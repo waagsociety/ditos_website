@@ -1,0 +1,15 @@
+.covervid-wrapper, .videoWrapper iframe{
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+}
+#main, .covervid-wrapper, .item{
+	overflow: hidden;
+}
+.covervid-wrapper video{
+	min-height: 100%;
+	min-width: 100%;
+}

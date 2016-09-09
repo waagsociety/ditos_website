@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ditos styleguide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Source+Serif+Pro" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <script src="https://assets.juicer.io/embed.js" type="text/javascript"></script>
+</head>
+<body>
+
+<header class="cd-auto-hide-header">
+  <nav class="cd-primary-nav">
+    <a href="#cd-navigation" class="nav-trigger">
+      <span>
+        <em aria-hidden="true"></em>
+      </span>
+    </a> <!-- .nav-trigger -->
+    <ul id="cd-navigation">
+      <li><a href="/" class="logo"><img src="logo.gif" alt="Logo"></a></li>
+      <li><a href="#0">Home</a></li>
+      <li><a href="#0">Events</a></li>
+      <li><a href="#0">Blog</a></li>
+      <li><a href="#0">About us</a></li>
+      <li><a href="#0">Contact Us</a></li>
+    </ul>
+  </nav> <!-- .cd-primary-nav -->
+
+  <nav class="cd-secondary-nav">
+    <ul>
+      <li><a class="active" href="#0">Intro</a></li>
+      <li><a href="#0">Map</a></li>
+      <li><a href="#0">About</a></li>
+      <li><a href="#0">Social</a></li>
+    </ul>
+  </nav> <!-- .cd-secondary-nav -->
+</header> <!-- .cd-auto-hide-header -->
+
+<main class="main__content">
+  <div class="flex">
+    <section>
+      <div class="blog__preview">
+        <article class="article__preview" style="background-image: url(photo.jpg)">
+          <header>  
+            <h3>Doing it together science</h3>
+            <p>An EU citizen science project</p>
+          </header>
+        </article>
+        <div class="small__preview">
+          <article class="article__preview" style="background-image: url(photo2.jpg)">
+            <header>  
+              <h6>Waag society holds is organizing science evening</h6>
+              <p>Wednesday, 17-08-2016, 18:30</p>
+            </header>
+          </article>
+          <article class="article__preview" style="background-image: url(photo3.jpg)">
+            <header>  
+              <h6>There is a meetup near you!</h6>
+              <p>Find out more information.</p>
+            </header>
+          </article>
+        </div>
+      </div>
+      <div class="text">
+        <p>
+          Doing It Together Science (DITOs) will implement many innovative participatory event formats across <a href="#">Europe focusing</a> on the active involvement of citizens in two critical areas: the cutting edge topic of biodesign and the pressing area of environmental monitoring. The project will advance the EU Responsible Research and Innovation agenda by moving beyond more traditional approaches into direct engagement that builds upon DIY, grassroots, and frugal innovation initiatives so that in the short and medium term we sustain localised capacity building and in the long term the effects of these grassroots efforts channel into policy action at different levels.
+        </p>
+      </div>
+      <div class="cd-form-wrapper cd-container">
+        <form class="cd-form">
+          <label class="cd-label" for="cd-email">Newsletter</label>
+          <input type="email" id="cd-email" class="cd-email" name="cd-email" placeholder="Enter your email address">
+          <input type="submit" class="cd-submit" value="Submit">
+          <div class="cd-loading"></div>
+        </form>
+
+        <div data-type="message" class="cd-response cd-response-error">Ops! Error message here</div>
+        <div data-type="message" class="cd-response-success"><p>Great! Success message here</p></div>
+        <div data-type="message" class="cd-response cd-response-notification">Hey! Notification message here</div>
+      </div>
+    </section>
+    <aside>
+      <header>
+        <h3 class="alpha">Upcoming events near you</h3>
+      </header>
+      <ul class="agenda__preview full__width">
+        <li class="agenda__preview__item">
+          <h4>Wat gaan we doen</h4>
+          <p>Waag Society</p>
+          <p>Amsterdam</p>
+        </li>
+        <li class="agenda__preview__item">
+          <h4>Wat gaan we doen</h4>
+          <p>Waag Society</p>
+          <p>Amsterdam</p>
+        </li>
+        <li class="agenda__preview__item">
+          <h4>Wat gaan we doen</h4>
+          <p>Waag Society</p>
+          <p>Amsterdam</p>
+        </li>
+      </ul>
+    </aside>
+  </div>
+    <ul class="juicer-feed" data-feed-id="ditos"></ul>
+</main>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  <script type="text/javascript" src="main.min.js"></script>
+</body>
+</html>

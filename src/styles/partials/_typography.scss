@@ -1,0 +1,93 @@
+html{
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  text-rendering: geometricPrecision;
+  font-smooth: always;
+  font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+body{
+  font-family: 'Source Serif Pro', serif;
+  font-size: 1.125em;
+}
+h1, .alpha,
+h2, .beta,
+h3, .gamma,
+h4, .delta,
+h5, .epsilon,
+h6, .zeta {
+  margin: 0;
+  letter-spacing: .01em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: $brand-color;
+}
+h1, .alpha {
+  font-size: 2.625em;
+  line-height: 1.0476190476190477;
+}
+h2, .beta {
+  font-size: 1.96875em;
+  line-height: 1.3968253968253967;
+}
+h3, .gamma {
+  font-size: 1.3125em;
+  line-height: 1.5714285714285714;
+}
+h4, .delta {
+  font-size: 1.1484375em;
+  line-height: 1.1972789115646258;
+}
+h5, .epsilon {
+  font-size: 0.984375em;
+  line-height: 1.3968253968253967;
+}
+h6, .zeta {
+  font-size: 0.875em;
+  line-height: 1.5714285714285714;
+}
+p,
+blockquote {
+  font-size: 1.1125em;
+  hyphens: none;
+}
+dd,
+dt,
+li {
+  margin: 0;
+}
+a{
+  text-decoration: none;
+  opacity: 1;
+  color: $brand-color;
+  transition: opacity 0.3s ease-in-out;
+  font-family: 'Montserrat', sans-serif;
+}
+input, select, button, textarea, .btn{
+	font-size: 1.3125em;
+	line-height: 1.5714285714285714;
+}
+
+strong{
+	font-weight: 500;
+}
+p{
+	line-height: 1.9em;
+}
+pre{
+  color: white;
+  padding: 20px;
+}
+code{
+  font-family: monospace;
+}
+strong{
+  font-weight: 700;
+}
+
+.text p{
+  margin-bottom: 2em;
+}

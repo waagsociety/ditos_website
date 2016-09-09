@@ -1,0 +1,65 @@
+@media (min-width:320px) {
+  .half__width{
+    width: 100%;
+  }
+  .big__padding,
+  .bigger__padding{
+    padding: ($gutter / 2);
+  }
+  h1, .alpha{
+    font-size: 1.625em;
+  }
+  .hero__header{
+    padding: 20px;
+  }
+  .btn, button{
+    border: 2px solid black;
+    font-size: .875em;
+    padding: 5px 10px;
+  }
+}
+
+@media (min-width:481px) {
+
+}
+
+@media (min-width:641px) {
+  
+}
+
+@media (min-width:961px) {
+  
+}
+
+@media (min-width:1024px) {
+  .half__width{
+    width: 50%;
+  }
+  .big__padding{
+    padding: $gutter * 2;
+  }
+  .bigger__padding{
+    padding: $gutter * 3;
+  }
+  h1, .alpha{
+    font-size: 2.625em;
+  }
+  .btn, button{
+    border: 4px solid black;
+    font-size: 1em;
+    margin: 5px 5px 5px 0;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width:768px) and (min-height: 1000px) {
+ 
+}
+
+@media (min-width:1281px) {
+  
+}
+
+@media (min-width:2000px) {
+  
+}

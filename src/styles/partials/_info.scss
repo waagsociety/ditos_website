@@ -1,0 +1,24 @@
+.info__field{
+  max-width: 400px;
+  margin: $gutter * 1.5;
+  h2{
+    font-size: 2.625em;
+  }
+}
+.info__icon{
+  margin-bottom: $gutter / 4;
+}
+
+@media (min-width:320px) {
+  .info__field{
+    max-width: 300px;
+    margin: $gutter / 2;
+  }
+}
+
+@media (min-width:1080px) {
+  .info__field{
+    max-width: 400px;
+    margin: $gutter * 1.5;
+  }
+}

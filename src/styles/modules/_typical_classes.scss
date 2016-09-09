@@ -1,0 +1,119 @@
+.right{
+	float: right;
+}
+.left{
+	float: left;
+}
+.hidden{
+     opacity:0;
+}
+.visible{
+     opacity:1;
+}
+.white{
+	color: white;
+}
+.fixed{
+	position: fixed;
+}
+.black{
+	color: black;
+}
+.no__margin{
+	margin: 0;
+}
+.full__width{
+	width: 100%;
+}
+.full__screen__height{
+	height: 100vh;
+}
+.half__width{
+	width: 50%;
+}
+.white__text{
+	color: white;
+}
+
+.white__text{
+	p,
+	h2{
+	color: white;
+	}
+}
+.flex{
+	display: flex;
+}
+.flex__center{
+	justify-content: center;
+	align-items: center;
+}
+.flex__start__center{
+	justify-content: flex-start;
+	align-items: center;
+}
+.flex__wrap{
+	flex-wrap: wrap;
+}
+.text__center{
+	text-align: center;
+}
+.wrapper{
+	max-width: 1260px;
+	padding: 0 $gutter;
+	margin: auto;
+}
+.cover__it{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+}
+.small__padding{
+	padding: ($gutter / 2);
+}
+.standard__padding{
+	padding: $gutter;
+}
+.big__padding{
+	padding: ($gutter * 2);
+}
+.bigger__padding{
+	padding: ($gutter * 3);
+}
+.big__padding__top{
+	padding: ($gutter * 2) 0;
+}
+.big__padding__bottom{
+	padding-bottom: ($gutter * 2);
+}
+.huge__padding{
+	padding: ($gutter * 4);
+}
+.huge__padding__tb{
+	padding: ($gutter * 4) 0;
+}
+
+.small__margin__bottom{
+	margin-bottom: ($gutter / 2);
+}
+.top__left{
+	top: 0;
+	left: 0;
+}
+.bottom__right{
+	bottom: 0;
+	right: 0;
+}
+.fixed{
+	position: fixed;
+}
+.absolute{
+	position: absolute;
+}
+.title__margin{
+  margin-bottom: 1em;
+}
