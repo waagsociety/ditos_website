@@ -1,6 +1,6 @@
 jQuery(document).ready(function($){
-  var mainHeader = $('.cd-auto-hide-header'),
-    secondaryNavigation = $('.cd-secondary-nav'),
+  var mainHeader = $('.auto-hide-header'),
+    secondaryNavigation = $('.secondary-nav'),
     //this applies only if secondary nav is below intro section
     belowNavHeroContent = $('.sub-nav-hero'),
     headerHeight = mainHeader.height();
@@ -91,7 +91,7 @@ jQuery(document).ready(function($){
   var messages = $('div[data-type="message"]');
   //check if user updates the email field
 
-  $('.cd-form .cd-email').keyup(function(event){  
+  $('.form .email').keyup(function(event){  
 
     
     //check if user has pressed the enter button (event.which == 13)
@@ -99,7 +99,7 @@ jQuery(document).ready(function($){
       //if not..
       //hide messages and loading bar 
       messages.removeClass('slide-in is-visible');
-      $('.cd-form').removeClass('is-submitted').find('.cd-loading').off('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend');
+      $('.form').removeClass('is-submitted').find('.loading').off('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend');
     }
     var emailInput = $(this);
     var insertedEmail = emailInput.val();
@@ -107,27 +107,27 @@ jQuery(document).ready(function($){
     var dotPosition = insertedEmail.lastIndexOf(".");
     
     if (atPosition< 1 || dotPosition<atPosition+2 ) {
-      $('.cd-form').removeClass('is-active').find('.cd-loading').off('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend');
+      $('.form').removeClass('is-active').find('.loading').off('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend');
     } else {
       //if he has..
       //show the submit button
-      $('.cd-form').addClass('is-active');
+      $('.form').addClass('is-active');
     }
   });
 
   //backspace doesn't fire the keyup event in android mobile
   //so we check if the email input is focused to hide messages and loading bar 
-  $('.cd-form .cd-email').on('focus', function(){
+  $('.form .email').on('focus', function(){
     messages.removeClass('slide-in is-visible');
-    $('.cd-form').removeClass('is-submitted').find('.cd-loading').off('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend');
+    $('.form').removeClass('is-submitted').find('.loading').off('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend');
   }); 
 
   //you should replace this part with your ajax function
-  $('.cd-submit').on('click', function(event){
-    if($('.cd-form').hasClass('is-active')) {
+  $('.submit').on('click', function(event){
+    if($('.form').hasClass('is-active')) {
       event.preventDefault();
       //show the loading bar and the corrisponding message
-      $('.cd-form').addClass('is-submitted').find('.cd-loading').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
+      $('.form').addClass('is-submitted').find('.loading').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
         showMessage();
       });
 
@@ -139,12 +139,12 @@ jQuery(document).ready(function($){
   });
 
   function showMessage() {
-    if( $('#cd-success').is(':checked') ) {
-      $('.cd-response-success').addClass('slide-in');
-    } else if ( $('#cd-error').is(':checked') ) {
-      $('.cd-response-error').addClass('is-visible');
+    if( $('#success').is(':checked') ) {
+      $('.response-success').addClass('slide-in');
+    } else if ( $('#error').is(':checked') ) {
+      $('.response-error').addClass('is-visible');
     } else {
-      $('.cd-response-notification').addClass('is-visible');
+      $('.response-notification').addClass('is-visible');
     }
   }
 

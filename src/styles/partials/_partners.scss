@@ -1,0 +1,15 @@
+.partner__bar{
+  padding: 80px 60px;
+  border-top: 1px solid #ccc;
+}
+
+.logo__bar{
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo__bar .item{
+  max-width: 200px;
+  opacity: .8;
+}

@@ -1,20 +1,29 @@
-.btn, button {
-  background: white;
-  border: 4px solid black;
-  color: black;
-  font-weight: 700;
-  cursor: pointer;
+.btn, button{
+  background-color: #F7DF09;
+  border: 0;
   font-size: 1em;
-  display: inline-block;
-  margin: ($gutter / 8) ($gutter / 8) ($gutter / 8) 0;
-  padding: ($gutter / 4) ($gutter / 2);
-  outline: none;
-  position: relative;
-  transition: all 0.2s;
+  margin: 5px 5px 5px 0;
+  padding: 10px 20px;
+    transition: .2s ease-in-out;
   &:hover{
-    color: blue;
-    border-color: blue;
-    transform: translateY(-3px);
-    box-shadow: 0 3px 0px rgba(0,0,0, .2);
+    background: #F7A809;
+    color: white;
   }
+}
+
+.busbtn{
+  padding: 10px;
+  border: 3px solid $sec-color !important;
+  transition: .15s ease-in-out;
+  &:hover{
+    background: $sec-color;
+    color: white;
+    a{
+      color: white !important;
+    }
+  }
+}
+.busbtn a{
+  color: $sec-color !important;
+  display: inline-block
 }
