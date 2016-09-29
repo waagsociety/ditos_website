@@ -1,5 +1,5 @@
 .blog__preview{
-  padding: 40px 40px 80px;
+  padding: 80px 120px;
   background: url(../images/subtle_dots_@2X.png);
   width: 100%;
 }
@@ -26,6 +26,7 @@
     height: 100%;
     p{
       color: #333;
+      font-size: .875em;
     }
   }
   header{
@@ -45,9 +46,11 @@
     }
     header{
       background: $brand-color;
-      h3,
-      p{
+      h3 {
         color: yellow;
+      }
+      p {
+        color: white;
       }
     }
     header{
