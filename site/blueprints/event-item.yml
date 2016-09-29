@@ -1,0 +1,32 @@
+title: event-item
+pages: false
+files: true
+fields:
+  title:
+    label: Event title
+    type:  text
+  introsentence:
+    label: Intro sentence
+    type:  text
+  text:
+    label: Text
+    type:  textarea
+  imagecopy:
+    label: Image copyright
+    type:  text
+  postimage:
+    label: Event Image
+    type:  selector
+    mode:  single
+    types:
+        - image
+  location:
+    label: Event location (you can drag the marker)
+    type: geolocation
+  date:
+    label: Date
+    type: date
+    format: MM/DD/YYYY
+  time:
+    label: Time
+    type: time

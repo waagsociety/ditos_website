@@ -1,0 +1,36 @@
+.main__content{
+  top: 200px;
+}
+.main__content section{
+  width: 70%;
+}
+.main__content aside{
+  border-left: 1px solid #ccc;
+  width: 30%;
+  header{
+    padding: 40px;
+    background: $brand-color;
+    h3{
+      color: white;
+    }
+  }
+}
+
+.text{
+  padding: 30px 60px 60px;
+  font-size: 1.2em;
+  ol{
+    list-style: decimal;
+    padding-left: 2em;
+    li{
+      margin-bottom: 0.5em;
+    }
+  }
+  ul{
+    list-style: disc;
+    padding-left: 2em;
+    li{
+      margin-bottom: 0.5em;
+    }
+  }
+} 

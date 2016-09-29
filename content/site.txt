@@ -1,0 +1,17 @@
+Title: Doing It Together Science
+
+----
+
+Author: Martin Risseeuw
+
+----
+
+Description: Doing It Together Science web platform.
+
+----
+
+Keywords: 
+
+----
+
+Copyright: © (date: Year) (link: http://waag.org text: Waag Society)

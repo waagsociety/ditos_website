@@ -3,6 +3,17 @@
 1. Auto-Hiding Navigation - Simple
 
 -------------------------------- */
+
+.logo{
+  display: block;
+  width: 150px;
+  height: auto;
+  margin-right: 40px;  
+}
+.logo img{
+  max-width: 100%;
+}
+
 #navigation{
   width: 100%;
 }
@@ -187,7 +198,9 @@
   z-index: 1;
   clear: both;
   width: 100%;
-  height: 50px;
+  justify-content: flex-end;
+  display: flex;
+  height: 70px;
   background-color: #5B00FF;
   background-image: linear-gradient(90deg, #5B00FF 30%, #D37777 100%);
   /* Rectangle: */
@@ -200,63 +213,13 @@
 .secondary-nav.nav-end::after {
   opacity: 0;
 }
-.secondary-nav ul, .secondary-nav li, .secondary-nav a {
-  height: 100%;
-}
-.secondary-nav ul {
-  display: flex;
-  padding: 0 60px 0 calc(242px + 2.5em);
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-}
-.secondary-nav ul::after {
-  clear: both;
-  content: "";
-  display: block;
-}
-.secondary-nav li {
-  display: inline-block;
-  float: left;
-  flex-shrink: 0;
-}
-.secondary-nav li:last-of-type {
-  padding-right: 20px;
-}
-.secondary-nav a {
-  display: block;
-  color: #fff;
-  opacity: .6;
-  padding: 0 20px;
-  line-height: 50px;
-}
-.secondary-nav a:hover, .secondary-nav a.active {
-  opacity: 1;
-}
+
 @media only screen and (min-width: 1024px) {
   .secondary-nav {
-    height: 70px;
     overflow: visible;
-  }
-  .secondary-nav ul {
-    /* reset mobile style */
-    display: block;
-  }
-  .secondary-nav li {
-    /* reset mobile style */
-    float: none;
-    flex-shrink: 1;
-  }
-  .secondary-nav a {
-    line-height: 70px;
-  }
-  .secondary-nav a.active {
-    // box-shadow: inset 0 10px #fff;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 970px) {
-  .secondary-nav ul{
-    padding: 0;
-  }
   .nav-trigger{
     z-index: 999;
   }

@@ -10,7 +10,7 @@ html{
   -webkit-font-smoothing: subpixel-antialiased;
 }
 body{
-  font-family: 'Source Serif Pro', serif;
+  font-family: 'Roboto Slab', serif;
   font-size: 1.125em;
 }
 h1, .alpha,
@@ -100,4 +100,11 @@ strong{
   font-size: 4em;
   padding: 30px 60px;
   line-height: 1.4em;
+}
+input,
+button,
+.btn,
+label{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
 }

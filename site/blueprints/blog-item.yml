@@ -1,0 +1,22 @@
+title: Blog-item
+pages: true
+files: true
+fields:
+  title:
+    label: Title
+    type:  text
+  introsentence:
+    label: Intro sentence
+    type:  text
+  text:
+    label: Text
+    type:  textarea
+  imagecopy:
+    label: Image copyright
+    type:  text
+  postimage:
+    label: Main Post Image
+    type:  selector
+    mode:  single
+    types:
+        - image

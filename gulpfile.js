@@ -12,7 +12,7 @@ gulp.task('styles', function() {
     browsers: ['last 2 versions'],
     cascade: false
   }))
-  .pipe(gulp.dest('./'));
+  .pipe(gulp.dest('./assets/css'));
 });
 
 gulp.task('js', function() {
@@ -25,7 +25,7 @@ gulp.task('js', function() {
   }))
   .pipe(uglify())
   .pipe(concat('main.min.js'))
-  .pipe(gulp.dest('./'))
+  .pipe(gulp.dest('./assets/js'))
 });   
 
 gulp.task('watch', function () {

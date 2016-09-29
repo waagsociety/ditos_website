@@ -1,0 +1,35 @@
+.agenda__preview__item{
+  border-top: 1px solid #ccc;
+  padding: 30px 40px;
+  width: 100%;
+  transition: .1s ease-in-out;
+  display: block;
+  span{
+    margin-right: 1em;
+  }
+  &:hover{
+    background-color: $lightgrey;
+  }
+  h4{
+    margin-bottom: .5em;
+  }
+  p{
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0.5em;
+    line-height: 1.5em;
+    font-size: .875em;
+    color: black !important;
+  }
+  .event__info{
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0.5em;
+    line-height: 1.5em;
+    font-size: .75em;
+    margin-top: 1em;
+    color: black;
+    li{
+      display: inline-block;
+      margin-bottom: 1em;
+    }
+  }
+}
