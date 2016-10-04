@@ -7,8 +7,8 @@ email: martin@waag.org
 language: en
 role: admin
 history:
-  - contact
-  - events/nieuw-waag-event
-  - events/waag-society-cool-stuff
+  - blog/doing-it-together-science
   - events/new-event
-  - about
+  - events/waag-society-cool-stuff
+  - events/diy-human-enhancement-clinic-1
+  - contact

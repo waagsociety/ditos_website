@@ -5,8 +5,8 @@
   padding: 10px 20px;
   transition: .2s ease-in-out;
   &:hover{
-    background: #F7A809;
-    color: white;
+    background: transparent;
+    color: $brand-color;
   }
 }
 
@@ -22,7 +22,26 @@
     }
   }
 }
+
 .busbtn a{
   color: $sec-color !important;
   display: inline-block
+}
+
+.disq_btn{
+  transition: .2s ease-out;
+  transform-origin: top center;
+  cursor: pointer;
+  width: 100%;
+  background: white;
+  border: 1px solid #eee;
+  font-weight: 400;
+  &:hover{
+    background: $brand-color;
+    color: white;
+  }
+}
+.disq_btn.deactive{
+  opacity: 0;
+  pointer-events: none;
 }

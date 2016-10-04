@@ -4,7 +4,7 @@
     <section>
       <header class="blog__header">
         <figure>
-          <img src="<?php echo url('assets/images/photo.jpg') ?>" />
+          <img src="<?php echo $page->contentURL() ?>/<?php echo $page->postimage() ?>" />
           <figcaption><i class="fa fa-copyright" aria-hidden="true"></i> <?php echo $page->imagecopy() ?></figcaption>
         </figure>
         <h1><?php echo $page->title() ?></h1>

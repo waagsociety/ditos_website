@@ -1,16 +1,40 @@
-Title: New event
+Title: Waag Society’s Open Wetlab evening
 
 ----
 
-Introsentence: ds
+Introsentence: Do you want to experiment in our Open Wetlab as artist, designer, biologist, or just because your are interested in this field? Join us!
 
 ----
 
-Text: klsljds
+Text: 
+
+Do you want to experiment in our Open Wetlab as artist, designer, biologist, or just because your are interested in this field? Join us! The Open Wetlab is open for visitors every Tuesday. After a summer break the biolab of Waag Society is open again for everyone interested in creating and executing open source biology and technology related projects. 
+
+Examples of previous projects are: 
+- 3D printing with bacteria 
+- Colouring of textiles with pigmented bacteria 
+- Making sculptures using Mycelium (fungus) 
+- (Ongoing) development of open source lab devices now used in the world wide BioHack Academy 
+- Using the cellulose biomaterial created by kombucha cultures as a paper or fabric
+
+How it works 
+Collaborative projects are developed during 4-week cycles on Tuesday evenings. The next cycle will start the 20th of September. Not able to make it the first evening? You are welcome to join in later.
+
+Program
+18:00 - 19:00 Door open; bring your own dinner 
+19:00 - 19:15 Introduction 
+19:15 - 21:15 Projects and experimentation 
+21:15 - 21:45 Wrap up
+
+Are you interested, but no idea how you can contribute? Come visit, experience and enjoy!
+
+Uncomfortable with visiting on your own? Bring a friend!
+
+Find more information here.
 
 ----
 
-Imagecopy: 
+Imagecopy: Waag Society 2016
 
 ----
 

@@ -2,7 +2,7 @@
 <main class="main__content">
   <div class="flex flex__wrap">
     <section>
-      <?php $items = $pages->find('blog')->children()->visible()->flip()->paginate(7); ?>
+      <?php $items = $pages->find('blog')->children()->visible()->paginate(7); ?>
       <div class="blog__preview left">
         <?php foreach($items as $item): ?>
           <a href="<?php echo $item->url() ?>" class="article__preview">
