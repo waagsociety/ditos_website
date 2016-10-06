@@ -282,6 +282,11 @@
     margin: 0 0.25em;
     transition: 0.2s ease-in-out;
     opacity: 0.9;
+    
+    a {
+      display: block;
+      height: 2em;
+    }
 
     svg {
       float: right;
