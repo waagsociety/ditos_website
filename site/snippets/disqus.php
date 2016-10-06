@@ -1,9 +1,9 @@
 <div class="button_bar flex">
-  <button class="light_btn disq_btn" onclick="loadDisqus(this)">
+  <button class="light_btn disq_btn icon labeled" onclick="loadDisqus(this)">
     <svg width="32" height="32"><use xlink:href="#i:commenting"/></svg>
     Comments by Disqus
   </button>
-  <button class="light_btn">
+  <button class="light_btn icon labeled">
     <svg width="32" height="32"><use xlink:href="#i:share"/></svg>
     Share
   </button>

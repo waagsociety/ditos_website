@@ -5,9 +5,39 @@
 /* FONT PATH
  * -------------------------- */
 
- svg {
-  fill: currentColor
- }
+svg { fill: currentColor }
+
+
+
+.icon {
+  display: block;
+  text-indent: -9999px;
+  width: 2.5em;
+  height: 2.5em;
+  position: relative;
+
+  &.labeled {
+    text-indent: 0;
+    width: auto;
+    padding-left: 56px;
+    svg {
+      left: 0;
+      transform: scale(0.75);
+      margin: -16px 0 0 12px;
+    }
+  }
+
+  svg {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    margin: -16px 0 0 -16px;
+    top: 50%;
+    left: 50%;
+  }
+
+}
+
 
 .fa {
   display: inline-block;
