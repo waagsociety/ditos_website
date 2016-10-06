@@ -1,5 +1,5 @@
 node_modules
 site/config
-assets/css
-assets/js
+assets/css/*
+assets/js/*
 .DS_Store
