@@ -13,7 +13,7 @@
       </ul>
       <?php else : ?>
       <section class="no__results">
-        <h1 class="gamma"><i class="fa fa-search" aria-hidden="true"></i> We couldnt find any search results, maybe try another search keyword.</h1>
+        <h1 class="gamma">We couldn&rsquo;t find any results, maybe try another search keyword.</h1>
         <?php snippet('search') ?>
       </section>
       <?php endif ?>

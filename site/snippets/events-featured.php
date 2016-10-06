@@ -34,7 +34,7 @@
     var viewHeight = $body.clientHeight
 
     var $parent = $featured.closest(parentSelector)
-    var parentBottom = $parent.clientHeight + 280
+    var parentBottom = $parent.clientHeight + 200
 
     if (initialScrollTop + viewHeight < parentBottom) {
       document.addEventListener('scroll', delegateScroll)
