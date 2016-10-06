@@ -7,90 +7,90 @@
   position: fixed;
   padding-top: 100%;
   z-index: 2;
+
+  &.done {
+    position: absolute;
+  }
+
+  .intro {
+    width: inherit;
+    max-width: 400px;
+    right: 50%;
+    bottom: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+
+  &.finish {
+    transition: background 0.2s ease;
+  }
+
+  .phrase {
+    background-color: transparent;
+  }
+
+  .phrase div {
+    position: absolute;
+    color: #5B00FF;
+    background-color: transparent; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+
+  .phrase h1 {
+    color: inherit;
+    font-size: 4em;
+  }
+
+  .phrase {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 0;
+    left: 0;
+    padding-top: 50%;
+    bottom: 0;
+    transform: scale(0.5);
+    transform-origin: center bottom;
+    opacity: 0;
+  }
+
+  &.finish.done .phrase {
+    transform: translateY(-100%);
+    transition: opacity 0.4s 0.2s ease-in, transform 0.4s 0.1s ease;
+    opacity: 1;
+  }
+
+
+  .intro {
+    opacity: 0;
+    position: absolute;
+    bottom: -1.96em;
+    transform: translateX(-1600px);
+    
+  }
+
+  &.start .intro {
+    opacity: 1;
+    transform: translateX(50%);
+    transition: opacity 0.4s ease, transform 2.5s ease-in-out;
+  }
+
+  .intro .body {
+    animation: bus-body 0.2s 1s infinite ease-in;
+  }
+
+  .intro .wiel {
+    animation: bus-wiel 0.25s 11 linear;
+    transform-origin: center;
+    display: block;
+    position: absolute;
+  }
+
 }
-
-#featured.done {
-  position: absolute;
-}
-
-#featured .intro {
-  width: inherit;
-  max-width: 400px;
-  right: 50%;
-  bottom: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-#featured.finish {
-  transition: background 0.2s ease;
-}
-
-#featured .phrase {
-  background-color: transparent;
-}
-
-#featured .phrase div {
-  position: absolute;
-  color: #5B00FF;
-  background-color: transparent; 
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-}
-
-#featured .phrase h1 {
-  color: inherit;
-  font-size: 4em;
-}
-
-#featured .phrase {
-  text-align: center;
-  position: absolute;
-  width: 100%;
-  height: 0;
-  left: 0;
-  padding-top: 50%;
-  bottom: 0;
-  transform: scale(0.5);
-  transform-origin: center bottom;
-  opacity: 0;
-}
-
-#featured.finish.done .phrase {
-  transform: translateY(-100%);
-  transition: opacity 0.4s 0.2s ease-in, transform 0.4s 0.1s ease;
-  opacity: 1;
-}
-
-
-#featured .intro {
-  opacity: 0;
-  position: absolute;
-  bottom: -1.96em;
-  transform: translateX(-1600px);
-  
-}
-
-#featured.start .intro {
-  opacity: 1;
-  transform: translateX(50%);
-  transition: opacity 0.4s ease, transform 2.5s ease-in-out;
-}
-
-#featured .intro .body {
-  animation: bus-body 0.2s 1s infinite ease-in;
-}
-
-#featured .intro .wiel {
-  animation: bus-wiel 0.25s 11 linear;
-  transform-origin: center;
-  display: block;
-  position: absolute;
-}
-
 
 @keyframes bus-body {
   from { transform: none }
