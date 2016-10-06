@@ -263,6 +263,20 @@
     margin-right: 1em;
     transition: 0.2s ease-in-out;
     opacity: 0.9;
+    text-indent: -999em;
+    width: 2em;
+    
+    
+    a {
+      display: block;
+      height: 2em;
+    }
+
+    svg {
+      float: right;
+      margin: 0.25em 0.25em;
+    }
+
     &:hover{
       transform: scale(1.1);
       opacity: 1;
