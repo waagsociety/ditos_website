@@ -59,11 +59,11 @@
   button{
     margin: 0;
     display: inline-block;
-    &+ button{
-      border-left: none;
-    }
-    &:last-child {
-      align-self: flex-end;
+    &[disabled], [disabled]:hover {
+      border: none;
+      color: black;
+      background: white;
+      cursor: initial;
     }
   }
 }
