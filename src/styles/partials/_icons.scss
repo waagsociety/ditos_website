@@ -38,6 +38,15 @@ svg { fill: currentColor }
 
 }
 
+.btn.icon svg { transform: scale(0.75) }
+
+.busbtn .icon.labeled {
+  padding-left: 36px;
+}
+.busbtn .icon.labeled svg {
+  margin-left: 0px;
+}
+
 .fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
