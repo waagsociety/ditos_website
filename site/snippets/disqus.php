@@ -1,6 +1,12 @@
-<div class="button_bar flex">
-  <button class="light_btn disq_btn" onclick="loadDisqus(this)"><i class="fa fa-comments-o" aria-hidden="true"></i> Comments by Disqus</button>
-  <button class="light_btn"><i class="fa fa-paper-plane-o" aria-hidden="true"></i> Share</button>
+<div class="button_bar">
+  <button class="light_btn disq_btn icon labeled" onclick="loadDisqus(this)">
+    <svg width="32" height="32"><use xlink:href="#i:commenting"/></svg>
+    Comments by Disqus
+  </button>
+  <button class="light_btn icon labeled right">
+    <svg width="32" height="32"><use xlink:href="#i:share"/></svg>
+    Share
+  </button>
 </div>
 
 <div id="disqus_thread"></div>

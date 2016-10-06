@@ -1,6 +1,8 @@
 <form id="searchform" class="search__form">
   <input id="mainsearch" placeholder="search" type="search" name="q" value="<?php echo esc($query) ?>">
-  <button type="submit" class="btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+  <button type="submit" class="btn icon">
+    <svg width="32" height="32"><use xlink:href="#i:search"/></svg>
+  </button>
 </form>
 <script type="text/javascript">
   document.getElementById('searchform').addEventListener('submit', function(evt){
