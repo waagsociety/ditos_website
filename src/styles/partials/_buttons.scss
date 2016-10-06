@@ -1,5 +1,5 @@
 .btn, button{
-  background-color: #F7DF09;
+  background-color: yellow;
   border: 0;
   font-size: 1em;
   padding: 10px 20px;
@@ -28,20 +28,42 @@
   display: inline-block
 }
 
-.disq_btn{
-  transition: .2s ease-out;
-  transform-origin: top center;
-  cursor: pointer;
-  width: 100%;
+.light_btn {
   background: white;
   border: 1px solid #eee;
   font-weight: 400;
+  transition: .2s ease-out;
+
   &:hover{
     background: $brand-color;
+    border-color: $brand-color;
     color: white;
   }
 }
+
+.disq_btn{
+  transform-origin: top center;
+  cursor: pointer;
+  width: auto;
+}
+
 .disq_btn.deactive{
   opacity: 0;
   pointer-events: none;
+}
+.share_btn {
+  background-color: $brand-color;
+  color: white;
+}
+.button_bar{
+  button{
+    margin: 0;
+    display: inline-block;
+    &+ button{
+      border-left: none;
+    }
+    &:last-child {
+      align-self: flex-end;
+    }
+  }
 }

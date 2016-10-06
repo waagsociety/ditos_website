@@ -250,3 +250,19 @@
     height: 60px;
   }
 }
+
+.social__bar {
+
+  display: flex;
+  align-items: center;
+  margin-right: 1em;
+
+  li {
+    font-size: 1.3em;
+    display: inline-block;
+    margin-right: 1em;
+  }
+  .fa-facebook {
+    font-size: .9em
+  }
+}

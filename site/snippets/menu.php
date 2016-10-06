@@ -13,6 +13,11 @@
   </ul>
 </nav> <!-- .primary-nav -->
 <nav class="secondary-nav">
+  <ul class="social__bar">
+    <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+    <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+    <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+  </ul>
   <?php snippet('search') ?>
 </nav> <!-- .secondary-nav -->
 
