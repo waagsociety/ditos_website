@@ -261,6 +261,15 @@
     font-size: 1.3em;
     display: inline-block;
     margin-right: 1em;
+    transition: 0.2s ease-in-out;
+    opacity: 0.9;
+    &:hover{
+      transform: scale(1.1);
+      opacity: 1;
+    }
+    a{
+      color: #fff;
+    }
   }
   .fa-facebook {
     font-size: .9em

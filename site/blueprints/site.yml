@@ -13,6 +13,15 @@ fields:
   keywords:
     label: Keywords
     type:  tags
+  facebook:
+    label: Facebook link
+    type:  text
+  instagram:
+    label: Instagram link
+    type:  text
+  twitter:
+    label: Twitter link
+    type:  text
   copyright:
     label: Copyright
     type:  textarea
