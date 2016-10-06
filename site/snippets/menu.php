@@ -9,7 +9,7 @@
     <?php foreach($pages->visible() as $p): ?>
       <li><a <?php e($p->isOpen(), ' class="active"') ?> href="<?php echo $p->url() ?>"><?php echo $p->title()->html() ?></a></li>
     <?php endforeach ?>
-    <li class="busbtn"><a href="<?php echo url('contact'); ?>"><i class="fa fa-bus" aria-hidden="true"></i> Request the science bus</a>
+    <li class="busbtn"><a href="<?php echo url('book-the-bus'); ?>"><i class="fa fa-bus" aria-hidden="true"></i> Request the science bus</a>
   </ul>
 </nav> <!-- .primary-nav -->
 <nav class="secondary-nav">

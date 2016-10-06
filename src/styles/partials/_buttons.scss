@@ -4,9 +4,19 @@
   font-size: 1em;
   padding: 10px 20px;
   transition: .2s ease-in-out;
+  cursor: pointer;
   &:hover{
     background: transparent;
     color: $brand-color;
+  }
+}
+
+.call__to__action{
+  background: yellow;
+  color: black;
+  &:hover{
+    color: white;
+    background-color: $sec-color;
   }
 }
 
