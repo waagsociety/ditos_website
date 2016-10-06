@@ -6,10 +6,11 @@
 .logo__bar{
   padding: 40px 0;
   display: flex;
-  justify-content: space-between;
+  margin-left: -20px;
 }
 
 .logo__bar .item{
   max-width: 200px;
+  margin: 20px;
   opacity: .8;
 }
