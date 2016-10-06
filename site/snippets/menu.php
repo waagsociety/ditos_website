@@ -14,8 +14,8 @@
       <li><a <?php e($p->isOpen(), ' class="active"') ?> href="<?php echo $p->url() ?>"><?php echo $p->title()->html() ?></a></li>
     <?php endforeach ?>
     <li class="busbtn">
-      <a href="<?php echo url('contact'); ?>">
-        <i class="fa fa-bus" aria-hidden="true"></i>
+      <a href="<?php echo url('contact'); ?>" class="icon labeled">
+        <svg width="32" height="32"><use xlink:href="#i:bus"/></svg>
         Request the science bus
       </a>
     </li>
