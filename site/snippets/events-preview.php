@@ -9,17 +9,19 @@
     <p class="agenda__intro"><?php echo $item->introsentence() ?></p>
     <ul class="event__info">
       <li>
-        <span>
-          <i class="fa fa-calendar" aria-hidden="true"></i> 
-          <time datetime="<?php echo $page->date('c') ?>"><?php echo $item->date('d/m/Y') ?></time> 
-          <time><?php echo $item->time() ?></time>
-        </span>
+        <svg viewBox="0 0 32 32"><use xlink:href="#i:calendar"/></svg> 
+        <time datetime="<?php echo $page->date('c') ?>">
+          <?php echo $item->date('d/m/Y') ?> 
+          <?php echo $item->time() ?>
+        </time>
       </li>
       <li>
-        <span><i class="fa fa-map-marker" aria-hidden="true"></i> Amsterdam</span>
+        <svg viewBox="0 0 32 32"><use xlink:href="#i:location"/></svg>
+        Amsterdam
       </li>
       <li>
-        <span><i class="fa fa-building-o" aria-hidden="true"></i> Waag Society</span>
+        <svg viewBox="0 0 32 32"><use xlink:href="#i:organisation"/></svg> 
+        Waag Society
       </li>
     </ul>
   </a>
