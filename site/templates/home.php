@@ -10,6 +10,7 @@
     </section>
     <aside>
       <?php snippet('events-preview') ?>
+      <?php snippet('events-featured') ?>
     </aside>
   </div>
   <?php snippet('partners') ?>
