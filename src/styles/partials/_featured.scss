@@ -1,5 +1,5 @@
 #featured {
-  font-size: 16px;
+  // background: silver;
   width: 30vw;
   bottom: 0;
   right: 0;
@@ -42,7 +42,10 @@
 
   .phrase h1 {
     color: inherit;
-    font-size: 4em;
+    font-size: 2em;
+    font-size: calc(2.5vw + 1em);
+    vertical-align: middle;
+    margin-bottom: 0.5em;
   }
 
   .phrase {
@@ -51,16 +54,18 @@
     width: 100%;
     height: 0;
     left: 0;
-    padding-top: 50%;
-    bottom: 0;
-    transform: scale(0.5);
+    padding-top: 33%;
+    top: 0;
+    // transform: scale(0.5);
+    transform: matrix3d(0.5,0,0.00,0,0.00,0.5,0.00,0.001,0,0,1,0,0,250,0,1);
     transform-origin: center bottom;
     opacity: 0;
+    z-index: 1;
   }
 
   &.finish.done .phrase {
-    transform: translateY(-100%);
-    transition: opacity 0.4s 0.2s ease-in, transform 0.4s 0.1s ease;
+    transform: none;
+    transition: opacity 0.4s 0.2s ease-in, transform 0.6s 0.1s ease;
     opacity: 1;
   }
 
@@ -68,14 +73,12 @@
   .intro {
     opacity: 0;
     position: absolute;
-    bottom: -1.96em;
-    transform: translateX(-1600px);
-    
+    transform: translate(-1600px, 10.5%);
   }
 
   &.start .intro {
     opacity: 1;
-    transform: translateX(50%);
+    transform: translate(50%, 10.5%);
     transition: opacity 0.4s ease, transform 2.5s ease-in-out;
   }
 
@@ -89,7 +92,29 @@
     display: block;
     position: absolute;
   }
+  
+  
+  .btn {
+    border: 2px solid black;
+  }
+  
+  .btn:hover {
+    background: yellow;
+    color: black;
+    animation: bus-btn 0.8s ease-in-out;
+  }
 
+}
+
+@keyframes bus-btn {
+  0% { transform: none }
+  72% { transform: skewX(-25deg) }
+  76% { transform: skewX(5deg) }
+  80% { transform: skewX(-5deg) }
+  84% { transform: skewX(4deg) }
+  88% { transform: skewX(-4deg) }
+  92% { transform: skewX(3deg) }
+  96% { transform: skewX(-3deg) }
 }
 
 @keyframes bus-body {
