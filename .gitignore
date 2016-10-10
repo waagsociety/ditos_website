@@ -5,3 +5,5 @@ assets/js/*
 .DS_Store
 
 *.log
+
+assets/css/main.css
