@@ -1,0 +1,34 @@
+{
+	"folders":
+	[
+    {
+        "path": "/",
+        "follow_symlinks": true
+    },
+    {
+        "name": "assets",
+        "path": "assets",
+        "follow_symlinks": true
+    },
+    {
+        "name": "site",
+        "path": "site",
+        "follow_symlinks": true
+    },
+    {
+        "name": "JavaScript",
+        "path": "src/js",
+        "follow_symlinks": true
+    },
+    {
+        "name": "CSS",
+        "path": "src/styles",
+        "follow_symlinks": true
+    },
+],
+  "settings":
+  {
+      "tab_size": 2,
+      "translate_tabs_to_spaces": true
+  },
+}
