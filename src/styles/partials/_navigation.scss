@@ -65,6 +65,7 @@
   /* vertically align its content */
   display: table;
   height: 100%;
+  width: 70px;
   padding: 0 1em;
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -233,6 +234,7 @@
     z-index: 999;
     position: fixed;
     border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #ccc;
     top: 60px;
     left: 0;
     height: auto;

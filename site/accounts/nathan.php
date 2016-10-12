@@ -9,5 +9,5 @@ password: >
 language: en
 role: admin
 history:
-  - events/calendar
+  - calendar
   - book-the-bus

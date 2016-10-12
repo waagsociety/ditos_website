@@ -1,10 +1,11 @@
 <?php snippet('header') ?>
+
 <main class="main__content">
   <div class="flex flex__wrap">
     <section>
       <div id="map"></div>
     </section>
-    <aside>
+    <aside>HALLO
       <?php snippet('events-preview') ?>
     </aside>
   </div>
