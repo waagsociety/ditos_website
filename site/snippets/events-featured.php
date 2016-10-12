@@ -4,7 +4,9 @@
   <div>
       
     <h1>Get With the Program</h1>
+    <a href="<?php echo url('book-the-bus') ?>">
     <button type="button" class="btn">Request the Science Bus!</button>
+    </a>
 
   </div>
   </header>

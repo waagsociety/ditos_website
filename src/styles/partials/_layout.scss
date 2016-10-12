@@ -3,10 +3,13 @@
 }
 .main__content section{
   width: 70%;
+  &.spread { width: 100% }
 }
+
 .main__content aside{
   border-left: 1px solid #ccc;
   width: 30%;
+  margin-bottom: -1px;
   header{
     padding: 36px 40px 44px;
     background: $brand-color;
