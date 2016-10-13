@@ -19,7 +19,8 @@ gulp.task('js', function() {
   gulp.src([
     'src/js/main.js',
     'src/js/mapbox.js',
-    'src/js/logo.js'    
+    'src/js/logo.js',
+    'src/js/newsletter.js'       
     ])
   .pipe(babel({
     presets: ['es2015']
