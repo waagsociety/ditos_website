@@ -1,5 +1,0 @@
-Title: Contact
-
-----
-
-Text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla leo quam, consequat at vulputate vel, malesuada sit amet felis. Aliquam accumsan turpis vel eleifend lacinia.

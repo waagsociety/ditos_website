@@ -10,7 +10,7 @@
     
     <li>
       <a href="<?php echo url('/'); ?>" class="logo">
-        <img src="<?php echo url('assets/images/logo.gif') ?>" alt="Logo">
+        <?php snippet('logo-animation') ?>
       </a>
     </li>
 

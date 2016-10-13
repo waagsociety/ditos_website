@@ -91,9 +91,7 @@ jQuery(document).ready(function($){
   var messages = $('div[data-type="message"]');
   //check if user updates the email field
 
-  $('.form .email').keyup(function(event){  
-
-    
+  $('.form .email').keyup(function(event){      
     //check if user has pressed the enter button (event.which == 13)
     if(event.which!= 13) {
       //if not..
@@ -129,6 +127,7 @@ jQuery(document).ready(function($){
       //show the loading bar and the corrisponding message
       $('.form').addClass('is-submitted').find('.loading').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
         showMessage();
+        $('.form').submit();
       });
 
       //if transitions are not supported - show messages
