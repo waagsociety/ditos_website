@@ -107,16 +107,16 @@
 
 }
 
-// @keyframes bus-btn {
-//   0% { transform: none }
-//   72% { transform: skewX(-25deg) }
-//   76% { transform: skewX(5deg) }
-//   80% { transform: skewX(-5deg) }
-//   84% { transform: skewX(4deg) }
-//   88% { transform: skewX(-4deg) }
-//   92% { transform: skewX(3deg) }
-//   96% { transform: skewX(-3deg) }
-// }
+@keyframes bus-btn {
+  0% { transform: none }
+  72% { transform: skewX(-25deg) }
+  76% { transform: skewX(5deg) }
+  80% { transform: skewX(-5deg) }
+  84% { transform: skewX(4deg) }
+  88% { transform: skewX(-4deg) }
+  92% { transform: skewX(3deg) }
+  96% { transform: skewX(-3deg) }
+}
 
 @keyframes bus-body {
   from { transform: none }
