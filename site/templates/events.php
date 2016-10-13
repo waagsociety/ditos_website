@@ -5,7 +5,7 @@
     <section>
       <div id="map"></div>
     </section>
-    <aside>HALLO
+    <aside>
       <?php snippet('events-preview') ?>
     </aside>
   </div>

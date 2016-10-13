@@ -1,6 +1,13 @@
 title: Page
 pages: true
-files: true
+files:
+  fields:
+    copyright:
+      label: Copyright
+      type: text
+    caption:
+      label: Caption
+      type: text
 fields:
   title:
     label: Title

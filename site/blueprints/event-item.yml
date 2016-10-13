@@ -1,32 +1,46 @@
-title: event-item
+title: Event-item
 pages: false
-files: true
+files: 
+  fields:
+    copyright:
+      label: Copyright
+      type: text
+    caption:
+      label: Caption
+      type: text
 fields:
   title:
-    label: Event title
+    label: Title
     type:  text
   introsentence:
-    label: Intro sentence
-    type:  text
-  text:
-    label: Text
-    type:  textarea
-  imagecopy:
-    label: Image copyright
+    label: Summary
     type:  text
   postimage:
-    label: Event Image
+    label: Image
     type:  selector
     mode:  single
     types:
-        - image
-  location:
-    label: Event location (you can drag the marker)
-    type: geolocation
+        - image  
+  text:
+    label: Text
+    type:  textarea
   date:
     label: Date
     type: date
     format: MM/DD/YYYY
+    width: 1/2
   time:
     label: Time
     type: time
+    width: 1/2
+  country:
+    label: Country
+    type: tags
+    width: 1/2
+  host:
+    label: Host (partner)
+    type: tags
+    width: 1/2
+  location:
+    label: Event location (you can drag the marker)
+    type: geolocation

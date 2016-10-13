@@ -42,7 +42,7 @@ Imagecopy: Waag Society 2016
 
 ----
 
-Postimage: screen-shot-2016-09-19-at-3.35.52-pm-2.png
+Postimage: 
 
 ----
 
@@ -55,3 +55,11 @@ Date: 2016-07-11
 ----
 
 Time: 17:00
+
+----
+
+Country: the Netherlands
+
+----
+
+Host: 
