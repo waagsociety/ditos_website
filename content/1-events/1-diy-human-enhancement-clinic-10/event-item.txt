@@ -2,7 +2,7 @@ Title: DIY Human Enhancement Clinic #10
 
 ----
 
-Introsentence: What use are hormones, to us, to others, to other species? What if you extract them yourself instead of leaving that to the pharmaceutical industry? What can you make? Cocktails, connections, corrections?
+Introsentence: What use are hormones, to us, to others, to other species?
 
 ----
 
@@ -50,7 +50,7 @@ Location: 52.3728073,4.900291000000038
 
 ----
 
-Date: 2016-07-11
+Date: 2016-10-13
 
 ----
 
@@ -62,4 +62,16 @@ Country: the Netherlands
 
 ----
 
-Host: 
+Host: De Waag
+
+----
+
+Date-end: 2016-10-13
+
+----
+
+Time-end: 
+
+----
+
+City: Amsterdam

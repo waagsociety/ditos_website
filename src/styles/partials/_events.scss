@@ -8,7 +8,10 @@
     margin-right: 1em;
   }
   &:hover{
-    background-color: $lightgrey;
+    background-color: #fafaff;
+  }
+  &.list {
+    padding: 40px 120px;
   }
   h4{
     margin-bottom: .5em;
@@ -33,4 +36,57 @@
       padding: 0 0.5em 0 0;
     }
   }
+}
+
+div.event__list {
+  margin-bottom: -1px;
+}
+
+nav.list__navigation {
+  padding: 30px 120px;
+}
+
+aside header.events__filters {
+  background-color: transparent;
+  padding: 0;
+}
+
+form.events__filters {
+  
+  padding: 40px 40px 30px;
+
+  select, input {
+    margin-top: 0.5em;
+  }
+
+  select {
+    appearance: none;
+    height: 3.25em;
+    padding: 0 3em 0 1em;
+    border-radius: 0;
+  }
+
+}
+
+
+.tabs {
+  display: flex;
+  background-color: white;
+  
+
+  button {
+    background-color: #fafaff;
+    flex-grow: 1;
+    border-bottom: 1px solid #ccc;
+    padding: 1.5em 0 1.75em;
+  }
+
+
+
+  button + button {
+    background-color: white;
+    border-left: solid 1px #ccc;
+    border-bottom: none;
+  }
+
 }

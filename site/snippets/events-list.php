@@ -1,13 +1,13 @@
-<?php $items = $pages->find('events')->children()->visible()->limit(3); ?>
+<?php $items = $pages->find('events')->children()->visible()->limit(30); ?>
 
-<header>
-  <h3 class="alpha">Upcoming events</h3>
+<header class="blog__header">
+  <h1 class="alpha">Upcoming events</h1>
 </header>
 
 <div class="agenda__preview full__width">
   
   <?php foreach($items as $item): ?>
-  <a href="<?php echo $item->url() ?>" class="agenda__preview__item event__info">
+  <a href="<?php echo $item->url() ?>" class="agenda__preview__item event__info list">
     
     <h4><?php echo $item->title() ?></h4>
     
@@ -29,5 +29,11 @@
 
   </a>
   <?php endforeach ?>
+
+  <nav class="list__navigation">
+
+    <a class="btn" href="archive">Past events</a>
+
+  </nav>
 
 </div>

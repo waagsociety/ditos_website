@@ -15,6 +15,11 @@ fields:
   introsentence:
     label: Summary
     type:  text
+    help: A short description for this event between 24 and 240 characters. 
+    validate:
+      min: 24
+      max: 240
+    required: true
   postimage:
     label: Image
     type:  selector
@@ -24,27 +29,44 @@ fields:
   text:
     label: Text
     type:  textarea
+    required: true
   date:
-    label: Date
+    label: Start date
     type: date
     format: MM/DD/YYYY
     width: 1/2
+    required: true
+  date-end:
+    label: End date
+    type: date
+    format: MM/DD/YYYY
+    width: 1/2
+    required: true
   time:
-    label: Time
+    label: Start time
+    type: time
+    width: 1/2
+    required: true
+  time-end:
+    label: End time
     type: time
     width: 1/2
   country:
     label: Country
-    type: tags
+    type: tags 
     width: 1/2
+    required: true
   city:
     label: City
     type: tags
     width: 1/2
+    required: true
   host:
-    label: Partner
+    label: Host
     type: tags
     width: 1/2
+    required: true
   location:
     label: Event location (you can drag the marker)
     type: geolocation
+    required: true
