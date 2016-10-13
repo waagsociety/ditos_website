@@ -6,6 +6,13 @@ function slugify($string) {
   return $string;
 }
 ?>
+<?php
+  $url = $page->url();
+  $parameters = param();
+  //print_r($parameters);
+  $countryParameter  = param('country');
+  $categoryParameter = param('category');
+?>
 <?php $items = $pages->find('events')->children()->visible()->limit(3); ?>
 
 <header class="events__filters">
@@ -20,16 +27,18 @@ function slugify($string) {
   <?php $countries = $page->children()->visible()->pluck('country', ',', true) ?>
   <?php //print_r($countries) ?>
   <?php foreach($countries as $key => $country): ?>
-    <?php $slug = slugify($country) ?><br>
+    <?php echo $slug ?>
   <?php endforeach ?> 
-  <br><br>
   <label>
     Where
     <select name="country">
-      <option value="" selected>Everywhere</option>
+      <option value="">Everywhere</option>
       <optgroup label="Filter by country">
-      <?php foreach($countries as $country): ?>
-      <option value="<?php echo slugify($country) ?>"><?php echo $country ?></option>
+      <?php foreach($countries as $country): $slug = slugify($country); ?>
+      <?php $selected = ($slug === $countryParameter ? 'selected' : '') ?>
+      <option value="<?php echo $slug ?>" <?php echo $selected ?>>
+        <?php echo $country ?>
+      </option>
       <?php endforeach ?>
       </optgroup>
     </select>
@@ -39,16 +48,19 @@ function slugify($string) {
 <script type="text/javascript">
 !function() {
 
+  <?php echo 'var $url = "'.$url.'/";' ?>
+  <?php echo 'var $country = "'.$countryParameter.'";' ?>
+
   var form = document.getElementById('filter-events')
   var fields = Array.prototype.slice.call(form.querySelectorAll('[name]'))
   var parameters = null
   
   form.onchange = function(event) {
     parameters = fields.reduce(function(result, element) {      
-      result[element.name] = element.value
+      if (element.value) result += element.name + ':' + element.value
       return result
-    }, {})
-    console.log(parameters)
+    }, "")
+    location = $url + parameters
   }
 
 }()
