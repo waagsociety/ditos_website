@@ -37,8 +37,12 @@ fields:
     label: Country
     type: tags
     width: 1/2
+  city:
+    label: City
+    type: tags
+    width: 1/2
   host:
-    label: Host (partner)
+    label: Partner
     type: tags
     width: 1/2
   location:
