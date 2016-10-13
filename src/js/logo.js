@@ -1,4 +1,3 @@
-
 !function(){
 
   var logo = document.getElementById('svg-logo');

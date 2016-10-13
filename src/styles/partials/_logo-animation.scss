@@ -10,6 +10,27 @@
   }
 }
 
+#svg-logo{
+  &:hover{
+    #d-symbol,
+    #i-symbol,
+    #t-symbol,
+    #o-symbol,
+    #s-symbol,
+    #d-letter,
+    #o-letter,
+    #t-letter,
+    #i-letter,
+    #s-letter,
+    #letters {
+      fill: $sec-color;
+      .st0{
+        stroke: $sec-color;
+      }
+    }
+  }
+}
+
 #d-letter,
 #o-letter,
 #t-letter,
