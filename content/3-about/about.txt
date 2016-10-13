@@ -4,17 +4,23 @@ Title: About
 
 Text: 
 
-The European Commission through its Horizon 2020 programme, with support from the Swiss confederation, have committed almost 4m euro to a three-year programme to increase public participation in scientific research and innovation across Europe. The 11-partner project, coordinated by UCL Extreme Citizen Science group, aims to build the institutional and policy foundations for sustained deep public engagement in science and technology in Europe that enables people to contribute at a level of participation suitable for them, whether that is engaging in face-to-face community meetings, using a crowdsourcing app to log air quality or working in a citizen biolab.
+**Doing It Together Science**
 
-Doing It Together Science (DITOs) will implement many innovative participatory event formats across Europe focusing on the active involvement of citizens in two critical areas: the cutting edge topic of biodesign and the pressing area of environmental monitoring. The project will advance the EU Responsible Research and Innovation agenda by moving beyond more traditional approaches into direct engagement that builds upon DIY, grassroots, and frugal innovation initiatives so that in the short and medium term we sustain localised capacity building and in the long term the effects of these grassroots efforts channel into policy action at different levels.
+Citizens have a major role to play in addressing the challenges to a sustainable future. It is by 'doing science together' that we combine our resources and expertise to raise awareness, build capacity, and innovative lasting solutions grounded in society. We address the call for Pan-European public outreach in science with and for society, through a tangible 'Do It Together' (DIY) method for wide and deep public engagement and participation in science.
 
-**Consortium** 
-The consortium includes a pan-European network ((link: http://ecsa.citizen-science.net/ text: European Citizen Science Association ECSA) - linking practitioners, scientists, and supporting policy makers), SMEs (Tekiu; Eutema), universities (UCL; Université Paris Descartes - CRI; Université de Geneve), science galleries, museums and arts organisations (Kapelica Gallery / Kersnikova; Medialab-Prado; RBINS) and NGOs (Meritum Association; Waag Society). These organisations cross multiple countries and languages, enabling coverage of much of Europe in its native languages.
+Doing It Together Science will implement many innovative participatory event formats across Europe focusing on the active involvement of citizens in two critical areas: biodesign and environmental sustainability. The project will advance the EU Responsible Research and Innovation agenda by moving beyond more traditional approaches into direct engagement that build upon DIY, grassroots, and frugal innovation initiatives so that in the short and medium term we sustain localised capacity building and in the leg term the effects of these grassroots efforts channel into policy action at different levels.
 
-At UCL, central coordination for DITOs as well as events, analysis and research will be provided by the UCL Extreme Citizen Science (ExCiteS) group. UCL ExCiteS includes researchers from a variety of specialities and has a history of developing tools to help communities collect data and participate in decision making. From work with non-literate peoples in the Congo to document environmental damage, to collaborations with communities around Heathrow to monitor noise pollution, UCL ExCiteS enables people to change their world through data.
+Through its Horizon 2020 programme the European Commission, with support from the Swiss confederation, have committed financial support to this three-year program to increase public participation in scientific research and innovation across Europe. The 11-partner project, coordinated by UCL Extreme Citizen Science group, aims to build the institutional and policy foundations for sustained deep public engagement in science and technology in Europe.
 
-Professor Muki Haklay, co-director of UCL ExCiteS and project co-ordinator for DITOs, said: "Doing it together science is a step-change in European public participation in science and innovation. Prior projects show this is possible, but now we need to scale it up and engage many more people; we want to promote this 'deep' engagement. Our great aim is for the public to be engaged in all aspects and stages in the scientific and innovation progress, at a level suitable for them."
-
-Dr Katrin Vohland, vice-chair of the European Citizen Science Association added: "DITOs provides a great opportunity not only to experiment with different pathways for different persons and communities to engage at different intensities but to enhance mutual learning for lasting effects at the interface of science and society."
-
-(image: eu_flag.png width: 500)
+The consortium includes a pan-European network:
+European Citizen Science Association ECSA
+Tekiu
+Eutema
+UCL
+Université Paris Descartes
+Université de Geneve 
+Kapelica Gallery / Kersnikova
+Medialab-Prado 
+RBINS
+Meritum Association 
+Waag Society —institute for art, science and technology—is a pioneer in the field of digital media. Over the past 22 years, the foundation has developed into an institution of international stature, a platform for artistic research and experimentation, and has become both a catalyst for events and a breeding ground for cultural and social innovation.

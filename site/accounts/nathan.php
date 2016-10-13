@@ -9,5 +9,6 @@ password: >
 language: en
 role: admin
 history:
+  - events/diy-human-enhancement-clinic-10
   - calendar
   - book-the-bus

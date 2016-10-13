@@ -1,0 +1,68 @@
+#d-symbol,
+#i-symbol,
+#t-symbol,
+#o-symbol,
+#s-symbol {
+  display: none;
+  fill: black;
+  .st0{
+    stroke: black;
+  }
+}
+
+#d-letter,
+#o-letter,
+#t-letter,
+#i-letter,
+#s-letter {
+  fill: black;
+}
+
+#letters{
+  fill: black;
+}
+
+.active-d {
+  #d-letter {
+    fill: $brand-color;
+  }
+  #d-symbol {
+    display: block;
+  }
+}
+
+.active-i {
+  #i-letter {
+    fill: $brand-color;
+  }
+  #i-symbol {
+    display: block;
+  }
+}
+
+.active-t {
+  #t-letter {
+    fill: $brand-color;
+  }
+  #t-symbol {
+    display: block;
+  }
+}
+
+.active-o {
+  #o-letter {
+    fill: $brand-color;
+  }
+  #o-symbol {
+    display: block;
+  }
+}
+
+.active-s {
+  #s-letter {
+    fill: $brand-color;
+  }
+  #s-symbol {
+    display: block;
+  }
+}

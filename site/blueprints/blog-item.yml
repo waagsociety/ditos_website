@@ -1,6 +1,12 @@
 title: Blog-item
-pages: true
-files: true
+pages: false
+files: 
+  copyright:
+    label: Copyright
+    type: text
+  caption:
+    label: Caption
+    type: text
 fields:
   title:
     label: Title

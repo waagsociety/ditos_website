@@ -1,6 +1,6 @@
 <?php $items = $pages->find('blog')->children()->limit(3); ?>
 <div class="blog__preview left">
-  <h3 class="preview__header">Latest <a href="#">blogs</a>, <a href="#">deliverables</a></h3>
+  <h3 class="preview__header">Latest <a href="#">blogs</a></h3>
   <?php foreach($items as $item): ?>
     <a href="<?php echo $item->url() ?>" class="article__preview">
       <article>
