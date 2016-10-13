@@ -1,5 +1,5 @@
 #featured {
-  // background: silver;
+  // background: silver!important;
   width: 30vw;
   bottom: 0;
   right: 0;
@@ -102,21 +102,21 @@
   .btn:hover {
     background: yellow;
     color: black;
-    animation: bus-btn 0.8s ease-in-out;
+    // animation: bus-btn 0.8s ease-in-out;
   }
 
 }
 
-@keyframes bus-btn {
-  0% { transform: none }
-  72% { transform: skewX(-25deg) }
-  76% { transform: skewX(5deg) }
-  80% { transform: skewX(-5deg) }
-  84% { transform: skewX(4deg) }
-  88% { transform: skewX(-4deg) }
-  92% { transform: skewX(3deg) }
-  96% { transform: skewX(-3deg) }
-}
+// @keyframes bus-btn {
+//   0% { transform: none }
+//   72% { transform: skewX(-25deg) }
+//   76% { transform: skewX(5deg) }
+//   80% { transform: skewX(-5deg) }
+//   84% { transform: skewX(4deg) }
+//   88% { transform: skewX(-4deg) }
+//   92% { transform: skewX(3deg) }
+//   96% { transform: skewX(-3deg) }
+// }
 
 @keyframes bus-body {
   from { transform: none }
