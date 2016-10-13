@@ -1,4 +1,4 @@
-Title: DIY Human Enhancement Clinic #10
+Title: An event in Antwerp
 
 ----
 
@@ -46,7 +46,7 @@ Postimage: screen-shot-2016-09-19-at-3.35.52-pm-2.png
 
 ----
 
-Location: 52.3728073,4.900291000000038
+Location: 51.2194475,4.40246430000002
 
 ----
 
@@ -55,3 +55,23 @@ Date: 2016-07-11
 ----
 
 Time: 17:00
+
+----
+
+Date-end: 2016-10-13
+
+----
+
+Time-end: 
+
+----
+
+Country: Belgium
+
+----
+
+City: Antwerp
+
+----
+
+Host: Tekiu

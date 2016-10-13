@@ -1,7 +1,3 @@
-<?php
-  $country  = param('country');
-  $category = param('category');
-?>
 <?php snippet('header') ?>
 <main class="main__content">
   

@@ -9,6 +9,8 @@ password: >
 language: en
 role: admin
 history:
+  - events/new-event
+  - events/waag-society-cool-stuff
   - events/diy-human-enhancement-clinic-10
   - calendar
   - book-the-bus

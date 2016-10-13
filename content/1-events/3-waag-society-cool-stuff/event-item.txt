@@ -1,4 +1,4 @@
-Title: DIY Human Enhancement Clinic #2
+Title: An event in Rome
 
 ----
 
@@ -34,12 +34,32 @@ Postimage: photo3.jpg
 
 ----
 
-Location: 52.38872829837041,4.88417717036134
+Location: 41.9027835,12.496365500000024
 
 ----
 
-Date: 2016-09-23
+Date: 2016-10-12
 
 ----
 
 Time: 17:00
+
+----
+
+Date-end: 2016-11-09
+
+----
+
+Time-end: 
+
+----
+
+Country: Italy
+
+----
+
+City: Rome
+
+----
+
+Host: Tekiu
