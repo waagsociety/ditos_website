@@ -1,15 +1,13 @@
 <?php snippet('header') ?>
+
 <main class="main__content">
   
-  <div class="flex flex__wrap" id="list">
+  <div class="flex flex__wrap">
  
     <section>
 
-      <?php snippet('mapbox') ?>
-      
-      <div class="event__list">
-      <?php snippet('events-list') ?>
-      </div>
+      <?php $view = param('view', 'map') ?>
+      <?php $view === 'map' ? snippet('mapbox') : snippet('events-list') ?>
 
     </section>
 

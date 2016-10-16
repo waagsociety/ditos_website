@@ -51,7 +51,7 @@ aside header.events__filters {
   padding: 0;
 }
 
-form.events__filters {
+.events__filters {
   
   padding: 40px 40px 30px;
 
@@ -70,22 +70,26 @@ form.events__filters {
 
 
 .tabs {
+  
   display: flex;
   background-color: white;
-  
+  input { display: none }
 
-  button {
+  .btn {
     background-color: #fafaff;
     flex-grow: 1;
     border-bottom: 1px solid #ccc;
     padding: 1.5em 0 1.75em;
+    text-align: center;
+    
   }
 
-
-
-  button + button {
-    background-color: white;
+  .btn + .btn {
     border-left: solid 1px #ccc;
+  }
+
+  .btn.is-active {
+    background-color: white;
     border-bottom: none;
   }
 

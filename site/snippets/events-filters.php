@@ -7,41 +7,48 @@ function slugify($string) {
 }
 ?>
 <?php
-  $url = $page->url();
-  $parameters = param();
-  //print_r($parameters);
-  $countryParameter  = param('country');
-  $categoryParameter = param('category');
+$url = $page->url();
+$viewParameter = param('view', 'map');
+$countryParameter  = param('country');
+$categoryParameter = param('category');
 ?>
-<?php $items = $pages->find('events')->children()->visible()->limit(3); ?>
 
-<header class="events__filters">
-  <nav class="tabs">
-    <button>Map</button>
-    <button>List</button>
-  </nav>
-</header>
-
-<form id="filter-events" class="events__filters full__width">
+<form id="filter-events"> 
   
+  <nav class="tabs">
+  <?php foreach (['Map', 'List'] as $name): $slug = slugify($name) ?> 
+    
+    <?php $selected = $slug === $viewParameter ?>
+    <label class="btn<?php e($selected, ' is-active')?>">
+      <input type="radio" name="view" value="<?php echo $slug ?>"<?php e($selected, ' checked')?>>
+      <?php echo $name ?>
+    </label>
+
+  <?php endforeach ?>
+  </nav>
+
+  <div class="events__filters full__width">
   <?php $countries = $page->children()->visible()->pluck('country', ',', true) ?>
-  <?php //print_r($countries) ?>
-  <?php foreach($countries as $key => $country): ?>
-    <?php echo $slug ?>
-  <?php endforeach ?> 
   <label>
-    Where
+    
+    Where    
     <select name="country">
+
       <option value="">Everywhere</option>
+
       <optgroup label="Filter by country">
       <?php foreach($countries as $country): $slug = slugify($country); ?>
-      <?php $selected = ($slug === $countryParameter ? 'selected' : '') ?>
-      <option value="<?php echo $slug ?>" <?php echo $selected ?>>
-        <?php echo $country ?>
-      </option>
+      
+        <?php $selected = ($slug === $countryParameter ? 'selected' : '') ?>
+        <option value="<?php echo $slug ?>" <?php echo $selected ?>>
+          <?php echo $country ?>
+        </option>
+      
       <?php endforeach ?>
       </optgroup>
+
     </select>
+
   </label>
 
 </form>
@@ -49,6 +56,7 @@ function slugify($string) {
 !function() {
 
   <?php echo 'var $url = "'.$url.'/";' ?>
+  <?php echo 'var $view = "'.$viewParameter.'";' ?>
   <?php echo 'var $country = "'.$countryParameter.'";' ?>
 
   var form = document.getElementById('filter-events')
@@ -56,10 +64,13 @@ function slugify($string) {
   var parameters = null
   
   form.onchange = function(event) {
-    parameters = fields.reduce(function(result, element) {      
-      if (element.value) result += element.name + ':' + element.value
+    parameters = fields.reduce(function(result, element) {    
+      const isCheck = typeof element.checked === 'boolean'
+      if (isCheck ? element.checked : !!element.value){ 
+        result.push(element.name + ':' + element.value)
+      }
       return result
-    }, "")
+    }, []).join('/')
     location = $url + parameters
   }
 
