@@ -12,8 +12,20 @@ $viewParameter = param('view', 'map');
 
 $countryIndex = $page->children()->visible()->pluck('country', ',', true);
 $countryParameter = param('country');
+$countryFilter = false;
+foreach ($countryIndex as $country) {
+  if (slugify($country) === $countryParameter) {
+    $countryFilter = $country;
+    break;
+  }
+}
 
-$categoryParameter = param('category');
+$items = $pages->find('events')->children()->visible();
+
+if ($countryFilter) $items = $items->filterBy('country', $countryFilter, ',');
+
+$items = $items->limit(30);
+
 ?>
 
 <main class="main__content">
@@ -21,7 +33,11 @@ $categoryParameter = param('category');
   <div class="flex flex__wrap">
  
     <section>
-    <?php $viewParameter === 'map' ? snippet('mapbox') : snippet('events-list') ?>
+    <?php 
+    $viewParameter === 'map' 
+      ? snippet('mapbox', ['items' => $items]) 
+      : snippet('events-list', ['items' => $items]) 
+    ?>
     </section>
 
     <aside class="filter__events"><?php snippet('events-filters') ?></aside>  
