@@ -12,7 +12,7 @@ function loadMapbox(){
   map.on('load', function() {
     map.addSource("events", {
         type: "geojson",
-        data: "http://localhost:8888/events/api/"
+        data: geojson
     });
 
     // Use the stores source to create five layers:
