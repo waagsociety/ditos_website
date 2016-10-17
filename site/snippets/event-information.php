@@ -12,12 +12,15 @@
   </li>
 
   <li>
-    <svg viewBox="0 0 32 32"><use xlink:href="#i:location"/></svg>
-    <?php if (strlen($page->venue()->html()) > 0) { 
-      echo $page->venue()->html().'<br>';
-    } ?>
-    <?php echo $page->address() ?><br>
-    <?php echo $page->city().'<br>'.$page->country() ?>
+    <a href="/">
+      <svg viewBox="0 0 32 32"><use xlink:href="#i:location"/></svg>
+      <?php if (strlen($page->venue()->html()) > 0) { 
+        echo $page->venue()->html().'<br>';
+      } ?>
+      <?php echo $page->address() ?><br>
+      <?php echo $page->city().'<br>'.$page->country() ?>
+      <button type="button">Open in Google Maps</button>
+    </a>
   </li>
 
 </ul>
