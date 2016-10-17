@@ -1,0 +1,45 @@
+Title: Another antwerp event
+
+----
+
+Introsentence: sajkdasjkasdjkdsakjdsa sasdsadds
+
+----
+
+Postimage: c705037601caa79f3b7d3260e445518a.jpg
+
+----
+
+Text: sawad
+
+----
+
+Date: 2016-10-20
+
+----
+
+Date-end: 2016-10-21
+
+----
+
+Time: 11:00
+
+----
+
+Time-end: 18:00
+
+----
+
+Country: Belgium
+
+----
+
+City: Brussel
+
+----
+
+Host: Jaap
+
+----
+
+Location: 50.8503396,4.351710300000036

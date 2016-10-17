@@ -7,6 +7,7 @@ email: martin@waag.org
 language: en
 role: admin
 history:
+  - events/another-antwerp-event
   - blog
   - about
   - about/partners
