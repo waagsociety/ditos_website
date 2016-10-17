@@ -6,12 +6,13 @@ function loadMapbox(){
       zoom: 6,
       center:[5.3770023,52.1626588],
       minZoom: 4,
+      pitch: 40,
   });
 
   map.on('load', function() {
     map.addSource("events", {
         type: "geojson",
-        data: "http://localhost:8888/events/api"
+        data: "http://localhost:8888/events/api/"
     });
 
     // Use the stores source to create five layers:
@@ -27,5 +28,8 @@ function loadMapbox(){
         }
     });
   });
+
+
+  map.addControl(new mapboxgl.NavigationControl());
 }
 

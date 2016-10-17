@@ -24,7 +24,6 @@ foreach($data as $article) {
       )
     )
   );
-
 }
 
 $geojson = array(
