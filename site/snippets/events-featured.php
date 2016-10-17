@@ -39,6 +39,7 @@
     var $parent = $featured.closest(parentSelector)
     var parentBottom = $parent.clientHeight + 200
 
+    $parent.classList.add('featured__container')
     if (initialScrollTop + viewHeight < parentBottom) {
       document.addEventListener('scroll', delegateScroll)
     }
