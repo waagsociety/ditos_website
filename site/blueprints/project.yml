@@ -15,3 +15,7 @@ fields:
   tags:
     label: Tags
     type:  tags
+  submenu:
+    label: Show submenu
+    type: checkbox
+    text: Do you want to display the submenu?

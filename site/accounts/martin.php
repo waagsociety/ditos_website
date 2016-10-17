@@ -7,6 +7,6 @@ email: martin@waag.org
 language: en
 role: admin
 history:
+  - blog
   - about
-  - book-the-bus
-  - events/aap
+  - about/partners

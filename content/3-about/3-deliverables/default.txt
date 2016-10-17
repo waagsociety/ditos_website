@@ -1,0 +1,17 @@
+Title: Deliverables
+
+----
+
+Text: Here you can find a list of DITOS deliverables:
+
+----
+
+Imagecopy: Waag Society 2016
+
+----
+
+Postimage: header.jpg
+
+----
+
+Submenu: 1

@@ -1,5 +1,5 @@
 title: Contact
-pages: false
+pages: true
 files: true
 fields:
   title:
@@ -8,3 +8,7 @@ fields:
   text:
     label: Text
     type:  textarea
+  submenu:
+    label: Show submenu
+    type: checkbox
+    text: Do you want to display the submenu?

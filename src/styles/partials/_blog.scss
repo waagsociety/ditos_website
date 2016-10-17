@@ -25,6 +25,7 @@
   width: calc(60% - 20px);
   height: 500px;
   float: left;
+
   article{
     overflow: hidden;
     position: absolute;
@@ -79,30 +80,34 @@
     z-index: 2;
   }
 }
-.article__preview:nth-of-type(1){
-  margin-right: 20px;
-}
+
+.article__preview:nth-of-type(1) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 
 .article__preview:nth-of-type(2){
+  width: calc(60% - 20px);
+  margin-right: 20px;
   margin-bottom: 20px;
 }
-.article__preview:nth-of-type(1n + 2){
+
+.article__preview:nth-of-type(1n + 3){
   width: 40%;
   height: 240px;
+  margin-bottom: 20px;
   header{
     max-width: 80%;
   }
 }
-.article__preview:nth-of-type(1n + 4){
+.article__preview:nth-of-type(1n + 5){
   width: calc(50% - 10px);
   height: 300px;
-  margin: 20px 20px 0 0;
 }
+
 .article__preview:nth-of-type(2n + 5){
-
-  margin: 20px 0 0 0;
+  margin-right: 20px;
 }
-
 .blog__header figcaption{
   background: $brand-color;
   color: yellow;

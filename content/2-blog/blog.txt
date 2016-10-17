@@ -3,3 +3,11 @@ Title: Blog
 ----
 
 Text: 
+
+----
+
+Submenu: 0
+
+----
+
+Tags: 

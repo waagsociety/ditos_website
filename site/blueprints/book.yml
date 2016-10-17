@@ -8,3 +8,7 @@ fields:
   text:
     label: Text
     type:  textarea
+  submenu:
+    label: Show submenu
+    type: checkbox
+    text: Do you want to display the submenu?

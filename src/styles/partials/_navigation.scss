@@ -253,6 +253,29 @@
   }
 }
 
+.subnav__list {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  padding-left: 60px;
+}
+
+.subnav__list li {
+  display: inline-block;
+  margin-right: 45px;
+  align-items: center;
+  font-size: 1.2em;
+  a {
+    color: white;
+    opacity: 0.8;
+
+    &.active { 
+      color: yellow;
+      opacity: 1;
+    }
+  }
+
+}
 
 .social__bar {
 

@@ -25,3 +25,7 @@ fields:
   copyright:
     label: Copyright
     type:  textarea
+  submenu:
+    label: Show submenu
+    type: checkbox
+    text: Do you want to display the submenu?

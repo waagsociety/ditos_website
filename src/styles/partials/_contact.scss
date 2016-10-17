@@ -2,6 +2,7 @@
   padding: 80px 120px;
   color: white;
   border-top: 1px solid #ccc;
+  background: url(../images/subtle_dots_@2X.png);
   label{
     margin-bottom: .5em;
     display: inline-block;
@@ -24,8 +25,30 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 1em;
+    &:focus{
+      border-color: $sec-color;
+    }
+  }
+  label ~ input:focus,
+  label ~ select:focus,
+  label ~ textarea:focus  {
+    color: $sec-color;
   }
   textarea{
     height: auto;
+  }
+
+  .alert {
+    background: yellow;
+    color: white;    
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    padding: ($gutter / 2);
+    max-width: 600px;
+    font-size: 1.5em;
+    line-height: 2em;
+    margin-bottom: 1em;
+    color: $brand-color;
   }
 }

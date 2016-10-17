@@ -9,27 +9,33 @@
         <?php echo kirbytext($page->text()) ?>
       </div>
       
-      <form class="contact__form">
+      <form method="post" class="contact__form">
+        
+        <?php if($alert): ?>
+          <div class="alert">
+          <ul>
+            <?php foreach($alert as $message): ?>
+            <li><?php echo html($message) ?></li>
+            <?php endforeach ?>
+          </ul>
+          </div>
+        <?php endif ?>
         <div class="input__row">
-          <label>Subject</label>
-          <select>
-            <option>Book the bus</option>
-            <option>Submit a blog post</option>
-          </select>
+          <label for="email">E-mail</label>
+          <input autofocus id="email" name="email" type="email">
         </div>
         <div class="input__row">
-          <label>Name</label>
-          <input placeholder="hoi">
+          <label>Your name?</label>
+          <input id="name" name="name" type="text">
         </div>
         <div class="input__row">
-          <label>E-mail</label>
-          <input placeholder="hoi">
+          <label>Your message</label>
+          <textarea rows="8" id="message" name="message" type="text"></textarea>
         </div>
-        <div class="input__row">
-          <label>Message</label>
-          <textarea placeholder="Message" rows="8"></textarea> 
-        </div>
+        <button type="submit" name="submit" value="Submit">Verstuur</button>
       </form>
+
+      
 
     </section>
     <aside>

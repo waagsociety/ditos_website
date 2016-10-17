@@ -8,7 +8,4 @@
   </form>
   <div data-type="message" class="response response-error" id="mce-error-response">Ops! Error message here</div>
   <div data-type="message" class="response-success" id="mce-success-response"><p>Great! Success message here</p></div>
-  <div data-type="message" class="response response-notification">Hey! Notification message here</div>
 </div>
-
-

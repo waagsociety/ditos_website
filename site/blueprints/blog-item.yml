@@ -17,12 +17,17 @@ fields:
   text:
     label: Text
     type:  textarea
-  imagecopy:
-    label: Image copyright
-    type:  text
   postimage:
     label: Main Post Image
     type:  selector
     mode:  single
+    required: true
     types:
         - image
+  submenu:
+    label: Show submenu
+    type: checkbox
+    text: Do you want to display the submenu?
+  tags:
+    label: Category
+    type:  tags

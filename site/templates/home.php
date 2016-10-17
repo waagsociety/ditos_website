@@ -5,7 +5,7 @@
       <?php snippet('blog-preview') ?>
       <?php snippet('newsletter') ?>
     </section>
-    <aside>
+    <aside class="featured__container">
       <?php snippet('events-preview') ?>
       <?php snippet('events-featured') ?>
     </aside>

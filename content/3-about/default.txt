@@ -12,15 +12,14 @@ Doing It Together Science will implement many innovative participatory event for
 
 Through its Horizon 2020 programme the European Commission, with support from the Swiss confederation, have committed financial support to this three-year program to increase public participation in scientific research and innovation across Europe. The 11-partner project, coordinated by UCL Extreme Citizen Science group, aims to build the institutional and policy foundations for sustained deep public engagement in science and technology in Europe.
 
-The consortium includes a pan-European network:
-European Citizen Science Association ECSA
-Tekiu
-Eutema
-UCL
-Université Paris Descartes
-Université de Geneve 
-Kapelica Gallery / Kersnikova
-Medialab-Prado 
-RBINS
-Meritum Association 
-Waag Society —institute for art, science and technology—is a pioneer in the field of digital media. Over the past 22 years, the foundation has developed into an institution of international stature, a platform for artistic research and experimentation, and has become both a catalyst for events and a breeding ground for cultural and social innovation.
+----
+
+Imagecopy: 
+
+----
+
+Postimage: header.jpg
+
+----
+
+Submenu: 1

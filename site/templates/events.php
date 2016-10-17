@@ -14,6 +14,5 @@
     <aside><?php snippet('events-filters') ?></aside>  
     
   </div>
-  <?php snippet('partners') ?>
 </main>
 <?php snippet('footer') ?>
