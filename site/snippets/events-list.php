@@ -1,19 +1,11 @@
 <?php
 
-function x($string) {
-  $string = trim($string);
-  $string = preg_replace('/\W+/', '-', $string);
-  $string = strtolower($string);
-  return $string;
-}
-
-
 $countryIndex = $page->children()->visible()->pluck('country', ',', true);
 $countryParameter = param('country');
 $countryFilter = false;
 
 foreach ($countryIndex as $country) {
-  if (x($country) === $countryParameter) {
+  if (slugify($country) === $countryParameter) {
     $countryFilter = $country;
     break;
   }

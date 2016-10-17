@@ -1,5 +1,12 @@
 <?php snippet('header') ?>
 <?php 
+function slugify($string) {
+  $string = trim($string);
+  $string = preg_replace('/\W+/', '-', $string);
+  $string = strtolower($string);
+  return $string;
+}
+
 $viewIndex = ['List', 'Map'];
 $viewParameter = param('view', 'map');
 

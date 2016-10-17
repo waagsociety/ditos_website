@@ -2,13 +2,6 @@
 
 $url = $page->url();
 
-function slugify($string) {
-  $string = trim($string);
-  $string = preg_replace('/\W+/', '-', $string);
-  $string = strtolower($string);
-  return $string;
-}
-
 $viewIndex = ['Map', 'List'];
 $viewParameter = param('view', 'map');
 $countryParameter = param('country');
