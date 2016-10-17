@@ -104,14 +104,37 @@ div.events__filters {
   padding: 30px 40px;
 
   li {
-    padding: 20px 0;
+    padding: 20px 0 20px 40px;
   }
 
   li + li { border-top: 1px solid #ccc }
 
+  button {
+    margin-top: 0.5em;
+  }
+
+  a {
+    color: inherit;
+    line-height: 1.4;
+  }
+
   svg { 
     width: 1em;
+    position: absolute;
+    left: 0.75em;
     margin-bottom: -0.125em;
   }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+

@@ -7,6 +7,7 @@
   position: fixed;
   padding-top: 100%;
   z-index: 2;
+  pointer-events: none;
 
   &.done {
     position: absolute;
@@ -19,6 +20,7 @@
     bottom: 0;
     position: absolute;
     pointer-events: none;
+    pointer-events: initial;
   }
 
   &.finish {
@@ -27,6 +29,7 @@
 
   .phrase {
     background-color: transparent;
+    pointer-events: none;
   }
 
   .phrase div {
@@ -97,6 +100,7 @@
   
   .btn {
     border: 2px solid black;
+    pointer-events: initial;
   }
   
   .btn:hover {
