@@ -2,7 +2,7 @@
   <h3 class="alpha">Event information</h3>
 </header>
 
-<ul class="event__details">
+<ul class="event__details full">
     
   <li>
     <svg viewBox="0 0 32 32"><use xlink:href="#i:calendar"/></svg> 
@@ -13,7 +13,11 @@
 
   <li>
     <svg viewBox="0 0 32 32"><use xlink:href="#i:location"/></svg>
-    <?php echo $page->city().', '.$page->country() ?>
+    <?php if (strlen($page->venue()->html()) > 0) { 
+      echo $page->venue()->html().'<br>';
+    } ?>
+    <?php echo $page->address() ?><br>
+    <?php echo $page->city().'<br>'.$page->country() ?>
   </li>
 
 </ul>
