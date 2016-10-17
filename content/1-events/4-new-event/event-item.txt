@@ -71,3 +71,19 @@ City: Amsterdam
 ----
 
 Host: De Waag
+
+----
+
+Activity: lecture
+
+----
+
+Venue: 
+
+----
+
+Address: Pieter Jacobszstraat 393
+
+----
+
+Link: 

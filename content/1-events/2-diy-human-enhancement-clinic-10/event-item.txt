@@ -75,3 +75,19 @@ Time-end:
 ----
 
 City: Amsterdam
+
+----
+
+Activity: workshop
+
+----
+
+Venue: 
+
+----
+
+Address: Voorstraat  123
+
+----
+
+Link: 

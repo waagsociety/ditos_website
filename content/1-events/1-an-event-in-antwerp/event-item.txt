@@ -75,3 +75,19 @@ City: Antwerp
 ----
 
 Host: Tekiu
+
+----
+
+Activity: workshop
+
+----
+
+Venue: 
+
+----
+
+Address: Eiermarkt 1000
+
+----
+
+Link: 

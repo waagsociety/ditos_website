@@ -8,9 +8,7 @@
       </div>
     </section>
     <aside>
-      <header>
-        <h3 class="alpha">Event information</h3>
-      </header>
+      <?php snippet('event-information') ?>
     </aside>
   </div>
 </main>

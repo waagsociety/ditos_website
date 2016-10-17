@@ -30,6 +30,12 @@
     </a>
     <?php endforeach ?>
 
+    <?php if (!count($items)) : ?>
+    <div class="agenda__preview__item event__info list">
+      <h1>It seems there are no upcoming&nbsp;events.</h1>
+    </div>
+    <?php endif ?>
+
     <nav class="list__navigation">
 
       <a class="btn" href="archive">Past events</a>

@@ -97,3 +97,21 @@ div.events__filters {
   }
 
 }
+
+
+.event__details {
+
+  padding: 30px 40px;
+
+  li {
+    padding: 20px 0;
+  }
+
+  li + li { border-top: 1px solid #ccc }
+
+  svg { 
+    width: 1em;
+    margin-bottom: -0.125em;
+  }
+
+}

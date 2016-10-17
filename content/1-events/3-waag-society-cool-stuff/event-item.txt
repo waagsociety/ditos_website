@@ -63,3 +63,19 @@ City: Rome
 ----
 
 Host: Tekiu
+
+----
+
+Activity: workshop
+
+----
+
+Venue: 
+
+----
+
+Address: Via Frenze 1200
+
+----
+
+Link: 
