@@ -11,7 +11,7 @@
 
     </section>
 
-    <aside><?php snippet('events-filters') ?></aside>  
+    <aside class="filter__events"><?php snippet('events-filters') ?></aside>  
     
   </div>
 </main>

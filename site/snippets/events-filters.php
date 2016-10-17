@@ -29,9 +29,8 @@ $categoryParameter = param('category');
 
   <div class="events__filters full__width">
   <?php $countries = $page->children()->visible()->pluck('country', ',', true) ?>
-  <label>
-    
-    Where    
+  <label class="form__select">
+    Where
     <select name="country">
 
       <option value="">Everywhere</option>
