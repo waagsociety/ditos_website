@@ -30,6 +30,19 @@ fields:
     label: Text
     type:  textarea
     required: true
+  host:
+    label: Host
+    type: tags
+    width: 1/2
+    required: true
+  activity:
+    label: Activity
+    type: select
+    options:
+      workshop: Workshop
+      lecture: Lecture
+    width: 1/2
+    required: true
   date:
     label: Start date
     type: date
@@ -51,9 +64,13 @@ fields:
     label: End time
     type: time
     width: 1/2
-  country:
-    label: Country
-    type: tags 
+  venue:
+    label: Venue
+    type: text
+    width: 1/2
+  address:
+    label: Address
+    type: text
     width: 1/2
     required: true
   city:
@@ -61,12 +78,17 @@ fields:
     type: tags
     width: 1/2
     required: true
-  host:
-    label: Host
-    type: tags
+  country:
+    label: Country
+    type: tags 
     width: 1/2
-    required: true
+    required: true  
+  link:
+    label: Link
+    type: url 
   location:
-    label: Event location (you can drag the marker)
+    label: Location
     type: geolocation
+    help: You can drag the marker
     required: true
+    

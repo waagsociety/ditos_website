@@ -5,6 +5,7 @@ $url = $page->url();
 $viewIndex = ['Map', 'List'];
 $viewParameter = param('view', 'map');
 $countryParameter = param('country');
+$activityParameter = param('activity');
 
 ?>
 <form id="filter-events"> 
@@ -34,8 +35,30 @@ $countryParameter = param('country');
       <?php foreach($countryIndex as $country): $slug = slugify($country); ?>
       
         <?php $selected = ($slug === $countryParameter ? 'selected' : '') ?>
-        <option value="<?php echo $slug ?>" <?php echo $selected ?>>
+        <option label="<?php echo $country ?>" value="<?php echo $slug ?>" <?php echo $selected ?>>
           <?php echo $country ?>
+        </option>
+      
+      <?php endforeach ?>
+      </optgroup>
+
+    </select>
+
+  </label>
+
+  <?php $activityIndex = $page->children()->visible()->pluck('activity', ',', true) ?>
+  <label class="form__select">
+    What
+    <select name="activity">
+
+      <option value="">Everything</option>
+
+      <optgroup label="Filter by activity">
+      <?php foreach($activityIndex as $activity): $slug = slugify($activity); ?>
+      
+        <?php $selected = ($slug === $activityParameter ? 'selected' : '') ?>
+        <option label="<?php echo $activity ?>" value="<?php echo $slug ?>" <?php echo $selected ?>>
+          <?php echo $activity ?>
         </option>
       
       <?php endforeach ?>

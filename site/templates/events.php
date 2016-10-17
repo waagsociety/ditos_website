@@ -13,17 +13,28 @@ $viewParameter = param('view', 'map');
 $countryIndex = $page->children()->visible()->pluck('country', ',', true);
 $countryParameter = param('country');
 $countryFilter = false;
-foreach ($countryIndex as $country) {
+
+if ($countryParameter) foreach ($countryIndex as $country) {
   if (slugify($country) === $countryParameter) {
     $countryFilter = $country;
     break;
   }
 }
 
+$activityIndex = $page->children()->visible()->pluck('activity', ',', true);
+$activityParameter = param('activity');
+$activityFilter = false;
+
+if ($activityParameter) foreach ($activityIndex as $activity) {
+  if (slugify($activity) === $activityParameter) {
+    $activityFilter = $activity;
+    break;
+  }
+}
+
 $items = $pages->find('events')->children()->visible();
-
 if ($countryFilter) $items = $items->filterBy('country', $countryFilter, ',');
-
+if ($activityFilter) $items = $items->filterBy('activity', $activityFilter, ',');
 $items = $items->limit(30);
 
 ?>

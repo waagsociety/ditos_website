@@ -11,6 +11,6 @@ role: admin
 history:
   - events/new-event
   - events/waag-society-cool-stuff
+  - events/an-event-in-antwerp
   - events/diy-human-enhancement-clinic-10
   - calendar
-  - book-the-bus
