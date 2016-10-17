@@ -1,4 +1,33 @@
-<?php $items = $pages->find('events')->children()->visible()->limit(30); ?>
+<?php
+
+function x($string) {
+  $string = trim($string);
+  $string = preg_replace('/\W+/', '-', $string);
+  $string = strtolower($string);
+  return $string;
+}
+
+
+$countryIndex = $page->children()->visible()->pluck('country', ',', true);
+$countryParameter = param('country');
+$countryFilter = false;
+
+foreach ($countryIndex as $country) {
+  if (x($country) === $countryParameter) {
+    $countryFilter = $country;
+    break;
+  }
+}
+
+$items = $pages->find('events')->children()->visible();
+
+if ($countryFilter) {
+  $items = $items->filterBy('country', $countryFilter, ',');
+}
+
+$items = $items->limit(30)
+
+?>
 <div class="event__list">
 
   <header class="blog__header">

@@ -1,22 +1,24 @@
 <?php 
+
+$url = $page->url();
+
 function slugify($string) {
   $string = trim($string);
   $string = preg_replace('/\W+/', '-', $string);
   $string = strtolower($string);
   return $string;
 }
-?>
-<?php
-$url = $page->url();
-$viewParameter = param('view', 'map');
-$countryParameter  = param('country');
-$categoryParameter = param('category');
-?>
 
+$viewIndex = ['Map', 'List'];
+$viewParameter = param('view', 'map');
+$countryParameter = param('country');
+
+?>
 <form id="filter-events"> 
   
   <nav class="tabs">
-  <?php foreach (['Map', 'List'] as $name): $slug = slugify($name) ?> 
+
+  <?php foreach ($viewIndex as $name): $slug = slugify($name) ?> 
     
     <?php $selected = $slug === $viewParameter ?>
     <label class="btn<?php e($selected, ' is-active')?>">
@@ -28,7 +30,7 @@ $categoryParameter = param('category');
   </nav>
 
   <div class="events__filters full__width">
-  <?php $countries = $page->children()->visible()->pluck('country', ',', true) ?>
+  <?php $countryIndex = $page->children()->visible()->pluck('country', ',', true) ?>
   <label class="form__select">
     Where
     <select name="country">
@@ -36,7 +38,7 @@ $categoryParameter = param('category');
       <option value="">Everywhere</option>
 
       <optgroup label="Filter by country">
-      <?php foreach($countries as $country): $slug = slugify($country); ?>
+      <?php foreach($countryIndex as $country): $slug = slugify($country); ?>
       
         <?php $selected = ($slug === $countryParameter ? 'selected' : '') ?>
         <option value="<?php echo $slug ?>" <?php echo $selected ?>>

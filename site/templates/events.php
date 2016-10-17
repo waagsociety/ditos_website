@@ -1,14 +1,20 @@
 <?php snippet('header') ?>
+<?php 
+$viewIndex = ['List', 'Map'];
+$viewParameter = param('view', 'map');
+
+$countryIndex = $page->children()->visible()->pluck('country', ',', true);
+$countryParameter = param('country');
+
+$categoryParameter = param('category');
+?>
 
 <main class="main__content">
   
   <div class="flex flex__wrap">
  
     <section>
-
-      <?php $view = param('view', 'map') ?>
-      <?php $view === 'map' ? snippet('mapbox') : snippet('events-list') ?>
-
+    <?php $viewParameter === 'map' ? snippet('mapbox') : snippet('events-list') ?>
     </section>
 
     <aside class="filter__events"><?php snippet('events-filters') ?></aside>  
