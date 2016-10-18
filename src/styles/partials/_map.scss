@@ -61,9 +61,9 @@
 .mapboxgl-popup-content {
   border-radius: 0;
   padding: 0;
-  max-width: 320px;
+  width: 320px;
   @include breakpoint(s) {
-    max-width: 290px;
+    width: 290px;
   }
   .main__pop {
     border-bottom: 1px solid #eee;

@@ -36,8 +36,9 @@ function loadMapbox(){
         "type": "symbol",
         "source": "events",
         "layout": {
-            "icon-image": "marker-3",
-            "icon-size": 0.8,
+            "icon-image": "marker-4",
+            "icon-size": 0.7,
+
         }
     });
   });
@@ -69,8 +70,8 @@ function loadMapbox(){
         </div>
         <div class="popup">
           <ul class="popup event details clearfix">
-            <li class="left"><svg viewBox="0 0 32 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i:calendar"></use></svg> <br/> ${feature.properties.date} ${feature.properties.time}</li>
-            <li class="left"><svg viewBox="0 0 32 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i:location"></use></svg> <br/> ${feature.properties.address}</li>
+            <li class="left"><svg viewBox="0 0 32 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i:calendar"></use></svg> Start date<br/> ${feature.properties.date} ${feature.properties.time}</li>
+            <li class="left"><svg viewBox="0 0 32 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i:location"></use></svg> Location<br/> ${feature.properties.address}</li>
           </ul>
         </div>
         <footer>

@@ -10,7 +10,7 @@
 </div>
 
 <div id="disqus_thread"></div>
-
+<a target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=#url">Share</a>
 <script type="text/javascript">
   function loadDisqus(el){
       el.disabled = true;
