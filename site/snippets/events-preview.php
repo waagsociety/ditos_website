@@ -1,4 +1,8 @@
-<?php $items = $pages->find('events')->children()->visible()->limit(3); ?>
+<?php 
+$items = $pages->find('events')->children()->visible()->filter(function($child){
+  return time() < strtotime($child->date_end('c'));
+})->sortBy('date', 'asc')->limit(3);
+?>
 
 <header>
   <h3 class="alpha">Upcoming events</h3>
