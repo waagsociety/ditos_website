@@ -13,8 +13,10 @@ foreach($data as $article) {
     'properties' => array(
       'url'   => (string)$article->url(),
       'title' => (string)$article->title(),
-      'text'  => (string)$article->text(),
-      'date'  => (string)$article->date()
+      'introsentence'  => (string)$article->introsentence(),
+      'date'  => (string)$article->date('d.m.Y'),
+      'time'  => (string)$article->time(),
+      'address'  => (string)$article->address()
     ),
     'geometry' => array(
       'type'   => 'Point',

@@ -49,3 +49,85 @@
     background-position: right center;
   }
 }
+
+.mapboxgl-map {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.mapboxgl-popup {
+  top: -2px;
+}
+
+.mapboxgl-popup-content {
+  border-radius: 0;
+  padding: 0;
+  max-width: 320px;
+  @include breakpoint(s) {
+    max-width: 290px;
+  }
+  .main__pop {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+  }
+  h2{
+    font-size: 1.4em;
+    margin-bottom: 0.2em;
+  }
+  p {
+    font-size: 1em;
+  }
+}
+.popup.wrapper {
+  padding: 20px;
+}
+.popup.event.details{
+  display: flex;
+}
+.popup.event.details li{
+  flex-grow: 1;
+  padding: 20px;
+  display: inline-block;
+  font-weight: 700;
+  width: 50%;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+
+  &:nth-of-type(2){
+    border-left: 1px solid #eee;
+    svg{
+      width: 1.2em;
+      top: 0.1em;
+      left: 0.5em;
+    }
+  }
+  svg{
+    width: 1em;
+  }
+}
+.pop_up footer{
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  a {
+    display: block;
+    color: black;
+    padding: 20px;
+    transition: .2s ease-in-out;
+    &:hover {
+      background: yellow;
+    }
+  }
+}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
