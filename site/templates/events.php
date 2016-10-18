@@ -32,7 +32,10 @@ if ($activityParameter) foreach ($activityIndex as $activity) {
   }
 }
 
-$items = $pages->find('events')->children()->visible();
+$items = $pages->find('events')->children()->visible()->filter(function($child){
+  return time() < strtotime($child->date_end('c'));
+})->sortBy('date', 'asc');
+
 if ($countryFilter) $items = $items->filterBy('country', $countryFilter, ',');
 if ($activityFilter) $items = $items->filterBy('activity', $activityFilter, ',');
 $items = $items->limit(30);

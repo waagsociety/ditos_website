@@ -101,29 +101,48 @@ div.events__filters {
 
 .event__details {
 
-  padding: 30px 40px;
+  padding: 0 0 0 40px;
 
   li {
-    padding: 20px 0 20px 40px;
+    
+    padding: 25px 40px 30px 0;
+    font-size: 125%;
+    line-height: 1.4;
+
+    p { 
+      font-size: 100%;
+      line-height: inherit;
+    }
+
+    header {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 67.5%;
+      padding: 0;
+      background: transparent;
+      position: static;
+      margin-bottom: 0.375em;
+    }
+
+    a { font-size: 1rem }
+    button { display: block }
+
+    svg { 
+      width: 1em;
+      position: absolute;
+      left: -25px;
+      top: 27px;
+    }
+
   }
 
   li + li { border-top: 1px solid #ccc }
 
   button {
-    margin-top: 0.5em;
+    margin-top: 1em;
   }
 
-  a {
-    color: inherit;
-    line-height: 1.4;
-  }
 
-  svg { 
-    width: 1em;
-    position: absolute;
-    left: 0.75em;
-    margin-bottom: -0.125em;
-  }
+  
 
 }
 

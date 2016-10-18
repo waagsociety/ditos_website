@@ -21,7 +21,7 @@ $items = $pages->find('events')->children()->visible()->filter(function($child){
       
       <li>
         <svg viewBox="0 0 32 32"><use xlink:href="#i:calendar"/></svg> 
-        <time datetime="<?php echo $item->date('c') ?>"><?php echo $item->date('d-m-Y') ?></time>
+        <time datetime="<?php echo $item->date('c') ?>"><?php echo $item->date('d.m.Y') ?></time>
       </li>
 
       <li>
