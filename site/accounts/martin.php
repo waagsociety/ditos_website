@@ -7,7 +7,8 @@ email: martin@waag.org
 language: en
 role: admin
 history:
+  - blog/doing-it-together-science
+  - events/an-event-in-antwerp
+  - events/cinekid-2016-smart-kids-lab
+  - events/diy-human-enhancement-clinic-10
   - events/another-antwerp-event
-  - blog
-  - about
-  - about/partners

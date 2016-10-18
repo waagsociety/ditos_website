@@ -15,7 +15,7 @@ fields:
   introsentence:
     label: Summary
     type:  text
-    help: A short description for this event between 24 and 240 characters. 
+    help: A short description for this event between 24 and 160 characters. 
     validate:
       min: 24
       max: 240

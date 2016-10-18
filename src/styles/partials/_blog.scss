@@ -23,7 +23,7 @@
 .article__preview{
   line-height: 0;
   width: calc(60% - 20px);
-  height: 500px;
+  height: 600px;
   float: left;
 
   article{
@@ -35,7 +35,7 @@
     height: 100%;
     p{
       color: #333;
-      font-size: .875em;
+      font-size: .75em;
     }
   }
   header{
@@ -48,6 +48,9 @@
     left: 0;
     background: #fff;
     transition: .2s ease-in-out;
+    h3{
+      font-size: .875em;
+    }
   }
   &:hover{
     .bg{
@@ -84,7 +87,18 @@
 .article__preview:nth-of-type(1) {
     width: 100%;
     margin-bottom: 20px;
+
+    p{
+      color: #333;
+      font-size: 0.875em;
+    }
+    header{
+      max-width: calc(60% - 20px);
+      h3{
+        font-size: 1.3em;
+      }
   }
+}
 
 .article__preview:nth-of-type(2){
   width: calc(60% - 20px);
@@ -94,10 +108,10 @@
 
 .article__preview:nth-of-type(1n + 3){
   width: 40%;
-  height: 240px;
+  height: 290px;
   margin-bottom: 20px;
   header{
-    max-width: 80%;
+    max-width: 90%;
   }
 }
 .article__preview:nth-of-type(1n + 5){

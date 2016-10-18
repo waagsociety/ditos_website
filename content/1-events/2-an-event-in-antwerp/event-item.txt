@@ -1,8 +1,8 @@
-Title: DIY Human Enhancement Clinic #10
+Title: An event in Antwerp
 
 ----
 
-Introsentence: What use are hormones, to us, to others, to other species?
+Introsentence: What use are hormones, to us, to others, to other species? What if you extract them yourself instead of leaving that to the pharmaceutical industry?
 
 ----
 
@@ -42,27 +42,19 @@ Imagecopy: Waag Society 2016
 
 ----
 
-Postimage: 
+Postimage: screen-shot-2016-09-19-at-3.35.52-pm-2.png
 
 ----
 
-Location: 52.3728073,4.900291000000038
+Location: 51.2194475,4.40246430000002
 
 ----
 
-Date: 2016-10-13
+Date: 2016-07-11
 
 ----
 
 Time: 17:00
-
-----
-
-Country: the Netherlands
-
-----
-
-Host: De Waag
 
 ----
 
@@ -74,7 +66,15 @@ Time-end:
 
 ----
 
-City: Amsterdam
+Country: Belgium
+
+----
+
+City: Antwerp
+
+----
+
+Host: Tekiu
 
 ----
 
@@ -86,7 +86,7 @@ Venue:
 
 ----
 
-Address: Voorstraat  123
+Address: Eiermarkt 1000
 
 ----
 

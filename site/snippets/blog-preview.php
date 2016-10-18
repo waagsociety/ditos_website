@@ -1,4 +1,5 @@
-<?php $items = $pages->find('blog')->children()->limit(4); ?>
+<?php $items = $pages->find('blog')->children()->visible()->sortBy('modified', 'desc')->limit(4); ?>
+
 <div class="blog__preview left">
   <h3 class="preview__header">Latest <a href="#">blogs</a></h3>
   <?php foreach($items as $item): ?>
