@@ -75,6 +75,27 @@
   background-color: $brand-color;
   color: white;
 }
+.share_block {
+  display: inline-block;
+  border: 1px solid #eee;
+  padding: 11px 20px 2px;
+  float: right;
+  margin-right: -1px;
+  transform: scale(0, 1);
+  opacity: 0;
+  transform-origin: right center;
+  transition: .15s ease-in-out;
+  svg {
+  transition: .1s ease-in-out;
+    &:hover {
+      fill: $sec-color;
+    }
+  }
+}
+.share_block.active {
+  transform: none;
+  opacity: 1;
+}
 .button_bar{
   button{
     margin: 0;
