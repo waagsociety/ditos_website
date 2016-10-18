@@ -36,8 +36,8 @@ function loadMapbox(){
         "type": "symbol",
         "source": "events",
         "layout": {
-            "icon-image": "marker-15",
-            "icon-size": 1
+            "icon-image": "marker-3",
+            "icon-size": 0.8,
         }
     });
   });
@@ -54,7 +54,7 @@ function loadMapbox(){
 
 
     var feature = features[0];
-    
+
     // Populate the popup and set its coordinates
     // based on the feature found.
     var popup = new mapboxgl.Popup({
@@ -74,7 +74,7 @@ function loadMapbox(){
           </ul>
         </div>
         <footer>
-          <a href="${feature.properties.url}">View</a>
+          <a href="${feature.properties.url}">View event</a>
         </footer>
       </div>`
     )

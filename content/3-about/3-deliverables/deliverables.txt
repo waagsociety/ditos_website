@@ -10,8 +10,4 @@ Imagecopy: Waag Society 2016
 
 ----
 
-Postimage: header.jpg
-
-----
-
 Submenu: 1

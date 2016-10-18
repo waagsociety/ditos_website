@@ -2,9 +2,9 @@
 <main class="main__content">
   <div class="flex flex__wrap">
     <section>
-      <?php $items = $pages->find('blog')->children()->visible()->paginate(6); ?>
+      <?php $items = $pages->find('about/deliverables')->children()->visible()->paginate(6); ?>
       <div class="blog__preview left">
-        <h3 class="preview__header">Latest blogs</h3>
+        <h3 class="preview__header">Project deliverables</h3>
         <?php foreach($items as $item): ?>
           <a href="<?php echo $item->url() ?>" class="article__preview">
             <article>

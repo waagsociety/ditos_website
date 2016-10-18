@@ -104,30 +104,18 @@
     width: 1em;
   }
 }
-.pop_up footer{
+.pop_up footer {
+  
   text-align: center;
-  text-transform: uppercase;
-  font-weight: 700;
+
   a {
     display: block;
     color: black;
     padding: 20px;
+    font-weight: 700;
     transition: .2s ease-in-out;
     &:hover {
       background: yellow;
     }
   }
 }
-
-.clearfix:after {
-     visibility: hidden;
-     display: block;
-     font-size: 0;
-     content: " ";
-     clear: both;
-     height: 0;
-     }
-.clearfix { display: inline-block; }
-/* start commented backslash hack \*/
-* html .clearfix { height: 1%; }
-.clearfix { display: block; }
