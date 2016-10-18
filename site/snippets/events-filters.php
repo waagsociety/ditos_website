@@ -68,6 +68,25 @@ $activityParameter = param('activity');
 
   </label>
 
+  <?php function redirectPage($url, $params, $int = 1) {
+    $result = array($url);
+    foreach ($params as $key => $value) {
+      if ($key === 'page') $value = $int;
+      array_push($result, $key.':'.$value);
+    }
+    return join('/', $result);
+  } ?>
+
+  <?php if ($pagination['active'] == 1) : ?>
+  <a href="<?php echo redirectPage($page->url(), params(), -1) ?>">
+    <button type="button">Past Events</button>
+  </a>
+  <?php else : ?>
+  <a href="<?php echo redirectPage($page->url(), params(), 1) ?>">
+    <button type="button">Upcoming Events</button>
+  </a>
+  <?php endif ?>
+
 </form>
 <script type="text/javascript">
 !function() {

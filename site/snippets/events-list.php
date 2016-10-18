@@ -1,7 +1,7 @@
 <div class="event__list">
 
   <header class="blog__header">
-    <h1 class="alpha">Upcoming events</h1>
+    <h1 class="alpha"><?php echo $pageInArchive ? 'Past' : 'Upcoming' ?> events</h1>
   </header>
 
   <div class="agenda__preview full__width">
@@ -35,12 +35,6 @@
       <h1>It seems there are no upcoming&nbsp;events.</h1>
     </div>
     <?php endif ?>
-
-    <nav class="list__navigation">
-
-      <a class="btn" href="archive">Past events</a>
-
-    </nav>
 
   </div>
 
