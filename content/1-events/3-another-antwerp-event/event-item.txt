@@ -43,3 +43,19 @@ Host: Jaap
 ----
 
 Location: 50.8503396,4.351710300000036
+
+----
+
+Activity: workshop
+
+----
+
+Venue: Het Theater
+
+----
+
+Address: Address 132
+
+----
+
+Link: 

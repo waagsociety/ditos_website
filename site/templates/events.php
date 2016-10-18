@@ -7,6 +7,9 @@ function slugify($string) {
   return $string;
 }
 
+$pageParam = param('page', 1);
+$pageInArchive = $pageParam < 0;
+
 $viewIndex = ['List', 'Map'];
 $viewParameter = param('view', 'map');
 
@@ -32,13 +35,32 @@ if ($activityParameter) foreach ($activityIndex as $activity) {
   }
 }
 
-$items = $pages->find('events')->children()->visible()->filter(function($child){
-  return time() < strtotime($child->date_end('c'));
-})->sortBy('date', 'asc');
+if ($pageInArchive) {
+  $items = $pages->find('events')->children()->visible()->filter(function($child){
+    return time() > strtotime($child->date_end('c'));
+  })->sortBy('date', 'desc');
+}
+else {
+  $items = $pages->find('events')->children()->visible()->filter(function($child){
+    return time() < strtotime($child->date_end('c'));
+  })->sortBy('date', 'asc');
+}
 
 if ($countryFilter) $items = $items->filterBy('country', $countryFilter, ',');
 if ($activityFilter) $items = $items->filterBy('activity', $activityFilter, ',');
-$items = $items->limit(30);
+
+$itemsPerPage = 2;
+$itemCount = count($items);
+
+$pagination = [
+  'active' => $pageParam,
+  'archive' => $pageInArchive,
+  'itemsPerPage' => $itemsPerPage,
+  'itemCount' => $itemCount,
+  'pageCount' => ceil($itemCount / $itemsPerPage)
+];
+
+$items = $items->slice(0, $itemsPerPage);
 
 ?>
 
@@ -54,7 +76,7 @@ $items = $items->limit(30);
     ?>
     </section>
 
-    <aside class="filter__events"><?php snippet('events-filters') ?></aside>  
+    <aside class="filter__events"><?php snippet('events-filters', ['pagination' => $pagination]) ?></aside>  
     
   </div>
 </main>

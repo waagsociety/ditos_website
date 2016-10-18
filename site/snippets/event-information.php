@@ -14,7 +14,7 @@
 
   <li>
     <header>
-      <svg viewBox="0 0 32 32"><use xlink:href="#i:location"/></svg>
+      <svg viewBox="0 0 32 32"><use xlink:href="#i:activity"/></svg>
       What
     </header>
     <?php echo $page->activity() ?>

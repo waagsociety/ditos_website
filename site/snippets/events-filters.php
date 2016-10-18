@@ -68,6 +68,8 @@ $activityParameter = param('activity');
 
   </label>
 
+  <?php echo $pagination['active'] ?>
+
 </form>
 <script type="text/javascript">
 !function() {
