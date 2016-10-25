@@ -78,7 +78,7 @@ City: Amsterdam
 
 ----
 
-Activity: workshop
+Activity: film-night
 
 ----
 

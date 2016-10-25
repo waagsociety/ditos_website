@@ -1,0 +1,61 @@
+Title: Upcoming two
+
+----
+
+Introsentence: Something something something something something
+
+----
+
+Postimage: 
+
+----
+
+Text: Hello
+
+----
+
+Host: De Waag
+
+----
+
+Activity: workshop
+
+----
+
+Date: 2016-10-26
+
+----
+
+Date-end: 2016-10-26
+
+----
+
+Time: 04:00
+
+----
+
+Time-end: 
+
+----
+
+Venue: 
+
+----
+
+Address: faaf afaf
+
+----
+
+City: afafafaff
+
+----
+
+Country: the Netherlands
+
+----
+
+Link: 
+
+----
+
+Location: 52.09781311061832,5.197305992065367

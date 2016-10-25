@@ -142,10 +142,47 @@ div.events__filters {
   }
 
 
-  
+
 
 }
 
+form.map .pagination { display: none }
+
+div.events__filters {
+
+  label { margin: 0 0 0.25em }
+
+  label.inactive { 
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  .btn.skip {
+    position: relative;
+    width: 2.75em;
+    text-indent: -9999px;
+  }
+
+  svg {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    top: 0.625em;
+    left: 0.625em;
+    width: 1.5em;
+    height: 1.5em;
+    position: absolute;
+    display: block;
+  }
+
+  .is-active { color: blue }
+
+  .prev { float: left }
+  .next { float: right }
+
+  .btn input { display: none }
+
+}
 
 
 
