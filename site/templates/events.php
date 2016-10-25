@@ -1,5 +1,5 @@
 <?php snippet('header') ?>
-<?php 
+<?php
 function slugify($string) {
   $string = trim($string);
   $string = preg_replace('/\W+/', '-', $string);
@@ -17,6 +17,7 @@ $countryIndex = $page->children()->visible()->pluck('country', ',', true);
 $countryParameter = param('country');
 $countryFilter = false;
 
+// 
 if ($countryParameter) foreach ($countryIndex as $country) {
   if (slugify($country) === $countryParameter) {
     $countryFilter = $country;
@@ -25,6 +26,7 @@ if ($countryParameter) foreach ($countryIndex as $country) {
 }
 
 $activityIndex = $page->children()->visible()->pluck('activity', ',', true);
+
 $activityParameter = param('activity');
 $activityFilter = false;
 
@@ -49,30 +51,34 @@ else {
 if ($countryFilter) $items = $items->filterBy('country', $countryFilter, ',');
 if ($activityFilter) $items = $items->filterBy('activity', $activityFilter, ',');
 
-$itemsPerPage = 2;
+$itemsPerPage = $viewParameter === 'map' ? 1000 : 24;
 $itemCount = count($items);
+$pageCount = ceil($itemCount / $itemsPerPage);
 
 $pagination = [
   'active' => $pageParam,
   'archive' => $pageInArchive,
   'itemsPerPage' => $itemsPerPage,
   'itemCount' => $itemCount,
-  'pageCount' => ceil($itemCount / $itemsPerPage)
+  'pageCount' => $pageCount
 ];
 
-$items = $items->slice(0, $itemsPerPage);
+$end = ceil(abs($pageParam) * $itemsPerPage);
+$start = ($end - $itemsPerPage);
+
+$items = $items->slice($start, $itemsPerPage);
 
 ?>
 
 <main class="main__content">
-  
+
   <div class="flex flex__wrap">
- 
+
     <section>
     <?php 
     $viewParameter === 'map' 
       ? snippet('mapbox', ['items' => $items]) 
-      : snippet('events-list', ['items' => $items]) 
+      : snippet('events-list', ['items' => $items, 'pagination' => $pagination]) 
     ?>
     </section>
 

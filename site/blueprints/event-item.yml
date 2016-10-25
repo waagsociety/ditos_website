@@ -41,6 +41,12 @@ fields:
     options:
       workshop: Workshop
       lecture: Lecture
+      meetup: Meetup
+      exhibition: Exhibition
+      seminar: Seminar
+      science-cafe: Science Café
+      film-night: Film Night
+      open-lab-evening: Open Lab Evening
     width: 1/2
     required: true
   date:
