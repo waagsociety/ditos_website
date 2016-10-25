@@ -1,0 +1,51 @@
+title: Location
+pages: false
+files: true
+fields:
+  title:
+    label: Name
+    type:  text
+  description:
+    label: Text
+    type:  text
+    help: A description for this location between 24 and 160 characters. 
+    validate:
+      min: 24
+      max: 240
+    required: true
+  logo:
+    label: Logo
+    type:  selector
+    mode:  single
+    types:
+        - image  
+  photo:
+    label: Photo
+    type:  selector
+    mode:  single
+    types:
+        - image 
+  address:
+    label: Address
+    type: text
+    width: 1/2
+    required: true
+  city:
+    label: City
+    type: tags
+    width: 1/2
+    required: true
+  country:
+    label: Country
+    type: tags 
+    width: 1/2
+    required: true  
+  link:
+    label: Link
+    type: url  
+  location:
+    label: Location
+    type: geolocation
+    help: You can drag the marker
+    required: true
+    
