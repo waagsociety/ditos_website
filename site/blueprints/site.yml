@@ -7,9 +7,7 @@ fields:
   author:
     label: Author
     type:  text
-  description:
-    label: Description
-    type:  textarea
+  description: description
   keywords:
     label: Keywords
     type:  tags
@@ -29,3 +27,6 @@ fields:
     label: Show submenu
     type: checkbox
     text: Do you want to display the submenu?
+  line:
+    type: line
+  seotitle: seotitle

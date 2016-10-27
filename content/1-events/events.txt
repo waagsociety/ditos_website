@@ -3,3 +3,11 @@ Title: Events
 ----
 
 Text: 
+
+----
+
+Description: Here you can find the upcoming DITOS events. From BIO science to environmental science.
+
+----
+
+Seotitle: 

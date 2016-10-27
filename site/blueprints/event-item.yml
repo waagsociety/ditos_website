@@ -12,14 +12,7 @@ fields:
   title:
     label: Title
     type:  text
-  description:
-    label: Description
-    type:  text
-    help: A description for this event between 24 and 160 characters. 
-    validate:
-      minLength: 24
-      maxLength: 140
-    required: true
+  description: description
   postimage:
     label: Image
     type:  selector
@@ -126,4 +119,7 @@ fields:
     type: geolocation
     help: You can drag the marker
     required: true
+  line:
+    type: line
+  seotitle: seotitle
     

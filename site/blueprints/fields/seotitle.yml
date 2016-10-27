@@ -1,0 +1,6 @@
+label: SEO title
+type:  text
+help: The SEO title will be the title shown in search engines such as google. When you leave this field empty it automatically will use the normal page title.
+validate:
+  minLength: 4
+  maxLength: 155

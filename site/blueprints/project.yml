@@ -6,6 +6,7 @@ fields:
   title:
     label: Title
     type:  text
+  description: description
   year:
     label: Year
     type:  text
@@ -19,3 +20,6 @@ fields:
     label: Show submenu
     type: checkbox
     text: Do you want to display the submenu?
+  line:
+    type: line
+  seotitle: seotitle

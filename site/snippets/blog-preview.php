@@ -6,7 +6,7 @@
       <article>
         <header>  
           <h3><?php echo $item->title() ?></h3>
-          <p><?php echo $item->introsentence() ?></p>
+          <p><?php echo $item->description() ?></p>
         </header>
         <div class="bg" style="background-image: url(<?php echo $item->contentURL() ?>/<?php echo $item->postimage() ?>)"></div>
       </article>

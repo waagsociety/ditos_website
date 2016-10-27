@@ -5,6 +5,10 @@ fields:
   title:
     label: Title
     type:  text
+  description: description
   text:
     label: Text
     type:  textarea
+  line:
+    type: line
+  seotitle: seotitle

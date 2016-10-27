@@ -5,11 +5,11 @@ fields:
   title:
     label: Title
     type:  text
-  description:
-    label: Description
-    type:  text
-    required: true
+  description: description
   text:
     label: text
     type: textarea
     required: true
+  line:
+    type: line
+  seotitle: seotitle

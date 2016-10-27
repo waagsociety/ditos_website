@@ -5,7 +5,7 @@ fields:
   title:
     label: Title
     type:  text
-  description:
-    label: Description
-    type:  text
-    required: true
+  description: description
+  line:
+    type: line
+  seotitle: seotitle

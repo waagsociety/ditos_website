@@ -12,6 +12,7 @@ fields:
   title:
     label: Title
     type:  text
+  description: description
   postimage:
     label: Main Post Image
     type:  selector
@@ -19,9 +20,6 @@ fields:
     required: true
     types:
         - image
-  introsentence:
-    label: Intro sentence
-    type:  text
   text:
     label: Text
     type:  textarea
@@ -36,5 +34,4 @@ fields:
     width: 1/2
   line:
     type: line
-  seo:
-    type: seo
+  seotitle: seotitle
