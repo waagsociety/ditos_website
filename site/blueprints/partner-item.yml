@@ -23,12 +23,12 @@ fields:
   address:
     label: Address
     type: select 
-    options: pages
-      # query:
-      #   page: locations
-      #   fetch: children
-      #   value: '{{Title}}'
-      #   text: '{{Title}}'
+    options: query
+      query:
+        page: /locations
+        fetch: children
+        value: '{{uid}}'
+        text: '{{Title}}'
   line:
     type: line
   seotitle: seotitle

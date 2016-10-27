@@ -110,15 +110,6 @@ fields:
     type: checkbox
     text: A reservation is required
     width: 1/3
-<<<<<<< HEAD
-  location:
-    label: Location
-    type: geolocation
-    help: You can drag the marker
-    required: true
   line:
     type: line
   seotitle: seotitle
-    
-=======
->>>>>>> b41449caaea239ada3563825bb2f17d2caf7338c
