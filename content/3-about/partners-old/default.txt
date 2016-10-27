@@ -1,4 +1,4 @@
-Title: Partners
+Title: Partners (old)
 
 ----
 
@@ -50,3 +50,7 @@ Postimage: header.jpg
 ----
 
 Submenu: 1
+
+----
+
+Description: 
