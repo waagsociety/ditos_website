@@ -19,15 +19,9 @@ fields:
     types:
       - image
   text: text
-  submenu:
-    label: Show submenu
-    type: checkbox
-    text: Do you want to display the submenu?
-    width: 1/2
   tags:
     label: Category
     type:  tags
-    width: 1/2
   line:
     type: line
   seotitle: seotitle
