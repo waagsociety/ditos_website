@@ -1,4 +1,4 @@
-title: Blog
+title: Articles
 icon: newspaper-o
 pages: true
 files: false
@@ -7,6 +7,9 @@ fields:
     label: Title
     type:  text
   description: description
+  listtitle:
+    label: List title
+    type:  text
   text:
     label: Text
     type:  textarea

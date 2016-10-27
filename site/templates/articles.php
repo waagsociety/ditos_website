@@ -2,15 +2,14 @@
 <main class="main__content">
   <div class="flex flex__wrap">
     <section>
-      <?php $items = $pages->find('blog')->children()->visible()->paginate(6); ?>
+      <?php $items = $page->children()->visible()->paginate(6); ?>
       <div class="blog__preview left">
-        <h3 class="preview__header">Latest blogs</h3>
         <?php foreach($items as $item): ?>
           <a href="<?php echo $item->url() ?>" class="article__preview">
             <article>
               <header>  
                 <h3><?php echo $item->title() ?></h3>
-                <p><?php echo $item->introsentence() ?></p>
+                <p><?php echo $item->description() ?></p>
               </header>
               <div class="bg" style="background-image: url(<?php echo $item->contentURL() ?>/<?php echo $item->postimage() ?>)"></div>
             </article>
@@ -32,7 +31,6 @@
       <?php snippet('events-preview') ?>
     </aside>
   </div>
-  <?php snippet('partners') ?>
   <?php snippet('social-stream') ?>
 </main>
 <?php snippet('footer') ?>
