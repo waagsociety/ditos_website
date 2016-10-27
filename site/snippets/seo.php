@@ -11,3 +11,6 @@
   <? else: ?>
     <meta property="og:image" content="aap.jpg" />
   <?php endif ?>
+
+
+<meta property="og:site_name" content="<?php echo $site->title()->html() ?>" />
