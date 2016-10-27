@@ -1,14 +1,9 @@
 title: Partner
 pages: false
 fields:
-  title:
-    label: Name
-    type:  text
+  title: title
   description: description
-  text: 
-    label: text
-    type: textarea
-    required: true
+  text: text
   logo:
     label: Logo
     type:  selector

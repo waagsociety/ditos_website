@@ -2,9 +2,7 @@ title: Location
 pages: false
 files: true
 fields:
-  title:
-    label: Name
-    type:  text
+  title: title
   description: description
   photo:
     label: Photo

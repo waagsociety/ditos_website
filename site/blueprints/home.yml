@@ -2,17 +2,9 @@ title: Home
 icon: home
 pages: false
 fields:
-  title:
-    label: Title
-    type:  text
+  title: title
   description: description
-  text:
-    label: Text
-    type:  textarea
-  submenu:
-    label: Show submenu
-    type: checkbox
-    text: Do you want to display the submenu?
+  text: text
   line:
     type: line
   seotitle: seotitle

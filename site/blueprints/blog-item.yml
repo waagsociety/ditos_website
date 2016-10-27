@@ -9,9 +9,7 @@ files:
       label: Caption
       type: text
 fields:
-  title:
-    label: Title
-    type:  text
+  title: title
   description: description
   postimage:
     label: Main Post Image
@@ -20,9 +18,7 @@ fields:
     required: true
     types:
       - image
-  text:
-    label: Text
-    type:  textarea
+  text: text
   submenu:
     label: Show submenu
     type: checkbox

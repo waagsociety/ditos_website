@@ -3,13 +3,9 @@ icon: bus
 pages: false
 files: true
 fields:
-  title:
-    label: Title
-    type:  text
+  title: title
   description: description
-  text:
-    label: Text
-    type:  textarea
+  text: text
   submenu:
     label: Show submenu
     type: checkbox

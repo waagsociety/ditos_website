@@ -3,13 +3,9 @@ icon: calendar
 pages: event-item
 files: false
 fields:
-  title:
-    label: Title
-    type:  text
+  title: title
   description: description
-  text:
-    label: Text
-    type:  textarea
+  text: text
   line:
     type: line
   seotitle: seotitle

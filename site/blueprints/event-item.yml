@@ -9,20 +9,15 @@ files:
       label: Caption
       type: text
 fields:
-  title:
-    label: Title
-    type:  text
+  title: title
   description: description
+  text: text
   postimage:
     label: Image
     type:  selector
     mode:  single
     types:
         - image  
-  text:
-    label: Text
-    type:  textarea
-    required: true
   partner:
     label: Partner
     type: select

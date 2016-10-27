@@ -3,9 +3,7 @@ icon: newspaper-o
 pages: true
 files: false
 fields:
-  title:
-    label: Title
-    type:  text
+  title: title
   description: description
   text:
     label: Text
