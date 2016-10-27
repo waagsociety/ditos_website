@@ -19,7 +19,7 @@ fields:
     mode:  single
     required: true
     types:
-        - image
+      - image
   text:
     label: Text
     type:  textarea
