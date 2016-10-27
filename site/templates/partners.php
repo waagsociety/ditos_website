@@ -12,7 +12,7 @@
         <?php $logo = $partner->image($partner->logo()) ?>
         <li>
           <a href="<?php echo $partner->url() ?>">
-            <figure>
+            <figure class="logo">
               <img src="<?php echo $logo->url() ?>" width="<?php echo $logo->width() ?>"  height="<?php echo $logo->height() ?>" alt="<?php echo $partner->title() ?> logo">
             </figure>
             <h1><?php echo $partner->title() ?></h1>
