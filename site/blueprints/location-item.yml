@@ -5,6 +5,7 @@ fields:
   title:
     label: Name
     type:  text
+<<<<<<< HEAD
   description:
     label: Description
     type:  text
@@ -13,6 +14,15 @@ fields:
       min: 24
       max: 240
     required: true
+=======
+  description: description
+  logo:
+    label: Logo
+    type:  selector
+    mode:  single
+    types:
+        - image  
+>>>>>>> origin/master
   photo:
     label: Photo
     type:  selector
@@ -42,4 +52,7 @@ fields:
     type: geolocation
     help: You can drag the marker
     required: true
+  line:
+    type: line
+  seotitle: seotitle
     

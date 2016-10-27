@@ -6,6 +6,7 @@ fields:
   title:
     label: Title
     type:  text
+  description: description
   text:
     label: Text
     type:  textarea
@@ -13,3 +14,6 @@ fields:
     label: Show submenu
     type: checkbox
     text: Do you want to display the submenu?
+  line:
+    type: line
+  seotitle: seotitle

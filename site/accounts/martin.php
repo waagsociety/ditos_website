@@ -7,8 +7,8 @@ email: martin@waag.org
 language: en
 role: admin
 history:
-  - blog/doing-it-together
   - blog/doing-it-together-science
+  - events
+  - blog/doing-it-together
   - events/another-antwerp-event
   - about/deliverables
-  - about/deliverables/deliverable-wp2-1
