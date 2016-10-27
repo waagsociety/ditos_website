@@ -1,0 +1,11 @@
+title: Locations
+pages: location-item
+files: false
+fields:
+  title:
+    label: Title
+    type:  text
+  description:
+    label: Description
+    type:  text
+    required: true

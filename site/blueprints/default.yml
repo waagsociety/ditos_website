@@ -12,6 +12,9 @@ fields:
   title:
     label: Title
     type:  text
+  description:
+    label: Description
+    type:  text
   text:
     label: Text
     type:  textarea
@@ -19,7 +22,6 @@ fields:
     label: Main Post Image
     type:  selector
     mode:  single
-    required: true
     types:
         - image
   submenu:

@@ -1,0 +1,9 @@
+Title: Partners
+
+----
+
+Description: DIToS about
+
+----
+
+Text: DIToS text
