@@ -6,4 +6,4 @@ Description: DIToS about
 
 ----
 
-Text: DIToS text
+Text: DIToS partner/about text
