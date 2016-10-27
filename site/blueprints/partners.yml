@@ -3,14 +3,9 @@ icon: thumbs-up
 pages: partner-item
 files: false
 fields:
-  title:
-    label: Title
-    type:  text
+  title: title
   description: description
-  text:
-    label: text
-    type: textarea
-    required: true
+  text: text
   line:
     type: line
   seotitle: seotitle

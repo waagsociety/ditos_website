@@ -2,13 +2,9 @@ title: deliverables
 pages: true
 files: false
 fields:
-  title:
-    label: Title
-    type:  text
+  title: title
   description: description
-  text:
-    label: Text
-    type:  textarea
+  text: text
   submenu:
     label: Show submenu
     type: checkbox

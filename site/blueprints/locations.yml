@@ -3,9 +3,7 @@ icon: map-marker
 pages: location-item
 files: false
 fields:
-  title:
-    label: Title
-    type:  text
+  title: title
   description: description
   line:
     type: line

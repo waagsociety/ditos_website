@@ -1,13 +1,11 @@
 title: Site
 pages: true
 fields:
-  title:
-    label: Title
-    type:  text
+  title: title
+  description: description
   author:
     label: Author
-    type:  text
-  description: description
+    type:  text 
   keywords:
     label: Keywords
     type:  tags
@@ -23,10 +21,6 @@ fields:
   copyright:
     label: Copyright
     type:  textarea
-  submenu:
-    label: Show submenu
-    type: checkbox
-    text: Do you want to display the submenu?
   line:
     type: line
   seotitle: seotitle
