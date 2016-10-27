@@ -58,4 +58,24 @@ Link:
 
 ----
 
-Location: 52.09644218477902,5.192113235412535
+Location: de-waag-amsterdam
+
+----
+
+Description: The Waag is a 15th-century building on Nieuwmarkt square in Amsterdam. It was originally a city gate and part of the walls of Amsterdam.
+
+----
+
+Partner: waag-society
+
+----
+
+Price: 
+
+----
+
+Currency: 
+
+----
+
+Reservation: 0

@@ -9,8 +9,8 @@ password: >
 language: en
 role: admin
 history:
+  - events/upcoming-one
+  - about/partners
+  - about/partners-old
   - events/an-event-in-antwerp
-  - about/partners-new
-  - about/partners-new/waag-society
   - search
-  - locations/de-waag-amsterdam

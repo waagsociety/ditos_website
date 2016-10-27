@@ -23,11 +23,26 @@ fields:
     label: Text
     type:  textarea
     required: true
-  host:
-    label: Host
-    type: tags
-    width: 1/2
-    required: true
+  partner:
+    label: Partner
+    type: select
+    options: query
+    query: 
+      page: /about/partners
+      value: '{{uid}}'
+      text: '{{title}}'
+    help: Your event will not be visisble for site visitors without a selected Partner
+    width: 1/3
+  location: 
+    label: Location
+    type: select
+    options: query
+    query: 
+      page: /locations
+      value: '{{uid}}'
+      text: '{{title}}'
+    help: Your event will not be visisble for site visitors without a selected Location
+    width: 1/3
   activity:
     label: Activity
     type: select
@@ -40,48 +55,29 @@ fields:
       science-cafe: Science Café
       film-night: Film Night
       open-lab-evening: Open Lab Evening
-    width: 1/2
+    width: 1/3
     required: true
   date:
     label: Start date
     type: date
     format: MM/DD/YYYY
-    width: 1/2
+    width: 1/4
     required: true
   date-end:
     label: End date
     type: date
     format: MM/DD/YYYY
-    width: 1/2
+    width: 1/4
     required: true
   time:
     label: Start time
     type: time
-    width: 1/2
+    width: 1/4
     required: true
   time-end:
     label: End time
     type: time
-    width: 1/2
-  venue:
-    label: Venue
-    type: text
-    width: 1/2
-  address:
-    label: Address
-    type: text
-    width: 1/2
-    required: true
-  city:
-    label: City
-    type: tags
-    width: 1/2
-    required: true
-  country:
-    label: Country
-    type: tags 
-    width: 1/2
-    required: true  
+    width: 1/4
   link:
     label: Link
     type: structure
@@ -114,6 +110,7 @@ fields:
     type: checkbox
     text: A reservation is required
     width: 1/3
+<<<<<<< HEAD
   location:
     label: Location
     type: geolocation
@@ -123,3 +120,5 @@ fields:
     type: line
   seotitle: seotitle
     
+=======
+>>>>>>> b41449caaea239ada3563825bb2f17d2caf7338c
