@@ -1,5 +1,5 @@
 title: Locations
-icon: globe
+icon: map-marker 
 pages: location-item
 files: false
 fields:

@@ -13,12 +13,6 @@ fields:
       min: 24
       max: 240
     required: true
-  logo:
-    label: Logo
-    type:  selector
-    mode:  single
-    types:
-        - image  
   photo:
     label: Photo
     type:  selector
