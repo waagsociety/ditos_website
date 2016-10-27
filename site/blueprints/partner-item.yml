@@ -16,7 +16,7 @@ fields:
   text: 
     label: text
     type: textarea
-    required: true: 
+    required: true
   logo:
     label: Logo
     type:  selector
