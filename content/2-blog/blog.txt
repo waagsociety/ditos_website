@@ -11,3 +11,11 @@ Submenu: 0
 ----
 
 Tags: 
+
+----
+
+Description: Read about peoples experiences on Doing It Together Science
+
+----
+
+Seotitle: The latest DITOS blog posts
