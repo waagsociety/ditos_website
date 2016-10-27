@@ -10,7 +10,7 @@ language: en
 role: admin
 history:
   - about/partners-new
+  - about/partners-new/waag-society
   - search
   - locations/de-waag-amsterdam
   - about/partners
-  - events/upcoming-two

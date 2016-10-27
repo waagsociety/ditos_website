@@ -1,6 +1,5 @@
 title: Partner
 pages: false
-files: false
 fields:
   title:
     label: Name
@@ -23,7 +22,19 @@ fields:
     mode:  single
     types:
         - image
+    # required: true
   url:
     label: URL
-    type: url  
+    type: url 
+    required: true
+  address:
+    label: Address
+    type: select 
+    options: pages
+      # query:
+      #   page: locations
+      #   fetch: children
+      #   value: '{{Title}}'
+      #   text: '{{Title}}'
+
     
