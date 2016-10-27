@@ -9,8 +9,8 @@ password: >
 language: en
 role: admin
 history:
+  - about/partners-new
+  - search
+  - locations/de-waag-amsterdam
+  - about/partners
   - events/upcoming-two
-  - events/upcoming-one
-  - events/diy-human-enhancement-clinic-10
-  - events/another-antwerp-event
-  - events/new-event
