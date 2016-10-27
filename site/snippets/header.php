@@ -10,6 +10,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
   <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.26.0/mapbox-gl.js'></script>
   <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.26.0/mapbox-gl.css' rel='stylesheet' />
+  <link rel="canonical" href="<?= $page->url() ?>">
+  <link rel="alternate" hreflang="en" href="en" />
   <?php echo css('assets/css/main.css') ?>
 </head>
 <body>

@@ -42,3 +42,7 @@ Submenu: 0
 ----
 
 Tags: design
+
+----
+
+Seo: 

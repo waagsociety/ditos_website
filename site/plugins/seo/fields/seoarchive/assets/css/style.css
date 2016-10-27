@@ -1,0 +1,73 @@
+.seo-archive {
+	background: #fff;
+	border: 2px solid #ddd;
+	border-left: 0;
+}
+
+.seo-link {
+	/*margin-top: .5em;*/
+	display: block;
+	padding: 0 2em;
+	border-left: 2px solid #ddd;
+}
+
+.seo-link:hover .seo-view-title {
+	/*border-left: 2px solid #555;*/
+	text-decoration: underline;
+}
+
+.seo-link:first-child {
+	padding-top: 2em;
+}
+.seo-link:last-child {
+	padding-bottom: 2em;
+}
+
+.seo-link:last-child .seo .seo-wrap-description {
+	padding-bottom: 0;
+}
+
+.seo-link .seo .seo-preview {
+	border: 0;
+}
+
+.seo-link .seo .seo-wrap-title {
+	padding: 0;
+}
+
+.seo-link .seo .seo-wrap-description {
+	padding: 0;
+	padding-bottom: 31px;
+}
+
+.seo-link .seo .seo-preview .seo-wrap-url {
+	padding: 0;
+}
+
+.seo-paging {
+	display: block;
+	margin-top: .5em;
+}
+
+.seo-paging > * {
+	width: 50%;
+}
+
+.seo-prev {
+	text-align: left;
+	float: left;
+}
+
+.seo-next {
+	text-align: right;
+	float: right;
+}
+
+.seo-prev i {
+	margin-right: .5em;
+	float: left;
+}
+
+.seo-next i {
+	margin-left: .5em;
+}

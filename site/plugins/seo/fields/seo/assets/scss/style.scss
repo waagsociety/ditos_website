@@ -1,0 +1,155 @@
+.seo {
+	&.no-description {
+		.seo-preview .seo-view-description {
+			opacity: .5;
+		}
+	}
+
+	&[data-title-active="true"] .seo-edit .seo-title {
+		display: block !important;
+	}
+
+	&[data-description-active="true"] .seo-edit .seo-description {
+		display: block !important;
+	}
+
+	&[data-seo-description-empty="true"] .seo-wrap-description {
+		opacity: .5;
+	}
+
+	.seo-preview {
+		border: 2px solid #ddd;
+		background: #fff;
+
+		.seo-title-crop {
+			overflow: hidden;
+		}
+
+		.seo-wrap {
+			cursor: pointer;
+		}
+
+		.seo-wrap-title {
+			padding: 1em 1em 0 1em;
+		}
+
+		.seo-crop-title {
+			width: 512px;
+		}
+
+		.seo-wrap-url {
+			padding: 0 1em;
+			display: block;
+		}
+
+		.seo-wrap-description {
+			padding: 0 1em 1em 1em;
+		}
+
+		.seo-view {
+			max-width: 512px;
+			font-family: arial,sans-serif;
+
+			&.seo-view-title {
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				display: inline-block;
+
+				color: #1a0dab;
+				font-size: 18px;
+				line-height: 21.6px;
+				vertical-align: bottom;
+			}
+
+			&.seo-view-url {
+				white-space: nowrap;
+				height: 17px;
+				line-height: 16px;
+				font-size: 14px;
+				color: #006621;
+				display: block;
+			}
+
+			&.seo-view-description {
+				line-height: 18.2px;
+				word-wrap: break-word;
+				color: #545454;
+				font-size: 13px;
+			}
+		}
+	}
+
+	.seo-edit {
+		.seo-template {
+			//padding: calc( .5em - 2px );
+			background: #eee;
+			border: 2px solid #ddd;
+			border-top: 0;
+
+			table {
+				border-collapse: collapse;
+				width: 100%;
+			}
+
+			tr.seo-fallback td:hover,
+			tr.seo-values td:hover {
+				background: #fcf8e3;
+			}
+
+			tr.seo-suffix td {
+				user-select: none;
+				cursor: default;
+				opacity: .5;
+			}
+
+			th {
+				border-bottom: 2px solid #eee;
+				padding: .5em;
+				background: #ddd;
+				user-select: none;
+				text-align: left;
+				font-weight: normal;
+				width: 1px;
+				cursor: default;
+			}
+
+			tr:last-child th {
+				border-bottom: 0;
+			}
+
+			th,
+			td {
+				font-size: .9em;
+			}
+
+			td {
+				font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New;
+				padding: .5em 1em;
+			}
+		}
+		.seo-title,
+		.seo-description {
+			display: none;
+			margin-top: 1.5em;
+		}
+
+		.seo-label {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			.seo-count {
+				margin-bottom: .5em;
+
+				&.seo-warning {
+					color: #b3000a;
+				}
+			}
+		}
+	}
+}
+
+.seo-render {
+	display: none;
+}

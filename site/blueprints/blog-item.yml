@@ -12,12 +12,6 @@ fields:
   title:
     label: Title
     type:  text
-  introsentence:
-    label: Intro sentence
-    type:  text
-  text:
-    label: Text
-    type:  textarea
   postimage:
     label: Main Post Image
     type:  selector
@@ -25,10 +19,22 @@ fields:
     required: true
     types:
         - image
+  introsentence:
+    label: Intro sentence
+    type:  text
+  text:
+    label: Text
+    type:  textarea
   submenu:
     label: Show submenu
     type: checkbox
     text: Do you want to display the submenu?
+    width: 1/2
   tags:
     label: Category
     type:  tags
+    width: 1/2
+  line:
+    type: line
+  seo:
+    type: seo
