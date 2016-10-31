@@ -1,6 +1,8 @@
 title: Location
 pages: false
 files: true
+options:
+  delete: false
 fields:
   title: title
   description: description
@@ -36,4 +38,7 @@ fields:
   line:
     type: line
   seotitle: seotitle
+  autoid: 
+    type: text
+    readonly: true
     
