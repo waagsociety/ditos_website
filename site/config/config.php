@@ -42,3 +42,12 @@ See https://github.com/helllicht/kirby-autoid
 
 c::set('autoid.type', 'hash');
 
+c::set('panel.widgets', array(
+  'pages'    => true,
+  'meta' => true,
+  'history'  => true,
+  'account'  => true,
+  'about'     => true,
+  'site'     => true,
+));
+
