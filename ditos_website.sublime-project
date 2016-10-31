@@ -27,7 +27,7 @@
     },
     {
         "name": "templates",
-        "path": "site/tempaltes",
+        "path": "site/templates",
         "follow_symlinks": true
     },
     {

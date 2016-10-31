@@ -2,11 +2,11 @@ Title: Nieuw event
 
 ----
 
-Description: 
+Description: sgklhdsglirdhgilurehgliuergheighuregilrebgiuerh
 
 ----
 
-Text: 
+Text: sdflknsdakjgfdlkjgbdkljgbdlrkjbglkrdjbgk
 
 ----
 
@@ -14,27 +14,27 @@ Postimage:
 
 ----
 
-Partner: 
+Partner: waag-society
 
 ----
 
-Location: 
+Location: de-waag-amsterdam
 
 ----
 
-Activity: 
+Activity: workshop
 
 ----
 
-Date: 
+Date: 2016-10-31
 
 ----
 
-Date-end: 
+Date-end: 2016-11-01
 
 ----
 
-Time: 
+Time: 00:00
 
 ----
 
@@ -54,7 +54,7 @@ Currency:
 
 ----
 
-Reservation: 
+Reservation: 0
 
 ----
 

@@ -1,73 +1,28 @@
 <?php snippet('header') ?>
 <?php
 
-function slugify($string) {
-  $string = trim($string);
-  $string = preg_replace('/\W+/', '-', $string);
-  $string = strtolower($string);
-  return $string;
-}
-
-$pageParam = param('page', 1);
-$pageInArchive = $pageParam < 0;
-
-$viewIndex = ['List', 'Map'];
+$itemsPerPage = 2;
 $viewParameter = param('view', 'map');
 
-$countryIndex = $page->children()->visible()->pluck('country', ',', true);
-$countryParameter = param('country');
-$countryFilter = false;
-
-// 
-if ($countryParameter) foreach ($countryIndex as $country) {
-  if (slugify($country) === $countryParameter) {
-    $countryFilter = $country;
-    break;
-  }
-}
-
-$activityIndex = $page->children()->visible()->pluck('activity', ',', true);
-
-$activityParameter = param('activity');
-$activityFilter = false;
-
-if ($activityParameter) foreach ($activityIndex as $activity) {
-  if (slugify($activity) === $activityParameter) {
-    $activityFilter = $activity;
-    break;
-  }
-}
-
-if ($pageInArchive) {
+if ($viewParameter === 'archive') {
   $items = $pages->find('events')->children()->visible()->filter(function($child){
     return time() > strtotime($child->date_end('c'));
   })->sortBy('date', 'desc');
 }
-
 else {
   $items = $pages->find('events')->children()->visible()->filter(function($child){
     return time() < strtotime($child->date_end('c'));
   })->sortBy('date', 'asc');
 }
 
-if ($countryFilter) $items = $items->filterBy('country', $countryFilter, ',');
-if ($activityFilter) $items = $items->filterBy('activity', $activityFilter, ',');
+if ($viewParameter !== 'map') {
 
-$itemsPerPage = $viewParameter === 'map' ? 1000 : 24;
-$itemCount = count($items);
-$pageCount = ceil($itemCount / $itemsPerPage);
+  $itemCount = count($items);
+  $pageCount = ceil(count($items) / $itemsPerPage);
+  $pageParameter = param('page', 1);
+  echo $pageParameter.$pageCount;
 
-$pagination = [
-  'active' => $pageParam,
-  'archive' => $pageInArchive,
-  'itemsPerPage' => $itemsPerPage,
-  'itemCount' => $itemCount,
-  'pageCount' => $pageCount
-];
-
-$end = ceil(abs($pageParam) * $itemsPerPage);
-$start = ($end - $itemsPerPage);
-$items = $items->slice($start, $itemsPerPage);
+}
 
 ?>
 
@@ -77,7 +32,7 @@ $items = $items->slice($start, $itemsPerPage);
       <?php 
       $viewParameter === 'map' 
         ? snippet('mapbox', ['items' => $items]) 
-        : snippet('events-list', ['items' => $items, 'pagination' => $pagination]) 
+        : snippet('events-list', ['items' => $items]) 
       ?>
     </section>
     <aside class="filter__events"><?php snippet('events-filters', ['pagination' => $pagination]) ?></aside>  
