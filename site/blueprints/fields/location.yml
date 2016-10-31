@@ -1,0 +1,9 @@
+label: Location
+type: select
+options: query
+query: 
+  page: /locations
+  value: '{{uid}}'
+  text: '{{title}}'
+help: Your event will not be visisble for site visitors without a selected Location
+width: 1/3

@@ -1,0 +1,9 @@
+label: Partner
+type: select
+options: query
+query: 
+  page: /about/partners
+  value: '{{uid}}'
+  text: '{{title}}'
+help: Your event will not be visisble for site visitors without a selected Partner
+width: 1/3

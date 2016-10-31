@@ -107,3 +107,11 @@ Currency:
 ----
 
 Reservation: 0
+
+----
+
+Partner: waag-society
+
+----
+
+Seotitle: 

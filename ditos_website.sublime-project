@@ -11,17 +11,32 @@
         "follow_symlinks": true
     },
     {
-        "name": "site",
-        "path": "site",
+        "name": "content",
+        "path": "content",
         "follow_symlinks": true
     },
     {
-        "name": "JavaScript",
+        "name": "blueprints",
+        "path": "site/blueprints",
+        "follow_symlinks": true
+    },
+    {
+        "name": "snippets",
+        "path": "site/snippets",
+        "follow_symlinks": true
+    },
+    {
+        "name": "templates",
+        "path": "site/tempaltes",
+        "follow_symlinks": true
+    },
+    {
+        "name": "javascript",
         "path": "src/js",
         "follow_symlinks": true
     },
     {
-        "name": "CSS",
+        "name": "css",
         "path": "src/styles",
         "follow_symlinks": true
     },

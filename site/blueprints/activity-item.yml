@@ -1,0 +1,6 @@
+title: Location
+pages: false
+files: true
+fields:
+  title: title
+  description: description

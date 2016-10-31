@@ -18,26 +18,8 @@ fields:
     mode:  single
     types:
         - image  
-  partner:
-    label: Partner
-    type: select
-    options: query
-    query: 
-      page: /about/partners
-      value: '{{uid}}'
-      text: '{{title}}'
-    help: Your event will not be visisble for site visitors without a selected Partner
-    width: 1/3
-  location: 
-    label: Location
-    type: select
-    options: query
-    query: 
-      page: /locations
-      value: '{{uid}}'
-      text: '{{title}}'
-    help: Your event will not be visisble for site visitors without a selected Location
-    width: 1/3
+  partner: partner
+  location: location
   activity:
     label: Activity
     type: select
