@@ -1,0 +1,25 @@
+Title: Thanks
+
+----
+
+Text: 
+
+Thanks for filling in the form. We will soon get in touch with you.
+
+----
+
+Postimage: 
+
+----
+
+Submenu: 0
+
+----
+
+Description: 
+
+Thanks for filling in the form. We will soon get in touch with you.
+
+----
+
+Seotitle: 

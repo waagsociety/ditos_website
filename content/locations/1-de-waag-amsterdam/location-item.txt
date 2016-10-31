@@ -31,3 +31,11 @@ Link: http://waag.org/nl
 ----
 
 Location: 52.37277830000001,4.900316400000065
+
+----
+
+Url: https://waag.org
+
+----
+
+Seotitle: 

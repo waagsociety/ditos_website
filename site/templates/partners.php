@@ -4,19 +4,18 @@
   <div class="flex flex__wrap">
     <section>
       <?php snippet('item-header') ?>
-      <div class="text">
-        <?php echo kirbytext($page->text()) ?>
-      </div>
       <ul class="partners">
       <?php foreach($page->children() as $partner) : ?>
         <?php $logo = $partner->image($partner->logo()) ?>
         <li>
           <a href="<?php echo $partner->url() ?>">
-            <figure class="logo">
+            <figure class="logo partner">
               <img src="<?php echo $logo->url() ?>" width="<?php echo $logo->width() ?>"  height="<?php echo $logo->height() ?>" alt="<?php echo $partner->title() ?> logo">
             </figure>
-            <h1><?php echo $partner->title() ?></h1>
-            <p><?php echo $partner->description() ?></p>
+            <div class="inner">
+              <h1><?php echo $partner->title() ?></h1>
+              <p><?php echo $partner->description() ?></p>
+            </div>
           </a>
         </li>
       <?php endforeach ?>

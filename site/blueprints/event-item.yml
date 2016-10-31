@@ -76,8 +76,7 @@ fields:
   link:
     label: Link
     type: structure
-    entry:
-      {{url}}<br>
+    entry: >
       {{label}}
     fields:
       url:

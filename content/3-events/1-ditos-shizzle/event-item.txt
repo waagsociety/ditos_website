@@ -1,0 +1,69 @@
+Title: DITOS shizzle
+
+----
+
+Description: DITOS shizzle DITOS shizzle
+
+----
+
+Text: dksa DITOS shizzle DITOS shizzle
+
+----
+
+Postimage: ditos-hec.jpg
+
+----
+
+Partner: UCL
+
+----
+
+Location: de-waag-amsterdam
+
+----
+
+Activity: workshop
+
+----
+
+Date: 2016-12-30
+
+----
+
+Date-end: 2016-12-31
+
+----
+
+Time: 16:00
+
+----
+
+Time-end: 18:00
+
+----
+
+Link: 
+
+- 
+  url: 'https://www.eventbrite.nl/l/registration-online-c/?ref=sem0brd0ggl0nl0ppca0brand&kw=eventbrite%20ex&cr=119826778449&utm_source=google&utm_medium=cpc&utm_content=paid&utm_campaign=g_nl_sem_b&utm_term=eventbrite&mkwid=siwxVCVl6_dc&pcrid=119826778449&pkw=eventbrite&pmt=e&plc=&gclid=CjwKEAjw19vABRCY2YmkpO2OzTsSJAAzEt8sgIpjObQ9q7hKQFMfl2oSi7qiHmTvFPukAo111-zUgBoCbnrw_wcB'
+  label: Eventbrite
+
+----
+
+Price: 1000000000
+
+----
+
+Currency: eur
+
+----
+
+Reservation: 0
+
+----
+
+Line: 
+
+----
+
+Seotitle: 

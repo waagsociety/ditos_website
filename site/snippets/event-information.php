@@ -57,12 +57,14 @@
       <svg viewBox="0 0 32 32"><use xlink:href="#i:location"/></svg>
       Where
     </header>
-    <?php $q = $page->address().' '.$page->city().' '.$page->country() ?>    
-    <?php if (strlen($page->venue()->html()) > 0) { 
-      echo $page->venue().'<br>';
-    } ?>
-    <?php echo $page->address() ?><br>
-    <?php echo $page->city().', '.$page->country() ?>
+    <?php 
+      $location = $pages->find('locations')->find($page->location());
+    ?>
+
+    <?php $q = $location->address().'+'.$location->city().'+'.$location->country() ?>    
+    <?php echo $location->title()?><br>
+    <?php echo $location->address() ?><br>
+    <?php echo $location->city().', '.$location->country() ?>
     <br>
     <a href="http://maps.google.com/?q=<?php echo $q ?>" target="_blank">
       <button type="button">View in Google Maps</button>

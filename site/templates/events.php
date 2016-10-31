@@ -1,5 +1,6 @@
 <?php snippet('header') ?>
 <?php
+
 function slugify($string) {
   $string = trim($string);
   $string = preg_replace('/\W+/', '-', $string);
@@ -42,6 +43,7 @@ if ($pageInArchive) {
     return time() > strtotime($child->date_end('c'));
   })->sortBy('date', 'desc');
 }
+
 else {
   $items = $pages->find('events')->children()->visible()->filter(function($child){
     return time() < strtotime($child->date_end('c'));
@@ -65,25 +67,21 @@ $pagination = [
 
 $end = ceil(abs($pageParam) * $itemsPerPage);
 $start = ($end - $itemsPerPage);
-
 $items = $items->slice($start, $itemsPerPage);
 
 ?>
 
 <main class="main__content">
-
+  <?php echo $page->children() ?>
   <div class="flex flex__wrap">
-
     <section>
-    <?php 
-    $viewParameter === 'map' 
-      ? snippet('mapbox', ['items' => $items]) 
-      : snippet('events-list', ['items' => $items, 'pagination' => $pagination]) 
-    ?>
+      <?php 
+      $viewParameter === 'map' 
+        ? snippet('mapbox', ['items' => $items]) 
+        : snippet('events-list', ['items' => $items, 'pagination' => $pagination]) 
+      ?>
     </section>
-
     <aside class="filter__events"><?php snippet('events-filters', ['pagination' => $pagination]) ?></aside>  
-    
   </div>
 </main>
 <?php snippet('footer') ?>

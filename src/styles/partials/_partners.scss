@@ -14,3 +14,41 @@
   margin: 20px;
   opacity: .8;
 }
+
+.logo.partner {
+  width: 250px;
+  img {
+    height: auto;
+  }
+}
+
+.partners .inner {
+  width: calc(100% - 250px);
+}
+
+.text.partners{
+  padding: 30px 120px 0;
+}
+
+.partners li a{
+  padding: 30px 120px;
+  border-bottom: 1px solid #eee;
+}
+
+.partners li:last-child a{
+  border-bottom: none;
+}
+
+.partners li a{
+  display: flex;
+  align-items: center;
+
+  h1{
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+  }
+  p{
+    font-size: 1em;
+    color: black;
+  }
+}

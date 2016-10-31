@@ -7,8 +7,8 @@ email: martin@waag.org
 language: en
 role: admin
 history:
-  - blog/doing-it-together-science
-  - blog
+  - locations/de-waag-amsterdam
+  - events/ditos-shizzle
   - events
-  - blog/doing-it-together
-  - events/another-antwerp-event
+  - about/contact/thanks
+  - book-the-bus/thanks

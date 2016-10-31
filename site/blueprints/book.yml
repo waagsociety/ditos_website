@@ -1,6 +1,6 @@
 title: Bus-form
 icon: bus
-pages: false
+pages: true
 files: true
 fields:
   title: title

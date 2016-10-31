@@ -4,6 +4,9 @@
     <section>
       <?php $items = $page->children()->visible()->paginate(6); ?>
       <div class="blog__preview left">
+        <?php if( $page->listtitle()->isNotEmpty()): ?>
+          <h3 class="preview__header"><?php echo $page->listtitle() ?></h3>
+        <?php endif ?>
         <?php foreach($items as $item): ?>
           <a href="<?php echo $item->url() ?>" class="article__preview">
             <article>

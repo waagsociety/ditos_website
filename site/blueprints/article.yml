@@ -1,0 +1,35 @@
+title: Article
+icon: file-text-o
+pages: false
+files:
+  fields:
+    copyright:
+      label: Copyright
+      type: text
+    caption:
+      label: Caption
+      type: text
+fields:
+  title: title
+  description: description
+  postimage:
+    label: Main Post Image
+    type:  selector
+    mode:  single
+    required: true
+    types:
+      - image
+  text: text
+  submenu:
+    label: Show submenu
+    type: checkbox
+    text: Do you want to display the submenu?
+    width: 1/2
+  tags:
+    label: Category
+    type:  tags
+    width: 1/2
+  line:
+    type: line
+  seotitle: seotitle
+  seodescription: seodescription

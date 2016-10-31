@@ -1,0 +1,6 @@
+label: SEO description
+type: text
+help: Fallback to "Description" if not used
+icon: search
+validate:
+  max: 155
