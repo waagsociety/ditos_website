@@ -3,7 +3,6 @@
 // if(!r::ajax()) go(url('error'));
 
 header('Content-Type: application/vnd.geo+json; charset=utf-8');
-
 $data = $pages->find('events')->children()->visible()->flip()->paginate(10);
 $features = array();
 

@@ -5,14 +5,10 @@
   </header>
 
   <div class="agenda__preview full__width">
-    
     <?php foreach($items as $item): ?>
     <a href="<?php echo $item->url() ?>" class="agenda__preview__item event__info list">
-      
-      <h4><?php echo $item->title() ?></h4>
-      
-      <p class="agenda__intro"><?php echo $item->introsentence() ?></p>
-      
+      <h4><?php echo $item->title() ?></h4>      
+      <p class="agenda__intro"><?php echo $item->description() ?></p>      
       <ul class="event__info">
         
         <li>
