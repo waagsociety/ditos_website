@@ -8,6 +8,7 @@ $data = $pages->find('events')->children()->visible()->flip()->paginate(10);
 $features = array();
 
 foreach($data as $article) {
+  $location = $pages->find('locations')->find($article->location());
   $features[] = array(
     'type'  => 'Feature',
     'properties' => array(
@@ -19,8 +20,8 @@ foreach($data as $article) {
     'geometry' => array(
       'type'   => 'Point',
       'coordinates' => array(
-        floatval(explode(",",(string)$article->location())[1]),
-        floatval(explode(",",(string)$article->location())[0])
+        floatval(explode(",",(string)$location->location())[1]),
+        floatval(explode(",",(string)$location->location())[0])
       )
     )
   );

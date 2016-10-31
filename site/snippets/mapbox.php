@@ -8,21 +8,22 @@ $data = $items;
 $features = array();
 
 foreach($data as $article) {
+  $location = $pages->find('locations')->find($article->location());
   $features[] = array(
     'type'  => 'Feature',
     'properties' => array(
       'url'   => (string)$article->url(),
       'title' => (string)$article->title(),
-      'introsentence'  => (string)$article->introsentence(),
+      'introsentence'  => (string)$article->description(),
       'date'  => (string)$article->date('d.m.Y'),
       'time'  => (string)$article->time(),
-      'address'  => (string)$article->address()
+      'address'  => (string)$location->title()
     ),
     'geometry' => array(
       'type'   => 'Point',
       'coordinates' => array(
-        floatval(explode(",",(string)$article->location())[1]),
-        floatval(explode(",",(string)$article->location())[0])
+        floatval(explode(",",(string)$location->location())[1]),
+        floatval(explode(",",(string)$location->location())[0])
       )
     )
   );

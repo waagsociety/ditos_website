@@ -72,7 +72,6 @@ $items = $items->slice($start, $itemsPerPage);
 ?>
 
 <main class="main__content">
-  <?php echo $page->children() ?>
   <div class="flex flex__wrap">
     <section>
       <?php 
