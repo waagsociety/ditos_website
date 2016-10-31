@@ -1,15 +1,18 @@
+<?php $render = new Render ?>
 <header>
   <h3 class="alpha">Event information</h3>
 </header>
 
+
+
 <ul class="event__details full">
   
-  <li>
-    <header>
-      <svg viewBox="0 0 32 32"><use xlink:href="#i:organisation"/></svg>
-      Who
-    </header>
-    <p>De Waag</p>
+  <li class="logo">
+  <?php $partner = $pages->find('about/partners')->find($page->partner()) ?>
+  <?php $logo = $partner->image($partner->logo()) ?>
+  <a href="<?= $site->url().'/about/partners/'.$partner->slug() ?>">
+  <?= $render->html(['img', 'src'=>$logo->url(), 'width'=>$logo->width(), 'height'=>$logo->height()]) ?>
+  </a>
   </li>
 
   <li>
