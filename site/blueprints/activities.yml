@@ -1,5 +1,6 @@
 title: Activities
-icon: flask 
+icon: flask
+hide: true
 pages: activity-item
 files: false
 fields:

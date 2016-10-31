@@ -1,5 +1,6 @@
 title: Locations
 icon: map-marker 
+hide: true
 pages: location-item
 files: false
 fields:

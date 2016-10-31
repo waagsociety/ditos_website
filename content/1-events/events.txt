@@ -2,4 +2,16 @@ Title: Events
 
 ----
 
-Text: 
+Description: The upcoming DITOS events
+
+----
+
+Text: Come visit the DITOS events.
+
+----
+
+Seotitle: 
+
+----
+
+Line: 
