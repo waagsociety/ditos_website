@@ -9,5 +9,8 @@ password: >
 language: en
 role: admin
 history:
-  - about/partners
-  - search
+  - events/nieuw-event
+  - events/ditos-shizzle
+  - about/partners/waag-society
+  - about/partners/UCL
+  - locations/de-waag-amsterdam

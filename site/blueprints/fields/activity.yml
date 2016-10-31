@@ -3,7 +3,7 @@ type: select
 options: query
 query: 
   page: /activities
-  value: '{{uid}}'
+  value: '{{autoid}}'
   text: '{{title}}'
 help: Your event will not be visisble for site visitors without a selected Activity
 width: 1/3

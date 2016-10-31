@@ -30,3 +30,15 @@ of the system, please check out http://getkirby.com/docs/advanced/options
 */
 
 c::set('panel.stylesheet', 'assets/css/panel.css');
+
+/*
+
+---------------------------------------
+Plugin: autoid
+---------------------------------------
+See https://github.com/helllicht/kirby-autoid
+
+*/
+
+c::set('autoid.type', 'hash');
+

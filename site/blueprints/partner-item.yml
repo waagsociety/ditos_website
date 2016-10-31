@@ -1,5 +1,7 @@
 title: Partner
 pages: false
+options:
+  delete: false
 fields:
   title: title
   description: description
@@ -11,21 +13,18 @@ fields:
     types:
         - image
     # required: true
+  
+  location: location
   url:
     label: URL
     type: url 
+    width: 2/3
     required: true
-  address:
-    label: Address
-    type: select 
-    options: query
-      query:
-        page: /locations
-        fetch: children
-        value: '{{uid}}'
-        text: '{{Title}}'
   line:
     type: line
   seotitle: seotitle
+  autoid:
+    type: text
+    readonly: true
 
     

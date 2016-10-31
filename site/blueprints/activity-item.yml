@@ -1,6 +1,11 @@
 title: Activity
 pages: false
 files: false
+options:
+  delete: false
 fields:
   title: title
   description: description
+  autoid: 
+    type: text
+    readonly: true
