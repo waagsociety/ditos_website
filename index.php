@@ -32,7 +32,7 @@ class Render {
       $emptyElement = true;
       $attributes = [];
       $childNodes = [];
-      array_push($nodes, '&lt;', $tagName);
+      array_push($nodes, '<', $tagName);
       
       foreach (array_slice($contents, 1) as $key => $value) {
         
@@ -53,7 +53,7 @@ class Render {
 
       array_push($nodes, $this->attribute($attributes), '>');
       if (!$emptyElement) {
-        array_push($nodes, join(' ', $childNodes), '&lt;/', $tagName, '>');
+        array_push($nodes, join(' ', $childNodes), '</', $tagName, '>');
       }
 
     }
@@ -76,7 +76,7 @@ class Render {
 
 }
 
-// $render = new Render;
+$render = new Render;
 
 // render
 echo $kirby->launch();

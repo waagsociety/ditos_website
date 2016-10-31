@@ -1,0 +1,65 @@
+Title: Nieuw event
+
+----
+
+Description: af;lksnglkrjbgklrebgl jlgjdlng dnljgdjgd;godth;d;
+
+----
+
+Text: afafa
+
+----
+
+Postimage: 
+
+----
+
+Partner: ucl
+
+----
+
+Location: de-waag-amsterdam
+
+----
+
+Activity: workshop
+
+----
+
+Date: 2016-11-09
+
+----
+
+Date-end: 2016-11-12
+
+----
+
+Time: 00:00
+
+----
+
+Time-end: 
+
+----
+
+Link: 
+
+----
+
+Price: 
+
+----
+
+Currency: 
+
+----
+
+Reservation: 0
+
+----
+
+Line: 
+
+----
+
+Seotitle: 
