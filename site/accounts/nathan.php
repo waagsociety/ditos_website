@@ -9,7 +9,5 @@ password: >
 language: en
 role: admin
 history:
-  - events/an-event-in-antwerp
-  - events/upcoming-one
   - about/partners
   - search

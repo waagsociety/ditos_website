@@ -5,6 +5,3 @@ files: false
 fields:
   title: title
   description: description
-  line:
-    type: line
-  seotitle: seotitle

@@ -1,6 +1,6 @@
-title: Location
+title: Activity
 pages: false
-files: true
+files: false
 fields:
   title: title
   description: description
