@@ -9,7 +9,7 @@ password: >
 language: en
 role: admin
 history:
+  - events
   - events/nieuw-event
   - about/partners/waag-society
-  - events/ditos-shizzle
   - locations/de-waag-amsterdam
