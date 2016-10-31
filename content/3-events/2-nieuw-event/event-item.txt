@@ -14,15 +14,15 @@ Postimage:
 
 ----
 
-Partner: 4f280fcf204fcb0444d04f35c12085cc
+Partner: UCL
 
 ----
 
-Location: 4b91a601c150a42f37a9e3a17e174d9a
+Location: de-waag-amsterdam
 
 ----
 
-Activity: 769537700059aaed334f2c836d666359
+Activity: workshop
 
 ----
 
