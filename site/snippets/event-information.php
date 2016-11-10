@@ -21,7 +21,7 @@
   <?php if ($activity) : ?>
   <li>
     <header>
-      <svg viewBox="0 0 32 32"><use xlink:href="#i:activity"/></svg>
+      <!-- <svg viewBox="0 0 32 32"><use xlink:href="#i:activity"/></svg> -->
       What
     </header>
     <?php echo $activity->title() ?>
@@ -30,7 +30,7 @@
 
   <li>
     <header>
-      <svg viewBox="0 0 32 32"><use xlink:href="#i:calendar"/></svg>
+      <!-- <svg viewBox="0 0 32 32"><use xlink:href="#i:calendar"/></svg> -->
       When
     </header>
     <?php
@@ -65,7 +65,7 @@
   <?php $q = $location->address().'+'.$location->city().'+'.$location->country() ?> 
   <li>
     <header>
-      <svg viewBox="0 0 32 32"><use xlink:href="#i:location"/></svg>
+      <!-- <svg viewBox="0 0 32 32"><use xlink:href="#i:location"/></svg> -->
       Where
     </header>       
     <?php echo $location->title()?><br>
