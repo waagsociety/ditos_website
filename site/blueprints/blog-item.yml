@@ -19,9 +19,7 @@ fields:
     types:
       - image
   text: text
-  tags:
-    label: Category
-    type:  tags
+  tags: tags
   line:
     type: line
   seotitle: seotitle
