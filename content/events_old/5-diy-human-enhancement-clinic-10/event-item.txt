@@ -46,11 +46,11 @@ Postimage: poster_example.png
 
 ----
 
-Location: 52.3728073,4.900291000000038
+Location: de-waag-amsterdam
 
 ----
 
-Date: 2016-10-13
+Date: 2016-11-25
 
 ----
 
@@ -66,7 +66,7 @@ Host: De Waag
 
 ----
 
-Date-end: 2016-10-13
+Date-end: 2016-11-30
 
 ----
 
@@ -78,7 +78,7 @@ City: Amsterdam
 
 ----
 
-Activity: film-night
+Activity: workshop
 
 ----
 
@@ -91,3 +91,31 @@ Address: Voorstraat  123
 ----
 
 Link: 
+
+----
+
+Description: A description for you
+
+----
+
+Partner: waag-society
+
+----
+
+Tags: 
+
+----
+
+Price: 0
+
+----
+
+Currency: eur
+
+----
+
+Reservation: 0
+
+----
+
+Seotitle: 
