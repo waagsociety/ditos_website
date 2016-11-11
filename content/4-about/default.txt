@@ -12,6 +12,8 @@ Doing It Together Science will implement many innovative participatory event for
 
 Through its Horizon 2020 programme the European Commission, with support from the Swiss confederation, have committed financial support to this three-year program to increase public participation in scientific research and innovation across Europe. The 11-partner project, coordinated by UCL Extreme Citizen Science group, aims to build the institutional and policy foundations for sustained deep public engagement in science and technology in Europe.
 
+(image: eu_flag.png)
+
 ----
 
 Imagecopy: 
@@ -23,3 +25,11 @@ Postimage: header.jpg
 ----
 
 Submenu: 1
+
+----
+
+Description: About the DITOS project
+
+----
+
+Seotitle: 
