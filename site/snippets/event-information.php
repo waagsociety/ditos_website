@@ -3,29 +3,34 @@
   <h3 class="alpha">Event information</h3>
 </header>
 
-
-
 <ul class="event__details full">
   
-  <li class="logo">
   <?php $partner = $pages->find('about/partners')->find($page->partner()) ?>
+  <?php if ($partner) : ?>
   <?php $logo = $partner->image($partner->logo()) ?>
-  <a href="<?= $site->url().'/about/partners/'.$partner->slug() ?>">
-  <?= $render->html(['img', 'src'=>$logo->url(), 'width'=>$logo->width(), 'height'=>$logo->height()]) ?>
-  </a>
-  </li>
+  <li class="logo">
+  
+    <a href="<?= $site->url().'/about/partners/'.$partner->slug() ?>">
+      <img src="<?= $logo->url() ?>" width="<?= $logo->width() ?>" height="<?= $logo->height() ?>">
+    </a>
 
+  </li>
+  <? endif ?>
+
+  <?php $activity = $pages->find('activities')->find($page->activity()) ?>
+  <?php if ($activity) : ?>
   <li>
     <header>
-      <svg viewBox="0 0 32 32"><use xlink:href="#i:activity"/></svg>
+      <!-- <svg viewBox="0 0 32 32"><use xlink:href="#i:activity"/></svg> -->
       What
     </header>
-    <?php echo $page->activity() ?>
+    <?php echo $activity->title() ?>
   </li>
+  <?php endif ?>
 
   <li>
     <header>
-      <svg viewBox="0 0 32 32"><use xlink:href="#i:calendar"/></svg>
+      <!-- <svg viewBox="0 0 32 32"><use xlink:href="#i:calendar"/></svg> -->
       When
     </header>
     <?php
@@ -54,24 +59,24 @@
       <button type="button">Add to Calendar</button>
     </a>
   </li>
-
+  
+  <?php $location = $pages->find('locations')->find($page->location()) ?>
+  <?php if ($location) : ?>
+  <?php $q = $location->address().'+'.$location->city().'+'.$location->country() ?> 
   <li>
     <header>
-      <svg viewBox="0 0 32 32"><use xlink:href="#i:location"/></svg>
+      <!-- <svg viewBox="0 0 32 32"><use xlink:href="#i:location"/></svg> -->
       Where
-    </header>
-    <?php 
-      $location = $pages->find('locations')->find($page->location());
-    ?>
-
-    <?php $q = $location->address().'+'.$location->city().'+'.$location->country() ?>    
+    </header>       
     <?php echo $location->title()?><br>
     <?php echo $location->address() ?><br>
     <?php echo $location->city().', '.$location->country() ?>
-    <br>
+
     <a href="http://maps.google.com/?q=<?php echo $q ?>" target="_blank">
       <button type="button">View in Google Maps</button>
     </a>
+
   </li>
+  <?php endif ?>
 
 </ul>

@@ -2,7 +2,7 @@
 
 $url = $page->url();
 
-$viewIndex = ['Map', 'List'];
+$viewIndex = ['Map', 'List', 'Archive'];
 $viewParameter = param('view', 'map');
 $countryParameter = param('country');
 $activityParameter = param('activity');
@@ -14,6 +14,13 @@ function redirectPage($url, $params, $int = 1) {
     array_push($result, $key.':'.$value);
   }
   return join('/', $result);
+}
+
+function slugify($string) {
+  $string = trim($string);
+  $string = preg_replace('/\W+/', '-', $string);
+  $string = strtolower($string);
+  return $string;
 }
 
 ?>
