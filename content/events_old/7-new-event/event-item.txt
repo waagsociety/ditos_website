@@ -42,7 +42,7 @@ Postimage:
 
 ----
 
-Location: 52.3702157,4.895167899999933
+Location: de-waag-amsterdam
 
 ----
 
@@ -74,7 +74,7 @@ Host: De Waag
 
 ----
 
-Activity: lecture
+Activity: workshop
 
 ----
 
@@ -87,3 +87,31 @@ Address: Pieter Jacobszstraat 393
 ----
 
 Link: 
+
+----
+
+Description: Waag Society’s Open Wetlab evening
+
+----
+
+Partner: ucl
+
+----
+
+Tags: 
+
+----
+
+Price: 112
+
+----
+
+Currency: eur
+
+----
+
+Reservation: 0
+
+----
+
+Seotitle: 

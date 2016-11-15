@@ -9,8 +9,8 @@ password: >
 language: en
 role: admin
 history:
-  - events/tralalala
-  - events/another-future-event
-  - events/a-future-event
-  - events/nieuw-event
-  - locations/jibberish
+  - events_old/upcoming-two
+  - events_old/new-event
+  - events_old/waag-society-cool-stuff
+  - events_old/an-event-in-antwerp
+  - events_old/upcoming-one

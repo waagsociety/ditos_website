@@ -63,8 +63,36 @@ Country: the Netherlands
 
 ----
 
-Link: http://smartkidslab.nl
+Link: 
 
 ----
 
-Location: 52.38711312339258,4.857239544860818
+Location: de-waag-amsterdam
+
+----
+
+Description: afafafafafafafafafaf
+
+----
+
+Partner: ucl
+
+----
+
+Tags: 
+
+----
+
+Price: 0
+
+----
+
+Currency: eur
+
+----
+
+Reservation: 0
+
+----
+
+Seotitle: 

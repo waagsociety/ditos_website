@@ -58,4 +58,32 @@ Link:
 
 ----
 
-Location: 52.09781311061832,5.197305992065367
+Location: jibberish
+
+----
+
+Description: Upcoming two Upcoming two
+
+----
+
+Partner: ucl
+
+----
+
+Tags: 
+
+----
+
+Price: 0
+
+----
+
+Currency: eur
+
+----
+
+Reservation: 0
+
+----
+
+Seotitle: 

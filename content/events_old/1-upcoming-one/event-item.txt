@@ -70,12 +70,20 @@ Partner: waag-society
 
 ----
 
-Price: 
+Price: 1
 
 ----
 
-Currency: 
+Currency: gbp
 
 ----
 
 Reservation: 0
+
+----
+
+Tags: 
+
+----
+
+Seotitle: 

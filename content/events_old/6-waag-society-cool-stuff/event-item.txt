@@ -34,7 +34,7 @@ Postimage: photo3.jpg
 
 ----
 
-Location: 41.9027835,12.496365500000024
+Location: de-waag-amsterdam
 
 ----
 
@@ -79,3 +79,31 @@ Address: Via Frenze 1200
 ----
 
 Link: 
+
+----
+
+Description: An event in Rome
+
+----
+
+Partner: waag-society
+
+----
+
+Tags: 
+
+----
+
+Price: 1000
+
+----
+
+Currency: eur
+
+----
+
+Reservation: 0
+
+----
+
+Seotitle: 

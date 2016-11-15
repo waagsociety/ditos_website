@@ -98,11 +98,11 @@ Description: affjnlgirebglrebgiurbgl irngl rnrglebgiluebgierubgoeurbgier
 
 ----
 
-Price: 
+Price: 2
 
 ----
 
-Currency: 
+Currency: gbp
 
 ----
 
@@ -115,3 +115,7 @@ Partner: waag-society
 ----
 
 Seotitle: 
+
+----
+
+Tags: 
