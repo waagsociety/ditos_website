@@ -1,3 +1,11 @@
+<?php
+$pageParameter = param('page', 1);
+$itemsPerPage = 2;
+$itemCount = count($items);
+$pageCount = ceil(count($items) / $itemsPerPage);
+
+$items = $items->paginate($itemsPerPage);
+?>
 <div class="event__list">
 
   <header class="blog__header">
@@ -29,10 +37,24 @@
     </a>
     <?php endforeach ?>
 
-    <?php if (!count($items)) : ?>
+    <?php if (!$itemCount) : ?>
     <div class="agenda__preview__item event__info list">
-      <h1>It seems there are no <?php echo $pagination['archive'] ? 'past' : 'upcoming' ?>&nbsp;events.</h1>
+      <h1>It seems there are no events.</h1>
     </div>
+    <?php endif ?>
+
+    <?php if($items->pagination()->hasPages()): ?>
+    <nav class="pagination">
+
+      <?php if($items->pagination()->hasNextPage()): ?>
+      <a class="next btn" href="<?php echo $items->pagination()->nextPageURL() ?>">Next &rsaquo;</a>
+      <?php endif ?>
+
+      <?php if($items->pagination()->hasPrevPage()): ?>
+      <a class="prev btn" href="<?php echo $items->pagination()->prevPageURL() ?>">&lsaquo; Back</a>
+      <?php endif ?>
+
+    </nav>
     <?php endif ?>
 
   </div>

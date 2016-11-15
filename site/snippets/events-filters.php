@@ -98,7 +98,7 @@ function slugify($string) {
 <?php
   $parameters = [];
   foreach (params() as $key => $value) {
-    array_push($parameters, $key.':'.$value);
+    if ($key !== 'page') array_push($parameters, $key.':'.$value);
   }
   $parameters = join('/', $parameters);
   $baseURL = $page->url();

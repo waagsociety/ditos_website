@@ -5,6 +5,7 @@ $itemsPerPage = 2;
 $viewParameter = param('view', 'map');
 $eventArchive = $page->uri() === 'events/archive';
 $tagsParameter = param('tagged');
+$pageParameter = param('page', 1);
 
 if ($eventArchive) {
   $items = $pages->find('events')->children()->visible()->filter(function($child){
@@ -17,20 +18,14 @@ else {
   })->sortBy('date', 'asc');
 }
 
-if ($tagsParameter) $items = $items->filterBy('tags', $tagsParameter, ',');
-
-if ($viewParameter !== 'map') {
-  $itemCount = count($items);
-  $pageCount = ceil(count($items) / $itemsPerPage);
-  $pageParameter = param('page', 1);
+if ($tagsParameter) {
+  $items = $items->filterBy('tags', $tagsParameter, ',');
 }
-
 ?>
 <main class="main__content">
   <div class="flex flex__wrap">
     <section>
-      <?php 
-      $viewParameter === 'map' 
+      <?php $viewParameter === 'map' 
         ? snippet('mapbox', ['items' => $items]) 
         : snippet('events-list', ['items' => $items]) 
       ?>
