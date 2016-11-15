@@ -100,14 +100,32 @@ div.events__filters {
 
 
 .full.event__details {
+  padding: 40px;
 
-  padding: 0 0 0 40px;
+
+  li.logo {
+    width: 100%;
+    border: none;
+    background: none;
+    text-align: center;
+    padding: 2em;
+
+    img {
+      max-width: 250px;
+    }
+  }
 
   li {
-    
-    padding: 25px 40px 30px 0;
-    font-size: 125%;
-    line-height: 1.4;
+    font-size: 110%;
+    line-height: 1.7;
+    border: 2px solid $brand-color;
+    margin: 0;
+    margin-bottom: -2px;
+    background: url(../images/subtle_dots_@2X.png);
+
+    section {
+      padding: 1em;
+    }
 
     p { 
       font-size: 100%;
@@ -116,12 +134,15 @@ div.events__filters {
 
     header {
       font-family: 'Montserrat', sans-serif;
-      font-size: 67.5%;
       padding: 0;
-      background: transparent;
+      background: $brand-color;
+      color: white;
+      margin-bottom: 0.3em;
       position: static;
-      margin-bottom: 0.375em;
+      padding: 0.5em 1em;
     }
+
+
 
     a { font-size: 1rem }
     button { display: block }
@@ -143,8 +164,6 @@ div.events__filters {
     }
 
   }
-
-  li + li { border-top: 1px solid #ccc }
 
   button {
     margin-top: 1em;

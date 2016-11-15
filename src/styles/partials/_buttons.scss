@@ -19,6 +19,16 @@
   }
 }
 
+.btn-2 {
+  color: white;
+  background: $brand-color;
+
+  &:hover {
+    color: $brand-color;
+    background: yellow;
+  }
+}
+
 .call__to__action{
   background: yellow;
   color: black;

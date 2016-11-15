@@ -2,7 +2,6 @@
   // background: rgba(245,245,245,1);
   // padding: 0 $gutter * 2;
   border-top: 1px solid #ccc;
-  background: #f3f3f3;
 }
 .referral{
   display: none !important;
@@ -701,7 +700,7 @@
 .juicer-feed.image-grid li.feed-item.words .j-text a,
 .juicer-feed.slider li.feed-item.words .j-text a,
 .juicer-feed.hip li.feed-item.words .j-text a {
-    color: white;
+    color: $brand-color;
     font-weight: bold
 }
 .juicer-feed.image-grid li.feed-item.words .j-text a:hover,
