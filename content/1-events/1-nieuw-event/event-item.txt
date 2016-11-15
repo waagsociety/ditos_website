@@ -66,4 +66,4 @@ Seotitle:
 
 ----
 
-Tags: tag met spaties
+Tags: tag met spaties,tag-zonder-spaties

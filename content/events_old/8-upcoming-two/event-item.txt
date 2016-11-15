@@ -22,11 +22,11 @@ Activity: workshop
 
 ----
 
-Date: 2016-10-26
+Date: 2017-01-11
 
 ----
 
-Date-end: 2016-10-26
+Date-end: 2017-01-12
 
 ----
 
@@ -70,7 +70,7 @@ Partner: ucl
 
 ----
 
-Tags: 
+Tags: science
 
 ----
 

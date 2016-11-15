@@ -1,6 +1,8 @@
 <?php
+$eventArchive = $page->uri() === 'events/archive';
+
 $pageParameter = param('page', 1);
-$itemsPerPage = 2;
+$itemsPerPage = 12;
 $itemCount = count($items);
 $pageCount = ceil(count($items) / $itemsPerPage);
 
@@ -39,7 +41,7 @@ $items = $items->paginate($itemsPerPage);
 
     <?php if (!$itemCount) : ?>
     <div class="agenda__preview__item event__info list">
-      <h1>It seems there are no events.</h1>
+      <h1>There seem to be no <?= $eventArchive ? 'past' : 'upcoming' ?> events.</h1>
     </div>
     <?php endif ?>
 
@@ -51,7 +53,7 @@ $items = $items->paginate($itemsPerPage);
       <?php endif ?>
 
       <?php if($items->pagination()->hasPrevPage()): ?>
-      <a class="prev btn" href="<?php echo $items->pagination()->prevPageURL() ?>">&lsaquo; Back</a>
+      <a class="prev btn" href="<?php echo $items->pagination()->prevPageURL() ?>">&lsaquo; Previous</a>
       <?php endif ?>
 
     </nav>
