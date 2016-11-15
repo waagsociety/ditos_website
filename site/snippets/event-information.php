@@ -18,21 +18,23 @@
   <? endif ?>
 
   <?php $activity = $pages->find('activities')->find($page->activity()) ?>
+  <?php $tags = explode(',', $page->tags()) ?>
   <?php if ($activity) : ?>
   <li>
-    <header>
-      <!-- <svg viewBox="0 0 32 32"><use xlink:href="#i:activity"/></svg> -->
-      What
-    </header>
+    <header>What</header>
     <?php echo $activity->title() ?>
+    <?php if (count($tags)) : ?>
+    <ul class="tags">
+      <?php foreach ($tags as $value) : ?>
+      <li><a href="">#<?= $value ?></a>
+      <?php endforeach ?>
+    </ul>
+    <?php endif ?>
   </li>
   <?php endif ?>
 
   <li>
-    <header>
-      <!-- <svg viewBox="0 0 32 32"><use xlink:href="#i:calendar"/></svg> -->
-      When
-    </header>
+    <header>When</header>
     <?php
       $date = $page->date('l d.m.Y');
       $time = $page->time();
@@ -76,6 +78,16 @@
       <button type="button">View in Google Maps</button>
     </a>
 
+  </li>
+  <?php endif ?>
+
+
+  <?php $links = $page->link()->toStructure() ?>
+  <?php if (count($links)) : ?>
+  <li>
+    <?php foreach ($links as $link) : ?>
+      <a class="btn" href="<?=  $link->url() ?>"><?= $link->label() ?></a>
+    <?php endforeach ?>
   </li>
   <?php endif ?>
 

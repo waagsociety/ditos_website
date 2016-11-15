@@ -46,11 +46,11 @@ Link:
 
 ----
 
-Price: 
+Price: 10
 
 ----
 
-Currency: 
+Currency: eur
 
 ----
 
@@ -63,3 +63,7 @@ Line:
 ----
 
 Seotitle: 
+
+----
+
+Tags: 

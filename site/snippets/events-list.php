@@ -1,7 +1,7 @@
 <div class="event__list">
 
   <header class="blog__header">
-    <h1 class="alpha"><?php echo $pagination['archive'] ? 'Past' : 'Upcoming' ?> events</h1>
+    <h1 class="alpha"><?= $page->title() ?></h1>
   </header>
 
   <div class="agenda__preview full__width">

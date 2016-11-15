@@ -9,9 +9,8 @@ password: >
 language: en
 role: admin
 history:
-  - >
-    events_old/diy-human-enhancement-clinic-10
+  - events/ditos-shizzle
   - events/nieuw-event
+  - events/archive
+  - events_old/diy-human-enhancement-clinic-10
   - events
-  - about/partners/waag-society
-  - locations/de-waag-amsterdam

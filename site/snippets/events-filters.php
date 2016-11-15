@@ -2,7 +2,7 @@
 
 $url = $page->url();
 
-$viewIndex = ['Map', 'List', 'Archive'];
+$viewIndex = ['Map', 'List'];
 $viewParameter = param('view', 'map');
 $countryParameter = param('country');
 $activityParameter = param('activity');
@@ -27,11 +27,10 @@ function slugify($string) {
 <form id="filter-events" class="<?php echo param('view', 'map') ?>"> 
   
   <nav class="tabs">
-
   <?php foreach ($viewIndex as $name): $slug = slugify($name) ?> 
     
     <?php $selected = $slug === $viewParameter ?>
-    <label class="btn<?php e($selected, ' is-active')?>">
+    <label class="btn <?php e($selected, 'is-active '); echo $slug; ?>">
       <input type="radio" name="view" value="<?php echo $slug ?>"<?php e($selected, ' checked')?>>
       <?php echo $name ?>
     </label>
@@ -84,59 +83,27 @@ function slugify($string) {
 
   </label>
 
-  
-  <?php if ($pagination['archive']) : ?>
-    <div class="pagination prev">
-    <?php $index = 0; while (++$index <= $pagination['pageCount']) : ?>
-      <?php $active = (0 - $index) == $pagination['active'] ?>
-      <label class="next btn<?php if ($active) echo ' is-active' ?>">
-        <input type="radio" name="page" value="<?php echo (0 - $index) ?>" 
-          <?php if ($active) echo 'checked' ?>>
-        <?php echo $index ?> 
-      </label>
-    <?php endwhile ?>
-    <?php $prevDisabled = abs($pagination['active']) >= $pagination['pageCount'] ?>
-    <label class="prev skip btn <?php if ($prevDisabled) echo ' inactive' ?>">
-      <input type="radio" name="page" value="<?php echo $pagination['active'] - 1 ?>"
-      <?php if ($prevDisabled) echo ' disabled' ?>>
-      <svg width="24" height="24"><path d="m16,4 l-8,8 l8,8" /></svg>
-      Previous
-    </label>
-    </div>
-
-  <?php else : ?>
-
-    <div class="pagination next">
-    <?php $index = 0; while (++$index <= $pagination['pageCount']) : ?>
-      <?php $active = $index == $pagination['active'] ?>
-      <label class="prev btn<?php if ($active) echo ' is-active' ?>">
-        <input type="radio" name="page" value="<?php echo $index ?>" 
-          <?php if ($active) echo 'checked' ?>><?php echo $index ?> 
-      </label>
-    <?php endwhile ?>
-    <?php $nextDisabled = $pagination['active'] >= $pagination['pageCount'] ?>
-    <label class="prev skip btn <?php if ($nextDisabled) echo ' inactive' ?>">
-      <input type="radio" name="page" value="<?php echo $pagination['active'] + 1 ?>"
-      <?php if ($nextDisabled) echo ' disabled' ?>>
-      Next
-      <svg width="24" height="24"><path d="m8,4 l8,8 l-8,8" /></svg>
-    </label>
-    </div>
-
-  <?php endif ?>
-
-  <?php if ($pagination['active'] < 1) : ?>
-  <a class="next" href="<?php echo redirectPage($page->url(), params(), 1) ?>">
-    <button type="button">Upcoming Events</button>
-  </a>
-  <?php else : ?>
-  <a class="prev" href="<?php echo redirectPage($page->url(), params(), -1) ?>">
-    <button type="button">Past Events</button>
-  </a> 
-  <?php endif ?>
-  </div>
-
 </form>
+<?php
+  $parameters = [];
+  foreach (params() as $key => $value) {
+    array_push($parameters, $key.':'.$value);
+  }
+  $parameters = join('/', $parameters);
+  $baseURL = $page->url();
+  $eventArchive = $page->uri() === 'events/archive';
+
+  if ($eventArchive) {
+    $eventLink = explode('/', $baseURL);
+    array_pop($eventLink);
+    array_push($eventLink, $parameters);
+  }
+  else $eventLink = [ $baseURL, 'archive', $parameters ];
+
+?>
+<a class="btn archive" href="<?= join('/', $eventLink) ?>"><?= $eventArchive ? 'Upcoming' : 'Past' ?> Events</a>
+
+
 <script type="text/javascript"><?php // do not move ?>
 !function() {
 
