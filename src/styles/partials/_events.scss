@@ -175,10 +175,6 @@ form {
   position: static;
 }
 
-.map .archive {
-  display: none;
-}
-
 .archive .list {
   background: white;
   border-bottom-color: transparent;
@@ -255,7 +251,9 @@ div.events__filters {
 }
 
 
-
+.tag.btn {
+  padding-left: 2.25em;
+}
 
 
 
