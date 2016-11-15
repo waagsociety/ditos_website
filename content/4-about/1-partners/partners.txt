@@ -2,7 +2,7 @@ Title: Partners
 
 ----
 
-Description: DIToS about
+Description: DIToS about the partners
 
 ----
 
@@ -11,3 +11,7 @@ Text: DIToS partner/about text
 ----
 
 Submenu: 1
+
+----
+
+Seotitle: 

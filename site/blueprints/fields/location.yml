@@ -5,5 +5,5 @@ query:
   page: /locations
   value: '{{uid}}'
   text: '{{title}}'
-help: Your event will not be visisble for site visitors without a selected Location
+help: This page will not become public without a Location
 width: 1/3
