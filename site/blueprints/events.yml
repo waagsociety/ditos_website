@@ -2,6 +2,11 @@ title: Events
 icon: calendar
 pages: event-item
 files: false
+options:
+  delete: false
+  template: false
+  url: false
+  status: false
 fields:
   title: title
   description: description

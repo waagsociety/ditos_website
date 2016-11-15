@@ -10,7 +10,3 @@ language: en
 role: admin
 history:
   - events/nieuw-event
-  - events_old
-  - events_old/upcoming-two
-  - events_old/new-event
-  - events_old/waag-society-cool-stuff

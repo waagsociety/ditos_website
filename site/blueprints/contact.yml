@@ -1,6 +1,11 @@
 title: Contact
 pages: true
 files: true
+options:
+  template: false
+  delete: false
+  url: false
+  status: false
 fields:
   title: title
   description: description

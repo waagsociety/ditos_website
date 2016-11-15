@@ -3,6 +3,11 @@ icon: newspaper-o
 pages: true
   template: article
 files: false
+options:
+  delete: false
+  template: false
+  status: false
+  url: false
 fields:
   title: title
   description: description

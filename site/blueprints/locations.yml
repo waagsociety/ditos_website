@@ -3,6 +3,12 @@ icon: map-marker
 hide: true
 pages: location-item
 files: false
+options:
+  preview: false
+  template: false
+  status: false
+  delete: false
+  url: false
 fields:
   title: title
   description: description

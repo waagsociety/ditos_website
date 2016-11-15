@@ -3,6 +3,12 @@ icon: flask
 hide: true
 pages: activity-item
 files: false
+options:
+  preview: false
+  template: false
+  status: false
+  delete: false
+  url: false
 fields:
   title: title
   description: description

@@ -2,6 +2,11 @@ title: Partners
 icon: thumbs-up
 pages: partner-item
 files: false
+options:
+  template: false
+  status: false
+  delete: false
+  url: false
 fields:
   title: title
   description: description

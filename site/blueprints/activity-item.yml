@@ -3,9 +3,9 @@ pages: false
 files: false
 options:
   delete: false
+  template: false
+  preview: false
+  url: false
 fields:
   title: title
   description: description
-  autoid: 
-    type: text
-    readonly: true

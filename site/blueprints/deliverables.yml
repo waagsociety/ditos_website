@@ -1,6 +1,11 @@
 title: deliverables
 pages: true
 files: false
+options:
+  delete: false
+  template: false
+  url: false
+  status: false
 fields:
   title: title
   description: description

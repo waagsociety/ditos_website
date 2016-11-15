@@ -9,6 +9,11 @@ files:
     caption:
       label: Caption
       type: text
+options:
+  delete: false
+  template: false
+  url: false
+  status: false
 fields:
   title: title
   description: description
