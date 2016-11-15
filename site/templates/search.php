@@ -1,8 +1,10 @@
+<?php $results = $site->search(param('query'))->visible(); ?>
+
 <?php snippet('header') ?>
 <main class="main__content">
   <div class="flex flex__wrap">
     <section>
-      <?php if($results->count() > 0): ?>
+      <?php if(count($results)) : ?>
       <ul class="search__results">
         <?php foreach($results as $result): ?>
           <a href="<?php echo $result->url() ?>" class="result">

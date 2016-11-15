@@ -8,6 +8,6 @@
   document.getElementById('searchform').addEventListener('submit', function(evt){
     evt.preventDefault();
     var searchVal = document.getElementById('mainsearch').value;
-    window.location.href = '/search?q=' + searchVal;
+    window.location.href = '/search/query:' + searchVal;
   })
 </script>

@@ -6,6 +6,7 @@ $viewIndex = ['Map', 'List'];
 $viewParameter = param('view', 'map');
 $countryParameter = param('country');
 $activityParameter = param('activity');
+$tagsParameter = param('tagged');
 
 function redirectPage($url, $params, $int = 1) {
   $result = array($url);
@@ -82,6 +83,16 @@ function slugify($string) {
     </select>
 
   </label>
+
+  <?php if ($tagsParameter) : ?>
+    <label class="btn tag">
+      <input type="checkbox" name="tagged" value="<?= $tagsParameter ?>" checked>
+      <svg width="24" height="24" stroke-width="2">
+        <path d="M6,6 l12,12 M18,6 l-12,12"/>
+      </svg>
+    #<?= $tagsParameter ?>
+    </label>
+  <?php endif ?>
 
 </form>
 <?php

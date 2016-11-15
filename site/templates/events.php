@@ -4,6 +4,7 @@
 $itemsPerPage = 2;
 $viewParameter = param('view', 'map');
 $eventArchive = $page->uri() === 'events/archive';
+$tagsParameter = param('tagged');
 
 if ($eventArchive) {
   $items = $pages->find('events')->children()->visible()->filter(function($child){
@@ -15,6 +16,8 @@ else {
     return time() < strtotime($child->date_end('c'));
   })->sortBy('date', 'asc');
 }
+
+if ($tagsParameter) $items = $items->filterBy('tags', $tagsParameter, ',');
 
 if ($viewParameter !== 'map') {
   $itemCount = count($items);
