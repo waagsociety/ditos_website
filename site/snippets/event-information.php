@@ -18,7 +18,7 @@
   <? endif ?>
 
   <?php $activity = $pages->find('activities')->find($page->activity()) ?>
-  <?php $tags = explode(',', $page->tags()) ?>
+  <?php $tags = $page->tags() && explode(',', $page->tags()) ?>
   <?php if ($activity) : ?>
   <li>
     <header>What</header>

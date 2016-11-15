@@ -9,5 +9,8 @@ password: >
 language: en
 role: admin
 history:
+  - blog/doing-it-together-science
+  - blog/nieuw-post
+  - blog/anot
   - about/partners
   - events/nieuw-event

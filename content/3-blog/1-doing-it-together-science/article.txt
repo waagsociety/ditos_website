@@ -41,7 +41,7 @@ Submenu: 0
 
 ----
 
-Tags: design
+Tags: design,Science
 
 ----
 
@@ -54,3 +54,15 @@ Description: Over the last four years, the Dutch Do It Yourself Biology (DIY Bio
 ----
 
 Seotitle: 
+
+----
+
+Author: Harry
+
+----
+
+Created: 2016-11-15
+
+----
+
+Seodescription: 

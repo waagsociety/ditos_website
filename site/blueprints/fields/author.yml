@@ -1,0 +1,4 @@
+label: Author
+type: text
+required: true
+width: 3/4

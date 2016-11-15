@@ -1,0 +1,6 @@
+label: Date
+type: date
+format: MM/DD/YYYY
+width: 1/4
+required: true
+default: today
