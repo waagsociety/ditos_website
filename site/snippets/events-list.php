@@ -2,7 +2,7 @@
 $eventArchive = $page->uri() === 'events/archive';
 
 $pageParameter = param('page', 1);
-$itemsPerPage = 12;
+$itemsPerPage = 2;
 $itemCount = count($items);
 $pageCount = ceil(count($items) / $itemsPerPage);
 
