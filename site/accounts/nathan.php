@@ -9,8 +9,8 @@ password: >
 language: en
 role: admin
 history:
-  - locations/jibberish
-  - events/ditos-shizzle
+  - events/tralalala
+  - events/another-future-event
+  - events/a-future-event
   - events/nieuw-event
-  - events/archive
-  - events_old/diy-human-enhancement-clinic-10
+  - locations/jibberish
