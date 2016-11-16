@@ -37,8 +37,14 @@ aside.featured__container {
   padding-bottom: 34vw;
 }
 
+
+.metadata {
+  width: 100%;
+  padding: 40px 120px 0;
+}
+
 .text{
-  padding: 60px 120px 60px 128px;
+  padding: 60px 128px 60px 120px;
   font-size: 1.2em;
   ol{
     list-style: decimal;

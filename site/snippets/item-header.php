@@ -21,9 +21,12 @@
   ?>
   <?php if ($author || $created || $tags) : ?>
   <section class="metadata">
-
-    <?php e($author, '<p>'.$author.'</p>') ?>
-    <?php e($created, '<time>'.date('d-m-Y', strtotime($created)).'</time>') ?>
+    
+    <?php if ($author || $created) : ?>
+    <p><?php e($author, $author) ?>
+    <?php e($created, '<time>on '.date('d-m-Y', strtotime($created)).'</time>') ?>
+    </p>
+    <?php endif ?>
     <?php if ($tags && count($tags)) : ?>
     <ul class="tags">
       <?php foreach ($tags as $tag) : ?>
