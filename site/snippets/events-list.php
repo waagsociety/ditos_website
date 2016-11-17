@@ -48,12 +48,12 @@ $items = $items->paginate($itemsPerPage);
     <?php if($items->pagination()->hasPages()): ?>
     <nav class="pagination">
 
-      <?php if($items->pagination()->hasNextPage()): ?>
-      <a class="next btn" href="<?php echo $items->pagination()->nextPageURL() ?>">Next &rsaquo;</a>
-      <?php endif ?>
-
       <?php if($items->pagination()->hasPrevPage()): ?>
       <a class="prev btn" href="<?php echo $items->pagination()->prevPageURL() ?>">&lsaquo; Previous</a>
+      <?php endif ?>
+
+      <?php if($items->pagination()->hasNextPage()): ?>
+      <a class="next btn" href="<?php echo $items->pagination()->nextPageURL() ?>">Next &rsaquo;</a>
       <?php endif ?>
 
     </nav>

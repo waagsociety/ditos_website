@@ -47,6 +47,9 @@ Link:
 - 
   url: 'https://www.eventbrite.nl/l/registration-online-c/?ref=sem0brd0ggl0nl0ppca0brand&kw=eventbrite%20ex&cr=119826778449&utm_source=google&utm_medium=cpc&utm_content=paid&utm_campaign=g_nl_sem_b&utm_term=eventbrite&mkwid=siwxVCVl6_dc&pcrid=119826778449&pkw=eventbrite&pmt=e&plc=&gclid=CjwKEAjw19vABRCY2YmkpO2OzTsSJAAzEt8sgIpjObQ9q7hKQFMfl2oSi7qiHmTvFPukAo111-zUgBoCbnrw_wcB'
   label: Eventbrite
+- 
+  url: https://waag.org/en
+  label: Waag Society
 
 ----
 

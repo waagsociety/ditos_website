@@ -100,7 +100,7 @@ div.events__filters {
 
 
 .full.event__details {
-  padding: 40px;
+  padding: 60px 70px;
 
 
   li.logo {
@@ -108,7 +108,7 @@ div.events__filters {
     border: none;
     background: none;
     text-align: center;
-    padding: 2em;
+    padding: 0 2em 2em;
 
     img {
       max-width: 250px;
@@ -116,7 +116,7 @@ div.events__filters {
   }
 
   li {
-    font-size: 110%;
+    font-size: 100%;
     line-height: 1.7;
     border: 2px solid $brand-color;
     margin: 0;
