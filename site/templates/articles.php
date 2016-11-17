@@ -15,7 +15,11 @@ $items = $items->paginate(6);
       <div class="blog__preview left">
         <h1 class="preview__header"><?php echo $page->title() ?>
           <?php if ($tagsParameter) : ?>
-          tagged <a class="btn" href="<?= $page->url() ?>"><?= $tagsParameter ?></a>
+           
+          <a class="btn" href="<?= $page->url() ?>">
+            #<?= $tagsParameter ?>
+            <svg width="24" height="24"><use xlink:href="#i:close"/></svg>            
+          </a>
           <?php endif ?>
         </h1>
         <?php e($page->description(), $page->description()->kirbytext()) ?>

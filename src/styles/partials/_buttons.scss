@@ -29,6 +29,19 @@
   }
 }
 
+h1 .btn {
+  background: transparent;
+  font-size: 1.5rem;
+  display: inline-block;
+  top: -0.25em;
+  padding: 0 0.2em 0.2em!important;
+  line-height: 1;
+
+  svg {
+    top: 0.125em;
+  }
+}
+
 .call__to__action{
   background: yellow;
   color: black;
