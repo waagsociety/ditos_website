@@ -10,7 +10,11 @@ Postimage: photo3.jpg
 
 ----
 
-Text: This is an experiment this is an experiment This is an experiment this is an experiment This is an experiment this is an experiment This is an experiment this is an experiment This is an experiment this is an experiment This is an experiment this is an experiment
+Text: 
+
+This is an experiment this is an experiment This is an experiment this is an experiment This is an experiment this is an experiment This is an experiment this is an experiment This is an experiment this is an experiment This is an experiment this is an experiment
+
+(file: handleiding_kitemapping_def.pdf)
 
 ----
 

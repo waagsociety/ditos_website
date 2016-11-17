@@ -40,15 +40,16 @@ kirbytext::$tags['file'] = array(
     // build a proper link to the file
     $file = $tag->file($tag->attr('file'));
     $text = $tag->attr('text');
+    $class = $tag->attr('btn');
 
     if(!$file) return $text;
 
     // use filename if the text is empty and make sure to
     // ignore markdown italic underscores in filenames
-    if(empty($text)) $text = str_replace('_', '\_', $file->name());
+    if(empty($text)) $text = 'Download file(s)';
 
     return html::a($file->url(), html($text), array(
-      'class'  => $tag->attr('class'),
+      'class'  => $tag->attr('class', 'btn btn-1'),
       'title'  => html($tag->attr('title')),
       'rel'    => $tag->attr('rel'),
       'target' => $tag->target(),

@@ -102,7 +102,9 @@ div.events__filters {
 .full.event__details {
   padding: 60px 70px;
 
-
+  .btn{
+    margin: 0 0 1em 0;
+  }
   li.logo {
     width: 100%;
     border: none;
@@ -125,6 +127,7 @@ div.events__filters {
 
     section {
       padding: 1em;
+      width: 100%;
     }
 
     p { 

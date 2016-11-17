@@ -97,5 +97,4 @@
     </section>
   </li>
   <?php endif ?>
-
 </ul>
