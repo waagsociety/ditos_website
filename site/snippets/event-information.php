@@ -1,10 +1,10 @@
 <header>
   <h3 class="alpha">Event information</h3>
 </header>
-
 <ul class="event__details full">
   
   <?php $partner = $pages->find('about/partners')->find($page->partner()) ?>
+  
   <?php if ($partner) : ?>
   <?php $logo = $partner->image($partner->logo()) ?>
   <li class="logo">
