@@ -19,21 +19,7 @@
 
   <?php $activity = $pages->find('activities')->find($page->activity()) ?>
   <?php $tags = $page->tags() && explode(',', $page->tags()) ?>
-  <?php if ($activity) : ?>
-  <li>
-    <header>What</header>
-    <section>
-      <?php echo $activity->title() ?>
-      <?php if (count($tags)) : ?>
-      <ul class="tags">
-        <?php foreach ($tags as $value) : ?>
-        <li><a href="./tagged:<?= $value ?>">#<?= $value ?></a>
-        <?php endforeach ?>
-      </ul>
-      <?php endif ?>
-    </section>
-  </li>
-  <?php endif ?>
+  
 
   <li>
     <header>When</header>
