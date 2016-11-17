@@ -1,12 +1,28 @@
+<?php
+$tagsParameter = param('tagged');
+$items = $page->children()->visible();
+
+if ($tagsParameter) {
+  $items = $items->filterBy('tags', $tagsParameter, ',');
+}
+$items = $items->paginate(6);
+?>
+
 <?php snippet('header') ?>
 <main class="main__content">
   <div class="flex flex__wrap">
     <section>
-      <?php $items = $page->children()->visible()->paginate(6); ?>
       <div class="blog__preview left">
-        <?php if( $page->listtitle()->isNotEmpty()): ?>
-          <h3 class="preview__header"><?php echo $page->listtitle() ?></h3>
-        <?php endif ?>
+        <h1 class="preview__header"><?php echo $page->title() ?>
+          <?php if ($tagsParameter) : ?>
+           
+          <a class="btn" href="<?= $page->url() ?>">
+            #<?= $tagsParameter ?>
+            <svg width="24" height="24"><use xlink:href="#i:close"/></svg>            
+          </a>
+          <?php endif ?>
+        </h1>
+        <?php e($page->description(), $page->description()->kirbytext()) ?>
         <?php foreach($items as $item): ?>
           <a href="<?php echo $item->url() ?>" class="article__preview">
             <article>

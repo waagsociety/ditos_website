@@ -6,6 +6,7 @@
       <?php snippet('item-header') ?>
       <div class="text">
         <?php echo kirbytext($page->text()) ?>
+        <?php snippet('disqus') ?>
       </div>
     </section>
     <aside>
