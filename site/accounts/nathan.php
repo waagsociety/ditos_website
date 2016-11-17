@@ -9,8 +9,8 @@ password: >
 language: en
 role: admin
 history:
-  - experiments/first-experiment
   - blog/doing-it-together-science
+  - experiments/first-experiment
   - blog/nieuw-post
   - blog/anot
   - about/partners

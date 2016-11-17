@@ -11,12 +11,7 @@ options:
 fields:
   title: title
   description: description
-  listtitle:
-    label: List title
-    type:  text
-  text:
-    label: Text
-    type:  textarea
+  text: text
   line:
     type: line
   seotitle: seotitle

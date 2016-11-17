@@ -9,7 +9,7 @@ fields:
   title: title
   description: description
   author: author
-  created: created
+  date: date
   postimage:
     label: Main Post Image
     type:  selector

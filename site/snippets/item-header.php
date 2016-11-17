@@ -16,15 +16,15 @@
   
   <?php
     $author = $page->author();
-    $created = $page->created();
+    $date = $page->date();
     $tags = !!trim($page->tags()) ? explode(',', $page->tags()) : false;
   ?>
-  <?php if ($author || $created || $tags) : ?>
+  <?php if ($author || $date || $tags) : ?>
   <section class="metadata">
     
-    <?php if ($author || $created) : ?>
+    <?php if ($author || $date) : ?>
     <p><?php e($author, $author) ?>
-    <?php e($created, '<time>on '.date('d-m-Y', strtotime($created)).'</time>') ?>
+    <?php e($date, '<time>on '.date('d-m-Y', $date).'</time>') ?>
     </p>
     <?php endif ?>
     <?php if ($tags && count($tags)) : ?>
