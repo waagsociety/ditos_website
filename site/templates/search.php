@@ -15,8 +15,8 @@
       </ul>
       <?php else : ?>
       <section class="no__results">
-        <h1 class="gamma">We couldn&rsquo;t find any results, maybe try another search keyword.</h1>
-        <?php snippet('search') ?>
+        <h1 class="gamma">We couldn&rsquo;t find any results, maybe try another search keyword. You can try searching again.</h1>
+        
       </section>
       <?php endif ?>
     </section>
