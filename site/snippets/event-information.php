@@ -24,7 +24,7 @@
       <?php if (count($tags)) : ?>
       <ul class="tags">
         <?php foreach ($tags as $tag) : ?>
-        <li><a href="./tagged:<?= $tag ?>">#<?= $tag ?></a>
+        <li><a href="./tagged:<?= $tag ?>">#<?php echo $tag ?></a>
         <?php endforeach ?>
       </ul>
       <?php endif ?>
