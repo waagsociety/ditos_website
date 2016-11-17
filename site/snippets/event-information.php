@@ -1,4 +1,3 @@
-<?php $render = new Render ?>
 <header>
   <h3 class="alpha">Event information</h3>
 </header>
@@ -9,11 +8,9 @@
   <?php if ($partner) : ?>
   <?php $logo = $partner->image($partner->logo()) ?>
   <li class="logo">
-  
     <a href="<?= $site->url().'/about/partners/'.$partner->slug() ?>">
       <img src="<?= $logo->url() ?>" width="<?= $logo->width() ?>" height="<?= $logo->height() ?>">
     </a>
-
   </li>
   <? endif ?>
 
