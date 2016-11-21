@@ -21,6 +21,8 @@ fields:
     mode:  single
     types:
         - image  
+    help: Optimal image size is 1200 x 1600. Max optimal file-size 400kb.
+    required: true
   tags: tags
   date:
     label: Start date

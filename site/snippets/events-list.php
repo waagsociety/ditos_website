@@ -20,6 +20,19 @@ $items = $items->paginate($itemsPerPage);
     <?php $location = $pages->find('locations')->find($item->location()) ?>
 
     <a href="<?php echo $item->url() ?>" class="agenda__preview__item event__info list">
+
+    <?php $postimage = $item->postimage()->toFile() ?>
+      <?php if ($postimage) : ?>
+      <figure>
+        <img src="<?php echo $postimage->url() ?>" width="100%" />
+        <?php if (strlen($postimage->copyright()) > 0) : ?>
+          <figcaption>
+            &copy; <?php echo $postimage->copyright() ?>
+          </figcaption>
+        <?php endif ?>
+      </figure>
+      <?php endif ?>
+      <div>
       <h4><?php echo $item->title() ?></h4>      
       <p class="agenda__intro"><?php echo $item->description() ?></p>      
       <ul class="event__info">
@@ -35,7 +48,7 @@ $items = $items->paginate($itemsPerPage);
         </li>
 
       </ul>
-
+      </div>
     </a>
     <?php endforeach ?>
 

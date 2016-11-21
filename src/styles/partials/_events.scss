@@ -3,7 +3,12 @@
   padding: 30px 40px;
   width: 100%;
   transition: .1s ease-in-out;
-  display: block;
+  display: flex;
+
+  figure {
+    max-width: 250px;
+    margin-right: 2em;
+  }
   span{
     margin-right: 1em;
   }
@@ -36,6 +41,7 @@
       padding: 0 0.5em 0 0;
     }
   }
+
 }
 
 div.event__list {
