@@ -8,7 +8,7 @@ fields:
   text: text
   submenu:
     label: Show submenu
-    type: checkbox
+    type: hidden
     text: Do you want to display the submenu?
   line:
     type: line
