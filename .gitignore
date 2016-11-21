@@ -1,7 +1,4 @@
 node_modules
-assets/css/*
-assets/js/*
 .DS_Store
 *.log
-
-assets/css/main.css
+content
