@@ -7,8 +7,6 @@ email: martin@waag.org
 language: en
 role: admin
 history:
-  - events/ditos-shizzle
   - locations/pinto-huis
-  - experiments/first-experiment
   - about
   - locations/de-waag-amsterdam
