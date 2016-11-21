@@ -47,6 +47,7 @@
 
         $time_end = strlen($page->time_end()) > 0 ? $page->time_end() : null;
       ?>
+
       <time datetime="<?php echo $page->date('c').' '.$time ?>">
         <?php echo $date ?> at <?php echo $time ?>
       </time>
@@ -55,14 +56,14 @@
         to
         <time>
           <?php if ($date_end) : ?>
-            <?php echo date('l d.m.Y', $date_end_time); ?> 
+            <?php echo date('l d.m.Y', $date_end_time) ?> 
             <?php if ($time_end) : ?>
               at <?php echo $time_end ?>
             <?php endif ?>
           <?php endif ?>
-
         </time>
       <?php endif ?>
+
       <a href="<?php echo $page->url() ?>/format:ics/">
         <button type="button" class="btn-1">Add to Calendar</button>
       </a>
@@ -70,34 +71,36 @@
   </li>
   
   <?php $location = $pages->find('locations')->find($page->location()) ?>
-  <?php if ($location) : ?>
-  <?php $q = $location->address().'+'.$location->city().'+'.$location->country() ?> 
-  <li>
-    <header>
-      <!-- <svg viewBox="0 0 32 32"><use xlink:href="#i:location"/></svg> -->
-      Where
-    </header>   
-    <section>    
-      <?php echo $location->title()?><br>
-      <?php echo $location->address() ?><br>
-      <?php echo $location->city().', '.$location->country() ?>
 
-      <a href="http://maps.google.com/?q=<?php echo $q ?>" target="_blank">
-        <button type="button" class="btn-1">View in Google Maps</button>
-      </a>
-      </section>
-  </li>
+  <?php if ($location) : ?>
+    <?php $q = $location->address().'+'.$location->city().'+'.$location->country() ?> 
+    <li>
+      <header>
+        <!-- <svg viewBox="0 0 32 32"><use xlink:href="#i:location"/></svg> -->
+        Where
+      </header>   
+      <section>    
+        <?php echo $location->title()?><br>
+        <?php echo $location->address() ?><br>
+        <?php echo $location->city().', '.$location->country() ?>
+
+        <a href="http://maps.google.com/?q=<?php echo $q ?>" target="_blank">
+          <button type="button" class="btn-1">View in Google Maps</button>
+        </a>
+        </section>
+    </li>
   <?php endif ?>
 
 
   <?php $links = $page->link()->toStructure() ?>
+  
   <?php if (count($links)) : ?>
-  <li>
-    <section>
-      <?php foreach ($links as $link) : ?>
-        <a class="btn btn-1" href="<?=  $link->url() ?>"><?= $link->label() ?></a>
-      <?php endforeach ?>
-    </section>
-  </li>
+    <li>
+      <section>
+        <?php foreach ($links as $link) : ?>
+          <a class="btn btn-1" href="<?=  $link->url() ?>"><?= $link->label() ?></a>
+        <?php endforeach ?>
+      </section>
+    </li>
   <?php endif ?>
 </ul>
