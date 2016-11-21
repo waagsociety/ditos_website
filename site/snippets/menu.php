@@ -24,7 +24,6 @@
         Request the science bus
       </a>
     </li>
-
   </ul>
 
 </nav>
@@ -46,6 +45,7 @@
     if($items and $items->count()):
 
     ?>
+
     <ul class="subnav__list">
       <?php foreach($items as $item): ?>
       <li <?php e($item->isOpen(), ' class="active"') ?>><a<?php e($item->isOpen(), ' class="active"') ?> href="<?php echo $item->url() ?>"><?php echo $item->title()->html() ?></a></li>
@@ -53,6 +53,13 @@
     </ul>
     <?php endif ?>
   <?php endif ?>
+  
+
+    <?php if($user = $site->user()): ?>
+      <a href="/panel/pages/<?php echo $page->uri() ?>/edit" class="editpage">
+        Edit page
+      </a>
+    <?php endif ?>
   <?php snippet('social-bar') ?>
   <?php snippet('search') ?>
 </nav>

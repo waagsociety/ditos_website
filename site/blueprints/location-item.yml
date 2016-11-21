@@ -6,12 +6,6 @@ options:
 fields:
   title: title
   description: description
-  photo:
-    label: Photo
-    type:  selector
-    mode:  single
-    types:
-      - image 
   address:
     label: Address
     type: text

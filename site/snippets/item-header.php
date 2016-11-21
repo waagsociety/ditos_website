@@ -20,11 +20,13 @@
     $tags = !!trim($page->tags()) ? explode(',', $page->tags()) : false;
   ?>
   <?php if ($author || $date || $tags) : ?>
-  <section class="metadata">
-    
+  <section class="metadata">    
     <?php if ($author || $date) : ?>
-    <p><?php e($author, $author) ?>
-    <?php e($date, '<time>on '.date('d-m-Y', $date).'</time>') ?>
+    <p>
+      <?php if ($author) : ?>
+        <?php e($author, $author) ?>
+      <?php endif ?>
+      posted on: <?php e($date, '<time>'.date('d-m-Y', $date).'</time>') ?>    
     </p>
     <?php endif ?>
     <?php if ($tags && count($tags)) : ?>
@@ -36,5 +38,4 @@
     <?php endif ?>
   </section>
   <?php endif ?>
-
 </header>

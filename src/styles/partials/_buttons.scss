@@ -51,6 +51,21 @@ h1 .btn {
   }
 }
 
+.editbtn {
+  padding: 10px;
+  border: 3px solid $sec-color;
+  transition: .15s ease-in-out;
+  font-kerning: normal;
+  letter-spacing: 0em;
+  &:hover{
+    background: $sec-color;
+    color: white;
+    a{
+      color: white !important;
+    }
+  }  
+}
+
 .busbtn{
   padding: 10px;
   border: 3px solid $sec-color;

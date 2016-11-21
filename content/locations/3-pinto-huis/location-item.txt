@@ -1,0 +1,41 @@
+Title: Pintohuis
+
+----
+
+Description: Pintohuis in Amsterdam
+
+----
+
+Photo: pinto.jpg
+
+----
+
+Address: Sint Antoniesbreestraat 69
+
+----
+
+City: Amsterdam
+
+----
+
+Country: the Netherlands
+
+----
+
+Url: http://waag.org/contact
+
+----
+
+Location: 52.3701209,4.900907800000027
+
+----
+
+Line: 
+
+----
+
+Seotitle: 
+
+----
+
+Autoid: 3d614a640336cf46a0683cc51b07b29e

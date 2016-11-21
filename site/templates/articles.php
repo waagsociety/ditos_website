@@ -37,10 +37,10 @@ $items = $items->paginate(6);
         <?php if($items->pagination()->hasPages()): ?>
           <nav class="pagination">
             <?php if($items->pagination()->hasNextPage()): ?>
-            <a class="btn btn-3 left" href="<?php echo $items->pagination()->nextPageURL() ?>">Oudere artikelen</a>
+            <a class="btn btn-3 left" href="<?php echo $items->pagination()->nextPageURL() ?>">‹ Previous</a>
             <?php endif ?>
             <?php if($items->pagination()->hasPrevPage()): ?>
-            <a class="btn btn-3 right" href="<?php echo $items->pagination()->prevPageURL() ?>">Nieuwere artikelen</a>
+            <a class="btn btn-3 right" href="<?php echo $items->pagination()->prevPageURL() ?>">Next ›</a>
             <?php endif ?>
           </nav>
         <?php endif ?>

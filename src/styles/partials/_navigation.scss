@@ -308,8 +308,24 @@
   }
 }
 
-.pagination {
+.editpage {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.event__list .pagination {
   padding: 40px 120px;
   background-color: rgba(0,0,0, 0.03);
   border-bottom: 1px solid #eee;
+  border-top: none;
 }
+
+
+.pagination {
+  padding: 20px 0;
+  border-top: 1px solid #eee;
+  float: left;
+  width: 100%;
+}
+
