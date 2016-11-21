@@ -12,6 +12,5 @@
     <li class="item"><a href="https://www.naturalsciences.be/"><img src="<?php echo url('assets/images/museum.jpg') ?>" /></a></li>
     <li class="item"><a href="http://www.tekiu.com/"><img src="<?php echo url('assets/images/tekiu.jpg') ?>" /></a></li>
     <li class="item"><a href="http://www.unige.ch/"><img src="<?php echo url('assets/images/unige.jpg') ?>" /></a></li>
-    <li class="item"><a href="https://ec.europa.eu/programmes/horizon2020/"><img src="<?php echo url('assets/images/eu.jpg') ?>" /></a></li>
   </ul>
 </div>
