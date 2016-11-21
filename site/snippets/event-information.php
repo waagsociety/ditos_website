@@ -50,11 +50,17 @@
       <time datetime="<?php echo $page->date('c').' '.$time ?>">
         <?php echo $date ?> at <?php echo $time ?>
       </time>
+
       <?php if ($date_end || $time_end) : ?>
         to
         <time>
-          <?php if ($date_end) { echo date('l d.m.Y', $date_end_time).' at '; } ?> 
-          <?php echo $time_end ?>
+          <?php if ($date_end) : ?>
+            <?php echo date('l d.m.Y', $date_end_time); ?> 
+            <?php if ($time_end) : ?>
+              at <?php echo $time_end ?>
+            <?php endif ?>
+          <?php endif ?>
+
         </time>
       <?php endif ?>
       <a href="<?php echo $page->url() ?>/format:ics/">
