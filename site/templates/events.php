@@ -2,7 +2,7 @@
 <?php
 
 $itemsPerPage = 2;
-$viewParameter = param('view', 'map');
+$viewParameter = param('view', 'events-list');
 $eventArchive = $page->uri() === 'events/archive';
 $tagsParameter = param('tagged');
 $pageParameter = param('page', 1);

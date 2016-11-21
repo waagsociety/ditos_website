@@ -3,7 +3,7 @@
 $url = $page->url();
 
 $viewIndex = ['Map', 'List'];
-$viewParameter = param('view', 'map');
+$viewParameter = param('view', 'list');
 $countryParameter = param('country');
 $activityParameter = param('activity');
 $tagsParameter = param('tagged');
