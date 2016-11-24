@@ -6,7 +6,13 @@ Introsentence: The first deliverable
 
 ----
 
-Text: wut wut
+Text: 
+
+wut wut
+
+- list rij een
+- list rij een
+- list rij een
 
 ----
 
@@ -19,3 +25,11 @@ Submenu: 0
 ----
 
 Tags: deliverable
+
+----
+
+Description: Deliverable enzo
+
+----
+
+Seotitle: 

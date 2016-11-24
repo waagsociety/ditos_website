@@ -138,6 +138,12 @@ h1 .btn {
   button{
     margin: 0;
     display: inline-block;
+
+    @include breakpoint(s) {
+      float: right;
+      margin-bottom: 1em;
+    }
+
     &[disabled], [disabled]:hover {
       border: none;
       color: black;

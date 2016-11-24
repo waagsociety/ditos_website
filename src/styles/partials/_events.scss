@@ -17,6 +17,10 @@
   }
   &.list {
     padding: 40px 120px;
+
+    @include breakpoint(s) {
+      padding: 20px;
+    }
   }
   h4{
     margin-bottom: .5em;
@@ -203,6 +207,10 @@ form {
   border-style: solid;
   padding: 1.5em;
   &:hover { color: $brand-color }
+
+  @include breakpoint(s) {
+    position: relative;
+  }
 }
 
 .tabs {

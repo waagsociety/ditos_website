@@ -12,9 +12,15 @@
 
 .metadata {
   width: 100% !important;
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   padding: 40px 120px;
   background: #f3f3f3;
+
+
+  @include breakpoint(s) {
+    font-size: 1em;
+    padding: 20px;
+  }
 }
 
 .blog__preview{
@@ -105,6 +111,9 @@
     }
     header{
       max-width: calc(60% - 20px);
+      @include breakpoint(s) {
+        max-width: none;
+      }
       h3{
         font-size: 1.3em;
       }
@@ -123,6 +132,9 @@
   margin-bottom: 20px;
   header{
     max-width: 90%;
+    @include breakpoint(s) {
+      max-width: none;
+    }
   }
 }
 .article__preview:nth-of-type(1n + 5){
@@ -142,6 +154,22 @@
   line-height: 2em;
   font-family: 'Montserrat', sans-serif;
   padding: 10px 20px;
+}
+
+
+.blog__header figure{
+  line-height: 0;
+}
+.blog__header h1{
+  background: yellow;
+  font-size: 4em;
+  padding: 36px 120px 42px;
+  line-height: 1.4em;
+
+  @include breakpoint(s) {
+    font-size: 1.6em;
+    padding: 20px;
+  }
 }
 
 #disqus_thread{

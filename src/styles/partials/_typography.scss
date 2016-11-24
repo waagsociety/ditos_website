@@ -91,15 +91,10 @@ strong{
 .text p{
   margin-bottom: 2em;
 }
-.blog__header figure{
-  line-height: 0;
-}
-.blog__header h1{
-  background: yellow;
-  // margin-bottom: 0.3em;
-  font-size: 4em;
-  padding: 36px 120px 42px;
-  line-height: 1.4em;
+.text ul li {
+  margin-bottom: 0.2em;
+  line-height: 1.9em;
+  font-size: 1.25em;
 }
 input,
 button,

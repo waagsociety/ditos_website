@@ -33,7 +33,8 @@ $items = $items->paginate($itemsPerPage);
       </figure>
       <?php endif ?>
       <div>
-      <h4><?php echo $item->title() ?></h4>      
+        
+        <h4><?php echo $item->title() ?></h4>   
       <p class="agenda__intro"><?php echo $item->description() ?></p>      
       <ul class="event__info">
         

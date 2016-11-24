@@ -9,14 +9,25 @@ $pageParameter = param('page', 1);
 
 if ($eventArchive) {
   $items = $pages->find('events')->children()->visible()->filter(function($child){
-    return time() > strtotime($child->date_end('c'));
+
+    $enddate = $child->date_end('c');
+    $enddateday = strtotime($enddate) + 86400; 
+
+    return time() > $enddateday;
   })->sortBy('date', 'desc');
 }
 else {
   $items = $pages->find('events')->children()->visible()->filter(function($child){
-    return time() < strtotime($child->date_end('c'));
+
+    $enddate = $child->date_end('c');
+    $enddateday = strtotime($enddate) + 86400; 
+
+    return time() <= $enddateday;
+
   })->sortBy('date', 'asc');
 }
+
+
 
 if ($tagsParameter) {
   $items = $items->filterBy('tags', $tagsParameter, ',');
