@@ -1,6 +1,8 @@
 <?php 
   $items = $pages->find('events')->children()->visible()->filter(function($child){
-    return time() < strtotime($child->date_end('c'));
+    $enddate = $child->date_end('c');
+    $enddateday = strtotime($enddate) + 86400; 
+    return time() <= $enddateday;
   })->sortBy('date', 'asc')->limit(3);
 ?>
 
@@ -11,6 +13,8 @@
 <div class="agenda__preview full__width">
   
   <?php foreach($items as $item): ?>
+    
+    <?php $location = $pages->find('locations')->find($item->location()) ?>
     <a href="<?php echo $item->url() ?>" class="agenda__preview__item event__info">
       <div>
         <h4><?php echo $item->title() ?></h4>
@@ -25,7 +29,7 @@
 
           <li>
             <svg viewBox="0 0 32 32"><use xlink:href="#i:location"/></svg>
-            <?php echo $item->city().', '.$item->country() ?>
+            <?php echo $location->city().', '.$location->country() ?>
           </li>
         </ul>
       </div>

@@ -9,7 +9,6 @@ $pageParameter = param('page', 1);
 
 if ($eventArchive) {
   $items = $pages->find('events')->children()->visible()->filter(function($child){
-
     $enddate = $child->date_end('c');
     $enddateday = strtotime($enddate) + 86400; 
 
