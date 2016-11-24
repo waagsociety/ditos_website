@@ -1,5 +1,6 @@
 title: deliverables
 pages: true
+  template: article
 files: false
 options:
   delete: false

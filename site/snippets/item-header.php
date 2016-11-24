@@ -19,6 +19,7 @@
     $date = $page->date();
     $tags = !!trim($page->tags()) ? explode(',', $page->tags()) : false;
   ?>
+  
   <?php if ($author || $date || $tags) : ?>
   <section class="metadata">    
     <?php if ($author || $date) : ?>
