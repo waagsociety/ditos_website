@@ -8,7 +8,7 @@
     Share
   </button>
   <div class="share_block">
-    <a target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=#url">
+    <a target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=<?php echo $page->url() ?>">
       <svg width="32" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i:facebook"></use></svg>
     </a>
     <a class="twitter-share-button" href="http://twitter.com/share?text=<?php echo $page->title() ?>&url=<?php echo $page->url() ?>&hashtags=DITscience&via=togethersci">
