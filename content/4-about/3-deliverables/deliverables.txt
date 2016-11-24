@@ -1,4 +1,4 @@
-Title: Deliverables
+Title: Library
 
 ----
 
@@ -11,3 +11,11 @@ Imagecopy: Waag Society 2016
 ----
 
 Submenu: 1
+
+----
+
+Description: Here you can find a list of DITOS deliverables
+
+----
+
+Seotitle: 

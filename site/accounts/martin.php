@@ -7,8 +7,8 @@ email: martin@waag.org
 language: en
 role: admin
 history:
+  - events/open-wetlab-project-evening-29-11
+  - about/deliverables
   - events/nieuw-event
-  - about/deliverables/deliverable-wp2-1
   - locations/pinto-huis
   - about
-  - locations/de-waag-amsterdam

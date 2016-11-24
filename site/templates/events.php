@@ -15,6 +15,7 @@ if ($eventArchive) {
     return time() > $enddateday;
   })->sortBy('date', 'desc');
 }
+
 else {
   $items = $pages->find('events')->children()->visible()->filter(function($child){
     $enddate = $child->date_end('c');

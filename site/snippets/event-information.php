@@ -54,13 +54,13 @@
        <?php echo $date ?> at <?php echo $time ?>
      </time>
      <?php if ($date_end || $time_end) : ?>
-       to
-       <time>
-         <?php if ($date_end) : ?>
+      to
+      <time>
+        <?php if ($date_end_time) : ?>
           <?php echo date('l d.m.Y', $date_end_time).' at ' ?>
-         <?php echo $time_end ?>
-         <?php endif ?>
-       </time>
+          <?php echo $time_end ?>
+        <?php endif ?>
+      </time>
      <?php endif ?>
      <a href="<?php echo $page->url() ?>/format:ics/">
        <button type="button" class="btn-1">Add to Calendar</button>
