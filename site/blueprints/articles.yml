@@ -1,7 +1,9 @@
 title: Articles
 icon: newspaper-o
 pages: true
-  template: article
+  template:
+    - blog-item
+    - article
 files: false
 options:
   delete: false
