@@ -9,9 +9,11 @@
         <?php $logo = $partner->image($partner->logo()) ?>
         <li>
           <a href="<?php echo $partner->url() ?>">
-            <figure class="logo partner">
-              <img src="<?php echo $logo->url() ?>" width="<?php echo $logo->width() ?>"  height="<?php echo $logo->height() ?>" alt="<?php echo $partner->title() ?> logo">
-            </figure>
+            <?php if($logo) : ?>
+              <figure class="logo partner">
+                <img src="<?php echo $logo->url() ?>" width="<?php echo $logo->width() ?>"  height="<?php echo $logo->height() ?>" alt="<?php echo $partner->title() ?> logo">
+              </figure>
+            <?php endif ?>
             <div class="inner">
               <h1><?php echo $partner->title() ?></h1>
               <p><?php echo $partner->description() ?></p>
