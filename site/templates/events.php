@@ -18,12 +18,9 @@ if ($eventArchive) {
 }
 else {
   $items = $pages->find('events')->children()->visible()->filter(function($child){
-
     $enddate = $child->date_end('c');
     $enddateday = strtotime($enddate) + 86400; 
-
     return time() <= $enddateday;
-
   })->sortBy('date', 'asc');
 }
 
