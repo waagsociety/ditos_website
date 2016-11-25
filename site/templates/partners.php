@@ -1,6 +1,5 @@
 <?php snippet('header') ?>
 <main class="main__content">
-
   <div class="flex flex__wrap">
     <section>
       <?php snippet('standard-header') ?>
