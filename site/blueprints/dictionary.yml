@@ -1,0 +1,38 @@
+title: dictionary
+icon: newspaper-o
+pages: false
+files:
+  fields:
+    copyright: copyright
+    caption: caption
+fields:
+  title: title
+  description: description
+  postimage:
+    label: Main Post Image
+    type:  selector
+    mode:  single
+    required: true
+    types:
+      - image
+  text: text
+  tags: tags
+  word:
+    label: Word
+    type: structure
+    entry: >
+      {{word}} <br>
+      {{meaning}}
+    fields:
+      word:
+        label: Word
+        type: text
+        required: true
+      meaning:
+        label: Meaning
+        type: textarea
+        required: true
+  line:
+    type: line
+  seotitle: seotitle
+  seodescription: seodescription
