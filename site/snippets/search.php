@@ -1,4 +1,13 @@
 <?php
+  $index = $site->children()->visible();
+
+  $page = param('page');
+  $directory = "";
+  foreach ($index as $child) {
+    if ($child->isOpen() || (string)$child === $page) $directory = $child;
+  }
+  echo $directory;
+
   $query = param('query');
 ?>
 
@@ -10,10 +19,13 @@
 </form>
 
 <script type="text/javascript">
-  console.log('x')
+  
+  var directory = "<?= $directory ?>"
+
   document.getElementById('searchform').addEventListener('submit', function(evt){
     evt.preventDefault();
     var searchVal = document.getElementById('mainsearch').value;
     window.location.href = '/search/query:' + searchVal;
   })
+
 </script>

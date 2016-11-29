@@ -1,12 +1,20 @@
 <?php 
 
-$results = $site
-  ->children()
-  ->visible()
-  ->children()
-  ->search(param('query'), array('words' => true))
-  ->visible(); 
+$index = $site->children()->visible();
 
+$page = param('page');
+$directory = "";
+foreach ($index as $child) {
+  if ($child->isOpen() || (string)$child === $page) $directory = $child;
+}
+
+$scope = strlen($directory) > 0 
+  ? $index->find($directory) 
+  : $index->children();
+
+$results = $scope
+  ->search(param('query'), array('words' => true))
+  ->visible();
 ?>
 
 <?php snippet('header') ?>
@@ -19,7 +27,6 @@ $results = $site
           <a href="<?php echo $result->url() ?>" class="result">
             <h2><?php echo $result->title()->html() ?></h2>
             <p><?php echo $result->description()->kirbytext() ?></p>
-            <date><?php echo $result->date('d-m-Y') ?></date>
           </a>
         <?php endforeach ?>
       </ul>
@@ -31,7 +38,7 @@ $results = $site
       <?php endif ?>
     </section>
     <aside>
-      <?php snippet('events-preview') ?>
+      <?php snippet('search-filters') ?>
     </aside>
   </div>
 </main>
