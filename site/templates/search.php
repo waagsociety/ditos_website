@@ -1,4 +1,13 @@
-<?php $results = $site->search(param('query'))->visible(); ?>
+<?php 
+
+$results = $site
+  ->children()
+  ->visible()
+  ->children()
+  ->search(param('query'), array('words' => true))
+  ->visible(); 
+
+?>
 
 <?php snippet('header') ?>
 <main class="main__content">
@@ -9,7 +18,8 @@
         <?php foreach($results as $result): ?>
           <a href="<?php echo $result->url() ?>" class="result">
             <h2><?php echo $result->title()->html() ?></h2>
-            <p><?php echo $result->text()->html() ?></p>
+            <p><?php echo $result->description()->kirbytext() ?></p>
+            <date><?php echo $result->date('d-m-Y') ?></date>
           </a>
         <?php endforeach ?>
       </ul>

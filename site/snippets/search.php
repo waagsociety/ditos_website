@@ -10,6 +10,7 @@
 </form>
 
 <script type="text/javascript">
+  console.log('x')
   document.getElementById('searchform').addEventListener('submit', function(evt){
     evt.preventDefault();
     var searchVal = document.getElementById('mainsearch').value;
