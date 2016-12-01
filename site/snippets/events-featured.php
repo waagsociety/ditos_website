@@ -33,14 +33,14 @@
     setTimeout(function(){ $featuredAddClass('finish') }, delay + duration)
     
     var $body = document.body
-    var initialScrollTop = $body.scrollTop
+    var initialScrollY = scrollY
     var viewHeight = $body.clientHeight
 
     var $parent = $featured.closest(parentSelector)
     var parentBottom = $parent.clientHeight + 200
 
     $parent.classList.add('featured__container')
-    if (initialScrollTop + viewHeight < parentBottom) {
+    if (initialScrollY + viewHeight < parentBottom) {
       document.addEventListener('scroll', delegateScroll)
     }
     else $featuredAddClass('done')
@@ -58,7 +58,7 @@
   }
 
   function scrollHandler() {
-    if ($body.scrollTop + viewHeight >= parentBottom) {
+    if (scrollY + viewHeight >= parentBottom) {
       $featuredAddClass('done')
       document.removeEventListener('scroll', delegateScroll)
     }
