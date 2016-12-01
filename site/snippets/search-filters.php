@@ -16,7 +16,6 @@ $page = param('page');
 $directory = "";
 foreach ($index as $child) {
   if ($child->isOpen() || (string)$child === $page) $directory = $child;
-  echo $child->title();
 }
 
 ?>
@@ -25,10 +24,10 @@ foreach ($index as $child) {
 
   <div class="events__filters full__width">
   <label class="form__select">
-    Where
+    Filter
     <select name="page">
 
-      <option value="">Everywhere</option>
+      <option value="">Show all</option>
 
       <optgroup label="Filter by page">
       <?php foreach($index as $child): $slug = slugify($child); ?>

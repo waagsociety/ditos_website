@@ -1,4 +1,4 @@
-Title: De Waag Amsterdam
+Title: Waag Society Amsterdam
 
 ----
 
@@ -34,7 +34,7 @@ Location: 52.37277830000001,4.900316400000065
 
 ----
 
-Url: https://waag.org
+Url: https://waag.org/en
 
 ----
 

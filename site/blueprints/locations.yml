@@ -10,5 +10,14 @@ options:
   delete: false
   url: false
 fields:
+  info:
+    label: Info
+    type: info
+    text: >
+      Dear Editor, 
+
+      To add a location, click on “Add” under Pages in the left column.
+
+      Have fun!
   title: title
-  description: description
+
