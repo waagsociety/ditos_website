@@ -12,6 +12,7 @@
   </div>
   <?php snippet('social-stream') ?>
   <?php snippet('partners') ?>
+  <?php snippet('eu-bar') ?>
 </main>
 
 <?php snippet('footer') ?>
