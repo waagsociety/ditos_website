@@ -18,13 +18,17 @@
 </form>
 
 <script type="text/javascript">
+!function() { 
   
   var directory = "<?= $directory ?>"
+  if (directory) directory = '/page:' + directory
+  else directory = ''
 
   document.getElementById('searchform').addEventListener('submit', function(evt){
-    evt.preventDefault();
-    var searchVal = document.getElementById('mainsearch').value;
-    window.location.href = '/search/query:' + searchVal;
+    evt.preventDefault()
+    var searchVal = document.getElementById('mainsearch').value
+    window.location.href = '/search/query:' + searchVal + directory
   })
 
+}()
 </script>

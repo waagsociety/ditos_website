@@ -60,10 +60,6 @@ function slugify($string) {
   </nav>
 
   <div class="events__filters full__width">
-  <?php 
-    // $countryIndex = $page->children()->visible()->pluck('country', ',', true);
-    echo 'TEST';
-  ?>
   <label class="form__select">
     Where
     <select name="country">
