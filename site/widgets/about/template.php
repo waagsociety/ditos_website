@@ -1,5 +1,5 @@
 <div class="text">
-  This site was built by: <a href="https://waag.org">Waag Society</a><br>
-  If you need help, contact us at <a href="mailto:pauline@waag.org">pauline@waag.org</a><br><br>
-  Everything you need to know about entering content is <a href="https://getkirby.com/docs/content/text" >in this guide.</a>
+  This site was built by <a href="https://waag.org">Waag Society</a>.
+  If you need help please refer to the <a href="http://togetherscience.eu/content/ditos-website-guide.docx">manual</a> first, 
+  otherwise you may contact us at <a href="mailto:nathan@waag.org">nathan@waag.org</a>.
 </div>
