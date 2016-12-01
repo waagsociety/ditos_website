@@ -26,6 +26,6 @@
       <?php snippet('events-preview') ?>
     </aside>
   </div>
-  <?php snippet('partners') ?>
+  <?php snippet('eu-bar') ?>
 </main>
 <?php snippet('footer') ?>
