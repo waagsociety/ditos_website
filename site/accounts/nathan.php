@@ -11,6 +11,4 @@ role: admin
 history:
   - blog/doing-it-together-science
   - experiments/first-experiment
-  - blog/nieuw-post
-  - blog/anot
   - about/partners

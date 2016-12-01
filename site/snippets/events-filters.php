@@ -1,5 +1,17 @@
 <?php 
 
+$items = $items; // from templates/events.php
+$locations = $site->find('locations')->children();
+
+$countryIndex = [];
+foreach ($items as $item) {
+  $location = $locations->find($item->location());
+  if ($location) {
+    $country = $location->country();
+    $countryIndex[slugify($country)] = $country;
+  }
+}
+
 $url = $page->url();
 
 $viewIndex = ['Map', 'List'];
@@ -26,7 +38,15 @@ function slugify($string) {
 
 ?>
 <form id="filter-events" class="<?php echo param('view', 'map') ?>"> 
-  
+
+  <div style="color:red!important">
+  <?php
+    // foreach ($locationIndex as $key => $name) {
+    //   echo $key.':'.$name;
+    // }
+  ?>
+  </div>
+
   <nav class="tabs">
   <?php foreach ($viewIndex as $name): $slug = slugify($name) ?> 
     
@@ -40,7 +60,10 @@ function slugify($string) {
   </nav>
 
   <div class="events__filters full__width">
-  <?php $countryIndex = $page->children()->visible()->pluck('country', ',', true) ?>
+  <?php 
+    // $countryIndex = $page->children()->visible()->pluck('country', ',', true);
+    echo 'TEST';
+  ?>
   <label class="form__select">
     Where
     <select name="country">
