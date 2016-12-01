@@ -40,11 +40,13 @@ fields:
     label: Start time
     type: time
     width: 1/4
+    interval: 15
     required: true
   time-end:
     label: End time
     type: time
     width: 1/4
+    interval: 15
   link:
     label: Link
     type: structure

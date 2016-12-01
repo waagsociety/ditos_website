@@ -6,7 +6,6 @@
   foreach ($index as $child) {
     if ($child->isOpen() || (string)$child === $page) $directory = $child;
   }
-  echo $directory;
 
   $query = param('query');
 ?>

@@ -1,4 +1,4 @@
-Title: UCL
+Title: University College London
 
 ----
 
@@ -14,7 +14,7 @@ Url: https://www.ucl.ac.uk/
 
 ----
 
-Text: The Extreme Citizen Science Department at UCL, UK, works with citizens at local levels around the world to design new technologies and practices to create new knowledge and to improve the environment and people's lives. Citizens without Borders - within which the activities are organised is a community London-based group committed to highlighting the power of ordinary people’s capacity to act as civic agents. It is about co-creating purposeful experiences that enrich our understanding of ourselves, the world around us, and our relationship(s) to it. It is about honing our critical thinking and co-creating new ways of knowing, seeing and doing.
+Text: The Extreme Citizen Science Department at University College London (UCL), UK, works with citizens at local levels around the world to design new technologies and practices to create new knowledge and to improve the environment and people's lives. Citizens without Borders - within which the activities are organised is a community London-based group committed to highlighting the power of ordinary people’s capacity to act as civic agents. It is about co-creating purposeful experiences that enrich our understanding of ourselves, the world around us, and our relationship(s) to it. It is about honing our critical thinking and co-creating new ways of knowing, seeing and doing.
 
 ----
 
@@ -26,7 +26,7 @@ Seotitle:
 
 ----
 
-Location: 
+Location: de-waag-amsterdam
 
 ----
 
