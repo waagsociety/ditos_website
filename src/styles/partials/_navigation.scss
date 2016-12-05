@@ -44,11 +44,7 @@
 .auto-hide-header.is-hidden {
   transform: translateY(-100%);
 }
-@media only screen and (min-width: 1024px) {
-  .auto-hide-header {
-    height: 130px;
-  }
-}
+
 #navigation{
   padding: 0 70px 0 56px;
   display: flex;
@@ -105,9 +101,13 @@
 .auto-hide-header .nav-trigger em::after {
   transform: translateY(6px);
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1025px) {
   .auto-hide-header .nav-trigger {
     display: none;
+  }
+
+  .auto-hide-header {
+    height: 130px;
   }
 }
 
@@ -224,7 +224,18 @@
     overflow: visible;
   }
 }
-@media only screen and (min-width: 320px) and (max-width: 970px) {
+
+.mobile {
+  display: none;
+
+  @include breakpoint(m) {
+    display: inline-block;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  .main__content{
+    top: 130px !important;
+  }
   .nav-trigger{
     z-index: 999;
   }
@@ -294,16 +305,24 @@
   }
 }
 
+.primary-nav .social__bar {
+  @include breakpoint(m){
+    display: none;
+  }
+}
+
 .social__bar {
 
   display: flex;
   align-items: center;
   margin-right: 1em;
+  
 
 
   @include breakpoint(s){
     border-top: 1px solid $lightgrey;
     padding-top: 20px;
+    display:block;
 
     .icon {
       width: 1em;
