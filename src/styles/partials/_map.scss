@@ -66,7 +66,7 @@
     width: 290px;
   }
   .main__pop {
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid $border-color;
     padding: 20px;
   }
   h2{
@@ -89,11 +89,11 @@
   display: inline-block;
   font-weight: 700;
   width: 50%;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid $border-color;
   text-align: center;
 
   &:nth-of-type(2){
-    border-left: 1px solid #eee;
+    border-left: 1px solid $border-color;
     svg{
       width: 1.2em;
       top: 0.1em;

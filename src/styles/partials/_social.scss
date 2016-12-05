@@ -1,7 +1,7 @@
 .main__content .juicer-feed{
   // background: rgba(245,245,245,1);
   // padding: 0 $gutter * 2;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid $border-color;
 }
 .referral{
   display: none !important;
@@ -684,8 +684,8 @@
 .juicer-feed.image-grid li.feed-item.words,
 .juicer-feed.slider li.feed-item.words,
 .juicer-feed.hip li.feed-item.words {
-    border-right: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
+    border-right: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
 }
 .juicer-feed.image-grid li.feed-item.words .j-text,
 .juicer-feed.slider li.feed-item.words .j-text,

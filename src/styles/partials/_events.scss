@@ -1,5 +1,5 @@
 .agenda__preview__item{
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid $border-color;
   padding: 30px 40px;
   width: 100%;
   transition: .1s ease-in-out;
@@ -95,14 +95,14 @@ div.events__filters {
   .btn {
     background-color: #fafaff;
     flex-grow: 1;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid $border-color;
     padding: 1.5em 0 1.75em;
     text-align: center;
     
   }
 
   .btn + .btn {
-    border-left: solid 1px #ccc;
+    border-left: solid 1px $border-color;
   }
 
   .btn.is-active {
@@ -205,7 +205,7 @@ form {
   left: 0;
   width: 100%;
   border-left-width: 0;
-  border-color: #ccc;
+  border-color: $border-color;
   border-top-width: 1px;
   border-bottom: 0;
   border-style: solid;
