@@ -1,6 +1,15 @@
 <?php 
 
-$items = $items; // from templates/events.php
+// page/routing filters
+$url = $page->url();
+$viewIndex = ['Map', 'List'];
+$viewParameter = param('view', 'list');
+$countryParameter = param('country');
+$activityParameter = param('activity');
+$tagsParameter = param('tagged');
+
+// country filters
+$items = $pages->find('events')->children()->visible();
 $locations = $site->find('locations')->children();
 
 $countryIndex = [];
@@ -12,13 +21,8 @@ foreach ($items as $item) {
   }
 }
 
-$url = $page->url();
-
-$viewIndex = ['Map', 'List'];
-$viewParameter = param('view', 'list');
-$countryParameter = param('country');
-$activityParameter = param('activity');
-$tagsParameter = param('tagged');
+// activity filters
+$activities = $pages->find('activities')->children()->visible();
 
 function redirectPage($url, $params, $int = 1) {
   $result = array($url);
@@ -29,23 +33,8 @@ function redirectPage($url, $params, $int = 1) {
   return join('/', $result);
 }
 
-function slugify($string) {
-  $string = trim($string);
-  $string = preg_replace('/\W+/', '-', $string);
-  $string = strtolower($string);
-  return $string;
-}
-
 ?>
 <form id="filter-events" class="<?php echo param('view', 'map') ?>"> 
-
-  <div style="color:red!important">
-  <?php
-    // foreach ($locationIndex as $key => $name) {
-    //   echo $key.':'.$name;
-    // }
-  ?>
-  </div>
 
   <nav class="tabs">
   <?php foreach ($viewIndex as $name): $slug = slugify($name) ?> 
@@ -81,7 +70,6 @@ function slugify($string) {
 
   </label>
 
-  <?php $activityIndex = $page->children()->visible()->pluck('activity', ',', true) ?>
   <label class="form__select">
     What
     <select name="activity">
@@ -89,14 +77,15 @@ function slugify($string) {
       <option value="">Everything</option>
 
       <optgroup label="Filter by activity">
-      <?php foreach($activityIndex as $activity): $slug = slugify($activity); ?>
+      <?php foreach($activities as $activity): $slug = slugify($activity->title()) ?>
       
         <?php $selected = ($slug === $activityParameter ? 'selected' : '') ?>
-        <option label="<?php echo $activity ?>" value="<?php echo $slug ?>" <?php echo $selected ?>>
-          <?php echo $activity ?>
+        <option label="<?php echo $activity->title() ?>" value="<?php echo $slug ?>" <?php echo $selected ?>>
+          <?php echo $activity->title() ?>
         </option>
       
       <?php endforeach ?>
+
       </optgroup>
 
     </select>
@@ -148,7 +137,8 @@ function slugify($string) {
   form.onchange = function(event) {
     parameters = fields.reduce(function(result, element) {
       const isCheck = typeof element.checked === 'boolean'
-      if (isCheck ? element.checked : !!element.value){ 
+      if (isCheck ? element.checked : !!element.value) {
+        console.log(element, element.name, element.value)
         result.push(element.name + ':' + element.value)
       }
       return result
