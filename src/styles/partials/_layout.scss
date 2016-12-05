@@ -3,6 +3,7 @@
 }
 .main__content section{
   width: calc(100% - 400px);
+  min-height: calc(100vh - 201px);
   &.full__width { width: 100% }
 }
 .main__content aside{

@@ -50,6 +50,5 @@ $items = $items->paginate(6);
       <?php snippet('events-preview') ?>
     </aside>
   </div>
-  <?php snippet('social-stream') ?>
 </main>
 <?php snippet('footer') ?>

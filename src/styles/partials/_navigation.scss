@@ -165,9 +165,6 @@
     margin-right: 0;
     justify-content: flex-end;
   }
-  .primary-nav > ul li:nth-last-of-type(2){
-    flex-grow: 1;
-  }
 
   .primary-nav > ul a {
     /* reset mobile style */
@@ -217,6 +214,10 @@
 }
 .secondary-nav.nav-end::after {
   opacity: 0;
+}
+
+.busbtn {
+  margin-left: auto;
 }
 
 @media only screen and (min-width: 1024px) {
