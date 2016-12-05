@@ -1,7 +1,8 @@
 #featured {
   // background: silver!important;
-  width: 30vw;
+  width: 100%;
   bottom: 0;
+  max-width: 400px;
   right: 0;
   height: 0;
   position: fixed;
@@ -19,7 +20,7 @@
 
   .intro {
     width: inherit;
-    max-width: 400px;
+    max-width: 320px;
     right: 50%;
     bottom: 0;
     position: absolute;
@@ -50,7 +51,7 @@
   .phrase h1 {
     color: inherit;
     font-size: 2em;
-    font-size: calc(2.5vw + 1em);
+    font-size: calc(2vw + 1em);
     vertical-align: middle;
     margin-bottom: 0.5em;
   }

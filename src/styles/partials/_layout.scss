@@ -2,13 +2,13 @@
   top: 200px;
 }
 .main__content section{
-  width: 70%;
-
+  width: calc(100% - 400px);
   &.full__width { width: 100% }
 }
 .main__content aside{
-  border-left: 1px solid #ccc;
-  width: 30%;
+  border-left: 1px solid $border-color;
+  width: 100%;
+  max-width: 400px;
   margin-bottom: -1px;
   font-weight: 400;
   font-family: 'Montserrat', sans-serif;
@@ -17,6 +17,7 @@
 
   @include breakpoint(s) {
     border-left: none;
+    max-width: none;
   }
 
   &::before {
@@ -50,6 +51,11 @@ aside.featured__container {
 
 .text{
   padding: 60px 128px 60px 120px;
+
+  @include breakpoint(m) {
+
+    padding: 60px 64px 30px 60px;
+  }
 
   ol {
     list-style: decimal;

@@ -18,6 +18,10 @@
   &.list {
     padding: 40px 120px;
 
+    @include breakpoint(m) {
+      padding: 20px 60px;
+    }
+
     @include breakpoint(s) {
       padding: 20px;
     }

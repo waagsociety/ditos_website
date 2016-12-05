@@ -14,7 +14,7 @@
   width: 100% !important;
   font-family: 'Montserrat', sans-serif;
   padding: 40px 120px;
-  background: #f3f3f3;
+  background: $lightgrey;
 
 
   @include breakpoint(s) {
@@ -27,6 +27,10 @@
   padding: 80px 120px;
   background: url(../images/subtle_dots_@2X.png);
   width: 100%;
+
+  @include breakpoint(m) {
+    padding: 40px 60px;
+  }
 }
 .blog__preview:before{
   content: '';
@@ -42,6 +46,10 @@
   width: calc(60% - 20px);
   height: 600px;
   float: left;
+
+  @include breakpoint(m) {
+    height: 400px;
+  }
 
   article{
     overflow: hidden;
@@ -165,6 +173,11 @@
   font-size: 4em;
   padding: 36px 120px 42px;
   line-height: 1.4em;
+
+  @include breakpoint(m) {
+    padding: 18px 60px 21px;
+    padding: 20px;
+  }
 
   @include breakpoint(s) {
     font-size: 1.6em;
