@@ -9,6 +9,10 @@
   z-index: 2;
   pointer-events: none;
 
+  @include breakpoint(s) {
+    display: none;
+  }
+
   &.done {
     position: absolute;
   }

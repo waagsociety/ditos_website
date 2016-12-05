@@ -4,7 +4,15 @@
   padding: 40px 120px;
   background: #fff;
 
+  @include breakpoint(s) {
+  padding: 20px;
+  }
+
   img {
     max-width: 350px;
+
+    @include breakpoint(s) {
+      max-width: 100%;
+    }
   }
 }

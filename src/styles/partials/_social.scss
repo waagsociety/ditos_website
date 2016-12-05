@@ -772,7 +772,7 @@
 .juicer-feed.slider .j-text .j-edit a,
 .juicer-feed.hip .j-text .j-message a,
 .juicer-feed.hip .j-text .j-edit a {
-    color: #F17E6F
+    color: $sec-color;
 }
 .juicer-feed.image-grid .j-text .j-message p,
 .juicer-feed.image-grid .j-text .j-edit p,
@@ -1832,3 +1832,5 @@
     position: relative;
     top: -1px !important
 }
+
+

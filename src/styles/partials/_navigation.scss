@@ -141,6 +141,10 @@
   line-height: 50px;
   padding-left: 5%;
   color: $brand-color;
+
+  @include breakpoint(s) {
+    padding-left: 0;
+  }
 }
 .primary-nav > ul a:hover, .primary-nav > ul a.active {
   color: $sec-color;
@@ -248,6 +252,12 @@
   .logo{
     display: none !important;
   }
+  .logo.mobile {
+    display: block !important;
+    width: 80px;
+    margin-left: 15px;
+    margin-top: 5px;
+  }
   .auto-hide-header{
     height: 60px;
   }
@@ -277,11 +287,29 @@
 
 }
 
+.secondary-nav .social__bar {
+
+  @include breakpoint(s) {
+    display: none;
+  }
+}
+
 .social__bar {
 
   display: flex;
   align-items: center;
   margin-right: 1em;
+
+
+  @include breakpoint(s){
+    border-top: 1px solid $lightgrey;
+    padding-top: 20px;
+
+    .icon {
+      width: 1em;
+      margin-right: 2em;
+    }
+  }
 
   li {
     font-size: 1.3em;
@@ -293,14 +321,16 @@
     a {
       display: block;
       height: 2em;
+      color: #fff;
+
+      @include breakpoint(s){
+        color: rgba(0, 0, 0, 0.3);
+      }
     }
 
     &:hover{
       transform: scale(1.1);
       opacity: 1;
-    }
-    a{
-      color: #fff;
     }
   }
   .fa-facebook {

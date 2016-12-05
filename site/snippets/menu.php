@@ -1,4 +1,10 @@
 <nav class="primary-nav">
+
+    <div class="mobile">
+      <a href="<?php echo url('/'); ?>" class="logo mobile">
+        <?php snippet('logo-animation') ?>
+      </a>
+    </div>
  
   <a href="#navigation" class="nav-trigger">
     <span>
@@ -7,7 +13,6 @@
   </a>
 
   <ul id="navigation">
-    
     <li>
       <a href="<?php echo url('/'); ?>" class="logo">
         <?php snippet('logo-animation') ?>
@@ -24,6 +29,10 @@
         Request the science bus
       </a>
     </li>
+
+    <div class="mobile">
+      <?php snippet('social-bar') ?>
+    </div>
   </ul>
 
 </nav>
