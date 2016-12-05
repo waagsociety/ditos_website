@@ -47,21 +47,29 @@ foreach ($index as $child) {
 
 <script type="text/javascript">
 <?php // do not move ?>
-var $url = "<?= $url ?>/"
+!function() {
+  var $url = "<?= $url ?>/"
 
-var form = document.getElementById('filter-search')
-var fields = Array.prototype.slice.call(form.querySelectorAll('[name]'))
-var parameters = null
+  var form = document.getElementById('filter-search')
+  var fields = Array.prototype.slice.call(form.querySelectorAll('[name]'))
+  var parameters = null
 
-form.onchange = function(event) {
-  parameters = fields.reduce(function(result, element) {
-    console.log(element)
-    const isCheck = typeof element.checked === 'boolean'
-    if (isCheck ? element.checked : !!element.value){ 
-      result.push(element.name + ':' + element.value)
-    }
-    return result
-  }, []).join('/')
-  location = $url + 'query:<?= $query ?>/' + parameters
-}
+  fields.forEach(function(element) {
+    if (element.querySelector('[selected]')) element.classList.add('is-selected')
+  })
+
+  form.onchange = function(event) {
+    parameters = fields.reduce(function(result, element) {
+      console.log(element)
+      const isCheck = typeof element.checked === 'boolean'
+      if (isCheck ? element.checked : !!element.value) {
+        element.classList.add('is-selected') 
+        result.push(element.name + ':' + element.value)
+      }
+      else element.classList.remove('is-selected')
+      return result
+    }, []).join('/')
+    location = $url + 'query:<?= $query ?>/' + parameters
+  }
+}()
 </script>

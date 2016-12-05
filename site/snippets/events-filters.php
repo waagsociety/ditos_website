@@ -133,14 +133,19 @@ function redirectPage($url, $params, $int = 1) {
   var form = document.getElementById('filter-events')
   var fields = Array.prototype.slice.call(form.querySelectorAll('[name]'))
   var parameters = null
+
+  fields.forEach(function(element) {
+    if (element.querySelector('[selected]')) element.classList.add('is-selected')
+  })
   
   form.onchange = function(event) {
     parameters = fields.reduce(function(result, element) {
       const isCheck = typeof element.checked === 'boolean'
       if (isCheck ? element.checked : !!element.value) {
-        console.log(element, element.name, element.value)
+        element.classList.add('is-selected')
         result.push(element.name + ':' + element.value)
       }
+      else element.classList.remove('is-selected')
       return result
     }, []).join('/')
     location = $url + parameters

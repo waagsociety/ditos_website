@@ -12,3 +12,7 @@ select {
   background-size: 16px;
   position: relative;
 }
+
+select.is-selected {
+  color: $brand-color;
+}
