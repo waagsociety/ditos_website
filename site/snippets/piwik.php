@@ -12,4 +12,4 @@
  })();
 </script>
 <noscript><p><img src="//stats.waag.org/piwik.php?idsite=8" style="border:0;" alt="" /></p></noscript>
-<!-- End Piwik Code —>
+<!-- End Piwik Code -->
