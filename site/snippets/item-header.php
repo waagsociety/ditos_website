@@ -22,14 +22,10 @@
   
   <?php if ($author || $date || $tags) : ?>
   <section class="metadata">    
-    <?php if ($author || $date) : ?>
     <p>
-      <?php if ($author) : ?>
-        <?php e($author, $author) ?>
-      <?php endif ?>
-      posted on: <?php e($date, '<time>'.date('d-m-Y', $date).'</time>') ?>    
+      By <?= $author ?>
+      on <?php e($date, '<time>'.date('d-m-Y', $date).'</time>') ?>    
     </p>
-    <?php endif ?>
     <?php if ($tags && count($tags)) : ?>
     <ul class="tags">
       <?php foreach ($tags as $tag) : ?>

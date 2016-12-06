@@ -55,7 +55,7 @@ if ($countryParameter) {
   });
 }
 
-// filter events without a valid location, activity, or partner
+// filter out events without a valid location, activity, or partner
 $locations = $pages->find('locations')->children();
 $activities = $pages->find('activities')->children();
 $partners = $pages->find('about')->children()->find('partners');
