@@ -15,24 +15,39 @@
    </li>
  <?php endif ?>
 
-
  <?php $activity = $pages->find('activities')->find($page->activity()) ?>
 
  <?php $tags = $tags = !!trim($page->tags()) ? explode(',', $page->tags()) : false; ?>
  <?php if ($activity) : ?>
-   <li>
-     <header>What</header>
-     <section>
-       <?php echo $activity->title() ?>
-       <?php if (count($tags)) : ?>
-         <ul class="tags">
-           <?php foreach($tags as $tag) : ?>
-           <li><a href="./tagged:<?= $tag ?>">#<?= $tag ?></a>
-           <?php endforeach ?>
-         </ul>
-       <?php endif ?>
-     </section>
-   </li>
+  <li>
+    <header>What</header>
+    <section>
+      <!-- ACTIVITY -->
+      <?php echo $activity->title() ?>
+   
+      <!-- TAGS -->
+      <?php if (count($tags)) : ?>
+        <ul class="tags">
+          <?php foreach($tags as $tag) : ?>
+          <li><a href="./tagged:<?= $tag ?>">#<?= $tag ?></a>
+          <?php endforeach ?>
+        </ul>
+      <?php endif ?>
+      
+      <!-- ADMISSION -->
+      <?php $currency = ['gbp'=>'£', 'eur'=>'€', 'pln'=>'zł', 'chf'=>'Fr. '][trim($page->currency()->html())] ?>
+      <p><?= ($page->price()->isNotEmpty() ? 'Admission fee: '.$currency.$page->price() : 'No admission fee') ?></p>
+
+      <!-- RSVP -->
+      <?php $links = $page->link()->toStructure() ?>
+      <?php foreach ($links as $link) : ?>
+        <a href="<?=  $link->url() ?>">
+          <button type="button" class="btn-1"><?= $link->label() ?></button>
+        </a>
+      <?php endforeach ?>
+
+    </section>
+  </li>
  <?php endif ?>
 
  <li>
@@ -85,18 +100,6 @@
        <button type="button" class="btn-1">View in Google Maps</button>
      </a>
      </section>
- </li>
- <?php endif ?>
-
-
- <?php $links = $page->link()->toStructure() ?>
- <?php if (count($links)) : ?>
- <li>
-   <section>
-     <?php foreach ($links as $link) : ?>
-       <a class="btn btn-1" href="<?=  $link->url() ?>"><?= $link->label() ?></a>
-     <?php endforeach ?>
-   </section>
  </li>
  <?php endif ?>
 

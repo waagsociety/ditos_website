@@ -6,7 +6,7 @@ if (param('format') === 'ics') : ?>
   <main class="main__content">
     <div class="flex flex__wrap">
       <section>
-        <?php snippet('item-header') ?>
+        <?php snippet('event-header') ?>
         <div class="text">
           <?php echo kirbytext($page->text()) ?>
           <?php snippet('disqus') ?>
