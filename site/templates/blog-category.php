@@ -33,6 +33,5 @@
     </aside>
   </div>
   <?php snippet('partners') ?>
-  <?php snippet('social-stream') ?>
 </main>
 <?php snippet('footer') ?>
