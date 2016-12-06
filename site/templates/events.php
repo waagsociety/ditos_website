@@ -8,7 +8,7 @@ function slugify($string) {
   return $string;
 }
 
-$itemsPerPage = 2;
+$itemsPerPage = 8;
 $viewParameter = param('view', 'events-list');
 $eventArchive = $page->uri() === 'events/archive';
 
