@@ -11,10 +11,14 @@
 }
 
 .metadata {
-  width: 100% !important;
+  width: 100%;
   font-family: 'Montserrat', sans-serif;
   padding: 40px 120px;
-  background: $lightgrey;
+  p {
+    font-size: 92.25%;
+    margin-bottom: 0.25em;
+  }
+  // background: $lightgrey;
 
 
   @include breakpoint(s) {
