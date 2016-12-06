@@ -51,7 +51,7 @@
           <label for="amount">How many people would you expect to visit a program of the science express in your community and what is their background?</label>
           <textarea id="amount" name="amount" type="amount" rows="3"></textarea> 
         </div>
-        <button type="submit" name="submit" value="Submit">Verstuur</button>
+        <button type="submit" name="submit" value="Submit">Send</button>
       </form>
 
     </section>
