@@ -21,7 +21,7 @@ function getMeta($site, $page) {
       $meta['title'] = $page->seotitle()->isNotEmpty() ? $page->seotitle() : $page->title() . ' | ' . $site->title();
       $meta['desc'] = $page->seodescription()->isNotEmpty() ? excerpt(h($page->seodescription()), 155) : html::decode(excerpt($page->description()->kt(), 155));
       $meta['type'] = 'article';
-      $meta['image'] = $page->postimage()->isNotEmpty() ? $page->postimage()->url() : url('assets/images/photo.jpg');
+      $meta['image'] = $page->postimage()->isNotEmpty() ? $page->url().'/'.$page->postimage()->filename() : url('assets/images/photo.jpg');
     }
   return $meta;
 }
