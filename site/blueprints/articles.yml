@@ -13,7 +13,7 @@ options:
 fields:
   title: title
   description: description
-  text: text
+  # text: text
   line:
     type: line
   seotitle: seotitle
