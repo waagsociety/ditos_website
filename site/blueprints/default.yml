@@ -3,12 +3,8 @@ icon: file-text-o
 pages: true
 files:
   fields:
-    copyright:
-      label: Copyright
-      type: text
-    caption:
-      label: Caption
-      type: text
+    copyright: copyright
+    caption: caption
 options:
   delete: false
   template: false

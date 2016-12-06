@@ -2,12 +2,8 @@ title: Event-item
 pages: false
 files: 
   fields:
-    copyright:
-      label: Copyright
-      type: text
-    caption:
-      label: Caption
-      type: text
+    copyright: copyright
+    caption: caption
 fields:
   title: title
   description: description

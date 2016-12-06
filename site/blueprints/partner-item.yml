@@ -13,7 +13,6 @@ fields:
     types:
         - image
     # required: true
-  
   location: location
   url:
     label: URL
