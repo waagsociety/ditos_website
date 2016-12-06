@@ -18,8 +18,10 @@ $tagsParameter = param('tagged');
 
 $pageParameter = param('page', 1);
 
+$items = $pages->find('events')->children()->visible();
+
 if ($eventArchive) {
-  $items = $pages->find('events')->children()->visible()->filter(function($child){
+  $items = $items->filter(function($child){
     $enddate = $child->date_end('c');
     $enddateday = strtotime($enddate) + 86400; 
 
@@ -28,7 +30,7 @@ if ($eventArchive) {
 }
 
 else {
-  $items = $pages->find('events')->children()->visible()->filter(function($child){
+  $items = $items->filter(function($child){
     $enddate = $child->date_end('c');
     $enddateday = strtotime($enddate) + 86400; 
     return time() <= $enddateday;
@@ -53,6 +55,15 @@ if ($countryParameter) {
   });
 }
 
+// filter events without a valid location, activity, or partner
+$locations = $pages->find('locations')->children();
+$activities = $pages->find('activities')->children();
+$partners = $pages->find('about')->children()->find('partners');
+$items->filter(function($item) use ($locations, $activities, $partners) {
+  return $locations->find($item->location())
+   && $activities->find($item->activity())
+   && $partners->find($item->partner());
+});
 ?>
 <main class="main__content">
   <div class="flex flex__wrap">
