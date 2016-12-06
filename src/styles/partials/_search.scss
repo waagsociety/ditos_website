@@ -66,6 +66,14 @@
     display: block;
     padding: 40px 80px;
     transition: .2s ease-in-out;
+
+    @include breakpoint(m) {
+      padding: 20px;
+      width: 100%;
+      font-size: 60%;
+      margin: 10px 0;
+    }
+
     &:hover{
       background: $brand-color;
         h2,
