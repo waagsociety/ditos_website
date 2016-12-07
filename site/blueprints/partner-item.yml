@@ -8,11 +8,8 @@ fields:
   text: text
   logo:
     label: Logo
-    type:  selector
-    mode:  single
-    types:
-        - image
-    # required: true
+    type:  image
+    required: true
   location: location
   url:
     label: URL
