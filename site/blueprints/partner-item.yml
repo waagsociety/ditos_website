@@ -8,6 +8,7 @@ fields:
   text: text
   logo:
     label: Logo
+    help: Add an image to Files on this page.
     type:  image
     required: true
   location: location
