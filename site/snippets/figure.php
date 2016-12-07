@@ -41,7 +41,7 @@ if ($image) : ?>
       <?= $author->html() ?>
     </footer>
 
-    <?php if (false || $caption) : ?>
+    <?php if (false && $caption) : ?>
     <figcaption><?= $caption->kirbytext() ?></figcaption>
     <?php endif ?>
 
