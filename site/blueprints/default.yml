@@ -3,6 +3,7 @@ icon: file-text-o
 pages: true
 files:
   fields:
+    license: license
     copyright: copyright
     caption: caption
 options:

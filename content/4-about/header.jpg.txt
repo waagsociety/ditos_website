@@ -3,3 +3,7 @@ Copyright: Waag Society
 ----
 
 Caption: 
+
+----
+
+License: CC0

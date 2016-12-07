@@ -6,3 +6,23 @@ img.central {
   display: block;
   margin: 0 auto 2.5em;
 }
+
+header figure img {
+  width: 100%;
+  height: auto;
+}
+
+figure footer {
+  background: $brand-color-opaque;
+  color: yellow;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  line-height: 2em;
+  font-family: 'Montserrat', sans-serif;
+  padding: 10px 20px;
+}
+
+figure footer a.license  {
+  color: inherit;
+}
