@@ -1,0 +1,7 @@
+label: Licence
+type: select
+default: CC0
+options:
+  CC0: Public Domain
+  BY: Attribution Required
+required: true

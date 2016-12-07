@@ -3,6 +3,7 @@ icon: newspaper-o
 pages: false
 files:
   fields:
+    license: license
     copyright: copyright
     caption: caption
 fields:
@@ -10,13 +11,7 @@ fields:
   description: description
   author: author
   date: date
-  postimage:
-    label: Main Post Image
-    type:  selector
-    mode:  single
-    required: true
-    types:
-      - image
+  postimage: postimage
   text: text
   tags: tags
   line:

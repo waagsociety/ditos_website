@@ -11,14 +11,7 @@ fields:
   location: location
   activity: activity
   text: text
-  postimage:
-    label: Image
-    type:  selector
-    mode:  single
-    types:
-        - image  
-    help: Optimal image size is 1200 x 1600. Max optimal file-size 400kb.
-    required: true
+  postimage: postimage
   tags: tags
   date:
     label: Start date

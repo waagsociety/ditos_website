@@ -8,13 +8,7 @@ files:
 fields:
   title: title
   description: description
-  postimage:
-    label: Main Post Image
-    type:  selector
-    mode:  single
-    required: true
-    types:
-      - image
+  postimage: postimage
   text: text
   tags: tags
   word:

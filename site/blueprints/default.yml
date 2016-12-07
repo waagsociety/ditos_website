@@ -14,12 +14,7 @@ fields:
   title: title
   description: description
   text: text
-  postimage:
-    label: Main Post Image
-    type:  selector
-    mode:  single
-    types:
-        - image
+  postimage: postimage
   submenu:
     label: Show submenu
     type: hidden

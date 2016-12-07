@@ -1,2 +1,3 @@
-label: Copyright
+# Used to be copyright, changed because obsolete due CC licensing
+label: Author
 type: text
