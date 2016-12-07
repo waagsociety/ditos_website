@@ -13,7 +13,7 @@ header figure img {
 }
 
 figure footer {
-  background: $brand-color-opaque;
+  background: $brand-color;
   color: yellow;
   position: absolute;
   right: 0;
@@ -25,4 +25,14 @@ figure footer {
 
 figure footer a.license  {
   color: inherit;
+  
+  span {
+    display: none
+  }
+
+  svg {
+    display: inline-block;
+    margin: 0 0 -0.3125em;
+  }
+
 }

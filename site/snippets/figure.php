@@ -35,12 +35,13 @@ if ($image) : ?>
     
     <footer>
       <a class="license <?= $licenseKey ?>" href="<?= $license['href'] ?>" title="License: <?= $license['title'] ?>" target="_blank">
-        <?= $license['title'] ?>        
+        <svg viewBox="5.5 -3.5 64 64" height="24"><use xlink:href="#i:<?= $licenseKey ?>"/></svg>
+        <span><?= $license['title'] ?></span>
       </a>
       <?= $author->html() ?>
     </footer>
 
-    <?php if ($caption) : ?>
+    <?php if (false || $caption) : ?>
     <figcaption><?= $caption->kirbytext() ?></figcaption>
     <?php endif ?>
 
