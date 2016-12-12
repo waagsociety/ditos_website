@@ -17,7 +17,7 @@
 
  <?php $activity = $pages->find('activities')->find($page->activity()) ?>
 
- <?php $tags = $tags = !!trim($page->tags()) ? explode(',', $page->tags()) : false; ?>
+ <?php $tags = $tags = !!trim($page->tags()) ? explode(',', $page->tags()) : []; ?>
  <?php if ($activity) : ?>
   <li>
     <header>What</header>
@@ -26,7 +26,7 @@
       <?php echo $activity->title() ?>
    
       <!-- TAGS -->
-      <?php if (count($tags)) : ?>
+      <?php if (count($tags) > 0) : ?>
         <ul class="tags">
           <?php foreach($tags as $tag) : ?>
           <li><a href="./tagged:<?= $tag ?>">#<?= $tag ?></a>

@@ -3,9 +3,9 @@
   <header class="phrase">
   <div>
       
-    <h1>Get With the Program</h1>
+    <h1>The Science Express is&nbsp;Coming!</h1>
     <a href="<?php echo url('book-the-bus') ?>">
-      <button type="button" class="btn">Request the Science Bus!</button>
+      <button type="button" class="btn">Request a Stop</button>
     </a>
 
   </div>
