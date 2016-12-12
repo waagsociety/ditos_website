@@ -38,7 +38,7 @@
 </nav>
 
 <nav class="secondary-nav">
-  <?php if($page->submenu() == '1'): ?>
+  <?php if($page->submenu() == '1' || $page->parent()->submenu() == '1'): ?>
     <?php
 
     $items = false;
