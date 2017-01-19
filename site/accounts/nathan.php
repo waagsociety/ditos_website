@@ -9,8 +9,8 @@ password: >
 language: en
 role: admin
 history:
+  - events/data
   - events/open-wetlab-project-evening-6-12
   - events/nieuw-event
   - blog/doing-it-together-science
   - experiments/first-experiment
-  - about/partners
