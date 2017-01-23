@@ -1,4 +1,5 @@
 node_modules
+thumbs
 .DS_Store
 *.log
 content
