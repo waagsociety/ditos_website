@@ -12,4 +12,6 @@ if(file_exists(__DIR__ . DS . 'site.php')) {
   $kirby = kirby();
 }
 
+require (__DIR__ . DS . 'site'. DS . 'vendor' . DS . 'PHPExcel.php');
+
 echo $kirby->launch();
