@@ -7,6 +7,20 @@
   }
 }
 
+ul.partners li img,
+a.agenda__preview__item img {
+  width: 240px;
+  max-width: initial;
+}
+
+section header .logo {
+  margin: 0 auto;
+  max-width: 100%;
+  width: 320px;
+  padding: 2.5em 2.5em 0;
+  height: auto;
+}
+
 .logo__bar{
   padding: 40px 0;
   display: flex;

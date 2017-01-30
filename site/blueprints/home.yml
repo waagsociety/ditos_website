@@ -2,7 +2,7 @@ title: Home
 icon: home
 pages: false
 options:
-  delete: false
+  # delete: false
   template: false
   url: false
   status: false

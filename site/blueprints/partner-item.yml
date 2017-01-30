@@ -1,7 +1,11 @@
 title: Partner
 pages: false
 options:
-  delete: false
+  # delete: false
+files:
+  fields:
+    license: license
+    copyright: copyright
 fields:
   title: title
   description: description
@@ -11,6 +15,7 @@ fields:
     help: Add an image to Files on this page.
     type:  image
     required: true
+  postimage: postimage
   location: location
   url:
     label: URL

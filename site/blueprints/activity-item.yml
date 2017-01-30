@@ -2,7 +2,7 @@ title: Activity
 pages: false
 files: false
 options:
-  delete: false
+  # delete: false
   template: false
   preview: false
   url: false

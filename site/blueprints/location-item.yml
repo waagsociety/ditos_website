@@ -2,7 +2,7 @@ title: Location
 pages: false
 files: true
 options:
-  delete: false
+  # delete: false
 fields:
   title: title
   description: description

@@ -1,4 +1,4 @@
-label: Main post image
+label: Image
 help: Add an image to Files on this page. Reccomended image dimensions are 1600 x 1200 pixels, the recommended file size is 200kb or less, please use the jpeg file format.
 type: image
 required: true

@@ -2,7 +2,7 @@
 $eventArchive = $page->uri() === 'events/archive';
 
 $pageParameter = param('page', 1);
-$itemsPerPage = 2;
+$itemsPerPage = 8;
 $itemCount = count($items);
 $pageCount = ceil(count($items) / $itemsPerPage);
 
@@ -21,10 +21,13 @@ $items = $items->paginate($itemsPerPage);
 
     <a href="<?php echo $item->url() ?>" class="agenda__preview__item event__info list">
 
-    <?php $postimage = $item->postimage()->toFile() ?>
+    <?php $postimage = strlen($item->postimage()) > 0
+      ? $item->postimage()->toFile()
+      : $site->find('about')->find('partners')->find($item->partner())->postimage()->toFile()
+    ?>
       <?php if ($postimage) : ?>
       <figure>
-        <img src="<?php echo $postimage->url() ?>" width="100%" />
+        <img src="<?php echo $postimage->url() ?>" width="240px" />
       </figure>
       <?php endif ?>
       <div>

@@ -3,7 +3,6 @@ pages: false
 files: 
   fields:
     copyright: copyright
-    caption: caption
 fields:
   title: title
   description: description
@@ -11,7 +10,9 @@ fields:
   location: location
   activity: activity
   text: text
-  postimage: postimage
+  postimage: 
+    extends: postimage
+    required: false
   tags: tags
   date:
     label: Start date

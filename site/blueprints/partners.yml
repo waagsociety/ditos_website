@@ -5,7 +5,7 @@ files: false
 options:
   template: false
   status: false
-  delete: false
+  # delete: false
   url: false
 fields:
   title: title

@@ -5,9 +5,8 @@ files:
   fields:
     license: license
     copyright: copyright
-    caption: caption
 options:
-  delete: false
+  # delete: false
   template: false
   url: false
   status: false

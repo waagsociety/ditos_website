@@ -6,7 +6,7 @@ pages: true
     - article
 files: false
 options:
-  delete: false
+  # delete: false
   template: false
   status: false
   url: false

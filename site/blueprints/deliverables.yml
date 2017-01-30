@@ -3,7 +3,7 @@ pages: true
   template: article
 files: false
 options:
-  delete: false
+  # delete: false
   template: false
   url: false
   status: false
