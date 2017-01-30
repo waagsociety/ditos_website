@@ -22,7 +22,6 @@ $items = $items->paginate(6);
           </a>
           <?php endif ?>
         </h1>
-        <?php e($page->description(), $page->description()->kirbytext()) ?>
         <?php foreach($items as $item): ?>
           <a href="<?php echo $item->url() ?>" class="article__preview">
             <article>
