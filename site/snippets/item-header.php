@@ -1,7 +1,8 @@
-<header class="blog__header">
+<?php $hasHeaderImage = $page->file($page->postimage())->exists() ?>
+
+<header class="blog__header <?php e($hasHeaderImage, 'header_has_an_image') ?>">
   
-  <?php snippet('figure', ['image' => $page->postimage()]) ?>
-  <h1><?php echo $page->title() ?></h1>
+  <?php snippet('figure', ['image' => $page->postimage(), 'title' => $page->title()]) ?>
   
   <?php
     $author = $page->author();
@@ -9,7 +10,9 @@
     $tags = !!trim($page->tags()) ? explode(',', $page->tags()) : false;
   ?>
   
-  <?php if ($author || $date || $tags) : ?>
+</header>
+
+<?php if ($author || $date || $tags) : ?>
   <section class="metadata">    
     <p>
       By <?= $author ?>
@@ -24,4 +27,3 @@
     <?php endif ?>
   </section>
   <?php endif ?>
-</header>

@@ -32,19 +32,24 @@ if ($image) : ?>
   <figure>
 
     <img src="<?= $url ?>" width="<?= $width ?>" height="<?= $height ?>">
-    
-    <footer>
-      <a class="license <?= $licenseKey ?>" href="<?= $license['href'] ?>" title="License: <?= $license['title'] ?>" target="_blank">
-        <svg viewBox="5.5 -3.5 64 64" height="24"><use xlink:href="#i:<?= $licenseKey ?>"/></svg>
-        <span><?= $license['title'] ?></span>
-      </a>
-      <?= $author->html() ?>
-    </footer>
-
-    <?php if (false && $caption) : ?>
-    <figcaption><?= $caption->kirbytext() ?></figcaption>
-    <?php endif ?>
 
   </figure>
 
+  <div>
+
+    <a class="license <?= $licenseKey ?>" href="<?= $license['href'] ?>" title="License: <?= $license['title'] ?>" target="_blank">
+      <svg viewBox="5.5 -3.5 64 64" height="24"><use xlink:href="#i:<?= $licenseKey ?>"/></svg>
+      <span><?= $license['title'] ?></span>
+    </a>
+    <?= $author->html() ?>
+
+    <h1><?= $title ?></h1>
+
+  </div>
+
+<?php else : ?>
+
+  <h1><?= $title ?></h1>
+
 <?php endif ?>
+

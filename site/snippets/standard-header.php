@@ -1,4 +1,6 @@
-<header class="blog__header">
-  <?php snippet('figure', ['image' => $page->postimage()]) ?>
-  <h1><?php echo $page->title() ?></h1>
+<?php $hasHeaderImage = $page->postimage()->isNotEmpty() ?>
+
+<header class="blog__header <?php e($hasHeaderImage, 'header_has_an_image') ?>">
+  
+  <?php snippet('figure', ['image' => $page->postimage(), 'title' => $page->title()]) ?>
 </header>

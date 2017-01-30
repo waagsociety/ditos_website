@@ -1,12 +1,12 @@
-<header class="blog__header">
-  
-  <?php snippet('figure', ['image' => $page->postimage()]) ?>
+<?php $hasHeaderImage = $page->file($page->postimage())->exists() ?>
 
-  <h1><?= $page->title() ?></h1>
+<header class="blog__header <?php e($hasHeaderImage, 'header_has_an_image') ?>">
+   
+  <?php snippet('figure', ['image' => $page->postimage(), 'title' => $page->title()]) ?>
 
-  <?php $logo = $page->file($page->logo()) ?>
-  <?php if ($logo->exists()) : ?>
-    <img class="logo" src="<?= $logo->url() ?>" width="500"/>
-  <?php endif ?>
-  
 </header>
+
+<?php $logo = $page->file($page->logo()) ?>
+<?php if ($logo->exists()) : ?>
+  <header><img class="logo" src="<?= $logo->url() ?>" width="500"/></header>
+<?php endif ?>

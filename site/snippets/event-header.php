@@ -1,8 +1,8 @@
-<header class="blog__header">
+<?php $hasHeaderImage = $page->file($page->postimage()->url())->exists() ?>
 
-  <?php snippet('figure', ['image' => $page->postimage()]) ?>
-
-  <h1><?php echo $page->title() ?></h1>
+<header class="blog__header <?php e($hasHeaderImage, 'header_has_an_image') ?>">
+  
+  <?php snippet('figure', ['image' => $page->postimage(), 'title' => $page->title()]) ?>
   
   <?php
     $author = $page->author();
