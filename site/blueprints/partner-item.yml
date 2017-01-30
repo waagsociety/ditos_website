@@ -1,7 +1,7 @@
 title: Partner
 pages: false
 options:
-  delete: false
+  # delete: false
 files:
   fields:
     license: license

@@ -6,7 +6,7 @@ files:
     license: license
     copyright: copyright
 options:
-  delete: false
+  # delete: false
   template: false
   url: false
   status: false
