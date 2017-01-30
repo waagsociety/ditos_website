@@ -27,7 +27,7 @@ $items = $items->paginate($itemsPerPage);
     ?>
       <?php if ($postimage) : ?>
       <figure>
-        <img src="<?php echo $postimage->url() ?>" width="240px" />
+        <img src="<?php echo thumb($postimage, array('width' => 480, 'quality' => 70))->url() ?>" width="240px" />
       </figure>
       <?php endif ?>
       <div>
