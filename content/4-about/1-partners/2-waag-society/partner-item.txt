@@ -31,3 +31,7 @@ Location: de-waag-amsterdam
 ----
 
 Autoid: 4f280fcf204fcb0444d04f35c12085cc
+
+----
+
+Postimage: waag_amsterdam.jpg

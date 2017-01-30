@@ -5,7 +5,6 @@ files:
   fields:
     license: license
     copyright: copyright
-    caption: caption
 fields:
   title: title
   description: description

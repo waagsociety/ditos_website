@@ -75,10 +75,6 @@
     $row++;
   }
 
-  // $sheet->getDefaultStyle()
-  //   ->getAlignment()
-  //   ->setHorizontal(PHPExcel_Style_Alignment::VERTICAL_TOP);
-
   foreach ($columns as $key => $column) {
     $span = $key.'1:'.$key;
     $sheet->getStyle($span.$sheet->getHighestRow())->getAlignment()->setWrapText(true);
