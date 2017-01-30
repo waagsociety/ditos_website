@@ -3,6 +3,40 @@
   // padding: 0 $gutter * 2;
   border-top: 1px solid $border-color;
 }
+
+.social-intro {
+    width: 100% !important;
+    padding: $gutter * 2;
+    text-align: center;
+    background: url(../images/cubes_@2X.png);
+    background-size: 2%;
+    border-top: 1px solid #eee;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #5B00FF;
+        background-image: linear-gradient(90deg, #5B00FF 30%, #D37777 100%);
+        opacity: 0.0;
+    }
+
+    h2 {
+        font-size: 3em;
+    }
+
+    @include breakpoint(m) {
+        font-size: 2em;
+    }
+
+    @include breakpoint(s) {
+        font-size: 1em;
+    }
+}
+
 .referral{
   display: none !important;
 }
