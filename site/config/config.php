@@ -15,6 +15,8 @@ for more information: http://getkirby.com/license
 
 */
 
+c::set('license', 'K2-PERSONAL-c1af1c43aecae04ff35328afd82c6f6b');
+
 /*
 
 ---------------------------------------
@@ -49,3 +51,4 @@ c::set('panel.widgets', array(
   'about'     => true,
   'site'     => true,
 ));
+
