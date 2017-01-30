@@ -17,4 +17,10 @@
       Twitter
     </a>
   </li>
+  <li>
+    <a href="<?php echo $site->youtube()->html() ?>" class="icon" target="_blank">
+      <svg width="32" height="32"><use xlink:href="#i:youtube"/></svg>
+      Youtube
+    </a>
+  </li>
 </ul>

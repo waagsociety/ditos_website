@@ -18,6 +18,9 @@ fields:
   twitter:
     label: Twitter link
     type:  text
+  youtube:
+    label: Youtube link
+    type:  text
   copyright:
     label: Copyright
     type:  textarea
