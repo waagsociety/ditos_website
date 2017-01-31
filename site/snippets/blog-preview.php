@@ -1,4 +1,4 @@
-<?php $items = $pages->children()->visible()->sortBy('modified', 'desc')->limit(4); ?>
+<?php $items = $pages->find('blog')->children()->visible()->sortBy('modified', 'desc')->limit(4); ?>
 <div class="blog__preview left">
   <?php foreach($items as $item): ?>
     <a href="<?php echo $item->url() ?>" class="article__preview">
