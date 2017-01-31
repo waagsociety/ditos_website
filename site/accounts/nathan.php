@@ -9,8 +9,8 @@ password: >
 language: en
 role: admin
 history:
+  - events/nieuw-event
   - events/bla
   - about/partners/waag-society
   - events/data
   - events/open-wetlab-project-evening-6-12
-  - events/nieuw-event
