@@ -1,0 +1,88 @@
+.tab-nav {
+	margin-left: 1.5em;
+	margin-bottom: 1.5em;
+	list-style: none;
+	border-bottom: 2px solid #ddd;
+	overflow: hidden;
+	-webkit-transition: all .2s ease-in-out;
+}
+
+.tab-nav li {
+	position: relative;
+	display: inline-block;
+	padding: .75em 1.5em 1em;
+	margin-right: 1px;
+	bottom: 0;
+	background: #fbfbfb;
+	cursor: pointer;
+}
+
+
+.tab-nav li:hover, .tab-nav li:focus {
+	background: #fff;
+	outline: none;
+}
+
+.tab-nav li.active {
+	z-index: 9;
+	background: #fff
+	box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+
+.tab-nav li {
+  background: #fff;
+}
+
+.tab-nav li:hover {
+  background: #ddd;
+}
+
+.tab-nav {
+  -webkit-transition: none;
+  transition: none;
+}
+
+.tab-nav li {
+  font-size: 14px;
+  padding: 10px;
+}
+
+.tab-nav li.active {
+  background: #000;
+  color: #fff;
+  cursor: default;
+}
+
+.tab-nav li.active:hover {
+  background: #000;
+}
+
+.tab-nav li:hover .fa {
+  color: #000;
+}
+
+.tab {
+  opacity: 0;
+  transition: opacity .25s ease-in-out;
+  max-height: 0;
+}
+
+.tab.fired {
+  display: none;
+}
+
+.tab.active.fired {
+  opacity: 1;
+  display: block;
+  max-height: 1000000px !important;
+}
+
+.tab-nav .fa {
+  color: #bbb;
+  display: inline-block;
+  margin: 0 6px 0 0;
+}
+
+.tab-nav li.active .fa {
+  color: #fff;
+}

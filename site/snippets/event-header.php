@@ -1,4 +1,4 @@
-<?php $hasHeaderImage = $page->file($page->postimage()->url())->exists() ?>
+<?php $hasHeaderImage = $page->file($page->postimage())->exists() ?>
 
 <header class="blog__header <?php e($hasHeaderImage, 'header_has_an_image') ?>">
   

@@ -161,7 +161,24 @@
 .blog__header figure{
   line-height: 0;
 }
-.blog__header h1{
+
+blog__header {
+  position: relative;
+}
+
+.header_has_an_image div {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  h1 {
+    color: white;
+    background: linear-gradient(110deg, rgba(91, 0, 255, 0.9) 30%, rgba(211, 119, 140, 0.92) 100%);
+    margin-top: 10px;
+  }
+}
+
+.blog__header h1 {
   background: yellow;
   font-size: 3.5em;
   padding: 40px 120px 50px;
