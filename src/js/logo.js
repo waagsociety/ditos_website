@@ -1,6 +1,5 @@
 !function(){
-
-  var logo = document.getElementById('svg-logo');
+  var logo = document.querySelector('#navigation #svg-logo');
   var classNames = Array.prototype.slice.call(logo.querySelectorAll('[id]'))
     .map(function(letter) {
       return letter.id
@@ -18,6 +17,8 @@
   
   setInterval(function(){
     if (index >= classNamesLength) index = 0
+
+    // console.log(classNames[index]);
     logo.setAttribute('class', classNames[index])
     index += 1
   }, 500)

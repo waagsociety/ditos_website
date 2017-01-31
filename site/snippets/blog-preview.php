@@ -1,6 +1,5 @@
-<?php $items = $pages->find('blog', 'about/deliverables')->children()->visible()->sortBy('modified', 'desc')->limit(4); ?>
+<?php $items = $pages->children()->visible()->sortBy('modified', 'desc')->limit(4); ?>
 <div class="blog__preview left">
-  <h3 class="preview__header">Latest <a href="<?php echo url('/blog'); ?>">blogs</a> <a href="<?php echo url('/experiments'); ?>">experiments</a></h3>
   <?php foreach($items as $item): ?>
     <a href="<?php echo $item->url() ?>" class="article__preview">
       <article>
