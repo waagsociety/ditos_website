@@ -3,7 +3,7 @@
 
 <main class="main__content">
   <div class="flex flex__wrap">
-    <section>
+    <section class="main-section">
       <?php snippet('standard-header') ?>
       <div class="text">
       <?php 

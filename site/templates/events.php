@@ -67,7 +67,7 @@ $items->filter(function($item) use ($locations, $activities, $partners) {
 ?>
 <main class="main__content">
   <div class="flex flex__wrap">
-    <section>
+    <section class="main-section">
       <?php $viewParameter === 'map' 
         ? snippet('mapbox', ['items' => $items]) 
         : snippet('events-list', ['items' => $items]) 

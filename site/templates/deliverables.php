@@ -1,7 +1,7 @@
 <?php snippet('header') ?>
 <main class="main__content">
   <div class="flex flex__wrap">
-    <section>
+    <section class="main-section">
       <?php $items = $pages->find('about/deliverables')->children()->visible()->paginate(6); ?>
       <div class="blog__preview left">
         <h3 class="preview__header">Project deliverables</h3>

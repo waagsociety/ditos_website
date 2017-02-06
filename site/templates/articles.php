@@ -11,7 +11,7 @@ $items = $items->paginate(6);
 <?php snippet('header') ?>
 <main class="main__content">
   <div class="flex flex__wrap">
-    <section>
+    <section class="main-section">
       <div class="blog__preview left">
         <h1 class="preview__header"><?php echo $page->title() ?>
           <?php if ($tagsParameter) : ?>

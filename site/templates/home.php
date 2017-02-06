@@ -1,7 +1,8 @@
 <?php snippet('header') ?>
 <main class="main__content">
   <div class="flex flex__wrap">
-    <section>
+    <section class="main-section">
+      <?php snippet('slider') ?>
       <?php snippet('blog-preview') ?>
       <?php snippet('newsletter') ?>
     </section>

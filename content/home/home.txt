@@ -3,3 +3,34 @@ Title: Home
 ----
 
 Text: The European Commission through its Horizon 2020 programme, with support from the Swiss confederation, have committed almost 4m euro to a three-year programme to increase public participation in scientific research and innovation across Europe. The 11-partner project, coordinated by UCL Extreme Citizen Science group, aims to build the institutional and policy foundations for sustained deep public engagement in science and technology in Europe that enables people to contribute at a level of participation suitable for them, whether that is engaging in face-to-face community meetings, using a crowdsourcing app to log air quality or working in a citizen biolab.
+
+----
+
+Description: Home of the doing it together science project
+
+----
+
+Slider: 
+
+- 
+  image: gmo-genetic-modification-glow-dark.jpg
+  content: |
+    ###Biodesign is:
+    ##Use of living things,<br/> such as bacteria or plants, in designing product or art
+    (link: # text: Check out class: btn)
+- 
+  image: 27738917781_0c8095b05b_k.png
+  content: |
+    ###Doing it together science is:
+    ##Something very<br/>very cool
+    (link: # text: Check out class: btn)
+- 
+  image: universite_paris_descartes.jpg
+  content: |
+    ###Uni is:
+    ##Use of living things,<br/> such as bacteria or plants, in designing product or art
+    (link: # text: Check out class: btn)
+
+----
+
+Seotitle: 

@@ -10,6 +10,19 @@ fields:
   title: title
   description: description
   text: text
+  slider:
+    label: Slider
+    type: structure
+    entry: >
+      {{image}}<br />
+      {{content}}
+    fields:
+      image:
+        label: Image
+        type: image
+      content:
+        label: Content
+        type: textarea
   line:
     type: line
   seotitle: seotitle
