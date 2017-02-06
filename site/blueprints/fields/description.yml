@@ -1,6 +1,6 @@
-label: Description
+label: Short description
 type:  text
-help: A line between 16 and 155 characters to describe this page
+help: Add a catchy short description for this event here (max. 155 characters)
 validate:
   minLength: 16
   maxLength: 155

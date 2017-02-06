@@ -1,3 +1,4 @@
 label: Text
 type:  textarea
 required: true
+help: If not longer text is available please copy the short description here.
