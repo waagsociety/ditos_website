@@ -17,7 +17,7 @@ Slider:
   content: |
     ###Biodesign is:
     ##Use of living things,<br/> such as bacteria or plants, in designing product or art
-    (link: # text: Check out class: btn)
+    (link: # text: What is Bio-design class: btn)
 - 
   image: 27738917781_0c8095b05b_k.png
   content: |

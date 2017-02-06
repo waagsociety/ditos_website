@@ -31,8 +31,12 @@
   background: url(../images/subtle_dots_@2X.png);
   width: 100%;
 
+  @include breakpoint(l) {
+    padding: 40px;
+  }
+
   @include breakpoint(m) {
-    padding: 40px 60px;
+    padding: 0;
   }
 }
 .blog__preview:before{
@@ -50,8 +54,16 @@
   height: 600px;
   float: left;
 
+  @include breakpoint(l) {
+    height: 400px;
+    width: 100% !important;
+    margin-bottom: 40px !important;
+  }
+
   @include breakpoint(m) {
     height: 400px;
+    width: 100% !important;
+    margin: 0 !important;
   }
 
   article{

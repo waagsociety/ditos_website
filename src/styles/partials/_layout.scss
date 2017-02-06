@@ -4,7 +4,12 @@
 .main__content .main-section{
   width: calc(100% - 400px);
   &.full__width { width: 100% }
+
+  @include breakpoint(s) {
+    width: 100%;
+  }
 }
+
 .main__content aside{
   border-left: 1px solid $border-color;
   width: 400px;
@@ -53,7 +58,6 @@ aside.featured__container {
   padding: 60px 128px 60px 120px;
 
   @include breakpoint(m) {
-
     padding: 60px 64px 30px 60px;
   }
 

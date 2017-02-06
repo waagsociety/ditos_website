@@ -26,14 +26,14 @@
 
     h2 {
         font-size: 3em;
-    }
 
-    @include breakpoint(m) {
-        font-size: 2em;
-    }
+        @include breakpoint(m) {
+            font-size: 2em;
+        }
 
-    @include breakpoint(s) {
-        font-size: 1em;
+        @include breakpoint(s) {
+            font-size: 1.5em;
+        }
     }
 }
 
