@@ -1,7 +1,7 @@
 <?php snippet('header') ?>
 <main class="main__content">
   <div class="flex flex__wrap">
-    <section>
+    <section class="main-section">
       <header class="blog__header">
         <h1><?php echo $page->title() ?></h1>
       </header>
