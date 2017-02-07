@@ -25,13 +25,21 @@ return function($site, $pages, $page) {
       // create the body from a simple snippet
       $body  = snippet('contactmail', $data, true);
       // build the email
+       
+
       $email = email(array(
         'to'      => 'martin@waag.org',
         'from'    => 'martin@waag.org',
-        'subject' => 'Nieuwe contact',
         'replyTo' => $data['email'],
-        'body'    => $body
+        'subject' => 'Nieuwe contact',
+        'body'    => $body,
+        'service' => 'mailgun',
+        'options' => array(
+          'key'    => 'key-5701b627c8057d332b047ddb56ba11e7',
+          'domain' => 'sandboxb1b404ee42b84a098a7d4daaa60a78dc.mailgun.org'
+        )
       ));
+      
       // try to send it and redirect to the
       // thank you page if it worked
       if($email->send()) {
