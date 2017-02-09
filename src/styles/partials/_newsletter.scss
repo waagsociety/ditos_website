@@ -61,6 +61,10 @@
   position: absolute;
 }
 
+.form-wrapper .button {
+  position: absolute;
+}
+
 .label {
   color: rgba(255,255,255,.8);
   left: 120px;
@@ -91,13 +95,13 @@
   -webkit-transform: translate3d(0, -200%, 0);
           transform: translate3d(0, -200%, 0);
 }
-.email, .submit {
+.email, .form-wrapper .button {
   width: 100%;
   bottom: 0;
   border: 0;
   margin-bottom: 0;
 }
-.email:focus, .submit:focus {
+.email:focus, .form-wrapper .button:focus {
   outline: none;
 }
 
@@ -143,7 +147,7 @@
   background-color: $sec-color;
 }
 
-.submit {
+.form-wrapper .button {
   top: 50%;
   cursor: pointer;
   background-color: rgba(0,0,0,.3);
@@ -158,16 +162,16 @@
   z-index: 2;
   line-height: 50px;
 }
-.is-active .submit {
+.is-active .button {
   display: block;
   -webkit-animation: bounce-in ease-out 0.4s;
           animation: bounce-in ease-out 0.4s;
 }
-.no-touch .submit:hover, .submit:focus {
+.no-touch .button:hover, .button:focus {
   background-color: rgba(0,0,0,.3);
 }
 @media only screen and (min-width: 768px) {
-  .submit {
+  .button {
     line-height: 4em;
   }
 }
