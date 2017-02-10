@@ -1,9 +1,0 @@
-Title: Contact
-
-----
-
-Text: Wanna know more about the project contact us.
-
-----
-
-Submenu: 1
