@@ -7,14 +7,14 @@ options:
   status: false
   # delete: false
   url: false
-fields:
-  title: title
-  description: description
-  text: text
-  submenu:
-    label: Show submenu
-    type: hidden
-    text: Do you want to display the submenu?
-  line:
-    type: line
-  seotitle: seotitle
+# fields:
+#   title: title
+#   description: description
+#   text: text
+#   submenu:
+#     label: Show submenu
+#     type: hidden
+#     text: Do you want to display the submenu?
+#   line:
+#     type: line
+#   seotitle: seotitle

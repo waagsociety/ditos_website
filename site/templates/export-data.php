@@ -29,7 +29,7 @@
 ?>
 <?php if ($user && params('download')) {
 
-  $pages = $page->parent()->children()->visible()->filterBy('template', 'event-item');
+  $pages = $page->parent()->children()->filterBy('template', 'event-item');
 
   $row = 1;
   $name = 0; $slug = 1; $width = 2; $callback = 3;
