@@ -9,5 +9,6 @@ password: >
 language: en
 role: admin
 history:
+  - about/partners/waag-society
   - events
   - events/exhibition
