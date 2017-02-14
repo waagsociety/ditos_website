@@ -5,6 +5,6 @@ firstname: pauline
 lastname: ""
 email: pauline@waag.org
 password: >
-  $2a$10$17UZY9.5uilys7s/7oPsA.vbrtc.fc0RRbOVjywSL8H0QJ04nMiYy
+  $2a$10$YsTnBiHA6yPklATc7EhV7egVSnqRs.hO3nH.KkLkLo3WNUWqgprDW
 language: en
 role: admin

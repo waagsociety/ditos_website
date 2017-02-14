@@ -89,7 +89,7 @@ fields:
     label: Evaluation
     id: evaluation
     type: tab
-    icon: area-chart
+    icon: pie-chart
   evaluation-info:
     label: Evaluation
     type: info
@@ -97,81 +97,92 @@ fields:
       Dear partner,<br>
       The information requested here is only visible for the consortium. Please be accurate when filling this in.
 
-  event-type:
-    label: Type of event as described in DoA
-    type: text
-  event-id:
-    label: Event ID
+  event-name:
+    label: Name of event (as described in DoA)
     type: text
   doa-description:
-    label: Type of event as described in DoA
+    label: Type of event (as described in DoA)
     type: textarea
-    buttons: false  
+    buttons: false
   alt-description:
     label: Brief description (for events not in DoA)
     type: textarea
     buttons: false
-  status: 
-    label: Status
-    type: select
-    options:
-      - Planned
-      - Completed
-      - Cancelled
+  facilitator: 
+    label: Facilitator’s (person) name
+    type: tags
+  event-id:
+    label: Event ID
+    type: text
     width: 1/2
+    help: "use “org.name_date” in YYYYMMDD format"
   work-package:
     label: Work package
     type: select
     options:
-      - Bio/Policy
-      - Bio/Public
-      - Env/Policy
-      - Env/Public
-      - Evaluation
-      - Dissemination
+      "Bio/Policy": "Bio/Policy"
+      "Bio/Public": "Bio/Public"
+      "Env/Policy": "Env/Policy"
+      "Env/Public": "Env/Public"
+      Evaluation: Evaluation
+      Dissemination: Dissemination
     width: 1/2
-  facilitator: 
-    label: Facilitator’s (person) name
-    type: tags
+  planning-phase:
+    label: Phase (the event was planned)
+    type: select
+    options:
+      "Scoping (M1 - M6)": "Scoping (M1 - M6)"
+      "Engagement (M7 - M24)": "Engagement (M7 - M24)"
+      "Scaling up (M25 - M36)": "Scaling up (M25 - M36)"
+    width: 1/2
+  reporting-period:
+    label: Reporting period
+    type: select
+    options:
+      "1 (M1 - M15)": "Reporting Period 1 (M1 - M15)"
+      "2 (M16 - M36)": "Reporting Period 2 (M16 - M36)"
+    width: 1/2
   audience-numbers:
     label: Audience numbers
     type: number
-    width: 1/4
+    width: 1/3
+  funds-eur:
+    label: Total amount of funds used (EUR)
+    type: number
+    width: 1/3
+  status: 
+    label: Status
+    type: select
+    options:
+      Planned: Planned
+      Completed: Completed
+      Cancelled: Cancelled
+    width: 1/3
   female-percentile:
     label: Percentage of female attendees
     type: number
     max: 100
-    width: 1/4
+    width: 1/3
   lower-age-bracket: 
     label: Participants lower age bracket
     type: number
-    width: 1/4
+    width: 1/3
   higher-age-bracket:
     label: Participants higher age bracket
     type: number
-    width: 1/4
-  funds-eur:
-    label: Total amount of funds used (EUR)
-    type: number
-    width: 1/2
-  reporting-period
-    label: Reporting period
-    type: select
-    options:
-      - Reporting Period 1 (M1 - M15)
-      - Reporting Period 2 (M16 - M36)
-    width: 1/2
-
+    width: 1/3
+  notes:
+    label: Additional notes
+    type: textarea
+    buttons: false
+  
   seo-tab:
     label: SEO
     id: seo
     type: tab
-    icon: search
+    icon: search-plus
   seo-info: 
     label: SEO
     type: info
-    text: The information on this page will be visible for the public. Please be accurate when filling this in.
 
-  line:
-    type: line
   seotitle: seotitle

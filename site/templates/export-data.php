@@ -29,26 +29,39 @@
 ?>
 <?php if ($user && params('download')) {
 
-  $pages = $page->parent()->children()->visible()->filterBy('template', 'event-item');
+  $pages = $page->parent()->children()->filterBy('template', 'event-item');
 
   $row = 1;
   $name = 0; $slug = 1; $width = 2; $callback = 3;
   $partners = $site->find('about')->find('partners');
   $activities = $site->find('activities');
   $columns = [
-    'A' => ['Title', 'title', 32],
-    'B' => ['Description', 'description', 48],
-    'C' => ['Partner', 'partner', 16, getFromPage($partners, 'title')],
-    'D' => ['Activity', 'activity', 16, getFromPage($activities, 'title')],
-    'E' => ['Page Link', 'tinyUrl', 32],
-    'F' => ['Tags', 'tags', 32],
+    'V' => ['Title', 'title', 32],
+    'W' => ['Description', 'description', 48],
+    'A' => ['Partner', 'partner', 32, getFromPage($partners, 'title')],
+    'K' => ['Activity', 'activity', 16, getFromPage($activities, 'title')],
+    'C' => ['Page Link', 'tinyUrl', 32],
+    'X' => ['Tags', 'tags', 32],
     'G' => ['Date', 'date', 12],
     'H' => ['Time', 'time', 8],
     'I' => ['End Date', 'date_end', 12],
     'J' => ['End Time', 'time_end', 8],
-    'K' => ['URL', 'link', 48, destructure(['url'])],
-    'L' => ['Price', 'price', 8],
-    'M' => ['Currency', 'currency', 8],
+    'Q' => ['URL', 'link', 48, destructure(['url'])],
+    'Y' => ['Price', 'price', 8],
+    'Z' => ['Currency', 'currency', 8],
+    'B' => ['Name of event', 'event_name', 32],
+    'S' => ['Event ID', 'event_id', 24],
+    'D' => ['DoA Description', 'doa_description', 96],
+    'E' => ['Brief description', 'alt_description', 96],
+    'F' => ['Status', 'status', 12],
+    'T' => ['Work Package', 'work_package', 16],
+    'P' => ['Facilitators', 'facilitator', 24],
+    'L' => ['Audience Numbers', 'audience_numbers', 8],
+    'M' => ['% Female', 'female_percentile', 12],
+    'N' => ['Lower age bracket', 'lower_age_bracket', 12],
+    'O' => ['Higher age bracket', 'higher_age_bracket', 12],
+    'R' => ['Used funds (EUR)', 'funds_eur', 12],
+    'U' => ['Reporting Period', 'reporting_period', 16],
   ];
 
   $phpExcel = new PHPExcel();
@@ -68,6 +81,7 @@
       $field = $column[$slug];
       $value = array_key_exists($field, $data) ? $data[$field] : $page->content()->get($field);
       if (array_key_exists($callback, $column) && strlen(trim($value)) > 0) {
+        // echo $value.' - '.$data['url'].'<br>';
         $value = $column[$callback]($value);
       }
       $sheet->setCellValue($key.$row, $value."\n");
