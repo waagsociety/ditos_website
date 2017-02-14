@@ -2,15 +2,9 @@ title: Events
 icon: calendar
 pages: event-item
 files: false
+update: false
 options:
   # delete: false
   template: false
   url: false
   status: false
-fields:
-  title: title
-  description: description
-  # text: text
-  line:
-    type: line
-  seotitle: seotitle

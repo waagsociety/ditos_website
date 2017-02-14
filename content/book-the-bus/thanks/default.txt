@@ -1,25 +1,0 @@
-Title: thanks
-
-----
-
-Description: 
-
-Thanks for filling in the form. We will soon get in touch with you.
-
-----
-
-Text: 
-
-Thanks for filling in the form. We will soon get in touch with you.
-
-----
-
-Postimage: photo2.jpg
-
-----
-
-Submenu: 0
-
-----
-
-Seotitle: 

@@ -90,6 +90,7 @@
     left: 80px;
     bottom: 100px;   
     z-index: 2; 
+    max-width: 70%;
 
     @include breakpoint(m) {
       left: 40px;

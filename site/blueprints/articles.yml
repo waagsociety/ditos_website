@@ -10,10 +10,10 @@ options:
   template: false
   status: false
   url: false
-fields:
-  title: title
-  description: description
-  # text: text
-  line:
-    type: line
-  seotitle: seotitle
+# fields:
+#   title: title
+#   description: description
+#   # text: text
+#   line:
+#     type: line
+#   seotitle: seotitle
