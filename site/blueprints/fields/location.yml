@@ -5,5 +5,5 @@ query:
   page: /locations
   value: '{{uid}}'
   text: '{{title}}'
-help: This page will not become public without a Location
+help: Select your location. When using a new location please add it first via Dashboard > Meta Data > Location
 width: 1/3

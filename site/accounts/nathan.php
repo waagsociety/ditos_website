@@ -8,4 +8,6 @@ password: >
   $2a$10$bKZ9ovsA2ApDIePBrAte3.IT/MaYyQDwc6Vt/QRUV1o9Wr.xm9F2K
 language: en
 role: admin
-history: [ ]
+history:
+  - events
+  - events/exhibition

@@ -1,4 +1,4 @@
 label: Text
 type:  textarea
 required: true
-help: If not longer text is available please copy the short description here.
+help: Here you can fill in a longer text that will be visible on the event page of the website. If not longer text is available please copy the short description here.

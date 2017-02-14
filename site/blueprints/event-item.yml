@@ -15,8 +15,12 @@ fields:
     type: info
     text: The information on this page will be visible for the public. Please be accurate when filling this in.
 
-  title: title
-  description: description
+  title:
+    extends: title
+    label: Public title
+  description: 
+    extends: description
+    help: Add a catchy short description for this event here. This will be shown in the list of all our events. (max. 155 characters)
   partner: partner
   location: location
   activity: activity
@@ -84,6 +88,12 @@ fields:
     type: checkbox
     text: A reservation is required to attend
     width: 1/3
+  publish-info: 
+    label: Publishing
+    type: info
+    text: >
+      If all required fields are filled in you can publish your event page. Set your page on ‘visible’  (left above under ‘Page settings’) and the information of this page will be publicly visible on the website.
+      <br><br>After saving this page your information will be saved and added to the event diary.
 
   evaluation-tab:
     label: Evaluation
@@ -101,21 +111,20 @@ fields:
     label: Name of event (as described in DoA)
     type: text
   doa-description:
-    label: Type of event (as described in DoA)
+    label: DoA Description (for events that are in the Grant Agreement DoA; if not in DoA complete the next column NOT this one)
     type: textarea
     buttons: false
   alt-description:
-    label: Brief description (for events not in DoA)
+    label: Brief description for events/details not in DoA
     type: textarea
     buttons: false
   facilitator: 
     label: Facilitator’s (person) name
     type: tags
   event-id:
-    label: Event ID
+    label: "Event ID: use org.name_date in YYYYMMDD format"
     type: text
     width: 1/2
-    help: "use “org.name_date” in YYYYMMDD format"
   work-package:
     label: Work package
     type: select
@@ -134,14 +143,19 @@ fields:
       "Scoping (M1 - M6)": "Scoping (M1 - M6)"
       "Engagement (M7 - M24)": "Engagement (M7 - M24)"
       "Scaling up (M25 - M36)": "Scaling up (M25 - M36)"
-    width: 1/2
+    width: 1/3
   reporting-period:
     label: Reporting period
     type: select
     options:
       "1 (M1 - M15)": "Reporting Period 1 (M1 - M15)"
       "2 (M16 - M36)": "Reporting Period 2 (M16 - M36)"
-    width: 1/2
+    width: 1/3
+  duration:
+    label: Event duration
+    type: text
+    width: 1/3
+    help: In amount of hours or days
   audience-numbers:
     label: Audience numbers
     type: number

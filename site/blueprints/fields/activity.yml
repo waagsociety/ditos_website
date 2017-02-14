@@ -1,9 +1,10 @@
-label: Activity
+label: Event Type
 type: select
 options: query
 query: 
   page: /activities
   value: '{{uid}}'
   text: '{{title}}'
-help: Your event will not be visisble for site visitors without a selected Activity
+help: Please select your event type here.
+default: conference
 width: 1/3

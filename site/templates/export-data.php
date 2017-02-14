@@ -1,4 +1,4 @@
-<?php 
+<?php
   $user = $site->user();
   $filename = "Doing it Together Science - events - ".date('Y-m-d H:i').".xls";
 
@@ -20,6 +20,14 @@
 
   };
 
+
+  function getAddress($locations) {
+    return function($slug) use ($locations) {
+      $locationPage = $locations->find($slug);
+      return join("\n", [$locationPage->title(), $locationPage->address(), $locationPage->country()]);
+    };
+  };
+
   function getFromPage($page, $field) {
     return function($slug) use ($page, $field) {
       return $page->find($slug)->content()->get($field);
@@ -35,33 +43,36 @@
   $name = 0; $slug = 1; $width = 2; $callback = 3;
   $partners = $site->find('about')->find('partners');
   $activities = $site->find('activities');
+  $locations = $site->find('locations');
+
   $columns = [
-    'V' => ['Title', 'title', 32],
-    'W' => ['Description', 'description', 48],
     'A' => ['Partner', 'partner', 32, getFromPage($partners, 'title')],
-    'K' => ['Activity', 'activity', 16, getFromPage($activities, 'title')],
+    'B' => ['Name of Event (as described in DoA)', 'event_name', 32],
     'C' => ['Page Link', 'tinyUrl', 32],
-    'X' => ['Tags', 'tags', 32],
-    'G' => ['Date', 'date', 12],
-    'H' => ['Time', 'time', 8],
-    'I' => ['End Date', 'date_end', 12],
-    'J' => ['End Time', 'time_end', 8],
-    'Q' => ['URL', 'link', 48, destructure(['url'])],
-    'Y' => ['Price', 'price', 8],
-    'Z' => ['Currency', 'currency', 8],
-    'B' => ['Name of event', 'event_name', 32],
-    'S' => ['Event ID', 'event_id', 24],
-    'D' => ['DoA Description', 'doa_description', 96],
-    'E' => ['Brief description', 'alt_description', 96],
+    'D' => ['DoA Description (for events that are in the Grant Agreement DoA)', 'doa_description', 96],
+    'E' => ['Brief Description (for events/details not in DoA)', 'alt_description', 96],
     'F' => ['Status', 'status', 12],
-    'T' => ['Work Package', 'work_package', 16],
-    'P' => ['Facilitators', 'facilitator', 24],
-    'L' => ['Audience Numbers', 'audience_numbers', 8],
+    'G' => ['Date', 'date', 12],
+    'H' => ['Time', 'time', 12],
+    'I' => ['End Date', 'date_end', 12],
+    'J' => ['End Time', 'time_end', 12],
+    'K' => ['Event Type', 'activity', 16, getFromPage($activities, 'title')],
+    'L' => ['Audience Numbers', 'audience_numbers', 12],
     'M' => ['% Female', 'female_percentile', 12],
-    'N' => ['Lower age bracket', 'lower_age_bracket', 12],
-    'O' => ['Higher age bracket', 'higher_age_bracket', 12],
-    'R' => ['Used funds (EUR)', 'funds_eur', 12],
-    'U' => ['Reporting Period', 'reporting_period', 16],
+    'N' => ['Work Package', 'work_package', 16],
+    'O' => ['Partner org. name AND facilitator’s (person) name', 'facilitator', 24],
+    'P' => ['Lower age bracket', 'lower_age_bracket', 12],
+    'Q' => ['Higher age bracket', 'higher_age_bracket', 12],
+    'R' => ['Url’s', 'link', 48, destructure(['url'])],
+    'S' => ['Total funding amount used (in EUR)', 'funds_eur', 12],
+    'T' => ['Event ID', 'event_id', 24],
+    'U' => ['Location', 'location', 32, getAddress($locations)],
+    'V' => ['Event Duration', 'duration', 16],
+    'W' => ['Price', 'price', 12],
+    'X' => ['Currency', 'currency', 12],
+    'Y' => ['Reporting Period', 'reporting_period', 16],
+    'Z' => ['Phase (the event was planned)', 'planning_phase', 32],
+    'AA' => ['Notes', 'notes', 32],
   ];
 
   $phpExcel = new PHPExcel();
@@ -81,7 +92,6 @@
       $field = $column[$slug];
       $value = array_key_exists($field, $data) ? $data[$field] : $page->content()->get($field);
       if (array_key_exists($callback, $column) && strlen(trim($value)) > 0) {
-        // echo $value.' - '.$data['url'].'<br>';
         $value = $column[$callback]($value);
       }
       $sheet->setCellValue($key.$row, $value."\n");

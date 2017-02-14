@@ -5,5 +5,6 @@ query:
   page: /about/partners
   value: '{{uid}}'
   text: '{{title}}'
-help: This page will not become public without a Partner
+help: Select the name of the organizer of this event
+default: eutema
 width: 1/3
