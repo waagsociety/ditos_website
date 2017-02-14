@@ -89,11 +89,13 @@ fields:
     text: A reservation is required to attend
     width: 1/3
   publish-info: 
-    label: Publishing
+    label: How to Publish
     type: info
     text: >
-      If all required fields are filled in you can publish your event page. Set your page on ‘visible’  (left above under ‘Page settings’) and the information of this page will be publicly visible on the website.
-      <br><br>After saving this page your information will be saved and added to the event diary.
+      
+      1) Save the page by clicking the button below. After saving this page your information will also be added to the event diary.
+      <br>
+      2) If all required fields are filled in and the page has saved you can publish your event page. Set your page on ‘visible’ (left above under ‘Page settings’) and the information of this page will be publicly visible on the website.
 
   evaluation-tab:
     label: Evaluation
@@ -189,6 +191,12 @@ fields:
     label: Additional notes
     type: textarea
     buttons: false
+
+  evaluation-publish:
+    label: Export Evaluation Data
+    type: info
+    text: > 
+      Save the page by clicking the button below. After saving this page your information will be added to the <a href="http://togetherscience.eu/events/data">event diary</a>.
   
   seo-tab:
     label: SEO

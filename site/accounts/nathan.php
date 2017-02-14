@@ -9,9 +9,8 @@ password: >
 language: en
 role: admin
 history:
-  - >
-    locations/royal-belgian-institute-of-natural-sciences-brussels
+  - locations/kersnikova-institute
+  - locations/royal-belgian-institute-of-natural-sciences-brussels
   - locations/london
   - locations/paris
   - locations/berlin
-  - locations/ucl-london
