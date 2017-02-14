@@ -43,7 +43,7 @@ $items = $items->paginate($itemsPerPage);
 
         <li>
           <svg viewBox="0 0 32 32"><use xlink:href="#i:location"/></svg>
-          <?php echo $location->city().', '.$location->country() ?>
+          <?php echo $location->title().', '.$location->country() ?>
         </li>
 
       </ul>

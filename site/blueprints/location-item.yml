@@ -5,22 +5,18 @@ options:
   # delete: false
 fields:
   title: title
-  description: description
   address:
     label: Address
     type: text
     width: 1/2
-    required: true
-  city:
-    label: City
-    type: tags
-    width: 1/2
-    required: true
   country:
     label: Country
     type: tags 
     width: 1/2
-    required: true  
+    required: true 
+  # city:
+  #   label: City
+  #   type: text 
   url:
     label: URL
     type: url  

@@ -85,7 +85,7 @@
 
  <?php $location = $pages->find('locations')->find($page->location()) ?>
  <?php if ($location) : ?>
- <?php $q = $location->address().'+'.$location->city().'+'.$location->country() ?>
+ <?php $q = strtolower(trim(join(' ', [$location->address(), $location->country()]))) ?>
  <li>
    <header>
      <!-- <svg viewBox="0 0 32 32"><use xlink:href="#i:location"/></svg> -->
@@ -93,8 +93,8 @@
    </header>
    <section>
      <?php echo $location->title()?><br>
-     <?php echo $location->address() ?><br>
-     <?php echo $location->city().', '.$location->country() ?>
+     <?php e(strlen($location->address()) > 0, $location->address().'<br>') ?>
+     <?php echo $location->country() ?>
 
      <a href="http://maps.google.com/?q=<?php echo $q ?>" target="_blank">
        <button type="button" class="btn-1">View in Google Maps</button>

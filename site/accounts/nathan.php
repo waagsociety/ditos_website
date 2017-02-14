@@ -9,6 +9,9 @@ password: >
 language: en
 role: admin
 history:
-  - about/partners/waag-society
-  - events
-  - events/exhibition
+  - >
+    locations/royal-belgian-institute-of-natural-sciences-brussels
+  - locations/london
+  - locations/paris
+  - locations/berlin
+  - locations/ucl-london
