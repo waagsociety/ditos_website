@@ -7,9 +7,17 @@ options:
   url: false
   status: false
 fields:
+  info:
+    label: Info
+    type: info
+    text: >
+      Dear Editor, 
+
+      Please do not edit this page unless discussed with Waag Society. On this page we edit the content of the homepage.
+
+      Have fun!
   title: title
   description: description
-  text: text
   slider:
     label: Slider
     type: structure

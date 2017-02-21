@@ -10,5 +10,12 @@ options:
   # delete: false
   url: false
 fields:
-  title: title
-  description: description
+  info:
+    label: Info
+    type: info
+    text: >
+      Dear Editor, 
+
+      To add a activity, click on “Add” under Pages in the left column.
+
+      Have fun!

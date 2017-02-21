@@ -7,14 +7,13 @@ options:
   status: false
   # delete: false
   url: false
-# fields:
-#   title: title
-#   description: description
-#   text: text
-#   submenu:
-#     label: Show submenu
-#     type: hidden
-#     text: Do you want to display the submenu?
-#   line:
-#     type: line
-#   seotitle: seotitle
+fields:
+  info:
+    label: Info
+    type: info
+    text: >
+      Dear Editor, 
+
+      To add a partner, click on “Add” under Pages in the left column.
+
+      Have fun!
