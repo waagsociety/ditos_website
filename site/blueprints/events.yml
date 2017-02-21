@@ -8,11 +8,11 @@ fields:
     label: Info
     type: info
     text: >
-      Dear Editor, 
+      Dear editor, 
 
-      To add an event, click on “Add” under Pages in the left column.
+      Please click on 'Edit' to find an overview of published and unpublished event pages.
 
-      Have fun!
+      Only 'Add' a new event in case your event is not listed in the Event Diary. Download the Event Diary via this link: http://togetherscience.eu/events/data
 options:
   # delete: false
   template: false
