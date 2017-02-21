@@ -1,5 +1,4 @@
 label: Image
-help: Add an image to this page in the left column by clicking ‘Add’ in the menu Files. After adding the image here you can select in in the menu above or drag it here from the left menu.
-Recommended image dimensions are 1600 x 1200 pixels, the recommended file size is 200kb or less, please use the jpeg file format.
+help: Add an image to this page in the left column by clicking ‘Add’ in the menu Files. After adding the image here you can select in in the menu above or drag it here from the left menu. Recommended image dimensions are 1600 x 1200 pixels, the recommended file size is 200kb or less, please use the jpeg file format.
 type: image
 required: true
