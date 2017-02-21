@@ -44,7 +44,7 @@ return function($site, $pages, $page) {
     
 
       $email = email(array(
-        'to'      => 'martin@waag.org',
+        'to'      => 'ditosbus@waag.org',
         'from'    => 'martin@waag.org',
         'replyTo' => $data['email'],
         'subject' => 'Request the bus',

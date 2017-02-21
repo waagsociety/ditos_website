@@ -28,8 +28,8 @@ return function($site, $pages, $page) {
        
 
       $email = email(array(
-        'to'      => 'pauline@waag.org',
-        'from'    => 'pauline@waag.org',
+        'to'      => 'ditosbus@waag.org',
+        'from'    => 'martin@waag.org',
         'replyTo' => $data['email'],
         'subject' => 'Nieuwe contact',
         'body'    => $body,
