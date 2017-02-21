@@ -3,6 +3,13 @@ icon: bus
 pages: true
 files: true
 fields:
+  info:
+    label: Info
+    type: info
+    text: >
+      Dear Editor, 
+
+      Please do not edit this page unless discussed with Waag Society.
   title: title
   description: description
   text: text

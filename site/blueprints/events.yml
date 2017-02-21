@@ -3,8 +3,19 @@ icon: calendar
 pages: event-item
 files: false
 update: false
+fields:
+  info:
+    label: Info
+    type: info
+    text: >
+      Dear Editor, 
+
+      To add an event, click on “Add” under Pages in the left column.
+
+      Have fun!
 options:
   # delete: false
   template: false
   url: false
   status: false
+
