@@ -19,7 +19,13 @@ $tagsParameter = param('tagged');
 $pageParameter = param('page', 1);
 
 $items = $pages->find('events')->children()->visible();
+?>
 
+<script type="text/javascript">
+  console.log(<?= json_encode($items->toArray()) ?>)
+</script>
+
+<?php
 if ($eventArchive) {
   $items = $items->filter(function($child){
     $enddate = $child->date_end('c');
