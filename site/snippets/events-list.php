@@ -18,6 +18,7 @@ $items = $items->paginate($itemsPerPage);
   <div class="agenda__preview full__width">
     <?php foreach($items as $item): ?>
     <?php $location = $pages->find('locations')->find($item->location()) ?>
+    <?php $activity = $pages->find('activities')->find($item->activity()) ?>
 
     <a href="<?php echo $item->url() ?>" class="agenda__preview__item event__info list">
 
@@ -44,6 +45,11 @@ $items = $items->paginate($itemsPerPage);
         <li>
           <svg viewBox="0 0 32 32"><use xlink:href="#i:location"/></svg>
           <?php echo $location->title().', '.$location->country() ?>
+        </li>
+
+        <li>
+          <svg viewBox="0 0 32 32"><use xlink:href="#i:activity"/></svg>
+          <?php echo $activity->title() ?>
         </li>
 
       </ul>
