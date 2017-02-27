@@ -75,7 +75,7 @@ class GeolocationField extends InputField {
 
     // Search field
     $input = new Brick("input");
-    $input->attr("placeholder","Search for an address (optional)");
+    $input->attr("placeholder","Search for an address");
     $input->addClass("geolocation-search-field input");
 
     // Search button
