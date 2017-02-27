@@ -55,6 +55,13 @@ if ($countryParameter) {
   });
 }
 
+?>
+
+<script type="text/javascript">
+  console.log(<?= json_encode($items->toArray()) ?>)
+</script>
+
+<?php
 // filter out events without a valid location, activity, or partner
 $locations = $pages->find('locations')->children();
 $activities = $pages->find('activities')->children();
@@ -65,6 +72,12 @@ $items->filter(function($item) use ($locations, $activities, $partners) {
    && $partners->find($item->partner());
 });
 ?>
+<script type="text/javascript">
+  console.log(<?= json_encode($locations->toArray()) ?>)
+  console.log(<?= json_encode($activities->toArray()) ?>)
+  console.log(<?= json_encode($partners->toArray()) ?>)
+  console.log(<?= json_encode($items->toArray()) ?>)
+</script>
 <main class="main__content">
   <div class="flex flex__wrap">
     <section class="main-section">
