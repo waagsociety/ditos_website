@@ -14,6 +14,7 @@
   width: 100%;
   font-family: 'Montserrat', sans-serif;
   padding: 40px 120px;
+
   p {
     font-size: 92.25%;
     margin-bottom: 0.25em;
@@ -26,76 +27,53 @@
   }
 }
 
-.blog__preview{
-  padding: 80px 120px;
-  background: url(../images/subtle_dots_@2X.png);
+.blog__preview {
   width: 100%;
-
-  @include breakpoint(l) {
-    padding: 40px;
-  }
-
-  @include breakpoint(m) {
-    padding: 0;
-  }
+  padding: 0 0 ($gutter * 2);
 }
-.blog__preview:before{
-  content: '';
-  width: 100%;
-  height: 50%;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  background-image: linear-gradient(-180deg, rgba(255,255,255,0.00) 0%, #FFFFFF 100%);
-}
+
+
+
 .article__preview{
   line-height: 0;
-  width: calc(60% - 20px);
-  height: 600px;
-  float: left;
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
 
-  @include breakpoint(l) {
-    height: 400px;
-    width: 100% !important;
-    margin-bottom: 40px !important;
-  }
-
-  @include breakpoint(m) {
-    height: 400px;
-    width: 100% !important;
-    margin: 0 !important;
+  &:first-child {
+    margin-top: 0;
   }
 
   article{
     overflow: hidden;
-    position: absolute;
-    left: 0;
-    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 200px;
     width: 100%;
-    height: 100%;
+
     p{
       color: #333;
       font-size: .75em;
     }
   }
   header{
-    position: absolute;
-    width: 100%;
-    max-width: 400px;
+    width: 60%;
+    flex-grow: 1;
     padding: 20px;
     height: auto;
-    bottom: 0;
-    left: 0;
     background: #fff;
     transition: .2s ease-in-out;
-    h3{
-      font-size: .875em;
+
+    @include breakpoint(s) {
+      width: 100%;
     }
   }
+
   &:hover{
     .bg{
       transform: scale(1.1);
     }
+
     header{
       background: $brand-color;
       h3 {
@@ -105,70 +83,28 @@
         color: white;
       }
     }
+
     header{
       z-index: 2;
     }
   }
+
   .bg{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
+    width: 40%;
     background-size: cover;
     background-position: center;
-    transition: 6s ease-out;
+    transition: 0.75s ease-out;
+
+    @include breakpoint(s) {
+      width: 100%;
+    min-height: 200px;
+    }
   }
+  
   header{
     z-index: 2;
   }
 }
-
-.article__preview:nth-of-type(1) {
-    width: 100%;
-    margin-bottom: 20px;
-
-    p{
-      color: #333;
-      font-size: 0.875em;
-    }
-    header{
-      max-width: calc(60% - 20px);
-      @include breakpoint(s) {
-        max-width: none;
-      }
-      h3{
-        font-size: 1.3em;
-      }
-  }
-}
-
-.article__preview:nth-of-type(2){
-  width: calc(60% - 20px);
-  margin-right: 20px;
-  margin-bottom: 20px;
-}
-
-.article__preview:nth-of-type(1n + 3){
-  width: 40%;
-  height: 290px;
-  margin-bottom: 20px;
-  header{
-    max-width: 90%;
-    @include breakpoint(s) {
-      max-width: none;
-    }
-  }
-}
-.article__preview:nth-of-type(1n + 5){
-  width: calc(50% - 10px);
-  height: 300px;
-}
-
-.article__preview:nth-of-type(2n + 5){
-  margin-right: 20px;
-}
-
 
 .blog__header figure{
   line-height: 0;

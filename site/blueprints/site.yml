@@ -9,6 +9,9 @@ fields:
   keywords:
     label: Keywords
     type:  tags
+  slogan:
+    label: Slogan
+    type:  text
   facebook:
     label: Facebook link
     type:  text

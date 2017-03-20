@@ -2,6 +2,8 @@
   /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
   width: 100%;
   margin: 0 auto;
+  background-color: #5B00FF;
+  background-image: linear-gradient(90deg, #5B00FF 30%, #D37777 100%);
 }
 .container::after {
   clear: both;
@@ -15,275 +17,45 @@
   position: relative;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-}
-
-.form {
-  position: relative;
-  width: 100%;
-  height: 100px;
-  background: $brand-color;
-}
-@media only screen and (min-width: 768px) {
-  .form {
-    height: 180px;
-  }
-}
-.form .loading {
-  /* loading bar */
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 3%;
-  width: 100%;
-  background-color: #7f8ba9;
-  -webkit-transform-origin: 0 50%;
-          transform-origin: 0 50%;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  visibility: hidden;
-  -webkit-transition: -webkit-transform 3s;
-  transition: -webkit-transform 3s;
-  transition: transform 3s;
-  transition: transform 3s, -webkit-transform 3s;
-  z-index: 3;
-}
-.no-csstransitions .form .loading {
-  /* we use modernizr to detect old browser and hide the loading effect */
-  display: none;
-}
-.form.is-submitted .loading {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-}
-
-.label, .email, .submit {
-  position: absolute;
-}
-
-.form-wrapper .button {
-  position: absolute;
-}
-
-.label {
-  color: rgba(255,255,255,.8);
-  left: 120px;
-  top: 20%;
-  font-size: 1.4em;
-  font-weight: 700;
-  opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-  transition: opacity 0.3s, -webkit-transform 0.3s;
-  transition: transform 0.3s, opacity 0.3s;
-  transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
-  z-index: 2;
-
-
-
-  @include breakpoint(m) {
-    left: 60px;
-  }
-
-  @include breakpoint(s) {
-    left: 40px;
-  }
-}
-.is-active .label {
-  opacity: 0;
-  -webkit-transform: translate3d(0, -200%, 0);
-          transform: translate3d(0, -200%, 0);
-}
-.email, .form-wrapper .button {
-  width: 100%;
-  bottom: 0;
-  border: 0;
-  margin-bottom: 0;
-}
-.email:focus, .form-wrapper .button:focus {
-  outline: none;
-}
-
-.email {
-  top: 0;
-  left: 0;
-  height: 100%;
-  background: transparent;
-  padding-left: 120px;
-  padding-top: 0.5em;
-  font-weight: 300;
-  color: #fff;
-  -webkit-transition: height 0.3s, background-color 0.3s;
-  transition: height 0.3s, background-color 0.3s;
-  z-index: 1;
-  font-size: 1.7em;
-
-  @include breakpoint(m) {
-    padding-left: 60px;
-  }
-
-  @include breakpoint(s) {
-    padding-left: 40px;
-  }
-
-}
-.email::-webkit-input-placeholder {
-  color: #fff;
-}
-.email::-moz-placeholder {
-  color: #fff;
-}
-.email:-moz-placeholder {
-  color: #fff;
-}
-.email:-ms-input-placeholder {
-  color: #fff;
-}
-.is-active .email {
-  height: 50%;
-}
-.email:focus {
-  background-color: $sec-color;
-}
-
-.form-wrapper .button {
-  top: 50%;
-  cursor: pointer;
-  background-color: rgba(0,0,0,.3);
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 700;
-  margin: 0;
-  /* hidden by default */
-  display: none;
-  -webkit-transition: background-color 0.2s;
-  transition: background-color 0.2s;
-  z-index: 2;
-  line-height: 50px;
-}
-.is-active .button {
-  display: block;
-  -webkit-animation: bounce-in ease-out 0.4s;
-          animation: bounce-in ease-out 0.4s;
-}
-.no-touch .button:hover, .button:focus {
-  background-color: rgba(0,0,0,.3);
-}
-@media only screen and (min-width: 768px) {
-  .button {
-    line-height: 4em;
-  }
-}
-
-@-webkit-keyframes bounce-in {
-  0% {
-    top: 100%;
-  }
-  60% {
-    top: 45%;
-  }
-  100% {
-    top: 50%;
-  }
-}
-@keyframes bounce-in {
-  0% {
-    top: 100%;
-  }
-  60% {
-    top: 45%;
-  }
-  100% {
-    top: 50%;
-  }
-}
-.response {
-  position: absolute;
-  bottom: 100%;
-  width: 100%;
-  left: 0;
-  padding: 1.4em;
-  color: #fff;
-  font-size: 14px;
-  font-size: 0.875em;
-  z-index: 3;
-  /* hidden by default */
-  visibility: hidden;
-  opacity: 0;
-  transform: translate(-50%, 0%);
-  transition: transform 0.3s 0s, opacity 0.3s 0s, visibility 0s .3s;
-}
-.response.response-error {
-  background-color: #e36767;
-}
-.response.response-error::after {
-  border-top-color: #e36767;
-}
-.response.response-notification {
-  background-color: #7f8ba9;
-}
-.response.response-notification::after {
-  border-top-color: #7f8ba9;
-}
-.response.is-visible {
-  visibility: visible;
-  opacity: 1;
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
-  -webkit-transition: -webkit-transform 0.3s 0s, opacity 0.3s 0s, visibility 0s 0s;
-  -webkit-transition: opacity 0.3s 0s, visibility 0s 0s, -webkit-transform 0.3s 0s;
-  transition: opacity 0.3s 0s, visibility 0s 0s, -webkit-transform 0.3s 0s;
-  transition: transform 0.3s 0s, opacity 0.3s 0s, visibility 0s 0s;
-  transition: transform 0.3s 0s, opacity 0.3s 0s, visibility 0s 0s, -webkit-transform 0.3s 0s;
-}
-
-.response-success {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 50%;
-  width: 100%;
-  background-color: #92c195;
-  -webkit-transform-origin: 50% 100%;
-  transform-origin: 50% 100%;
-  -webkit-transform: scaleY(0);
-  transform: scaleY(0);
-  visibility: hidden;
-  -webkit-transition: -webkit-transform .3s 0s, visibility 0s .3s;
-  -webkit-transition: visibility 0s .3s, -webkit-transform .3s 0s;
-  transition: visibility 0s .3s, -webkit-transform .3s 0s;
-  transition: transform .3s 0s, visibility 0s .3s;
-  transition: transform .3s 0s, visibility 0s .3s, -webkit-transform .3s 0s;
-  z-index: 3;
-}
-.response-success p {
-  position: absolute;
+  padding: ($gutter * 2);
   text-align: center;
-  width: 100%;
-  left: 50%;
-  top: 50%;
-  bottom: auto;
-  right: auto;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  color: #fff;
-  opacity: 0;
-  -webkit-transition: opacity 0.3s 0s;
-  transition: opacity 0.3s 0s;
-}
-.response-success.slide-in {
-  visibility: visible;
-  -webkit-transform: scaleY(1);
-  transform: scaleY(1);
-  -webkit-transition: -webkit-transform .3s 0s, visibility 0s 0s;
-  -webkit-transition: visibility 0s 0s, -webkit-transform .3s 0s;
-  transition: visibility 0s 0s, -webkit-transform .3s 0s;
-  transition: transform .3s 0s, visibility 0s 0s;
-  transition: transform .3s 0s, visibility 0s 0s, -webkit-transform .3s 0s;
-}
-.response-success.slide-in p {
-  opacity: 1;
-  -webkit-transition: opacity 0.3s 0.3s;
-  transition: opacity 0.3s 0.3s;
+
+  @include breakpoint(s) {
+    padding: 20px;
+  }
+
+  .form {
+    max-width: 600px;
+    margin: auto;
+  }
+
+  h2 {
+    color: #fff;
+    margin-bottom: 0.5em;
+
+    @include breakpoint(s) {
+      font-size: 100%;
+    }
+  }
+
+  input {
+    border-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-bottom: 0;
+    padding: 1em;
+    border-radius: 2px;
+    color: #fff;
+  }
+
+  button {
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    height: calc(100% - 5px);
+    border-radius: 0 1px 1px 0;
+  }
+
+  button:hover {
+    background-color: #fff;
+  }
 }

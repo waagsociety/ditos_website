@@ -7,8 +7,8 @@ email: martin@waag.org
 language: en
 role: admin
 history:
-  - events
   - home
+  - events
   - activities/conference
   - events/open-wetlab-project-evening-29-11
   - about/deliverables

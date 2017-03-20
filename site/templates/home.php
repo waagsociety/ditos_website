@@ -4,14 +4,14 @@
     <section class="main-section">
       <?php snippet('slider') ?>
       <?php snippet('blog-preview') ?>
-      <?php snippet('newsletter') ?>
     </section>
     <aside class="featured__container">
       <?php snippet('events-preview') ?>
       <?php snippet('events-featured') ?>
     </aside>
   </div>
-  <?php snippet('social-stream') ?>
+
+  <?php snippet('newsletter') ?>
   <?php snippet('partners') ?>
   <?php snippet('eu-bar') ?>
 </main>

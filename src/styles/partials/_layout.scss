@@ -1,12 +1,34 @@
 .main__content{
   top: 200px;
 }
+
+
 .main__content .main-section{
   width: calc(100% - 400px);
   &.full__width { width: 100% }
 
   @include breakpoint(s) {
     width: 100%;
+  }
+}
+
+.home .main__content .main-section,
+.articles .main__content .main-section {
+  background: url(../images/subtle_dots_@2X.png);
+  padding: ($gutter * 2);
+
+  @include breakpoint(s){
+    padding: 20px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 245, 245, 0.35);
   }
 }
 
@@ -38,7 +60,7 @@
   header{
     padding: 36px 40px 44px;
     background: $brand-color;
-    h3{
+    h3 a{
       color: white;
     }
   }

@@ -23,12 +23,21 @@
       <li><a <?php e($p->isOpen(), ' class="active"') ?> href="<?php echo $p->url() ?>"><?php echo $p->title()->html() ?></a></li>
     <?php endforeach ?>
 
-    <li class="busbtn">
-      <a href="<?php echo url('book-the-bus'); ?>" class="icon labeled">
-        <svg width="32" height="32"><use xlink:href="#i:bus"/></svg>
-        Request the science bus
-      </a>
-    </li>
+    <div class="button-bar">
+      <li class="busbtn">
+        <a href="#mc_embed_signup" class="icon labeled">
+          <svg width="32" height="32"><use xlink:href="#i:mail"/></svg>
+          Join the mailing
+        </a>
+      </li>
+
+      <li class="busbtn">
+        <a href="<?php echo url('book-the-bus'); ?>" class="icon labeled">
+          <svg width="32" height="32"><use xlink:href="#i:bus"/></svg>
+          Request the bus
+        </a>
+      </li>
+    </div>
 
     <div class="mobile">
       <?php snippet('social-bar') ?>
@@ -38,6 +47,7 @@
 </nav>
 
 <nav class="secondary-nav">
+
   <?php if($page->submenu() == '1' || $page->parent()->submenu() == '1'): ?>
     <?php
 
@@ -61,6 +71,8 @@
       <?php endforeach ?>
     </ul>
     <?php endif ?>
+  <?php else: ?>
+    <p class="slogan"><?= $site->slogan() ?></p>
   <?php endif ?>
   
 

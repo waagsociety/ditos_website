@@ -1,0 +1,16 @@
+title: Socials
+icon: newspaper-o
+pages: false
+files: false
+options:
+  # delete: false
+  template: false
+  status: false
+  url: false
+fields:
+  title: title
+  description: description
+  text: text
+  line:
+    type: line
+  seotitle: seotitle

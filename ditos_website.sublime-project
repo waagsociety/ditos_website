@@ -1,0 +1,49 @@
+{
+	"folders":
+	[
+    {
+        "path": "/",
+        "follow_symlinks": true
+    },
+    {
+        "name": "assets",
+        "path": "assets",
+        "follow_symlinks": true
+    },
+    {
+        "name": "content",
+        "path": "content",
+        "follow_symlinks": true
+    },
+    {
+        "name": "blueprints",
+        "path": "site/blueprints",
+        "follow_symlinks": true
+    },
+    {
+        "name": "snippets",
+        "path": "site/snippets",
+        "follow_symlinks": true
+    },
+    {
+        "name": "templates",
+        "path": "site/templates",
+        "follow_symlinks": true
+    },
+    {
+        "name": "javascript",
+        "path": "src/js",
+        "follow_symlinks": true
+    },
+    {
+        "name": "css",
+        "path": "src/styles",
+        "follow_symlinks": true
+    },
+],
+  "settings":
+  {
+      "tab_size": 2,
+      "translate_tabs_to_spaces": true
+  },
+}

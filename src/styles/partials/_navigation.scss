@@ -205,6 +205,7 @@
   height: 70px;
   background-color: #5B00FF;
   background-image: linear-gradient(90deg, $brand-color 30%, #D37777 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   /* Rectangle: */
   color: white;
   /* Force Hardware Acceleration */
@@ -216,8 +217,16 @@
   opacity: 0;
 }
 
-.busbtn {
+.button-bar {
   margin-left: auto;
+
+  .busbtn {
+    display: inline-block;
+    margin-right: 1em;
+    font-size: 1.2em;
+    padding: 0;
+    padding: 0.4em 0.6em;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -256,10 +265,6 @@
     height: auto;
     width: 100%;
     font-size: 80% !important;
-  }
-  .busbtn{
-    padding: 0;
-    border: 0 !important;
   }
   .logo{
     display: none !important;
@@ -379,3 +384,17 @@
   width: 100%;
 }
 
+
+.slogan {
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  margin-left: $gutter * 1.5;
+  opacity: 0.8;
+  font-size: 0.875em;
+  font-family: 'Montserrat', sans-serif;
+
+  @include breakpoint(s) {
+    display: none;
+  }
+}

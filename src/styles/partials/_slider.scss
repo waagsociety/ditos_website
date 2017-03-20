@@ -1,14 +1,16 @@
 .slider {
   padding-bottom: 56.25%;
   overflow: hidden;
+  margin-bottom: $gutter * 2;
 
   @include breakpoint(m) {
     font-size: 50%;
   }
 
   @include breakpoint(s) {
-    display: none;
+  margin-bottom: 0;
   }
+
 
   .item {
     background-size: cover;

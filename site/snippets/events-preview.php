@@ -7,7 +7,7 @@
 ?>
 
 <header>
-  <h3 class="alpha">Upcoming events</h3>
+  <h3 class="alpha"><a href="<?php echo url('/events'); ?>">Upcoming events</a></h3>
 </header>
 
 <div class="agenda__preview full__width">

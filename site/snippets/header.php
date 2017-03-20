@@ -12,7 +12,7 @@
   <link rel="alternate" hreflang="en" href="en" />
   <?php echo css('assets/css/main.css') ?>
 </head>
-<body>
+<body class="<?= $page->intendedTemplate() ?>">
 <header class="auto-hide-header">
   <?php snippet('menu') ?>
 </header>
