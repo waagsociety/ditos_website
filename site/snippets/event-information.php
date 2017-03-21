@@ -50,38 +50,40 @@
   </li>
  <?php endif ?>
 
- <li>
-   <header>When</header>
-   <section>
-     <?php
-       $date = $page->date('l d.m.Y');
-       $time = $page->time();
-
-       $date_end = $page->date_end();
-       $date_end = str_replace('-', '/', $date_end);
-       $date_end_time = strtotime($date_end);
-       $date_end = date('Y-m-d', $date_end_time);
-       $date_end = $date_end == $page->date('Y-m-d') ? null : $date_end;
-
-       $time_end = strlen($page->time_end()) > 0 ? $page->time_end() : null;
-     ?>
-     <time datetime="<?php echo $page->date('c').' '.$time ?>">
-       <?php echo $date ?> at <?php echo $time ?>
-     </time>
-     <?php if ($date_end || $time_end) : ?>
-      to
+  <li>
+    <header>When</header>
+    <section>
       <time>
-        <?php if ($date_end_time) : ?>
-          <?php echo date('l d.m.Y', $date_end_time).' at ' ?>
-          <?php echo $time_end ?>
+      <?php $dateEnd = strtotime($page->date_end('Y.m.d')) ?>        
+      <?php if ($dateEnd === $page->date() || strlen($page->date_end()) < 1) : ?>
+
+        <?= date('l d-m-Y', $page->date()) ?>
+
+        <?php if (strlen($page->time_end()) > 0) : ?> 
+          from <?= $page->time() ?> to <?= $page->time_end() ?>
+        <?php else : ?>
+          at <?= $page->time() ?>
         <?php endif ?>
+
+      <?php else : ?>
+        
+        <?= date('l d-m-Y', $page->date()) ?>
+        at <?= $page->time() ?>
+        to <?= date('l d-m-Y', $dateEnd) ?>
+
+        <?php if ($page->time_end()) : ?> 
+        at <?= $page->time_end() ?>
+        <?php else : ?>
+          
+        <?php endif ?>
+
+      <?php endif ?>
       </time>
-     <?php endif ?>
-     <a href="<?php echo $page->url() ?>/format:ics/">
-       <button type="button" class="btn-1">Add to Calendar</button>
-     </a>
-   </section>
- </li>
+      <a href="<?php echo $page->url() ?>/format:ics/">
+        <button type="button" class="btn-1">Add to Calendar</button>
+      </a>
+    </section>
+  </li>
 
  <?php $location = $pages->find('locations')->find($page->location()) ?>
  <?php if ($location) : ?>
