@@ -43,6 +43,10 @@
   background: url(../images/geometry_@2X.png);
   background-size: 70%;
 
+  h3 {
+    color: #fff;
+  }
+
   @include breakpoint(s) {
     border-left: none;
     max-width: none;
@@ -98,4 +102,4 @@ aside.featured__container {
       margin-bottom: 0.5em;
     }
   }
-} 
+}
