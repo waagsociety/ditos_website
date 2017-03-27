@@ -42,15 +42,19 @@ $items = $items->paginate($itemsPerPage);
           <time datetime="<?php echo $page->date('c') ?>"><?php echo $item->date('d-m-Y') ?></time>
         </li>
 
+        <?php if ($location) : ?> 
         <li>
           <svg viewBox="0 0 32 32"><use xlink:href="#i:location"/></svg>
           <?php echo $location->title().', '.$location->country() ?>
         </li>
+        <?php endif ?>
 
+        <?php if ($activity) : ?>
         <li>
           <svg viewBox="0 0 32 32"><use xlink:href="#i:activity"/></svg>
           <?php echo $activity->title() ?>
         </li>
+        <?php endif ?>
 
       </ul>
       </div>
