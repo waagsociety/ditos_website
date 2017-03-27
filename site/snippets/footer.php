@@ -1,4 +1,5 @@
-
+  <?php snippet('newsletter') ?>
+  <?php snippet('eu-bar') ?>
   <script>
   var localPattern = new RegExp('^<?= $site->url() ?>');
   Array.prototype.slice.call(document.querySelectorAll('a')).forEach(function(link) {

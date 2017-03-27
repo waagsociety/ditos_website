@@ -1,4 +1,4 @@
-/* -------------------------------- 
+/* --------------------------------
 
 1. Auto-Hiding Navigation - Simple
 
@@ -8,7 +8,7 @@
   display: block;
   width: 150px;
   height: auto;
-  margin-right: 40px;  
+  margin-right: 40px;
 }
 .logo img{
   max-width: 100%;
@@ -177,8 +177,8 @@
 
 .nav-open .primary-nav ul,
 .primary-nav ul:target {
-  /* 
-    show primary nav - mobile only 
+  /*
+    show primary nav - mobile only
     :target is used to show navigation on no-js devices
   */
   display: block;
@@ -190,7 +190,7 @@
   }
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 2. Auto-Hiding Navigation - with Sub Nav
 
@@ -244,7 +244,7 @@
 }
 @media only screen and (min-width: 320px) and (max-width: 1024px) {
   .main__content{
-    top: 130px !important;
+    margin-top: 130px !important;
   }
   .nav-trigger{
     z-index: 999;
@@ -296,7 +296,7 @@
     color: white;
     opacity: 0.8;
 
-    &.active { 
+    &.active {
       color: yellow;
       opacity: 1;
     }
@@ -322,7 +322,7 @@
   display: flex;
   align-items: center;
   margin-right: 1em;
-  
+
 
 
   @include breakpoint(s){
