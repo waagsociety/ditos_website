@@ -24,6 +24,10 @@
     padding: 20px;
   }
 
+  @include breakpoint(m) {
+    font-size: 85%;
+  }
+
   .form {
     max-width: 600px;
     margin: auto;

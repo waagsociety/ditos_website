@@ -44,24 +44,24 @@ section header .logo {
   }
 }
 
-.partners .inner {
+.partner-list .inner {
   width: calc(100% - 250px);
 }
 
-.text.partners{
+.text.partner-list{
   padding: 30px 120px 0;
 }
 
-.partners li a{
+.partner-list li a{
   padding: 30px 120px;
   border-bottom: 1px solid #eee;
 }
 
-.partners li:last-child a{
+.partner-list li:last-child a{
   border-bottom: none;
 }
 
-.partners li a{
+.partner-list li a{
   display: flex;
   align-items: center;
 

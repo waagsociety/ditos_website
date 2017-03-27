@@ -3,7 +3,7 @@
   <div class="flex flex__wrap">
     <section class="main-section">
       <?php snippet('standard-header') ?>
-      <ul class="partners">
+      <ul class="partner-list">
       <?php foreach($page->children() as $partner) : ?>
         <?php $logo = $partner->image($partner->logo()) ?>
         <li>

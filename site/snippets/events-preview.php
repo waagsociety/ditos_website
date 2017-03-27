@@ -3,7 +3,7 @@
     $enddate = $child->date_end('c');
     $enddateday = strtotime($enddate) + 86400; 
     return time() <= $enddateday;
-  })->sortBy('date', 'asc')->limit(3);
+  })->sortBy('date', 'asc')->limit(5);
 ?>
 
 <header>

@@ -8,7 +8,8 @@
   }
 
   @include breakpoint(s) {
-  margin-bottom: 0;
+    font-size: 30%;
+    margin-bottom: 0;
   }
 
 
@@ -62,6 +63,11 @@
       left: 40px;
       bottom: 40px;  
     }
+
+    @include breakpoint(m) {
+      left: 20px;
+      bottom: 20px;  
+    }
   }
 
   .item {
@@ -97,6 +103,11 @@
     @include breakpoint(m) {
       left: 40px;
       bottom: 80px;  
+    }
+
+    @include breakpoint(s) {
+      left: 20px;
+      bottom: 40px;  
     }
   }
 
