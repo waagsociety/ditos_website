@@ -7,7 +7,6 @@
     </section>
     <aside class="featured__container">
       <?php snippet('events-preview') ?>
-      <?php snippet('events-featured') ?>
     </aside>
   </div>
 

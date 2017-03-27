@@ -72,7 +72,6 @@
     </ul>
     <?php endif ?>
   <?php else: ?>
-    <p class="slogan"><?= $site->slogan() ?></p>
   <?php endif ?>
   
 
