@@ -12,11 +12,7 @@ html{
 
 body{
   font-family: 'Fjord One', serif;
-  font-size: 1.125em;
-
-  @include breakpoint(l) {
-    font-size: 87.5% !important;
-  };
+  font-size: 1em;
 }
 
 h1, .alpha,
