@@ -17,6 +17,12 @@
 #navigation{
   width: 100%;
 }
+
+.mailbtn {
+  @include breakpoint(l) {
+    display: none !important;
+  }
+}
 .auto-hide-header {
   position: fixed;
   z-index: 2;
@@ -158,8 +164,9 @@
   .primary-nav > ul li {
     display: inline-block;
     float: left;
-    margin-right: 2.5em;
-    font-size: 1.2em;
+    margin-right: 1.5em;
+    font-size: 1.1em;
+
   }
   .primary-nav > ul li:last-of-type {
     margin-right: 0;
@@ -223,7 +230,7 @@
   .busbtn {
     display: inline-block;
     margin-right: 1em;
-    font-size: 1.2em;
+    font-size: 1em;
     padding: 0;
     padding: 0.4em 0.6em;
   }

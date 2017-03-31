@@ -3,6 +3,10 @@
   overflow: hidden;
   margin-bottom: $gutter * 2;
 
+  @include breakpoint(l) {
+    font-size: 60%;
+  }
+
   @include breakpoint(m) {
     font-size: 50%;
   }
@@ -11,7 +15,6 @@
     font-size: 30%;
     margin-bottom: 0;
   }
-
 
   .item {
     background-size: cover;
@@ -57,16 +60,16 @@
     z-index: 8;
     position: absolute;
     left: 80px;
-    bottom: 50px;   
+    bottom: 50px;
 
     @include breakpoint(m) {
       left: 40px;
-      bottom: 40px;  
+      bottom: 40px;
     }
 
     @include breakpoint(m) {
       left: 20px;
-      bottom: 20px;  
+      bottom: 20px;
     }
   }
 
@@ -88,7 +91,7 @@
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;    
+    height: 100%;
     z-index: 2;
     opacity: 0.2;
   }
@@ -96,18 +99,18 @@
   .caption {
     position: absolute;
     left: 80px;
-    bottom: 100px;   
-    z-index: 2; 
+    bottom: 100px;
+    z-index: 2;
     max-width: 70%;
 
     @include breakpoint(m) {
       left: 40px;
-      bottom: 80px;  
+      bottom: 80px;
     }
 
     @include breakpoint(s) {
       left: 20px;
-      bottom: 40px;  
+      bottom: 40px;
     }
   }
 

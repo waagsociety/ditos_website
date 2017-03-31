@@ -5,7 +5,7 @@
         <?php snippet('logo-animation') ?>
       </a>
     </div>
- 
+
   <a href="#navigation" class="nav-trigger">
     <span>
       <em aria-hidden="true"></em>
@@ -24,7 +24,7 @@
     <?php endforeach ?>
 
     <div class="button-bar">
-      <li class="busbtn">
+      <li class="busbtn mailbtn">
         <a href="#mc_embed_signup" class="icon labeled">
           <svg width="32" height="32"><use xlink:href="#i:mail"/></svg>
           Join the mailing
@@ -73,7 +73,7 @@
     <?php endif ?>
   <?php else: ?>
   <?php endif ?>
-  
+
 
     <?php if($user = $site->user()): ?>
       <a href="/panel/pages/<?php echo $page->uri() ?>/edit" class="editpage">
@@ -83,6 +83,3 @@
   <?php snippet('social-bar') ?>
   <?php snippet('search') ?>
 </nav>
-
-
-
