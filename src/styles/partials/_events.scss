@@ -1,5 +1,10 @@
+.event__details,
+.filter__events {
+  border: 1px solid $brand-color;
+  background: #fff;
+}
 .agenda__preview__item{
-  border-bottom: 1px solid $border-color;
+  border-top: 1px solid $brand-color;
   padding: 30px 40px;
   width: 100%;
   transition: .1s ease-in-out;
@@ -65,7 +70,7 @@ aside.filter__events {
 }
 
 div.events__filters {
-  
+
   padding: 40px 40px 30px;
 
   select, input {
@@ -87,7 +92,7 @@ div.events__filters {
 }
 
 .tabs {
-  
+
   display: flex;
   background-color: white;
   input { display: none }
@@ -98,7 +103,7 @@ div.events__filters {
     border-bottom: 1px solid $border-color;
     padding: 1.5em 0 1.75em;
     text-align: center;
-    
+
   }
 
   .btn + .btn {
@@ -114,7 +119,7 @@ div.events__filters {
 
 
 .full.event__details {
-  padding: 36px 40px 44px;
+  padding: 0;
 
   .btn{
     margin: 0 0 1em 0;
@@ -124,7 +129,7 @@ div.events__filters {
     border: none;
     background: none;
     text-align: center;
-    padding: 0 2em 2em;
+    padding: 2em;
 
     img {
       max-width: 250px;
@@ -134,17 +139,15 @@ div.events__filters {
   li {
     font-size: 100%;
     line-height: 1.7;
-    border: 2px solid $brand-color;
     margin: 0;
     margin-bottom: -2px;
-    background: url(../images/subtle_dots_@2X.png);
 
     section {
       padding: 1em;
       width: 100%;
     }
 
-    p { 
+    p {
       font-size: 100%;
       line-height: inherit;
     }
@@ -164,7 +167,7 @@ div.events__filters {
     a { font-size: 1rem }
     button { display: block }
 
-    svg { 
+    svg {
       width: 1em;
       position: absolute;
       left: -25px;
@@ -218,8 +221,8 @@ form {
 }
 
 .tabs {
-  position: static; 
-  
+  position: static;
+
 }
 
 form.map .pagination { display: none }
@@ -230,7 +233,7 @@ div.events__filters {
 
   label { margin: 0 0 0.25em }
 
-  label.inactive { 
+  label.inactive {
     opacity: 0.5;
     pointer-events: none;
   }
@@ -259,7 +262,7 @@ div.events__filters {
   .next { float: right }
 
   .btn input { display: none }
-  
+
 }
 
 .tags {
@@ -275,9 +278,3 @@ div.events__filters {
 .tag.btn {
   padding-left: 2.25em;
 }
-
-
-
-
-
-

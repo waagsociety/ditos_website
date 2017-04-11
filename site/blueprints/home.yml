@@ -7,11 +7,20 @@ options:
   url: false
   status: false
 fields:
+  aboutimage:
+    label: about image
+    type: image
+  abouttitle:
+    label: about title
+    type: text
+  abouttext:
+    label: about text
+    type: textarea
   info:
     label: Info
     type: info
     text: >
-      Dear Editor, 
+      Dear Editor,
 
       Please do not edit this page unless discussed with Waag Society. On this page we edit the content of the homepage.
   title: title

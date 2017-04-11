@@ -9,7 +9,7 @@
           <a href="<?php echo $item->url() ?>" class="article__preview">
             <article>
               <div class="bg" style="background-image: url(<?php echo $item->contentURL() ?>/<?php echo $item->postimage() ?>)"></div>
-              <header>  
+              <header>
                 <h3><?php echo $item->title() ?></h3>
                 <p><?php echo $item->introsentence() ?></p>
               </header>
@@ -32,6 +32,5 @@
       <?php snippet('events-preview') ?>
     </aside>
   </div>
-  <?php snippet('partners') ?>
 </main>
 <?php snippet('footer') ?>

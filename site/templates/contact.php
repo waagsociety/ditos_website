@@ -8,9 +8,9 @@
       <div class="text">
         <?php echo kirbytext($page->text()) ?>
       </div>
-      
+
       <form method="post" class="contact__form">
-        
+
         <?php if($alert): ?>
           <div class="alert">
           <ul>
@@ -35,13 +35,12 @@
         <button type="submit" name="submit" value="Submit">Send</button>
       </form>
 
-      
+
 
     </section>
     <aside>
       <?php snippet('events-preview') ?>
     </aside>
   </div>
-  <?php snippet('partners') ?>
 </main>
 <?php snippet('footer') ?>

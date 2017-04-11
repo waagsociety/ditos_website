@@ -1,0 +1,52 @@
+.home .blog__preview {
+  margin-bottom: 60px;
+}
+
+.about-section {
+  border: 1px solid $brand-color;
+  margin: 20px 0 0;
+  float: left;
+  background: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875em;
+
+
+  .inner {
+    display: flex;
+
+    @include breakpoint(m) {
+      flex-wrap: wrap;
+    }
+
+    figure {
+      display: block;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 40%;
+      flex-grow: 1;
+      min-height: 200px;
+
+      @include breakpoint(l) {
+        width: 100%;
+      }
+
+      img {
+        display: none;
+      }
+    }
+    .content {
+      padding: 70px;
+      width: 60%;
+
+        @include breakpoint(l) {
+          padding: 20px;
+          font-size: 80%;
+          width: 100%;
+        }
+
+      p {
+        margin-bottom: 1em;
+      }
+    }
+  }
+}

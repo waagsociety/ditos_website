@@ -4,7 +4,7 @@
 
 
 .main__content .main-section{
-  width: calc(100% - 400px);
+  width: calc(100% - 420px);
   &.full__width { width: 100% }
 
   @include breakpoint(s) {
@@ -12,44 +12,63 @@
   }
 }
 
-.home .main__content .main-section,
-.articles .main__content .main-section,
-.deliverables .main__content .main-section {
+.main__content,
+.articles .main__content,
+.deliverables .main__content {
   background: url(../images/subtle_dots_@2X.png);
-  padding: ($gutter * 2);
+  padding: 70px;
 
   @include breakpoint(s){
     padding: 20px;
   }
+}
 
-  &::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 245, 245, 0.35);
-  }
+.book .main-section,
+.social .main-section,
+.default .main-section,
+.dictionary .main-section,
+.contact .main-section,
+.partners .main-section,
+.article .main-section,
+.blog-item .main-section,
+.event-item .main-section,
+.events .main-section {
+  background: #fff;
+  border: 1px solid $brand-color;
+}
+
+.main__content .flex.flex__wrap {
+  justify-content: space-between;
+}
+
+.agenda__preview {
+  margin-bottom: 20px;
+  background: url(../images/geometry_@2X.png);
+  background-size: 70%;
+  flex-grow: -1;
+}
+
+aside .agenda__preview {
+
+  border: 1px solid #5B00FF;
 }
 
 .main__content aside{
-  border-left: 1px solid $border-color;
-  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 350px;
   max-width: 100%;
-  margin-bottom: -1px;
   font-weight: 400;
   font-family: 'Montserrat', sans-serif;
-  background: url(../images/geometry_@2X.png);
-  background-size: 70%;
 
   h3 {
     color: #fff;
+    text-align: center;
   }
 
   @include breakpoint(s) {
-    border-left: none;
     max-width: none;
+    width: auto;
   }
 
   &::before {
@@ -69,10 +88,6 @@
       color: white;
     }
   }
-}
-
-aside.featured__container {
-  padding-bottom: 34vw;
 }
 
 

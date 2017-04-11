@@ -23,7 +23,7 @@
       <li><a <?php e($p->isOpen(), ' class="active"') ?> href="<?php echo $p->url() ?>"><?php echo $p->title()->html() ?></a></li>
     <?php endforeach ?>
 
-    <div class="button-bar">
+    <!-- <div class="button-bar">
       <li class="busbtn mailbtn">
         <a href="#mc_embed_signup" class="icon labeled">
           <svg width="32" height="32"><use xlink:href="#i:mail"/></svg>
@@ -35,6 +35,15 @@
         <a href="<?php echo url('book-the-bus'); ?>" class="icon labeled">
           <svg width="32" height="32"><use xlink:href="#i:bus"/></svg>
           Request the bus
+        </a>
+      </li>
+    </div> -->
+
+    <div class="button-bar">
+      <li class="busbtn mailbtn">
+        <a href="<?php echo url('/#mc_embed_signup'); ?>" class="has-icon">
+          <svg width="32" height="32"><use xlink:href="#i:mail"/></svg>
+          <span>Join the mailing</span>
         </a>
       </li>
     </div>

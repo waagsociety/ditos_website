@@ -1,4 +1,3 @@
-  <?php snippet('newsletter') ?>
   <?php snippet('eu-bar') ?>
   <script>
   var localPattern = new RegExp('^<?= $site->url() ?>');

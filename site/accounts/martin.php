@@ -10,5 +10,4 @@ history:
   - home
   - events
   - activities/conference
-  - events/open-wetlab-project-evening-29-11
   - about/deliverables

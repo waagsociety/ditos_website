@@ -12,6 +12,5 @@
       <?php snippet('events-preview') ?>
     </aside>
   </div>
-  <?php snippet('partners') ?>
 </main>
 <?php snippet('footer') ?>

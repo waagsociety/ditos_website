@@ -4,12 +4,13 @@
     <section class="main-section">
       <?php snippet('slider') ?>
       <?php snippet('blog-preview') ?>
+      <?php snippet('about-section') ?>
     </section>
     <aside class="featured__container">
       <?php snippet('events-preview') ?>
     </aside>
   </div>
-  <?php snippet('partners') ?>
 </main>
-
+<?php snippet('newsletter') ?>
+<?php snippet('partners') ?>
 <?php snippet('footer') ?>

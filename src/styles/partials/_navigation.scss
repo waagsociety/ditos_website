@@ -18,8 +18,8 @@
   width: 100%;
 }
 
-.mailbtn {
-  @include breakpoint(l) {
+@media only screen and (max-width: 1180px) {
+  .mailbtn {
     display: none !important;
   }
 }
@@ -52,7 +52,7 @@
 }
 
 #navigation{
-  padding: 0 70px 0 56px;
+  padding: 0 70px 0 66px;
   display: flex;
   align-items: center;
 }
@@ -73,7 +73,7 @@
   text-transform: uppercase;
   font-weight: bold;
   right: 0;
-  border-left: 1px solid $border-color;
+  border-left: 1px solid #eee;
 }
 .auto-hide-header .nav-trigger span {
   /* vertically align inside parent element */
@@ -161,12 +161,14 @@
     content: "";
     display: block;
   }
+  .primary-nav > ul li:first-child {
+    margin-right: 0;
+  }
   .primary-nav > ul li {
     display: inline-block;
     float: left;
     margin-right: 1.5em;
     font-size: 1.3em;
-
   }
   .primary-nav > ul li:last-of-type {
     margin-right: 0;
@@ -230,11 +232,21 @@
   .busbtn {
     display: inline-block;
     margin-right: 1em;
-    font-size: 1em;
+    text-align: center;
     padding: 0;
-    padding: 0.4em 0.6em;
+    padding: 0.2em 0.6em;
+    line-height: 0;
+  }
+
+  .has-icon svg{
+    margin-right: 10px;
+    top: 0.1em;
+  }
+  .has-icon span{
+    top: -0.2em;
   }
 }
+
 
 @media only screen and (min-width: 1024px) {
   .secondary-nav {
@@ -291,7 +303,7 @@
   display: flex;
   align-items: center;
   flex-grow: 1;
-  padding-left: 60px;
+  padding-left: 70px;
 }
 
 .subnav__list li {

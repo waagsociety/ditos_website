@@ -8,7 +8,7 @@
       <div class="text">
         <?php echo kirbytext($page->text()) ?>
       </div>
-      
+
       <form method="post" class="contact__form">
         <?php if($alert): ?>
           <div class="alert">
@@ -37,19 +37,19 @@
         </div>
         <div class="input__row">
           <label for="why">Why do you want the science express to visit your town?</label>
-          <textarea id="why" name="why" type="why" rows="4"></textarea> 
+          <textarea id="why" name="why" type="why" rows="4"></textarea>
         </div>
         <div class="input__row">
           <label for="activities">What kind of activity would you like to organise with the science express?</label>
-          <textarea id="activities" name="activities" type="activities" rows="4"></textarea> 
+          <textarea id="activities" name="activities" type="activities" rows="4"></textarea>
         </div>
         <div class="input__row">
           <label>We are curious about you! Tell us something about yourself and why the science express would make a difference to your community by visiting in the summer of 2017.</label>
-          <textarea id="about" name="about" type="about" rows="8"></textarea> 
+          <textarea id="about" name="about" type="about" rows="8"></textarea>
         </div>
         <div class="input__row">
           <label for="amount">How many people would you expect to visit a program of the science express in your community and what is their background?</label>
-          <textarea id="amount" name="amount" type="amount" rows="3"></textarea> 
+          <textarea id="amount" name="amount" type="amount" rows="3"></textarea>
         </div>
         <button type="submit" name="submit" value="Submit">Send</button>
       </form>
@@ -57,7 +57,6 @@
     </section>
     <aside>
       <?php snippet('events-preview') ?>
-      <?php snippet('events-featured') ?>
     </aside>
   </div>
 </main>

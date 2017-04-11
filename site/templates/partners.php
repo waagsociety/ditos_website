@@ -26,6 +26,5 @@
       <?php snippet('events-preview') ?>
     </aside>
   </div>
-  <?php snippet('eu-bar') ?>
 </main>
 <?php snippet('footer') ?>
