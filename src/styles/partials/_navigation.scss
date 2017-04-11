@@ -3,7 +3,10 @@
 1. Auto-Hiding Navigation - Simple
 
 -------------------------------- */
-
+.sub-menu {
+  background: $brand-color;
+  padding: 10px 0;
+}
 .logo{
   display: block;
   width: 150px;

@@ -33,6 +33,7 @@
   }
 }
 
+
 .book .main-section,
 .social .main-section,
 .default .main-section,
@@ -46,6 +47,14 @@
   background: #fff;
   border: 1px solid $brand-color;
 }
+
+
+.dictionary .main__content,
+.contact .main__content,
+.partners .main__content {
+  padding: 100px 70px 70px;
+}
+
 
 .main__content .flex.flex__wrap {
   justify-content: space-between;

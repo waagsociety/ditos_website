@@ -19,9 +19,6 @@
       </a>
     </li>
 
-    <?php foreach($pages->visible() as $p): ?>
-      <li><a <?php e($p->isOpen(), ' class="active"') ?> href="<?php echo $p->url() ?>"><?php echo $p->title()->html() ?></a></li>
-    <?php endforeach ?>
 
     <!-- <div class="button-bar">
       <li class="busbtn mailbtn">
@@ -56,8 +53,24 @@
 </nav>
 
 <nav class="secondary-nav">
+  <ul class="subnav__list">
+    <?php foreach($pages->visible() as $p): ?>
+      <li><a <?php e($p->isOpen(), ' class="active"') ?> href="<?php echo $p->url() ?>"><?php echo $p->title()->html() ?></a></li>
+    <?php endforeach ?>
+  </ul>
+
+    <?php if($user = $site->user()): ?>
+      <a href="/panel/pages/<?php echo $page->uri() ?>/edit" class="editpage">
+        Edit page
+      </a>
+    <?php endif ?>
+  <?php snippet('social-bar') ?>
+  <?php snippet('search') ?>
+</nav>
+
 
   <?php if($page->submenu() == '1' || $page->parent()->submenu() == '1'): ?>
+    <nav class="sub-menu">
     <?php
 
     $items = false;
@@ -80,15 +93,5 @@
       <?php endforeach ?>
     </ul>
     <?php endif ?>
-  <?php else: ?>
+  </nav>
   <?php endif ?>
-
-
-    <?php if($user = $site->user()): ?>
-      <a href="/panel/pages/<?php echo $page->uri() ?>/edit" class="editpage">
-        Edit page
-      </a>
-    <?php endif ?>
-  <?php snippet('social-bar') ?>
-  <?php snippet('search') ?>
-</nav>
