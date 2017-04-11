@@ -6,12 +6,12 @@
   })->sortBy('date', 'asc')->limit(3);
 ?>
 
-<header>
-  <h3 class="alpha"><a href="<?php echo url('/events'); ?>">Upcoming events</a></h3>
-</header>
-
 <div class="agenda__preview full__width">
 
+
+  <header>
+    <h3 class="alpha"><a href="<?php echo url('/events'); ?>">Upcoming events</a></h3>
+  </header>
   <?php foreach($items as $item): ?>
 
     <?php $location = $pages->find('locations')->find($item->location()) ?>
