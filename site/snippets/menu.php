@@ -38,8 +38,9 @@
 
     <div class="button-bar">
 
-
-      <?php snippet('social-bar') ?>
+      <div class="standard-bar">
+        <?php snippet('social-bar') ?>
+      </div>
       <li class="busbtn mailbtn">
         <a href="<?php echo url('/#mc_embed_signup'); ?>" class="has-icon">
           <svg width="32" height="32"><use xlink:href="#i:mail"/></svg>
@@ -49,6 +50,11 @@
     </div>
 
     <div class="mobile">
+      <ul class="subnav__list">
+        <?php foreach($pages->visible() as $p): ?>
+          <li><a <?php e($p->isOpen(), ' class="active"') ?> href="<?php echo $p->url() ?>"><?php echo $p->title()->html() ?></a></li>
+        <?php endforeach ?>
+      </ul>
       <?php snippet('social-bar') ?>
     </div>
   </ul>
