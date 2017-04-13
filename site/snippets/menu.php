@@ -37,6 +37,9 @@
     </div> -->
 
     <div class="button-bar">
+
+
+      <?php snippet('social-bar') ?>
       <li class="busbtn mailbtn">
         <a href="<?php echo url('/#mc_embed_signup'); ?>" class="has-icon">
           <svg width="32" height="32"><use xlink:href="#i:mail"/></svg>
@@ -64,7 +67,6 @@
         Edit page
       </a>
     <?php endif ?>
-  <?php snippet('social-bar') ?>
   <?php snippet('search') ?>
 </nav>
 

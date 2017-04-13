@@ -155,6 +155,21 @@
     padding-left: 0;
   }
 }
+.button-bar {
+  display: flex;
+}
+.button-bar .social__bar {
+  top: 0.35em;
+  height: 100%;
+  li {
+    margin: 0 10px !important
+  }
+  a {
+    color: $sec-color;
+  }
+}
+
+
 .primary-nav > ul a:hover, .primary-nav > ul a.active {
   color: $sec-color;
 }
