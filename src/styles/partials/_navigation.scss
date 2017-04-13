@@ -345,7 +345,7 @@
 }
 
 .subnav__list {
-  @include breakpoint(l){
+  @include breakpoint(m){
     display: none;
   }
 }
