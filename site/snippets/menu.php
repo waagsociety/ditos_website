@@ -18,6 +18,7 @@
         <?php snippet('logo-animation') ?>
       </a>
     </li>
+    <p class="slogan">500 innovative workshops, exhibitions and activities in 9 European countries</p>
 
 
     <!-- <div class="button-bar">
