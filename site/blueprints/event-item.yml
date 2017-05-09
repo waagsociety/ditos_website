@@ -58,13 +58,13 @@ fields:
     entry: >
       {{label}}
     fields:
-      url:
-        label: URL
-        type: url
-        required: true
       label:
         label: Label
         type: tags
+        required: true
+      url:
+        label: URL
+        type: url
         required: true
   price:
     label: Price
@@ -112,10 +112,12 @@ fields:
   event-name:
     label: Name of event (as described in DoA)
     type: text
+    readonly: true
   doa-description:
     label: DoA Description (for events that are in the Grant Agreement DoA; if not in DoA complete the next column NOT this one)
     type: textarea
     buttons: false
+    readonly: true
   alt-description:
     label: Brief description for events/details not in DoA
     type: textarea
@@ -191,6 +193,58 @@ fields:
     label: Additional notes
     type: textarea
     buttons: false
+  
+  collaboration:
+    label: Collaboration
+    type: info
+    text: > 
+      Please fill in the names of organisations with which you have collaborated for this event. When more organisations apply separate them with a comma (for example: UPD, UCL). 
+  ngo:
+    label: NGOs
+    type: text
+  communities:
+    label: DIY & local communities
+    type: text
+  academic:
+    label: Education, Academia & Research
+    type: text
+  governance:
+    label: Local & national government
+    type: text
+  industry:
+    label: Industry, Company & Startups
+    type: text
+  other:
+    label: Other
+    type: text
+
+  resources:
+    label: Online Resources
+    type: structure
+    help: Please place the link of any online resources related to or as result of this event (video’s, blog, datasets, guidelines, forum discussions, etc)
+    entry: >
+      <h1>{{title}}</h1><br>
+      {{type}}
+    fields:
+      title:
+        label: Title
+        type: text
+        required: true
+      url:
+        label: URL
+        type: url
+        required: true
+      category:
+        label: Category
+        type: select
+        options:
+          video: Video
+          blogpost: Blogpost
+          dataset: Dataset
+          guidelines: Guidelines
+          discussion: Forum discussion
+          other: Other
+        required: true
 
   evaluation-publish:
     label: Export Evaluation Data
