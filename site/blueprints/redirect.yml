@@ -1,0 +1,6 @@
+title: Redirect
+pages: false
+files: false
+fields:
+  link: 
+    type: url
