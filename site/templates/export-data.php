@@ -74,12 +74,13 @@
     'Z' => ['Reporting Period', 'reporting_period', 16],
     'AA' => ['Phase (the event was planned)', 'planning_phase', 32],
     'AB' => ['Notes', 'notes', 32],
-    'AC' => ['DIY & local communities', 'communities', 32],
-    'AD' => ['Education, Academia & Research', 'academic', 32],
-    'AE' => ['Local & national government', 'governance', 32],
-    'AF' => ['Industry, Company & Startups', 'industry', 32],
-    'AG' => ['Other (Collaboration)', 'other', 32],
-    'AH' => ['Online Resources', 'resources', 32, destructure(['url'])],
+    'AC' => ['NGO', 'ngo', 32],
+    'AD' => ['DIY & local communities', 'communities', 32],
+    'AE' => ['Education, Academia & Research', 'academic', 32],
+    'AF' => ['Local & national government', 'governance', 32],
+    'AG' => ['Industry, Company & Startups', 'industry', 32],
+    'AH' => ['Other (Collaboration)', 'other', 32],
+    'AI' => ['Online Resources', 'resources', 32, destructure(['url'])],
   ];
 
   $phpExcel = new PHPExcel();
