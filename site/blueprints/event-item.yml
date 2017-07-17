@@ -198,7 +198,7 @@ fields:
     label: Collaboration
     type: info
     text: > 
-      Please fill in the names of organisations with which you have collaborated for this event. When more organisations apply separate them with a comma (for example: UPD, UCL). 
+      Please fill in the names of organisations with which you have collaborated for this event. When more organisations apply separate them with a semicolon (;) (for example: UPD; UCL). 
   ngo:
     label: NGOs
     type: text
