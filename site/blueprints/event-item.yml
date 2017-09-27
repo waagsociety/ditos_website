@@ -117,7 +117,7 @@ fields:
     label: DoA Description (for events that are in the Grant Agreement DoA; if not in DoA complete the next column NOT this one)
     type: textarea
     buttons: false
-    readonly: true
+    # readonly: true
   alt-description:
     label: Brief description for events/details not in DoA
     type: textarea
