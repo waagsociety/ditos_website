@@ -112,7 +112,7 @@ fields:
   event-name:
     label: Name of event (as described in DoA)
     type: text
-    readonly: true
+    # readonly: true
   doa-description:
     label: DoA Description (for events that are in the Grant Agreement DoA; if not in DoA complete the next column NOT this one)
     type: textarea
