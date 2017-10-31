@@ -9,7 +9,13 @@ $features = array();
 foreach($data as $article) {
   $location = $pages->find('locations')->find($article->location());
   if ($location) {
-    if ($location->location() != ",") {
+    if ($location->location() == ",") {
+      echo 'console.warn("location ‘'.$article->location().'’ for event ‘'.$article->title().'’ has no coordinates");';
+    }
+    else if ($location->location() == "") {
+      echo 'console.warn("event ‘'.$article->title().'’ has no location");';
+    }
+    else {
       $coords = explode(",", $location->location());
       $features[] = array(
         'type'  => 'Feature',
@@ -30,7 +36,6 @@ foreach($data as $article) {
         )
       );
     }
-    else echo 'console.warn("location ‘'.$article->location().'’ for event ‘'.$article->title().'’ has no coordinates");';
   }
   else echo 'console.warn("location ‘'.$article->location().'’ for event ‘'.$article->title().'’ does not exist");';
 }
