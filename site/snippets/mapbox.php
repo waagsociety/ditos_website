@@ -50,15 +50,8 @@ echo 'var geojson = '.json_encode($geojson).';';
 ?>
 </script>
 <script type="text/javascript">
-  // geojson.features = geojson.features.filter(function(feature) { 
-  //   var coords = feature.geometry.coordinates
-  //   if (!coords[0] && !coords[1]) {
-  //     console.warn('no coordinates for location ‘' + feature.properties.address + '’ at ‘' + feature.properties.title + '’')
-  //   }
-  //   return coords[0] || coords[1]
-  // })
-  
-  console.info(JSON.stringify(geojson, null, 2))
+
+  // console.info(JSON.stringify(geojson, null, 2))
   document.addEventListener("DOMContentLoaded", function(event) {
     loadMapbox();
   });
