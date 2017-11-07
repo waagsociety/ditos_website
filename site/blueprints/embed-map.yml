@@ -1,0 +1,16 @@
+title: Embedded Map Page
+icon: flask
+hide: true
+pages: false
+files: false
+options:
+  preview: true
+  template: false
+  status: false
+  # delete: false
+  url: true
+fields:
+  source:
+    label: Link to the iframe src
+    type: url
+    text: Only the contents of the iframe src-tag
