@@ -1,5 +1,5 @@
 node_modules
 thumbs
-.DS_Store
+*/.DS_Store
 *.log
 content
