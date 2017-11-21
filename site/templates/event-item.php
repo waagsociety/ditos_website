@@ -1,6 +1,6 @@
 <?php 
 if (param('format') === 'ics') : ?>
-  <?php snippet('ics', ['event' => $page]) ?>
+  <?php snippet('ics') ?>
 <?php else : ?>
   <?php snippet('header') ?>
   <main class="main__content">
