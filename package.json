@@ -4,7 +4,7 @@
   "description": "Ditos site",
   "main": "index.js",
   "scripts": {
-    "start": "gulp start",
+    "start": "gulp start & vagrant up & open http://localhost:4040",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
