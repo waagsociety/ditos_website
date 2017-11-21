@@ -3,3 +3,4 @@ thumbs
 */.DS_Store
 *.log
 content
+.vagrant
