@@ -1,10 +1,10 @@
 {
   "name": "Ditos",
   "version": "1.0.0",
-  "description": "datahub site",
+  "description": "Ditos site",
   "main": "index.js",
   "scripts": {
-    "start": "gulp start & open ./index.sublime-project",
+    "start": "gulp start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
