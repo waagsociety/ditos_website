@@ -7,3 +7,7 @@
   tasks:
     - name: 'Install Apache'
       apt: name=apache2 state=present update_cache=yes
+    - name: 'Install PHP 7.0'
+      apt: name=php7.0
+    - name: 'Install mod_rewrite for PHP'
+      apt: name=libapache2-mod-php7.0
