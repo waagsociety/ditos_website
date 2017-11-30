@@ -3,7 +3,7 @@
   become: true
   pre_tasks:
     - name: 'Install Python for Ansible'
-      raw: apt-get -y install python-simplejson
+      raw: apt-get update && apt-get -y install python-simplejson
   tasks:
     - name: 'Install Apache'
       apt: name=apache2 state=present update_cache=yes
