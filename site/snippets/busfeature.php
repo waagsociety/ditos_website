@@ -4,9 +4,9 @@
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 383 425"><path d="M119.6 270.7c0-6.7-2.4-12.5-7.2-17.2-4.8-4.8-10.5-7.2-17.2-7.2s-12.5 2.4-17.2 7.2c-4.8 4.8-7.2 10.5-7.2 17.2 0 6.7 2.4 12.5 7.2 17.2 4.8 4.8 10.5 7.1 17.2 7.1s12.5-2.4 17.2-7.1c4.8-4.7 7.2-10.5 7.2-17.2zm195.2 0c0-6.7-2.4-12.5-7.1-17.2-4.8-4.8-10.5-7.2-17.2-7.2-6.7 0-12.5 2.4-17.2 7.2-4.8 4.8-7.1 10.5-7.1 17.2 0 6.7 2.4 12.5 7.1 17.2 4.8 4.8 10.5 7.1 17.2 7.1 6.7 0 12.5-2.4 17.2-7.1 4.7-4.7 7.1-10.5 7.1-17.2zm-8.8-75.4l-13.7-73.2c-.6-2.9-2.1-5.3-4.3-7.2-2.2-1.8-4.8-2.8-7.7-2.8h-175c-2.9 0-5.5.9-7.7 2.8-2.2 1.8-3.6 4.2-4.3 7.2l-13.7 73.2c-.6 3.8.3 7.2 2.7 10.1s5.5 4.4 9.3 4.4H294c3.8 0 6.9-1.5 9.3-4.4 2.4-3 3.3-6.3 2.7-10.1zM262.9 78.6c0-2.5-.9-4.7-2.7-6.5s-3.9-2.7-6.5-2.7h-122c-2.5 0-4.7.9-6.5 2.7-1.8 1.8-2.7 3.9-2.7 6.5 0 2.5.9 4.7 2.7 6.5 1.8 1.8 3.9 2.7 6.5 2.7h122c2.5 0 4.7-.9 6.5-2.7s2.7-3.9 2.7-6.5zm76.2 138.2v114.9h-24.4v24.4c0 6.7-2.4 12.5-7.1 17.2-4.8 4.8-10.5 7.1-17.2 7.1-6.7 0-12.5-2.4-17.2-7.1-4.8-4.8-7.1-10.5-7.1-17.2v-24.4H119.6v24.4c0 6.7-2.4 12.5-7.2 17.2-4.8 4.8-10.5 7.1-17.2 7.1-6.7 0-12.5-2.4-17.2-7.1-4.8-4.8-7.2-10.5-7.2-17.2v-24.4H46.4V216.8c0-14.2 1.6-28.4 4.8-42.5l19.6-86.5c1.1-9.9 7.3-18.6 18.6-26.1s25.9-13.1 43.8-17c18-3.8 37.8-5.7 59.5-5.7s41.6 1.9 59.5 5.7c18 3.8 32.6 9.5 43.8 17 11.2 7.5 17.4 16.2 18.6 26.1l20 86.5c3.1 13 4.5 27.1 4.5 42.5z" fill="currentColor"/></svg>
   </header>
   <div class="feature-content">
-    <p>We’re bringing the power of citizen science to the people of Europe. Until November 2017 the Science Bus will travel through Europe bringing workshops and tools to investigate the world around you.</p>
+    <p>In 2017 the Science Bus traveled through Europe hosting workshops in which we did experiments and build scientific instruments. The Science Bus tour has come to an end, but you can continue experimenting at home.</p>
     <a href="<?php //echo url('book-the-bus'); ?>https://togethersciencebus.eu/" class="btn btn-bus">
-      Follow the Science Bus
+      Get Started
     </a>
   </div>
 </section>
