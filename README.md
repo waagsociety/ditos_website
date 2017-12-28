@@ -14,3 +14,6 @@ NodeJS
 ```$ npm start```
 
 Ask Nathan or Taco for the server password
+
+## For reusing the playbook to provision a server use:
+ansible-playbook playbook.yml -i hosts --ask-pass --ask-sudo-pass
