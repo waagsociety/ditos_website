@@ -1,0 +1,2 @@
+[testing]
+213.108.110.18 ansible_ssh_user=deploy
