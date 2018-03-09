@@ -86,14 +86,6 @@ fields:
   event-name:
     label: Name of event (as described in DoA)
     type: text
-  doa-description:
-    label: DoA Description (for events that are in the Grant Agreement DoA; if not in DoA complete the next column NOT this one)
-    type: textarea
-    buttons: false
-  alt-description:
-    label: Brief description for events/details not in DoA
-    type: textarea
-    buttons: false
   facilitator: 
     label: Facilitator’s (person) name
     type: tags
@@ -128,20 +120,10 @@ fields:
       "1 (M1 - M15)": "Reporting Period 1 (M1 - M15)"
       "2 (M16 - M36)": "Reporting Period 2 (M16 - M36)"
     width: 1/3
-  duration:
-    label: Event duration
-    type: text
-    width: 1/3
-    help: In amount of hours or days
   audience-numbers:
     label: Audience numbers
     type: number
     width: 1/3
-  funds-eur:
-    label: Total amount of funds used
-    type: number
-    width: 1/3
-    placeholder: €
   status: 
     label: Status
     type: select
