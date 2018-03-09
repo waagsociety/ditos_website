@@ -5,6 +5,6 @@ query:
   page: /about/partners
   value: '{{uid}}'
   text: '{{title}}'
-help: Select the name of the organizer of this event
-default: eutema
+help: Select here 
+default: 
 width: 1/3
