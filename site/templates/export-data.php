@@ -28,6 +28,13 @@
     };
   };
 
+  function getGeolocation($locations) {
+    return function($slug) use ($locations) {
+      $locationPage = $locations->find($slug);
+      return $locationPage->location();
+    };
+  };
+
   function getFromPage($page, $field) {
     return function($slug) use ($page, $field) {
       return $page->find($slug)->content()->get($field);
@@ -74,6 +81,7 @@
     'Z' => ['Industry, Company & Startups', 'industry', 32],
     'AA' => ['Other (Collaboration)', 'other', 32],
     'AB' => ['Online Resources', 'resources', 32, destructure(['url'])],
+    'AC' => ['Geolocation','location', 32, getGeoLocation($locations)] 
   ];
 
   $phpExcel = new PHPExcel();
