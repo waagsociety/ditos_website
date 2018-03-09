@@ -32,13 +32,13 @@ fields:
   date:
     label: Start date
     type: date
-    format: MM/DD/YYYY
+    format: DD/MM/YYYY
     width: 1/4
     required: true
   date-end:
     label: End date
     type: date
-    format: MM/DD/YYYY
+    format: DD/MM/YYYY
     width: 1/4
     required: true
   time:
@@ -49,6 +49,7 @@ fields:
     required: false 
   link:
     label: Link
+    help: "Place here the link to your local event page where visitors can find more information."
     type: structure
     entry: >
       {{label}}

@@ -1,6 +1,6 @@
 label: Date
 type: date
-format: MM/DD/YYYY
+format: DD/MM/YYYY
 width: 1/4
 required: true
 default: today
