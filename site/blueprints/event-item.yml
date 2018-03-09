@@ -98,9 +98,10 @@ fields:
     label: Facilitator’s (person) name
     type: tags
   event-id:
-    label: "Event ID: use org.name_date in YYYYMMDD format"
+    label: "Event ID"
     type: text
     width: 1/2
+    help: "N.B. use org.name_date in YYYYMMDD format"
   work-package:
     label: Work package
     type: select
@@ -137,9 +138,10 @@ fields:
     type: number
     width: 1/3
   funds-eur:
-    label: Total amount of funds used (EUR)
+    label: Total amount of funds used
     type: number
     width: 1/3
+    placeholder: €
   status: 
     label: Status
     type: select
@@ -155,11 +157,11 @@ fields:
     width: 1/3
     placeholder: %
   lower-age-bracket: 
-    label: Participants lower age bracket
+    label: Age of youngest participant 
     type: number
     width: 1/3
   higher-age-bracket:
-    label: Participants higher age bracket
+    label: Age of oldest participant
     type: number
     width: 1/3
   notes:
