@@ -34,13 +34,13 @@ fields:
     type: date
     format: DD/MM/YYYY
     width: 1/4
-    required: true
+    required: false 
   date-end:
     label: End date
     type: date
     format: DD/MM/YYYY
     width: 1/4
-    required: true
+    required: false
   time:
     label: Start time
     type: time

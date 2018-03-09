@@ -34,10 +34,6 @@
         </ul>
       <?php endif ?>
       
-      <!-- ADMISSION -->
-      <?php $currency = ['gbp'=>'£', 'eur'=>'€', 'pln'=>'zł', 'chf'=>'Fr. '][trim($page->currency()->html())] ?>
-      <p><?= ($page->price()->isNotEmpty() ? 'Admission fee: '.$currency.$page->price() : 'No admission fee') ?></p>
-
       <!-- RSVP -->
       <?php $links = $page->link()->toStructure() ?>
       <?php foreach ($links as $link) : ?>
@@ -50,6 +46,7 @@
   </li>
  <?php endif ?>
 
+ <?php if($page->date()) : ?>
   <li>
     <header>When</header>
     <section>
@@ -84,6 +81,7 @@
       </a>
     </section>
   </li>
+ <?php endif ?>
 
  <?php $location = $pages->find('locations')->find($page->location()) ?>
  <?php if ($location) : ?>
