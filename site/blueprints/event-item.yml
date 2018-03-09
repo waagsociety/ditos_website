@@ -86,12 +86,10 @@ fields:
   event-name:
     label: Name of event (as described in DoA)
     type: text
-    # readonly: true
   doa-description:
     label: DoA Description (for events that are in the Grant Agreement DoA; if not in DoA complete the next column NOT this one)
     type: textarea
     buttons: false
-    # readonly: true
   alt-description:
     label: Brief description for events/details not in DoA
     type: textarea
@@ -155,6 +153,7 @@ fields:
     type: number
     max: 100
     width: 1/3
+    placeholder: %
   lower-age-bracket: 
     label: Participants lower age bracket
     type: number
