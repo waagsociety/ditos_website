@@ -14,9 +14,16 @@ $(function() {//document ready
         
         //update the two readonly fields via the mapping
         if(index > -1){
-            var wp = workpackages[index];
+           
+            //parse the wp number
+            var wp = parseInt(workpackages[index]);
+            var wp_index = -1;//the default empty value
+            if(!isNaN(wp)){
+                wp_index = wp - 1;//index starts at 0     
+            }
+            wpField.value = wp_index;
+            
             var eventType = eventTypes[index];
-            wpField.value = wp;
             typeField.value = eventType;
         }
         else //the empty selector
