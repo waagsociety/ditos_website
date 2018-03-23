@@ -41,6 +41,74 @@
     };
   }
 
+//get the reporting period based on the start date of the event
+function getReportingPeriod()
+{
+    return function($value)
+    {
+        $period1_start = strtotime('06/01/2016');
+        $period1_end = strtotime('08/31/2017');
+        $period1_title = "Reporting period 1 M1 - M15";
+
+        $period2_start = strtotime('09/01/2017');
+        $period2_end = strtotime('05/01/2019');
+        $period2_title = "Reporting period 2 M16 - M36";
+
+        $date = strtotime($value);
+
+        if($date >= $period1_start && $date <= $period1_end)
+        {
+            return $period1_title;
+        }
+        else if($date >= $period2_start && $date <= $period2_end)
+        {
+            return $period2_title;
+        }
+        else
+        {
+            return $value;//should return the unmodified date for clarity, if not in valid range
+        }
+    };
+}
+
+//get the phase based on the start date of the event
+function getPhase()
+{
+    return function($value)
+    {
+        $scoping_start = strtotime('06/01/2016');
+        $scoping_end = strtotime('11/30/2016');
+        $scoping_title = 'Scoping M1- M6';
+
+        $engagement_start = strtotime('12/01/2016');
+        $engagement_end = strtotime('05/31/2018');
+        $engagement_title = 'Engagement M7 - M24';
+
+        $scaling_start = strtotime('06/01/2018');
+        $scaling_end = strtotime('05/31/2019');
+        $scaling_title = 'Scaling up M25 - M36';
+
+        $date = strtotime($value);
+
+        if($date >= $scoping_start && $date <= $scoping_end)
+        {
+            return $scoping_title;
+        }
+        else if($date >= $engagement_start && $date <= $engagement_end)
+        {
+            return $engagement_title;
+        }
+        else if($date >= $scaling_start && $date <= $scaling_end)
+        {
+            return $scaling_title;
+        }
+        else
+        {
+            return $value;//should return the unmodified date
+        }
+    };
+}
+
 ?>
 <?php if ($user && params('download')) {
 
@@ -71,8 +139,8 @@
     'P' => ['Url’s', 'link', 48, destructure(['url'])],
     'Q' => ['Event ID', 'event_id', 24],
     'R' => ['Location', 'location', 32, getAddress($locations)],
-    'S' => ['Reporting Period', 'reporting_period', 16],
-    'T' => ['Phase (the event was planned)', 'planning_phase', 32],
+    'S' => ['Reporting Period', 'date', 16, getReportingPeriod()],
+    'T' => ['Phase (the event was planned)', 'date', 32, getPhase()],
     'U' => ['Notes', 'notes', 32],
     'V' => ['NGO', 'ngo', 32],
     'W' => ['DIY & local communities', 'communities', 32],
