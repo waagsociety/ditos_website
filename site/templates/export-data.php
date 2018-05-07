@@ -20,6 +20,18 @@
 
   };
 
+  function getEventName()
+  {
+      return function($value) {
+          
+          $options = array("Bio Citizen Science","Bio Friday Academy","bio Hack The City","Bio Playshop","BioArt","BioBlitz / Bioblitz hub meeting","Biodesign Cafe","Biodesign NightScience","BioDesignWorkshops","BioNights","BioTalks","Capacity Building workshops","Citizen Science prototypes exhibition","Citizen Science prototyping workshops","Citizen Science Seminars","Citizen Science Summit","CityHack","Classific' Action Exhibition","Classifica' Action Taxonomy workshops","CRI Journal","CwB BioCafe","CwB Cafe (environmental)","Debates Science Assoc.","Digital Story Telling","Discovery Trip","DIY Science Postcards","Do-It-Together Bio","Env. Citizen Science","Env. DIY Lab","Env. Friday Academy","Env. Hack the City","Env. Science Cafe","EoW Playshop","Europe’s Interactive Citizen Science Map","European Stakeholder Roundtable BioDesign","European Stakeholder Roundtable Env Sust","European Stakeholder Roundtable RRI","Gameliers","Grand Challenge Cafes","If I were Prime Minister","Igame4er","Ik Heb een Vraag website","Labo ID","Leadership programme","Local Meetups","Local Stakeholder Roundtable DITOs Good Practices","new exhibition (RBINS)","Open Science Schools","OpenBio workshop","OpenLabEvening","Pan-European Policy Forum","Persepctives on DIY Bio","Perspectives on Citizen Science conference","Poison Exhibition","Public Lab Workshops","Reddit / MOOC","Science Cafe","Science Express tour","Science Film Night - Bio","Science Film Night - Environmental","Stakeholder Roundtable RRI","Student Env. Monitoring","Taxonomy of Bioindicators","Teacher Training Workshop","Touch|Play|Learn","Travelling exhibition & database (RBINS)","Unforeseen conference / seminar","Unforeseen Discovery Trip","Unforeseen Exhibition","Unforeseen online activity","Unforeseen science cafe or screening","Unforeseen Workshop","Videos, blogs, tweets, photos","Water & Biodiversity exhibition","Workshop Lab Books Bio","Workshop Lab Books Environmental","Xperilab");
+
+          //todo cast value to int to get the key, and return the value from the options array.
+          //but first all values need to be coerced into the new system!
+
+          return $value;
+      };
+  };
 
   function getAddress($locations) {
     return function($slug) use ($locations) {
@@ -123,13 +135,13 @@ function getPhase()
   $columns = [
     'A' => ['Partner', 'partner', 32, getFromPage($partners, 'title')],
     'B' => ['Title', 'title', 32],
-    'C' => ['Name of Event (as described in DoA)', 'event_name', 32],
+    'C' => ['Name of Event (as described in DoA)', 'event_name', 32, getEventName()],
     'D' => ['Page Link', 'tinyUrl', 32],
     'E' => ['Status', 'status', 12],
     'F' => ['Date', 'date', 12],
     'G' => ['Time', 'time', 12],
     'H' => ['End Date', 'date_end', 12],
-    'I' => ['Event Type', 'activity', 16, getFromPage($activities, 'title')],
+    'I' => ['Event Type', 'activity', 16],
     'J' => ['Audience Numbers', 'audience_numbers', 12],
     'K' => ['% Female', 'female_percentile', 12],
     'L' => ['Work Package', 'work_package', 16],
