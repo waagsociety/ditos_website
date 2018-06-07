@@ -63,7 +63,7 @@ function getReportingPeriod()
         $period1_title = "Reporting period 1 M1 - M15";
 
         $period2_start = strtotime('09/01/2017');
-        $period2_end = strtotime('05/01/2019');
+        $period2_end = strtotime('05/31/2019');
         $period2_title = "Reporting period 2 M16 - M36";
 
         $date = strtotime($value);
