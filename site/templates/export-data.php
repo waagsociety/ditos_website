@@ -179,11 +179,19 @@ function getPhase()
     $data = $page->toArray();
     foreach ($columns as $key => $column) {
       $field = $column[$slug];
-      $value = array_key_exists($field, $data) ? $data[$field] : $page->content()->get($field);
-      if (array_key_exists($callback, $column) && strlen(trim($value)) > 0) {
-        $value = $column[$callback]($value);
+        
+      try{
+        $value = array_key_exists($field, $data) ? $data[$field] : $page->content()->get($field);
+        if (array_key_exists($callback, $column) && strlen(trim($value)) > 0) {
+            $value = $column[$callback]($value);
+        }
+        $sheet->setCellValue($key.$row, $value."\n");
+      } 
+      catch (Error $e) 
+      {
+        //show the error in the event sheet itself, so it can be fixed by someone.
+        $sheet->setCellValue($key.$row, 'DATA ERROR!'."\n");
       }
-      $sheet->setCellValue($key.$row, $value."\n");
     }
     $row++;
   }
