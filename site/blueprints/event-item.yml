@@ -22,26 +22,24 @@ fields:
     extends: description
     help: Add a catchy short description for this event here. This will be shown in the list of all our events. (max. 155 characters)
 
-  event-name: doa
+  event-name: 
+    label: Name of event (as described in DoA)
+    type: text
   
   work-package:
     label: Work package
     type: select
     options:
-      WP1 Biodesign
-      WP2 Env Sustainability
-      WP3 Public engagement
-      WP4 policy engagement
-      WP5 Evaluation
+      "WP2 Env Sustainability": "Bio/Policy"
+      "WP1 Biodesign": "Bio/Public"
+      "WP4 policy engagement": "Env/Policy"
+      "WP4 policy engagement": "Env/Public"
+      "WP5 Evaluation": Evaluation
+      "WP3 Public engagement": Dissemination
     width: 1/2
-    readonly: false 
-  
-  activity: 
-    label: Event Type
-    type: text
-    readonly: true 
-    width: 1/2
-  
+      
+  activity: activity 
+      
   partner: partner
   location: location
   text: text
