@@ -20,7 +20,7 @@ Partner: <select name="partner">
 
 <?php foreach($partners as $item): ?>
       <?php if(!$item) continue ?>
-      <option<?php e(isset($data['partner']) && $data['partner'] == $item->title(), ' selected') ?> value="<?= $item->title() ?>"><?= $item->title() ?></option>
+      <option<?php e(isset($data['partner']) && $data['partner'] == $item->title(), ' selected') ?> value="<?= $item->slug() ?>"><?= $item->title() ?></option>
     <?php endforeach ?>
 
 
