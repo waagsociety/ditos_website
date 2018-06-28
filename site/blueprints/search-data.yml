@@ -1,0 +1,16 @@
+title: Eventsearch 
+pages: false
+files: false
+hide: true
+options:
+  # delete: false
+  template: false
+  url: false
+  status: false
+fields:
+  title: title
+  description: description
+  label: Publish
+    type: checkbox
+    text: Search event data
+    default: false
