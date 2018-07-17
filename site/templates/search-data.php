@@ -10,7 +10,8 @@ if(r::is('POST')) $data = get();
 if($user)
 {
     $events = $site->children()->get('events')->children()->filterBy('template', 'event-item');
-    $partners = $site->children()->get('about')->children()->get('about/partners')->children();//->get('parners')->filterBy('template','partner-item');
+    $partners = $site->children()->get('about')->children()->get('about/partners')->children();
+    $activities= $site->children()->get('activities')->children();
 ?>
 
 <br><br>
@@ -46,7 +47,19 @@ Status: <select name="status">
 <?php foreach($status_options as $item): ?>
       <option<?php e(isset($data['status']) && $data['status'] == $item, ' selected') ?> value="<?= $item ?>"><?= $item ?></option>
     <?php endforeach ?>
-</select
+</select>
+
+<br><br>
+
+Event type: <select name="activity"><!-- activities -->
+    <option selected value="">All</option>
+
+<?php foreach($activities as $item): ?>
+      <?php if(!$item) continue ?>
+      <option<?php e(isset($data['activity']) && $data['activity'] == $item->slug(), ' selected') ?> value="<?= $item->slug() ?>"><?= $item->title() ?></option>
+    <?php endforeach ?>
+</select>
+
 <br><br>
 <br><br>
 <button type="submit" form="filters" value="Submit">Search</button>
@@ -81,6 +94,11 @@ Status: <select name="status">
         if($data['status'])
         {
             $events = $events->search($data['status'],'status');
+        }
+
+        if($data['activity'])
+        {
+            $events = $events->search($data['activity'],'activity');
         }
 
         $nr_of_results = count($events);
