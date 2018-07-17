@@ -101,10 +101,12 @@ Event type: <select name="activity"><!-- activities -->
             $events = $events->search($data['activity'],'activity');
         }
 
+        $events = $events->sortBy('event_name', 'asc');
+
         $nr_of_results = count($events);
         echo 'count: ' . $nr_of_results;;
 
-        echo '<table cellspacing="10"><tr><th>name</th><th>date</th><th>partner</th><th>title</th><th>Actions</th></tr>';
+        echo '<table cellspacing="10"><tr><th>name</th><th>date</th><th>partner</th><th>title</th><th>WP</th><th>Actions</th></tr>';
         foreach($events as $event)
         {
 ?>
@@ -113,6 +115,7 @@ Event type: <select name="activity"><!-- activities -->
         <td><?php echo $event->date("Y-m-d") ?></td>
         <td><?php echo $event->partner() ?></td>
         <td><?php echo $event->title() ?></td>
+        <td><?php echo $event->work_package() ?></td>
         <td><a href="<?php echo "/panel/pages/events/" . $event->slug(). "/edit" ?>">Edit</a>&nbsp;|&nbsp;<a href="<?php echo $event->url()?>">View</a></td>
     </tr>
 <?php
