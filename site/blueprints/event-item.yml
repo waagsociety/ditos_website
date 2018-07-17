@@ -64,7 +64,12 @@ fields:
     type: time
     width: 1/4
     interval: 15
-    required: false 
+    required: false
+  time-end:
+    label: End time
+    type: time
+    width: 1/4
+    interval: 15 
   link:
     label: Link
     help: "Place here the link to your local event page where visitors can find more information."
