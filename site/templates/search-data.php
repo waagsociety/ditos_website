@@ -29,7 +29,7 @@ Partner: <select name="partner">
 
 </select>
 <br><br>
-Date:&nbsp;&nbsp;&nbsp;<input name="date" value="<?php e(isset($data), $data['date']) ?>"> (YYYY-MM-DD) e.g. for everying in may 2018 use 2018-05.
+Date:&nbsp;&nbsp;&nbsp;<input name="date" value="<?php e(isset($data), $data['date']) ?>"> (YYYY-MM-DD) e.g. for everything in may 2018 use 2018-05.
 </input>
 <br><br>
 Title:&nbsp;&nbsp;&nbsp;<input name="title" value="<?php e(isset($data), $data['title']) ?>">
