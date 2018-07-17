@@ -35,8 +35,19 @@ Date:&nbsp;&nbsp;&nbsp;<input name="date" value="<?php e(isset($data), $data['da
 Title:&nbsp;&nbsp;&nbsp;<input name="title" value="<?php e(isset($data), $data['title']) ?>">
 </input>
 <br><br>
-Name:&nbsp;<input name="name" value="<?php e(isset($data), $data['name']) ?>"> (Name of event as described in DoA)
-</input>
+DOA Name:&nbsp;<input name="name" value="<?php e(isset($data), $data['name']) ?>"></input>
+<br><br>
+
+<?php
+    $status_options = array("Planned", "Completed", "Cancelled")
+?>
+Status: <select name="status">
+    <option selected value="">All</option>
+<?php foreach($status_options as $item): ?>
+      <option<?php e(isset($data['status']) && $data['status'] == $item, ' selected') ?> value="<?= $item ?>"><?= $item ?></option>
+    <?php endforeach ?>
+</select
+<br><br>
 <br><br>
 <button type="submit" form="filters" value="Submit">Search</button>
 </form>
@@ -65,6 +76,11 @@ Name:&nbsp;<input name="name" value="<?php e(isset($data), $data['name']) ?>"> (
         if($data['name'])
         {
             $events = $events->search($data['name'],'event_name');
+        }
+
+        if($data['status'])
+        {
+            $events = $events->search($data['status'],'status');
         }
 
         $nr_of_results = count($events);
