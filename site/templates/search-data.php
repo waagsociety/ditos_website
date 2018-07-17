@@ -13,10 +13,19 @@ if($user)
     $partners = $site->children()->get('about')->children()->get('about/partners')->children();
     $activities= $site->children()->get('activities')->children();
 ?>
+    <script language="javascript">
+    
+    //submit the form, with sorting
+    function submitForm(field_to_sortby)
+    {
+        document.getElementById("filters").elements["sortby"].value = field_to_sortby ;
+        document.getElementById("filters").submit();
+    }
+    </script>
 
 <br><br>
 <form id="filters" method="post">
-
+<input type="hidden" name="sortby" value="event_name" />
 <!-- filters -->
 Partner: <select name="partner">
     <option selected value="">All Partners</option>
@@ -101,12 +110,15 @@ Event type: <select name="activity"><!-- activities -->
             $events = $events->search($data['activity'],'activity');
         }
 
-        $events = $events->sortBy('event_name', 'asc');
+        if($data['sortby'])
+        {
+            $events = $events->sortBy($data['sortby'], 'asc');
+        }
 
         $nr_of_results = count($events);
         echo 'count: ' . $nr_of_results;;
 
-        echo '<table cellspacing="10"><tr><th>name</th><th>date</th><th>partner</th><th>title</th><th>WP</th><th>Actions</th></tr>';
+        echo '<table cellspacing="10"><tr><th><a href="javascript:submitForm(\'event_name\')">name</a></th><th><a href="javascript:submitForm(\'date\')">date</a></th><th>partner</th><th>title</th><th>WP</th><th>Actions</th></tr>';
         foreach($events as $event)
         {
 ?>
