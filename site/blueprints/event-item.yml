@@ -30,12 +30,12 @@ fields:
     label: Work package
     type: select
     options:
-      "Bio/Policy": "WP2 Env Sustainability"
       "Bio/Public": "WP1 Biodesign"
-      "Env/Policy": "WP4 policy engagement"
-      "Env/Public": "WP4 policy engagement"
-      Evaluation: "WP5 Evaluation"
+      "Env/Public": "WP2 Env Sustainability"
       Dissemination: "WP3 Public engagement"
+      "Bio/Policy": "WP4 Bio Policy"
+      "Env/Policy": "WP4 Env Policy"
+      Evaluation: "WP5 Evaluation"
     width: 1/2
       
   activity: activity 
