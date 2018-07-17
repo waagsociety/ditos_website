@@ -111,7 +111,7 @@ fields:
   event-id:
     label: "Event ID"
     type: text
-    width: 1/2
+    width: 1/3
     help: "N.B. use org.name_date in YYYYMMDD format"
   audience-numbers:
     label: Audience numbers
