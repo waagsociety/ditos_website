@@ -49,7 +49,7 @@ DOA Name:&nbsp;<input name="name" value="<?php e(isset($data), $data['name']) ?>
 <br><br>
 
 <?php
-    $status_options = array("Planned", "Completed", "Cancelled")
+    $status_options = array("Planned", "Completed", "Cancelled", "Empty")
 ?>
 Status: <select name="status">
     <option selected value="">All</option>
@@ -102,7 +102,13 @@ Event type: <select name="activity"><!-- activities -->
 
         if($data['status'])
         {
-            $events = $events->search($data['status'],'status');
+            $value = $data['status'];
+            if($value == 'Empty'){
+                $events = $events->filterBy('status','not in',['Planned','Completed','Cancelled']);
+            }
+            else {
+                $events = $events->search($value,'status');
+            }
         }
 
         if($data['activity'])
