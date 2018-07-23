@@ -49,7 +49,16 @@ DOA Name:&nbsp;<input name="name" value="<?php e(isset($data), $data['name']) ?>
 <br><br>
 
 <?php
-    $status_options = array("Planned", "Completed", "Cancelled", "Empty")
+    $status_options = array("Planned", "Completed", "Cancelled", "Empty");
+    $work_package_options = array(
+                                "Bio/Public" => "WP1 Biodesign", 
+                                "Env/Public" => "WP2 Env Sustainability", 
+                                "Dissemination" => "WP3 Public engagement", 
+                                "Bio/Policy" => "WP4 Bio Policy", 
+                                "Env/Policy" => "WP4 Env Policy", 
+                                "Evaluation" => "WP5 Evaluation",
+                                "" => ""
+                            );//manual mapping to display drop down values
 ?>
 Status: <select name="status">
     <option selected value="">All</option>
@@ -122,9 +131,8 @@ Event type: <select name="activity"><!-- activities -->
         }
 
         $nr_of_results = count($events);
-        echo 'count: ' . $nr_of_results;;
-
-        echo '<table cellspacing="10"><tr><th><a href="javascript:submitForm(\'event_name\')">name</a></th><th><a href="javascript:submitForm(\'date\')">date</a></th><th>partner</th><th>title</th><th>WP</th><th>Actions</th></tr>';
+        echo 'count: ' . $nr_of_results;
+        echo '<table cellspacing="10"><tr><th><a href="javascript:submitForm(\'event_name\')">DOA name</a></th><th><a href="javascript:submitForm(\'date\')">date</a></th><th>partner</th><th>title</th><th>WP</th><th>status</th><th>type</th><th>Actions</th></tr>';
         foreach($events as $event)
         {
 ?>
@@ -133,7 +141,9 @@ Event type: <select name="activity"><!-- activities -->
         <td><?php echo $event->date("Y-m-d") ?></td>
         <td><?php echo $event->partner() ?></td>
         <td><?php echo $event->title() ?></td>
-        <td><?php echo $event->work_package() ?></td>
+        <td><?php echo $work_package_options[$event->work_package()->value()]?> </td>
+        <td><?php echo $event->status() ?></td>
+        <td><?php echo $event->activity() ?></td>
         <td><a href="<?php echo "/panel/pages/events/" . $event->slug(). "/edit" ?>">Edit</a>&nbsp;|&nbsp;<a href="<?php echo $event->url()?>">View</a></td>
     </tr>
 <?php
