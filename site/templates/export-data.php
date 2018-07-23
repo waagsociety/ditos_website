@@ -46,6 +46,28 @@
       return $locationPage->location();
     };
   };
+  
+  function getLat($locations) {
+    return function($slug) use ($locations) {
+      $locationPage = $locations->find($slug);
+      $location = $locationPage->location();
+      if($location != ""){
+          $location = $location->split(',')[0];
+      }
+      return $location;
+    };
+  };
+
+  function getLong($locations) {
+    return function($slug) use ($locations) {
+      $locationPage = $locations->find($slug);
+      $location = $locationPage->location();
+      if($location != ""){
+          $location = $location->split(',')[1];
+      }
+      return $location;
+    };
+  }
 
   function getFromPage($page, $field) {
     return function($slug) use ($page, $field) {
@@ -161,7 +183,9 @@ function getPhase()
     'Z' => ['Industry, Company & Startups', 'industry', 32],
     'AA' => ['Other (Collaboration)', 'other', 32],
     'AB' => ['Online Resources', 'resources', 32, destructure(['url'])],
-    'AC' => ['Geolocation','location', 32, getGeoLocation($locations)] 
+    'AC' => ['Geolocation','location', 32, getGeolocation($locations)],
+    'AD' => ['Latitude','location', 32, getLat($locations)],
+    'AE' => ['Longitude','location', 32, getLong($locations)] 
   ];
 
   $phpExcel = new PHPExcel();
@@ -181,9 +205,9 @@ function getPhase()
       $field = $column[$slug];
         
       try{
-        $value = array_key_exists($field, $data) ? $data[$field] : $page->content()->get($field);
+        $value = array_key_exists($field, $data) ? $data[$field] : $page->content()->get($field);//waarde als er geen callback (closure) is
         if (array_key_exists($callback, $column) && strlen(trim($value)) > 0) {
-            $value = $column[$callback]($value);
+            $value = $column[$callback]($value);//waarde als er wel een closure is
         }
         $sheet->setCellValue($key.$row, $value."\n");
       } 
